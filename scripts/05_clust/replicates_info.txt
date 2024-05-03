@@ -1,0 +1,5 @@
+development_filtered_tpm_table.csv	egg	OL1.out	OL2.out	OL3.out
+development_filtered_tpm_table.csv	blastula	OL5.out	OL6.out	OL7.out
+development_filtered_tpm_table.csv	gastrula	OL9.out	OL10.out	OL11.out
+development_filtered_tpm_table.csv	trochophore	OL14.out	OL15.out	OL16.out
+development_filtered_tpm_table.csv	adult	OL18.out	OL19.out	OL20.out
