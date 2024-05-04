@@ -1,0 +1,16 @@
+Name	Condition	Replicate
+OL1.out	egg	1
+OL2.out	egg	2
+OL3.out	egg	3
+OL5.out	blastula	1
+OL6.out	blastula	2
+OL7.out	blastula	3
+OL9.out	gastrula	1
+OL10.out	gastrula	2
+OL11.out	gastrula	3
+OL14.out	trochophore	1
+OL15.out	trochophore	2
+OL16.out	trochophore	3
+OL18.out	adult	1
+OL19.out	adult	2
+OL20.out	adult	3

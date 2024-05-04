@@ -1,0 +1,16 @@
+GO:0000976, GO:0000975, GO:0000984, GO:0001017, GO:0044212 - transcription cis-regulatory region binding
+GO:0001228, GO:0001077, GO:0001205, GO:0001209, GO:0001211, GO:0001212, GO:0001213 - A DNA-binding transcription factor activity RNA polymerase II.
+GO:0000122, GO:0010553, GO:0045816 - negative regulation of transcription by RNA polymerase II
+GO:0140297, GO:0001107, GO:0033613, GO:0070491 - DNA-binding transcription factor binding
+GO:0007219, GO:0030179 - NOTCH
+GO:0071363 - cellular response to growth factor stimulus
+GO:0007169 - cell surface receptor protein tyrosine kinase signaling pathway
+GO:0007178 - cell surface receptor protein serine/threonine kinase signaling pathway
+GO:0000165 - MAPK cascade
+GO:0000978, GO:0000980 - RNA polymerase II cis-regulatory region sequence-specific DNA binding
+GO:0003002 - regionalisation
+
+
+GO:0050793 - regulation of development
+GO:0032502, GO:0044767 - developmental process
+GO:0040007, GO:0048590 - growth
