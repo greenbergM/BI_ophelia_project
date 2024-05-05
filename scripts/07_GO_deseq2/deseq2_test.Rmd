@@ -28,6 +28,8 @@ library(ggVennDiagram)
 library(UpSetR)
 library(tibble)
 library(stringr)
+
+source("/Volumes/oli/RESULTS/scripts/07_GODeseq/deseq2_utils.R")
 ```
 
 ## Imports + sample names
@@ -73,6 +75,7 @@ rownames(sampleTable) <- colnames(txi$counts)
 ```{r deseq2, message=FALSE, warning=FALSE}
 dds <- DESeqDataSetFromTximport(txi, sampleTable, ~condition)
 ```
+
 ## Creating table with normalised counts 
 
 ```{r norm counts}
@@ -84,6 +87,7 @@ write.table(normalized_counts, file="normalized_counts.txt", sep="\t", quote=F, 
 ```
 
 ## Stages clustering
+
 ```{r pca, message=FALSE, warning=FALSE}
 vst_dds <- vst(dds)
 counts.norm <- assay(vst_dds)
@@ -91,98 +95,32 @@ counts.norm <- assay(vst_dds)
 plotPCA(vst_dds,intgroup=c("condition")) + 
   geom_encircle(aes(x = PC1, y = PC2, color = condition)) 
 ```
+
+
 ```{r sample clustering, message=FALSE, warning=FALSE}
 sampleDists <- dist(t(assay(vst_dds)))
 sampleDistMatrix <- as.matrix(sampleDists)
 rownames(sampleDistMatrix) <- paste(vst_dds$condition, vst_dds$type)
-colnames(sampleDistMatrix) <- NULL
 
 pheatmap(sampleDistMatrix,
-         clustering_distance_rows=sampleDists,
-         clustering_distance_cols=sampleDists, 
-         color = viridis(100)) 
-
+         annotation_col = sampleTable,
+         clustering_distance_rows = sampleDists,
+         clustering_distance_cols = sampleDists, 
+         color = viridis(100),
+         show_colnames = FALSE)
 ```
 
-## Embryo stages vs adult
+## All vs egg
 
-### Differential analysis
+Comparasion of all stages to a starting point - an egg:
+
+### DESeq
 ```{r dds_emvsa, message=FALSE, warning=FALSE}
 dds$condition = relevel(dds$condition, "egg")
 dds_vs_egg <- DESeq(dds)
 ```
 
-### Results analysis
-```{r func for deg_classification}
-classify_DEGs <- function(deseq_res_df) {
-  deseq_res_df <- as.data.frame(deseq_res_df)
-
-  deseq_res_df <- rownames_to_column(deseq_res_df, var = "gene")
-  
-  deseq_res_df$DEGs <- case_when(
-    deseq_res_df$padj < 0.05 & deseq_res_df$log2FoldChange > 2 ~ "Upregulated",
-    deseq_res_df$padj < 0.05 & deseq_res_df$log2FoldChange < -2 ~ "Downregulated",
-    TRUE ~ "Non-DEG"
-  )
-  
-  deseq_res_df <- merge(deseq_res_df, annotation[c("query", "Preferred_name", "Description", "PFAMs", "GOs")],
-                        by.x = "gene", by.y = "query", all.x = TRUE)
-  
-  deseq_res_df$Preferred_name[is.na(deseq_res_df$Preferred_name)] <- "-"
-  deseq_res_df$Description[is.na(deseq_res_df$Description)] <- "-"
- 
-  deseq_res_df_up <- deseq_res_df[deseq_res_df$DEGs == "Upregulated", ]
-  rownames(deseq_res_df_up) <- NULL
-  
-  deseq_res_df_down <- deseq_res_df[deseq_res_df$DEGs == "Downregulated", ]
-  rownames(deseq_res_df_up) <- NULL
-
-  return(list(up = deseq_res_df_up, down = deseq_res_df_down, all = deseq_res_df))
-}
-```
-
-```{r func for vulcano}
-
-volcano_plot <- function(res_df, contrast) {
-  
-  num_upregulated <- sum(res_df$DEGs == "Upregulated")
-  num_downregulated <- sum(res_df$DEGs == "Downregulated")
-  
-  res_df_with_names <- res_df[res_df$Preferred_name != "-", ]
-  
-  top_genes <- head(res_df_with_names[order(res_df_with_names$padj), ], 20)
-  
-  name <- paste(c(contrast[2], contrast[3]), collapse = " vs ")
-
-  ggplot(res_df) +
-    geom_point(aes(x = log2FoldChange, y = -log10(padj), colour = DEGs), size = 0.5) +
-    geom_text(data = top_genes, 
-              aes(x = log2FoldChange, y = -log10(padj), label = Preferred_name), 
-              color = "black", size = 2, check_overlap = TRUE) +
-
-    ggtitle(name) +
-    xlab("log2FC") + 
-    ylab("-log10 padj") +
-    theme(legend.position = "bottom", legend.key.size = unit(0.4, "cm"),
-          legend.text = element_text(size = 9),
-          plot.title = element_text(size = rel(1.1), hjust = 0.5),
-          axis.title = element_text(size = rel(0.8)),
-          axis.text = element_text(size = 7),
-          panel.grid.major = element_blank(),
-          panel.grid.minor = element_blank(),
-          panel.background = element_blank()) +
-    scale_color_manual(name = NULL, values = c("Upregulated" = "magenta", 
-                                               "Downregulated" = "cyan", 
-                                               "Non-DEG" = "gray"),
-                       labels = c(paste("Downregulated genes:", num_downregulated),
-                                  "Non-differentially expressed",
-                                  paste("Upregulated genes:", num_upregulated))) +
-    geom_vline(xintercept = c(-2, 2), linetype = "dashed", color = "black")+
-    geom_hline(yintercept = -log10(0.05), linetype = "dashed", color = "black")
-    
-}
-```
-
+### Plots
 
 ```{r results1}
 contrast1 = c("condition", "blastula","egg")
@@ -201,13 +139,13 @@ troch_vs_egg <- classify_DEGs(troch_vs_egg)
 adult_vs_egg <- classify_DEGs(adult_vs_egg)
 ```
 
-
 ```{r volcano, message=FALSE, warning=FALSE}
 volcano_plot(blast_vs_egg$all, contrast1)
 volcano_plot(gastr_vs_egg$all, contrast2)
 volcano_plot(troch_vs_egg$all, contrast3)
 volcano_plot(adult_vs_egg$all, contrast4)
 ```
+Venn diagramm for all DEGs:
 
 ```{r venn2}
 blast_vs_egg_sig <- blast_vs_egg$all[blast_vs_egg$all$DEGs != "Non-DEG", ]
@@ -230,6 +168,7 @@ ggVennDiagram(list(blast_vs_egg_sig_names, gastr_vs_egg_sig_names, troch_vs_egg_
   scale_fill_gradient(low="cyan",high = "magenta")
 ```
 
+UpsetR plots for upregulated and downregulated DEGs:
 
 ```{r upsetr}
 upregulated <- list(blastula = blast_vs_egg$up$gene, 
@@ -249,144 +188,10 @@ upset(fromList(downregulated), order.by = "freq", sets = names(downregulated),
       mainbar.y.label = "Downregulated genes intersections")
 ```
 
-```{r shrink}
-#res <- lfcShrink(dds_emvsa, coef = "condition_egg_vs_adult", type = "apeglm")
-```
-
-### GO
-
-```{r go2}
-run_GO_analysis <- function(degs_df) {
-  degs <- factor(as.integer(gene_names %in% degs_df$gene))
-  names(degs) <- gene_names
-  GOdata <- new("topGOdata", ontology = "BP", allGenes = degs, annot = annFUN.gene2GO, gene2GO = oli_geneID2GO)
-  resultFis <- runTest(GOdata, algorithm = "classic", statistic = "fisher")
-  resultsFis_df <- as.data.frame(score(resultFis))
-  resultsFis_df_signif <- subset(resultsFis_df, resultsFis_df$`score(resultFis)` < 0.01)
-  GO_set <- GenTable(GOdata, classic=resultFis, ranksOf="classicFisher", 
-                     topNodes = length(resultsFis_df_signif$`score(resultFis)`))
-  
-  GO_subset <- subset(GO_set, Significant > 10)
-  GO_subset$classic <- gsub("<", "", GO_subset$classic)
-  
-  simMatrix <- calculateSimMatrix(GO_subset$GO.ID,
-                                  orgdb="org.Hs.eg.db",
-                                  ont="BP",
-                                  method="Rel")
-  scores <- setNames(-log10(as.numeric(GO_subset$classic)), GO_subset$GO.ID)
-  reducedTerms <- reduceSimMatrix(simMatrix,
-                                  scores,
-                                  threshold=0.7,
-                                  orgdb="org.Hs.eg.db")
-  reducedTerms_uniq <- reducedTerms %>% 
-    group_by(parentTerm) %>%
-    filter(row_number() == 1)
-  
-  reducedTerms_uniq <- reducedTerms[!duplicated(reducedTerms$parentTerm), ]
-  
-  reducedTerms_uniq <- as.data.frame(reducedTerms_uniq)
-  reducedTerms <- as.data.frame(reducedTerms)
-
-  #Get real number of genes per term for rrvgo output and calculate fold change:
-  filtered_oli_geneID2GO <- oli_geneID2GO[gene_names %in% degs_df$gene]
-  term_genes_subset <- length(filtered_oli_geneID2GO)
-  term_genes_all <- length(oli_geneID2GO)
-
-  calculate_num_genes <- function(term) {
-    sum(sapply(filtered_oli_geneID2GO, function(gene_list) term %in% gene_list))
-  }
-
-  calculate_fold_change <- function(num_genes, term) {
-    num_genes_term <- sum(sapply(oli_geneID2GO, function(gene_list) term %in% gene_list))
-    (num_genes / term_genes_subset) / (num_genes_term / term_genes_all)
-  }
-
-  reducedTerms_uniq$Significant <- sapply(reducedTerms_uniq$go, calculate_num_genes)
-  reducedTerms_uniq$fold_change <- mapply(calculate_fold_change, reducedTerms_uniq$Significant, reducedTerms_uniq$go)
-  reducedTerms_uniq$GO_id_desc <- paste(reducedTerms_uniq$go, "|", reducedTerms_uniq$term)
-  
-  reducedTerms$Significant <- sapply(reducedTerms$go, calculate_num_genes)
-  reducedTerms$fold_change <- mapply(calculate_fold_change, reducedTerms$Significant, reducedTerms$go)
-  reducedTerms$GO_id_desc <- paste(reducedTerms$go, "|", reducedTerms$term)
-
-  GO_subset$fold_change <- (GO_subset$Significant / term_genes_subset) / (GO_subset$Annotated / term_genes_all)
-  GO_subset$score <- -log10(as.numeric(GO_subset$classic))
-  GO_subset$GO_id_desc <- paste(GO_subset$GO.ID, "|", GO_subset$Term)
-
-  return(list(reducedTerms_uniq = reducedTerms_uniq, GO_subset = GO_subset, reducedTerms = reducedTerms))
-}
-```
-
-```{r go4}
-plot_GO_hist <- function(rTerms_uniq_df, name) {
-  rTerms_uniq_df$GO_id_desc <- str_trunc(rTerms_uniq_df$GO_id_desc, width = 50, ellipsis = "...")
-
-  rTerms_uniq_df_top<- rTerms_uniq_df %>% top_n(25, fold_change)
-  
-  ggplot(data = rTerms_uniq_df_top, aes(x = fold_change, y = reorder(GO_id_desc, fold_change), fill = Significant)) +
-    geom_bar(stat = "identity") +
-    geom_point(aes(x = fold_change, y = reorder(GO_id_desc, fold_change), size = score), 
-               shape = 21, fill = "yellow") +
-    scale_fill_viridis_c(name = "Number of genes", option = "cividis") +
-    labs(
-      title = paste(name),
-      y = "GO term: biological process",
-      x = "Fold enrichment",
-      size = "Enrichment score"
-    ) +
-    theme(
-      axis.text.y = element_text(size = 8),
-      plot.title = element_text(face = "bold", size = 10),
-      legend.text = element_text(size = 8),
-      legend.title = element_text(size = 8)
-    )
-}
-```
-
-```{r z-score matrix func}
-make_zscore_matrix <- function(GOI) {
-  norm_expr_goi <- subset(normalized_counts, normalized_counts$gene %in% GOI$query)
-  
-  norm_expr_goi$gene <- paste(norm_expr_goi$gene, " | ", 
-                              GOI$Preferred_name[match(norm_expr_goi$gene, 
-                                                       GOI$query)])
-
-  avg_norm_expr_goi <- data.frame(
-    gene = norm_expr_goi$gene,
-    egg = rowMeans(norm_expr_goi[, c(2:4)]),
-    blastula = rowMeans(norm_expr_goi[, c(5:7)]),
-    gastrula = rowMeans(norm_expr_goi[, c(6:9)]),
-    trochophore = rowMeans(norm_expr_goi[, c(10:13)]),
-    adult = rowMeans(norm_expr_goi[, c(14:16)])
-  )
-
-  gene <- avg_norm_expr_goi[,1]
-  vals <- as.matrix(avg_norm_expr_goi[,2:ncol(avg_norm_expr_goi)])
-
-  score <- NULL
-  for (i in 1:nrow(vals)) {
-    row <- vals[i,]
-    zscore <- (row - mean(row)) / sd(row)
-    score <- rbind(score, zscore)
-  }
-
-  row.names(score) <- gene
-  return(score)
-}
-```
-
-```{r get_term_genes_func}
-get_term_genes <- function(degs, GO) {
-  
-  degs2GO <- oli_geneID2GO[gene_names %in% degs$gene]
-  GOI <- names(Filter(function(gene_list) GO %in% gene_list, degs2GO))
-  GOI <- annotation[annotation$query %in% GOI, ]
-  return(GOI)
-}
-```
+### Blastula analysis
 
 ```{r go3, message=FALSE, warning=FALSE}
-blast_vs_egg_up_GO <- run_GO_analysis(blast_vs_egg$up)
+blast_vs_egg_up_GO <- run_GO_analysis(blast_vs_egg$up, oli_geneID2GO)
 blast_vs_egg_up_rTerms_uniq <- blast_vs_egg_up_GO$reducedTerms_uniq
 blast_vs_egg_up_rTerms <- blast_vs_egg_up_GO$reducedTerms
 blast_vs_egg_up_allTerms <- blast_vs_egg_up_GO$GO_subset
@@ -398,8 +203,8 @@ plot_GO_hist(blast_vs_egg_up_rTerms_uniq, "blastula vs egg: Upregulated")
 ```
 
 ```{r tmp_heatmap}
-dienc_genes <- get_term_genes(blast_vs_egg$up, "GO:0048852")
-zscore <- make_zscore_matrix(dienc_genes)
+dienm_genes <- get_term_genes(blast_vs_egg$up, "GO:0048852", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(dienm_genes, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          color = viridis(n = 20, option = "inferno" ), 
@@ -407,20 +212,20 @@ pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0,
 ```
 
 ```{r tmp_heatmap}
-gois <- get_term_genes(blast_vs_egg$up, "GO:0021532")
-zscore <- make_zscore_matrix(gois)
+neut <- get_term_genes(blast_vs_egg$up, "GO:0021532", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(neut, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          color = viridis(n = 20, option = "inferno" ), 
          main = "Neural tube formation (GO:0021532)")
 ```
-Рассмотрим отдельные подтермины термина animal organ morphogenesis GO:0009887, в которых не очень много генов
 
 ```{r morph blastula}
-
 animal_organ_morph <- rbind(
-                            get_term_genes(blast_vs_egg$up, "GO:0035113"), #embryonic appendage morphogenesis
-                            get_term_genes(blast_vs_egg$up, "GO:0030326")) #embryonic limb morphogenesis
+                            get_term_genes(blast_vs_egg$up, "GO:0035113", oli_geneID2GO, annotation), 
+#embryonic appendage morphogenesis
+                            get_term_genes(blast_vs_egg$up, "GO:0030326", oli_geneID2GO, annotation)) 
+#embryonic limb morphogenesis
 
 #get_term_genes(blast_vs_egg$up, "GO:0060411"),
 #get_term_genes(blast_vs_egg$up, "GO:0003151"),
@@ -430,18 +235,17 @@ animal_organ_morph <- rbind(
 
 animal_organ_morph <- unique(animal_organ_morph)
 
-zscore <- make_zscore_matrix(animal_organ_morph )
+zscore <- make_zscore_matrix(animal_organ_morph, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          color = viridis(n = 20, option = "inferno" ), 
-         main = "Animal organ morphogenesis - partial (GO:0009887)")
+         main = "Animal organ morphogenesis (GO:0035113, GO:0030326)")
 
 #CTNNB1 - betta-catenin
 ```
 
-
 ```{r egg, message=FALSE, warning=FALSE}
-blast_vs_egg_down_GO <- run_GO_analysis(blast_vs_egg$down)
+blast_vs_egg_down_GO <- run_GO_analysis(blast_vs_egg$down, oli_geneID2GO)
 blast_vs_egg_down_rTerms_uniq <- blast_vs_egg_down_GO$reducedTerms_uniq
 blast_vs_egg_down_rTerms <- blast_vs_egg_down_GO$reducedTerms
 blast_vs_egg_down_allTerms <- blast_vs_egg_down_GO$GO_subset
@@ -451,18 +255,10 @@ blast_vs_egg_down_allTerms <- blast_vs_egg_down_GO$GO_subset
 treemapPlot(blast_vs_egg_down_rTerms, size = "score")
 plot_GO_hist(blast_vs_egg_down_rTerms_uniq, "blastula vs egg: Downregulated")
 ```
-
-```{r tmp_heatmap}
-mapk_activation <- get_term_genes(blast_vs_egg$down, "GO:0032874")
-zscore <- make_zscore_matrix(mapk_activation)
-pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
-         treeheight_row = 30,
-         color = viridis(n = 20, option = "inferno" ), 
-         main = "Positive regulation of stress-activated MAPK (GO:0032874)")
-```
+### Gastrula analysis
 
 ```{r go6, message=FALSE, warning=FALSE}
-gastr_vs_egg_up_GO <- run_GO_analysis(gastr_vs_egg$up)
+gastr_vs_egg_up_GO <- run_GO_analysis(gastr_vs_egg$up, oli_geneID2GO)
 gastr_vs_egg_up_rTerms_uniq <- gastr_vs_egg_up_GO$reducedTerms_uniq
 gastr_vs_egg_up_rTerms <- gastr_vs_egg_up_GO$reducedTerms
 gastr_vs_egg_up_allTerms <- gastr_vs_egg_up_GO$GO_subset
@@ -474,8 +270,8 @@ plot_GO_hist(gastr_vs_egg_up_rTerms_uniq, "gastrula vs egg: Upregulated")
 ```
 
 ```{r tmp_heatmap}
-signal_transduction <- get_term_genes(gastr_vs_egg$up, "GO:0023019")
-zscore <- make_zscore_matrix(signal_transduction)
+signal_transduction <- get_term_genes(gastr_vs_egg$up, "GO:0023019", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(signal_transduction, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          color = viridis(n = 20, option = "inferno" ), 
@@ -483,8 +279,8 @@ pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0,
 ```
 
 ```{r tmp_heatmap}
-dev_ind <- get_term_genes(gastr_vs_egg$up, "GO:0031128")
-zscore <- make_zscore_matrix(dev_ind)
+dev_ind <- get_term_genes(gastr_vs_egg$up, "GO:0031128", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(dev_ind, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          color = viridis(n = 20, option = "inferno" ), 
@@ -492,28 +288,12 @@ pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0,
 ```
 
 ```{r tmp_heatmap}
-ectodermal_placode <- get_term_genes(gastr_vs_egg$up, "GO:0071697")
-zscore <- make_zscore_matrix(ectodermal_placode)
+ectodermal_placode <- get_term_genes(gastr_vs_egg$up, "GO:0071697", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(ectodermal_placode, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          color = viridis(n = 20, option = "inferno" ), 
          main = "Ectodermal placode morphogenesis (GO:0071697)")
-```
-
-```{r go9}
-hox <- c("oli_50210_length_1493_cov_11.603521_g18335_i0", "oli_5958_length_4506_cov_57.382585_g2416_i0", 
-         "oli_8055_length_4075_cov_29.613943_g3210_i0", "oli_44581_length_1658_cov_17.283912_g16012_i0")
-
-hox_genes <- annotation[annotation$query %in% hox, ]
-
-brain_genes <- get_term_genes(blast_vs_egg$up, "GO:0048852")
-head_n_body <- rbind(hox_genes, brain_genes)
-
-zscore <- make_zscore_matrix(head_n_body)
-pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
-         treeheight_row = 30,
-         color = viridis(n = 20, option = "inferno" ), 
-         main = "Head and body genes")
 ```
 
 ```{r dds_2, message=FALSE, warning=FALSE}
@@ -521,7 +301,7 @@ dds$condition = relevel(dds$condition, "blastula")
 dds_vs_blast <- DESeq(dds)
 ```
 
-```{r volc2}
+```{r volc2, message=FALSE, warning=FALSE}
 contrast = c("condition", "gastrula","blastula")
 gastr_vs_blast <- results(dds_vs_blast, contrast = contrast)
 gastr_vs_blast <- classify_DEGs(gastr_vs_blast)
@@ -530,7 +310,7 @@ volcano_plot(gastr_vs_blast$all, contrast)
 
 
 ```{r go8, message=FALSE, warning=FALSE}
-gastr_vs_blast_up_GO<- run_GO_analysis(gastr_vs_blast$up)
+gastr_vs_blast_up_GO<- run_GO_analysis(gastr_vs_blast$up, oli_geneID2GO)
 gastr_vs_blast_up_rTerms_uniq <- gastr_vs_blast_up_GO$reducedTerms_uniq
 gastr_vs_blast_up_rTerms <- gastr_vs_blast_up_GO$reducedTerms
 gastr_vs_blast_up_allTerms <- gastr_vs_blast_up_GO$GO_subset
@@ -542,9 +322,8 @@ plot_GO_hist(gastr_vs_blast_up_rTerms_uniq, "gastrula vs blastula: Upregulated")
 ```
 
 ```{r tmp_heatmap}
-#test <- gastr_vs_blast$up
-cell_diff <- get_term_genes(gastr_vs_blast$up, "GO:0048505")
-zscore <- make_zscore_matrix(cell_diff)
+cell_diff <- get_term_genes(gastr_vs_blast$up, "GO:0048505", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(cell_diff, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          color = viridis(n = 20, option = "inferno" ), 
@@ -552,8 +331,8 @@ pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0,
 ```
 
 ```{r tmp_heatmap}
-embryonic_heart <- get_term_genes(gastr_vs_blast$up, "GO:0003144")
-zscore <- make_zscore_matrix(embryonic_heart)
+embryonic_heart <- get_term_genes(gastr_vs_blast$up, "GO:0003144", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(embryonic_heart, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          color = viridis(n = 20, option = "inferno" ), 
@@ -561,8 +340,8 @@ pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0,
 ```
 
 ```{r tmp_heatmap}
-embr_eye <- get_term_genes(gastr_vs_blast$up, "GO:0048596")
-zscore <- make_zscore_matrix(embr_eye)
+embr_eye <- get_term_genes(gastr_vs_blast$up, "GO:0048596", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(embr_eye, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          color = viridis(n = 20, option = "inferno" ), 
@@ -570,25 +349,57 @@ pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0,
 ```
 
 ```{r tmp_heatmap}
-viscerocranium <- get_term_genes(gastr_vs_blast$up, "GO:0048703")
-zscore <- make_zscore_matrix(viscerocranium)
+viscerocranium <- get_term_genes(gastr_vs_blast$up, "GO:0048703", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(viscerocranium, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          color = viridis(n = 20, option = "inferno" ), 
-         main = "Eye formation (GO:0048703)")
+         main = "Viscerocranium morphogenesis (GO:0048703)")
 ```
 
 ```{r tmp_heatmap}
-osteoblast <- get_term_genes(gastr_vs_blast$up, "GO:0001649")
-zscore <- make_zscore_matrix(osteoblast)
+osteoblast <- get_term_genes(gastr_vs_blast$up, "GO:0001649", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(osteoblast, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          color = viridis(n = 20, option = "inferno" ), 
-         main = "Eye formation (GO:0001649)")
+         main = "Osteoblast differentiation (GO:0001649)")
 ```
 
+```{r go8, message=FALSE, warning=FALSE}
+gastr_vs_blast_down_GO<- run_GO_analysis(gastr_vs_blast$down, oli_geneID2GO)
+gastr_vs_blast_down_rTerms_uniq <- gastr_vs_blast_up_GO$reducedTerms_uniq
+gastr_vs_blast_down_rTerms <- gastr_vs_blast_up_GO$reducedTerms
+gastr_vs_blast_down_allTerms <- gastr_vs_blast_up_GO$GO_subset
+```
+
+```{r go9}
+treemapPlot(gastr_vs_blast_down_rTerms, size = "score")
+plot_GO_hist(gastr_vs_blast_down_rTerms_uniq, "gastrula vs blastula: Downgulated")
+```
+
+
+```{r tmp_heatmap}
+embr_eye <- get_term_genes(gastr_vs_blast$down, "GO:0048596", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(embr_eye, normalized_counts)
+pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
+         treeheight_row = 30,
+         color = viridis(n = 20, option = "inferno" ), 
+         main = "Eye formation (GO:0048596)")
+```
+
+```{r tmp_heatmap}
+#signal_transduction <- get_term_genes(gastr_vs_blast$down, "GO:0023019", oli_geneID2GO, annotation)
+#embryonic_heart <- get_term_genes(gastr_vs_blast$down, "GO:0003144", oli_geneID2GO, annotation)
+#cell_diff <- get_term_genes(gastr_vs_blast$down, "GO:0048505", oli_geneID2GO, annotation)
+
+#each - 1 gene
+```
+
+### Trochophore analysis
+
 ```{r go6, message=FALSE, warning=FALSE}
-troch_vs_egg_GO <- run_GO_analysis(troch_vs_egg$up)
+troch_vs_egg_GO <- run_GO_analysis(troch_vs_egg$up, oli_geneID2GO)
 troch_vs_egg_rTerms_uniq <- troch_vs_egg_GO$reducedTerms_uniq
 troch_vs_egg_rTerms <- troch_vs_egg_GO$reducedTerms
 troch_vs_egg_allTerms <- troch_vs_egg_GO$GO_subset
@@ -598,6 +409,25 @@ troch_vs_egg_allTerms <- troch_vs_egg_GO$GO_subset
 treemapPlot(troch_vs_egg_rTerms, size = "score")
 plot_GO_hist(troch_vs_egg_rTerms_uniq, "troch vs egg: Upregulated")
 ```
+
+```{r tmp_heatmap}
+neural_retina <- get_term_genes(troch_vs_egg$up, "GO:0061074", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(neural_retina, normalized_counts)
+pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
+         treeheight_row = 30,
+         color = viridis(n = 20, option = "inferno" ), 
+         main = "Neural retina formation (GO:0061074)")
+```
+
+```{r tmp_heatmap}
+neural_retina <- get_term_genes(troch_vs_egg$up, "GO:0021871", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(neural_retina, normalized_counts)
+pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
+         treeheight_row = 30,
+         color = viridis(n = 20, option = "inferno" ), 
+         main = "Forebrain regionalisation (GO:0021871)")
+```
+
 ```{r dds_3, message=FALSE, warning=FALSE}
 dds$condition = relevel(dds$condition, "gastrula")
 dds_vs_gastr <- DESeq(dds)
@@ -610,19 +440,69 @@ volcano_plot(troch_vs_gastr$all, contrast)
 ```
 
 ```{r go9, message=FALSE, warning=FALSE}
-troch_vs_gastr_GO <- run_GO_analysis(troch_vs_gastr$up)
-troch_vs_gastr_rTerms_uniq <- troch_vs_gastr_GO$reducedTerms_uniq
-troch_vs_gastr_rTerms <- troch_vs_gastr_GO$reducedTerms
-troch_vs_gastr_allTerms <- troch_vs_gastr_GO$GO_subset
+troch_vs_gastr_up_GO <- run_GO_analysis(troch_vs_gastr$up, oli_geneID2GO)
+troch_vs_gastr_up_rTerms_uniq <- troch_vs_gastr_up_GO$reducedTerms_uniq
+troch_vs_gastr_up_rTerms <- troch_vs_gastr_up_GO$reducedTerms
+troch_vs_gastr_up_allTerms <- troch_vs_gastr_up_GO$GO_subset
 ```
 
 ```{r go7}
-treemapPlot(troch_vs_gastr_rTerms, size = "score")
-plot_GO_hist(troch_vs_gastr_rTerms_uniq, "troch vs gastrula: Upregulated")
+treemapPlot(troch_vs_gastr_up_rTerms, size = "score")
+plot_GO_hist(troch_vs_gastr_up_rTerms_uniq, "troch vs gastrula: Upregulated")
 ```
 
+```{r go9, message=FALSE, warning=FALSE}
+troch_vs_gastr_down_GO <- run_GO_analysis(troch_vs_gastr$down, oli_geneID2GO)
+troch_vs_gastr_down_rTerms_uniq <- troch_vs_gastr_down_GO$reducedTerms_uniq
+troch_vs_gastr_down_rTerms <- troch_vs_gastr_down_GO$reducedTerms
+troch_vs_gastr_down_allTerms <- troch_vs_gastr_down_GO$GO_subset
+```
+
+```{r go7}
+treemapPlot(troch_vs_gastr_down_rTerms, size = "score")
+plot_GO_hist(troch_vs_gastr_down_rTerms_uniq, "troch vs gastrula: Downregulated")
+```
+
+```{r tmp_heatmap}
+segment <- get_term_genes(troch_vs_gastr$down, "GO:0007379", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(segment, normalized_counts)
+pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
+         treeheight_row = 30,
+         color = viridis(n = 20, option = "inferno" ), 
+         main = "Segment specification (GO:0007379)")
+```
+
+```{r tmp_heatmap}
+notch <- get_term_genes(troch_vs_gastr$down, "GO:0045747", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(notch, normalized_counts)
+pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
+         treeheight_row = 30,
+         color = viridis(n = 20, option = "inferno" ), 
+         main = "Positive Notch regulation (GO:0045747)")
+```
+
+```{r tmp_heatmap}
+fate <- get_term_genes(troch_vs_gastr$down, "GO:0001709", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(fate, normalized_counts)
+pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
+         treeheight_row = 30,
+         color = viridis(n = 20, option = "inferno" ), 
+         main = "Cell fate determination (GO:0001709)")
+```
+
+```{r tmp_heatmap}
+fate <- get_term_genes(troch_vs_gastr$down, "GO:0048863", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(fate, normalized_counts)
+pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
+         treeheight_row = 30,
+         color = viridis(n = 20, option = "inferno" ), 
+         main = "Stem cell differentiation (GO:0048863)")
+```
+
+### Adult analysis
+
 ```{r go6, message=FALSE, warning=FALSE}
-adult_vs_egg_GO <- run_GO_analysis(adult_vs_egg$up)
+adult_vs_egg_GO <- run_GO_analysis(adult_vs_egg$up, oli_geneID2GO)
 adult_vs_egg_rTerms_uniq <- adult_vs_egg_GO$reducedTerms_uniq
 adult_vs_egg_rTerms <- adult_vs_egg_GO$reducedTerms
 adult_vs_egg_allTerms <- adult_vs_egg_GO$GO_subset
@@ -631,6 +511,23 @@ adult_vs_egg_allTerms <- adult_vs_egg_GO$GO_subset
 ```{r go7}
 treemapPlot(adult_vs_egg_rTerms, size = "score")
 plot_GO_hist(adult_vs_egg_allTerms, "adult vs egg: Upregulated")
+```
+```{r tmp_heatmap}
+signal_transduction <- get_term_genes(adult_vs_egg$up, "GO:0023019", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(signal_transduction, normalized_counts)
+pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
+         treeheight_row = 30,
+         color = viridis(n = 20, option = "inferno" ), 
+         main = "Signal transduction (GO:0023019)")
+```
+
+```{r tmp_heatmap}
+dors <- get_term_genes(adult_vs_egg$up, "GO:0021516", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(dors, normalized_counts)
+pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
+         treeheight_row = 30,
+         color = viridis(n = 20, option = "inferno" ), 
+         main = "Dorsal spinal cord (GO:0021516)")
 ```
 
 ```{r}
@@ -645,252 +542,67 @@ volcano_plot(adult_vs_troch$all, contrast)
 ```
 
 ```{r go6, message=FALSE, warning=FALSE}
-adult_vs_troch_GO <- run_GO_analysis(adult_vs_troch$up)
-adult_vs_troch_rTerms_uniq <- adult_vs_troch_GO$reducedTerms_uniq
-adult_vs_troch_rTerms <- adult_vs_troch_GO$reducedTerms
-adult_vs_troch_allTerms <- adult_vs_troch_GO$GO_subset
+adult_vs_troch_up_GO <- run_GO_analysis(adult_vs_troch$up, oli_geneID2GO)
+adult_vs_troch_up_rTerms_uniq <- adult_vs_troch_up_GO$reducedTerms_uniq
+adult_vs_troch_up_rTerms <- adult_vs_troch_up_GO$reducedTerms
+adult_vs_troch_up_allTerms <- adult_vs_troch_up_GO$GO_subset
 ```
 
 ```{r go7}
-treemapPlot(adult_vs_troch_rTerms, size = "score")
-plot_GO_hist(adult_vs_troch_allTerms, "adult vs troch: Upregulated")
+treemapPlot(adult_vs_troch_up_rTerms, size = "score")
+plot_GO_hist(adult_vs_troch_up_allTerms, "adult vs troch: Upregulated")
 ```
 
-# Test part
-
-```{r}
-interesting_GOs <- "GO:0000976|GO:0000975|GO:0000984|GO:0001017|GO:0044212|GO:0001228|GO:0001077|GO:0001205|GO:0001209|GO:0001211|GO:0001212|GO:0001213|GO:0140297|GO:0001107|GO:0033613|GO:0070491|GO:0007219|GO:0030179|GO:0071363|GO:0007169|GO:0007178|GO:0000165|GO:0000122|GO:0010553|GO:0045816|GO:0000978|GO:0000980|GO:0003002"
-
-
-gastr_vs_blast_up_interesting <- subset(gastr_vs_blast$up, grepl(interesting_GOs, gastr_vs_blast$up$GOs))
-gastr_vs_blast_down_interesting <- subset(gastr_vs_blast$down, grepl(interesting_GOs, gastr_vs_blast$down$GOs))
-
-gastr_vs_blast_sig <- gastr_vs_blast$all[gastr_vs_blast$all$DEGs != "Non-DEG", ]
-gastr_vs_blast_interesting <-  subset(gastr_vs_blast_sig, grepl(interesting_GOs, gastr_vs_blast_sig$GOs))
-
-gastr_vs_blast_trash <- anti_join(gastr_vs_blast_sig, gastr_vs_blast_interesting)
-gastr_vs_blast_trash <- gastr_vs_blast_trash[gastr_vs_blast_trash$Description != "-", ]
-
-blast_vs_egg_up_interesting <- subset(blast_vs_egg$up, grepl(interesting_GOs, blast_vs_egg$up$GOs))
-blast_vs_egg_down_interesting <- subset(blast_vs_egg$down, grepl(interesting_GOs, blast_vs_egg$down$GOs))
-
-troch_vs_gastr_up_interesting <- subset(troch_vs_gastr$up, grepl(interesting_GOs, troch_vs_gastr$up$GOs))
-troch_vs_gastr_down_interesting <- subset(troch_vs_gastr$down, grepl(interesting_GOs, troch_vs_gastr$down$GOs))
-
-adult_vs_troch_up_interesting <- subset(adult_vs_troch$up, grepl(interesting_GOs, adult_vs_troch$up$GOs))
-adult_vs_troch_down_interesting <- subset(adult_vs_troch$down, grepl(interesting_GOs, adult_vs_troch$down$GOs))
+```{r go6, message=FALSE, warning=FALSE}
+adult_vs_troch_down_GO <- run_GO_analysis(adult_vs_troch$down, oli_geneID2GO)
+adult_vs_troch_down_rTerms_uniq <- adult_vs_troch_down_GO$reducedTerms_uniq
+adult_vs_troch_down_rTerms <- adult_vs_troch_down_GO$reducedTerms
+adult_vs_troch_down_allTerms <- adult_vs_troch_down_GO$GO_subset
 ```
 
-```{r}
-#gastr_vs_blast_up_int_GO <- run_GO_analysis(gastr_vs_blast_up_interesting)
-#gastr_vs_blast_down_int_GO <- run_GO_analysis(gastr_vs_blast_down_interesting)
+```{r go7}
+treemapPlot(adult_vs_troch_down_rTerms, size = "score")
+plot_GO_hist(adult_vs_troch_down_allTerms, "adult vs troch: Upregulated")
+```
 
-# не самая лучшая затея, т.к. несбалансированный набор генов
+### Signaling pathway and transcription factor genes analysis 
+
+```{r}
+blast_vs_egg_up_interesting <- get_important_development_genes(blast_vs_egg$up)
+blast_vs_egg_down_interesting <- get_important_development_genes(blast_vs_egg$down)
+
+gastr_vs_blast_up_interesting <- get_important_development_genes(gastr_vs_blast$up)
+gastr_vs_blast_down_interesting <- get_important_development_genes(gastr_vs_blast$down)
+
+troch_vs_gastr_up_interesting <- get_important_development_genes(troch_vs_gastr$up)
+troch_vs_gastr_down_interesting <- get_important_development_genes(troch_vs_gastr$down)
+
+adult_vs_troch_up_interesting <- get_important_development_genes(adult_vs_troch$up)
+adult_vs_troch_down_interesting <- get_important_development_genes(adult_vs_troch$down)
 ```
 
 ```{r}
-#treemapPlot(gastr_vs_blast_down_int_GO$reducedTerms, size = "score")
-#plot_GO_hist(gastr_vs_blast_down_int_GO$reducedTerms_uniq, "Gastr vs blastula interesting: Upregulated")
+hox_genes <- rbind(subset(blast_vs_egg_up_interesting, grepl('HOX', Preferred_name)),
+                   subset(blast_vs_egg_down_interesting, grepl('HOX', Preferred_name)),
+                   subset(gastr_vs_blast_up_interesting, grepl('HOX', Preferred_name)),
+                   subset(gastr_vs_blast_down_interesting, grepl('HOX', Preferred_name)),
+                   subset(troch_vs_gastr_up_interesting, grepl('HOX', Preferred_name)),
+                   subset(troch_vs_gastr_down_interesting, grepl('HOX', Preferred_name)),
+                   subset(adult_vs_troch_up_interesting, grepl('HOX', Preferred_name)),
+                   subset(adult_vs_troch_down_interesting, grepl('HOX', Preferred_name)))
 
-#test <- gastr_vs_blast_down_int_GO$reducedTerms
-#test_uniq <- gastr_vs_blast_down_int_GO$reducedTerms_uniq
-```
+hox_genes <- unique(hox_genes[c('gene', 'Preferred_name')])
+hox_genes$query <- hox_genes$gene
 
-```{r}
-blast_vs_egg_BMP_up <- subset(blast_vs_egg_up_interesting, grepl('BMP|TGF|SMAD', Preferred_name) | grepl('BMP|TGF|SMAD', Description) | grepl('BMP|TGF', PFAMs))
-blast_vs_egg_BMP_down <- subset(blast_vs_egg_down_interesting, grepl('BMP|TGF|SMAD', Preferred_name) | grepl('BMP|TGF|SMAD', Description) | grepl('BMP|TGF', PFAMs))
-
-gastr_vs_blast_BMP_up <- subset(gastr_vs_blast_up_interesting, grepl('BMP|TGF|SMAD', Preferred_name) | grepl('BMP|TGF|SMAD', Description) | grepl('BMP|TGF', PFAMs))
-gastr_vs_blast_BMP_down <- subset(gastr_vs_blast_down_interesting, grepl('BMP|TGF|SMAD', Preferred_name) | grepl('BMP|TGF|SMAD', Description) | grepl('BMP|TGF', PFAMs))
-
-troch_vs_gastr_BMP_up <- subset(troch_vs_gastr_up_interesting, grepl('BMP|TGF|SMAD', Preferred_name) | grepl('BMP|TGF|SMAD', Description) | grepl('BMP|TGF', PFAMs))
-troch_vs_gastr_BMP_down <- subset(troch_vs_gastr_down_interesting, grepl('BMP|TGF|SMAD', Preferred_name) | grepl('BMP|TGF|SMAD', Description) | grepl('BMP|TGF', PFAMs))
-
-adult_vs_troch_BMP_up <- subset(adult_vs_troch_up_interesting, grepl('BMP|TGF|SMAD', Preferred_name) | grepl('BMP|TGF|SMAD', Description) | grepl('BMP|TGF', PFAMs))
-adult_vs_troch_BMP_down <- subset(adult_vs_troch_down_interesting, grepl('BMP|TGF|SMAD', Preferred_name) | grepl('BMP|TGF|SMAD', Description) | grepl('BMP|TGF', PFAMs))
-
-BMP <- rbind(blast_vs_egg_BMP_up,
-             blast_vs_egg_BMP_down,
-             gastr_vs_blast_BMP_up,
-             gastr_vs_blast_BMP_down,
-             troch_vs_gastr_BMP_up,
-             troch_vs_gastr_BMP_down,
-             adult_vs_troch_BMP_up,
-             adult_vs_troch_BMP_down
-             )
-
-BMP <- unique(BMP[c('gene', 'Preferred_name')])
-BMP$query <- BMP$gene
-
-zscore <- make_zscore_matrix(BMP)
+zscore <- make_zscore_matrix(hox_genes, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          color = viridis(n = 100, option = "inferno" ), 
-         main = "TGF+smad")
+         main = "DEG hox")
 
 
-foxq <- subset(annotation, grepl('foxq', Preferred_name))  #почему-то не вошел в аннотацию, но он как бы дифф экспрессируется на бластуле
-zscore <- make_zscore_matrix(foxq)
-pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
-         treeheight_row = 30,
-         color = viridis(n = 100, option = "inferno" ), 
-         main = "Foxq")
-
-
-```
-
-
-```{r}
-blast_vs_egg_wnt_up <- subset(blast_vs_egg_up_interesting, grepl('WNT|CTNN|GSK3|TLE|TCF4', Preferred_name) | grepl('frizzled|Wnt|wnt', Description) | grepl('wnt', PFAMs))
-
-blast_vs_egg_wnt_down <- subset(blast_vs_egg_down_interesting, grepl('WNT|CTNN|GSK3|TLE|TCF4', Preferred_name) | grepl('frizzled|Wnt|wnt', Description) | grepl('wnt', PFAMs))
-
-gastr_vs_blast_wnt_up <- subset(gastr_vs_blast_up_interesting, grepl('WNT|CTNN|GSK3|TLE|TCF4', Preferred_name) | grepl('frizzled|Wnt|wnt', Description) | grepl('wnt', PFAMs))
-
-gastr_vs_blast_wnt_down <- subset(gastr_vs_blast_down_interesting, grepl('WNT|CTNN|GSK3|TLE|TCF4', Preferred_name) | grepl('frizzled|Wnt|wnt', Description) | grepl('wnt', PFAMs))
-
-troch_vs_gastr_wnt_up <- subset(troch_vs_gastr_up_interesting, grepl('WNT|CTNN|GSK3|TLE|TCF4', Preferred_name) | grepl('frizzled|Wnt|wnt', Description) | grepl('wnt', PFAMs))
-
-troch_vs_gastr_wnt_down <- subset(troch_vs_gastr_down_interesting, grepl('WNT|CTNN|GSK3|TLE|TCF4', Preferred_name) | grepl('frizzled|Wnt|wnt', Description) | grepl('wnt', PFAMs))
-
-adult_vs_troch_wnt_up <- subset(adult_vs_troch_up_interesting, grepl('WNT|CTNN|GSK3|TLE|TCF4', Preferred_name) | grepl('frizzled|Wnt|wnt', Description) | grepl('wnt', PFAMs))
-
-adult_vs_troch_wnt_down <- subset(adult_vs_troch_down_interesting, grepl('WNT|CTNN|GSK3|TLE|TCF4', Preferred_name) | grepl('frizzled|Wnt|wnt', Description) | grepl('wnt', PFAMs))
-
-WNT <- rbind(blast_vs_egg_wnt_up, 
-             blast_vs_egg_wnt_down, 
-             gastr_vs_blast_wnt_up, 
-             gastr_vs_blast_wnt_down, 
-             troch_vs_gastr_wnt_up, 
-             troch_vs_gastr_wnt_down,
-             adult_vs_troch_wnt_up,
-             adult_vs_troch_wnt_down
-             )
-WNT <- unique(WNT[c('gene', 'Preferred_name')])
-WNT$query <- WNT$gene
-
-zscore <- make_zscore_matrix(WNT)
-pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
-         treeheight_row = 30,
-         color = viridis(n = 100, option = "inferno" ), 
-         main = "WNT")
-
-```
-
-```{r}
-blast_vs_egg_fgf_up <- subset(blast_vs_egg_up_interesting, grepl('FGF|MAPK', Preferred_name) | grepl('MAPK', Description))
-
-blast_vs_egg_fgf_down <- subset(blast_vs_egg_down_interesting, grepl('FGF|MAPK', Preferred_name) | grepl('MAPK', Description))
-gastr_vs_blast_fgf_up <- subset(gastr_vs_blast_up_interesting, grepl('FGF|MAPK', Preferred_name) | grepl('MAPK', Description))
-
-gastr_vs_blast_fgf_down <- subset(gastr_vs_blast_down_interesting, grepl('FGF|MAPK', Preferred_name) | grepl('MAPK', Description))
-
-troch_vs_gastr_fgf_up <- subset(troch_vs_gastr_up_interesting, grepl('FGF|MAPK', Preferred_name) | grepl('MAPK', Description))
-
-adult_vs_troch_fgf_up <- subset(adult_vs_troch_up_interesting, grepl('FGF|MAPK', Preferred_name) | grepl('MAPK', Description))
-adult_vs_troch_fgf_down <- subset(adult_vs_troch_down_interesting, grepl('FGF|MAPK', Preferred_name) | grepl('MAPK', Description))
-
-
-fgf <- rbind(blast_vs_egg_fgf_up, 
-             blast_vs_egg_fgf_down, 
-             gastr_vs_blast_fgf_up, 
-             gastr_vs_blast_fgf_down, 
-             troch_vs_gastr_fgf_up,
-             adult_vs_troch_fgf_up,
-             adult_vs_troch_fgf_down
-             )
-
-fgf <- unique(fgf[c('gene', 'Preferred_name')])
-
-fgf18 <- c('oli_7821_length_4128_cov_35.198520_g3119_i0', 'FGF18')
-fgf <- rbind(fgf, fgf18)
-
-fgf$query <- fgf$gene
-
-zscore <- make_zscore_matrix(fgf)
-pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
-         treeheight_row = 30,
-         color = viridis(n = 100, option = "inferno" ), 
-         main = "FGF")
-
-
-```
-```{r}
-blast_vs_egg_notch_up <- subset(blast_vs_egg_up_interesting, grepl('NOTCH|HES', Preferred_name) | grepl('Notch|NOTCH|notch', Description))
-
-blast_vs_egg_notch_down <- subset(blast_vs_egg_down_interesting, grepl('NOTCH|HES', Preferred_name) | grepl('Notch|NOTCH|notch', Description))
-gastr_vs_blast_notch_up <- subset(gastr_vs_blast_up_interesting,  grepl('NOTCH|HES', Preferred_name) | grepl('Notch|NOTCH|notch', Description))
-
-gastr_vs_blast_notch_down <- subset(gastr_vs_blast_down_interesting,  grepl('NOTCH|HES', Preferred_name) | grepl('Notch|NOTCH|notch', Description))
-
-troch_vs_gastr_notch_up <- subset(troch_vs_gastr_up_interesting,  grepl('NOTCH|HES', Preferred_name) | grepl('Notch|NOTCH|notch', Description))
-
-troch_vs_gastr_notch_down <- subset(troch_vs_gastr_down_interesting,  grepl('NOTCH|HES', Preferred_name) | grepl('Notch|NOTCH|notch', Description))
-
-adult_vs_troch_notch_up <- subset(adult_vs_troch_up_interesting, grepl('NOTCH|HES', Preferred_name) | grepl('Notch|NOTCH|notch', Description))
-
-adult_vs_troch_notch_down <- subset(adult_vs_troch_down_interesting,  grepl('NOTCH|HES', Preferred_name) | grepl('Notch|NOTCH|notch', Description))
-
-notch <- rbind(blast_vs_egg_notch_up, 
-             blast_vs_egg_notch_down, 
-             gastr_vs_blast_notch_up, 
-             gastr_vs_blast_notch_down, 
-             troch_vs_gastr_notch_up, 
-             troch_vs_gastr_notch_down,
-             adult_vs_troch_notch_up,
-             adult_vs_troch_notch_down
-             )
-notch <- unique(notch[c('gene', 'Preferred_name')])
-notch$query <- notch$gene
-
-zscore <- make_zscore_matrix(notch)
-pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
-         treeheight_row = 30,
-         color = viridis(n = 100, option = "inferno" ), 
-         main = "notch")
-
-```
-
-```{r}
-blast_vs_egg_shh_up <- subset(blast_vs_egg_up_interesting, grepl('SHH|GLI|SUFU', Preferred_name))
-
-blast_vs_egg_shh_down <- subset(blast_vs_egg_down_interesting, grepl('SHH|GLI|SUFU', Preferred_name))
-gastr_vs_blast_shh_up <- subset(gastr_vs_blast_up_interesting,  grepl('SHH|GLI|SUFU', Preferred_name))
-
-gastr_vs_blast_shh_down <- subset(gastr_vs_blast_down_interesting,  grepl('SHH|GLI|SUFU', Preferred_name))
-
-troch_vs_gastr_shh_up <- subset(troch_vs_gastr_up_interesting,  grepl('SHH|GLI|SUFU', Preferred_name))
-
-troch_vs_gastr_shh_down <- subset(troch_vs_gastr_down_interesting,  grepl('SHH|GLI|SUFU', Preferred_name))
-
-adult_vs_troch_shh_up <- subset(adult_vs_troch_up_interesting, grepl('SHH|GLI|SUFU', Preferred_name))
-
-adult_vs_troch_shh_down <- subset(adult_vs_troch_down_interesting, grepl('SHH|GLI|SUFU', Preferred_name))
-
-shh <- rbind(blast_vs_egg_shh_up, 
-             blast_vs_egg_shh_down, 
-             gastr_vs_blast_shh_up, 
-             gastr_vs_blast_shh_down, 
-             troch_vs_gastr_shh_up, 
-             troch_vs_gastr_shh_down,
-             adult_vs_troch_shh_up,
-             adult_vs_troch_shh_down
-             )
-shh <- unique(shh[c('gene', 'Preferred_name')])
-
-sufu <- c('oli_5830_length_4539_cov_85.451635_g2369_i0', 'SUFU')
-shh$query <- shh$gene
-
-patched <- subset(annotation, grepl('PTCH1', Preferred_name))[c(1,9)]
-patched$gene <- patched$query
-
-shh <- rbind(shh, sufu, patched)
-
-
-zscore <- make_zscore_matrix(shh)
-pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
-         treeheight_row = 30,
-         color = viridis(n = 100, option = "inferno" ), 
-         main = "shh")
-
+gastr_vs_blast_all <- gastr_vs_blast$all
+blast_vs_egg_all <- blast_vs_egg$all
+troch_vs_gastr_all <- troch_vs_gastr$all
+adult_vs_troch_all <- adult_vs_troch$all
 ```
