@@ -234,3 +234,31 @@ get_important_development_genes <- function(DEG_set) {
   
   return(interesting_genes)
 }
+
+#####
+
+#Function that finds annotation for specific genes in list DEGs df based on name or/and description or/and PFAMs
+get_genes_by_name <- function(name=NULL, description=NULL, pfam=NULL, datasets) {
+  GOIs <- data.frame()
+  
+  for (dataset in datasets) {
+    subset_data <- data.frame()
+    
+    if (!is.null(name)) {
+      subset_data <- rbind(subset_data, subset(dataset, grepl(name, Preferred_name)))
+    }
+    if (!is.null(description)) {
+      subset_data <-  rbind(subset_data, subset(dataset, grepl(description, Description)))
+    }
+    if (!is.null(pfam)) {
+      subset_data <- rbind(subset_data, subset(dataset, grepl(pfam, PFAMs)))
+    }
+    
+    GOIs <- rbind(GOIs, subset_data)
+  }
+  
+  GOIs <- unique(GOIs)
+  GOIs <- annotation[annotation$query %in% GOIs$gene, ]
+  
+  return(GOIs)
+}
