@@ -2,7 +2,9 @@
 title: "Deseq2_Oli_analysis"
 author: "Гринберг Михаил"
 date: "2024-03-28"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -571,7 +573,7 @@ adult_vs_troch_up_interesting <- get_important_development_genes(adult_vs_troch$
 adult_vs_troch_down_interesting <- get_important_development_genes(adult_vs_troch$down)
 
 
-all_DEGs <- list(
+interesting_DEGs_list <- list(
   blast_vs_egg_up_interesting,
   blast_vs_egg_down_interesting,
   gastr_vs_blast_up_interesting,
@@ -590,11 +592,7 @@ all_DEGs <- list(
 ```
 
 ```{r hox_anterior}
-hox_n_posterior_genes <- get_genes_by_name(name = 'HOX|cad|GATA|FOXA|EVX', datasets = all_DEGs)
-head_n_anterior_genes <- get_genes_by_name(name = 'OTX|foxq|SIX3', datasets = all_DEGs)
-
-body_pattern <- rbind(hox_n_posterior_genes, head_n_anterior_genes)
-
+body_pattern <- get_genes_by_name(name = 'HOX|cad|GATA|FOXA|EVX|OTX|foxq|SIX3|TWIST|FOXC|Foxd|SOX2|otx1', datasets = interesting_DEGs_list)
 zscore <- make_zscore_matrix(body_pattern, normalized_counts)
 
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
@@ -603,19 +601,19 @@ pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0,
 ```
 
 ```{r tgfb}
-tgfb_pathway <- get_genes_by_name(name='BMP|TGF|SMAD', description = 'BMP|TGF|SMAD', pfam = 'BMP|TGF', datasets = all_DEGs)
+tgfb_pathway <- get_genes_by_name(name='BMP|TGF|SMAD', description = 'BMP|TGF|SMAD', pfam = 'BMP|TGF', datasets = interesting_DEGs_list)
 
 zscore <- make_zscore_matrix(tgfb_pathway, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
-         main = "TGF-b pathway")
+         main = "TGF-b")
 ```
 
 ```{r wnt}
 wnt_pathway <- get_genes_by_name(name='WNT|CTNN|GSK3|TLE|TCF4', 
                                  description = 'frizzled|Wnt|wnt', 
                                  pfam = 'wnt', 
-                                 datasets = all_DEGs)
+                                 datasets = interesting_DEGs_list)
 
 zscore <- make_zscore_matrix(wnt_pathway, normalized_counts)
 
@@ -627,7 +625,7 @@ pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0,
 ```{r notch}
 notch_pathway <- get_genes_by_name(name='NOTCH|HES', 
                                  description = 'Notch|NOTCH|notch', 
-                                 datasets = all_DEGs)
+                                 datasets = interesting_DEGs_list)
 
 zscore <- make_zscore_matrix(notch_pathway, normalized_counts)
 
@@ -638,7 +636,7 @@ pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0,
 
 ```{r shh}
 shh_pathway <- get_genes_by_name(name='SHH|GLI3|SUFU', 
-                                 datasets = all_DEGs)
+                                 datasets = interesting_DEGs_list)
 
 zscore <- make_zscore_matrix(shh_pathway, normalized_counts)
 
@@ -650,11 +648,38 @@ pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0,
 ```{r fgf_mapk}
 fgf_pathway <- get_genes_by_name(name='FGF|MAPK', 
                                  description = 'MAPK',
-                                 datasets = all_DEGs)
+                                 datasets = interesting_DEGs_list)
 
 zscore <- make_zscore_matrix(fgf_pathway, normalized_counts)
 
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          main = "FGF/MAPK pathway")
+```
+
+```{r}
+all_DEGs_list <- list(blast_vs_egg$up,
+                 blast_vs_egg$down,
+                 gastr_vs_blast$up,
+                 gastr_vs_blast$down,
+                 gastr_vs_egg$up,
+                 gastr_vs_egg$down,
+                 troch_vs_gastr$up,
+                 troch_vs_gastr$down,
+                 troch_vs_egg$up,
+                 troch_vs_egg$down,
+                 adult_vs_troch$up,
+                 adult_vs_troch$down,
+                 adult_vs_egg$up,
+                 adult_vs_egg$down
+)
+
+
+all_DEGs <- get_genes_by_name(name="|",datasets = all_DEGs_list)
+zscore <- make_zscore_matrix(all_DEGs, normalized_counts)
+
+pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
+         treeheight_row = 90,
+         main = "all_DEGs", show_rownames = FALSE)
+
 ```

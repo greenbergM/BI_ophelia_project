@@ -2,11 +2,12 @@ library(topGO)
 library(rrvgo)
 library(dplyr)
 library(ggplot2)
+library(stringr)
 
 working_directory <- "/Volumes/oli/RESULTS/data/06_GOclust"
 setwd(working_directory)
 
-oli_clusters_file <- "/Volumes/oli/RESULTS/data/05_clust/oli_clust_2/oli_clust_2.csv"
+oli_clusters_file <- "/Volumes/oli/RESULTS/data/05_clust/oli_clust_1/oli_clust_1.csv"
 oli_geneID2GO_file <- "/Volumes/oli/RESULTS/data/04_annotation/eggnog/oli_gene2GO.csv"
 
 
@@ -19,7 +20,7 @@ for(cluster in colnames(oli_clusters_df)){
   #GO enrichment in cluster
   cluster_genes <- factor(as.integer(gene_names %in% oli_clusters_df[[cluster]]))
   names(cluster_genes) <- gene_names
-  GOdata_cluster <- new("topGOdata", ontology = "BP", allGenes = cluster_genes, annot = annFUN.gene2GO, gene2GO = oli_geneID2GO)
+  GOdata_cluster <- new("topGOdata", ontology = "MF", allGenes = cluster_genes, annot = annFUN.gene2GO, gene2GO = oli_geneID2GO) #BP
   resultFis <- runTest(GOdata_cluster, algorithm = "classic", statistic = "fisher")
   resultsFis_df <- as.data.frame(score(resultFis))
   
@@ -30,7 +31,7 @@ for(cluster in colnames(oli_clusters_df)){
   
   simMatrix <- calculateSimMatrix(GO_subset$GO.ID,
                                   orgdb="org.Hs.eg.db",
-                                  ont="BP",
+                                  ont="MF", #BP
                                   method="Rel")
   
   scores <- setNames(-log10(as.numeric(GO_subset$classic)), GO_subset$GO.ID)
@@ -56,8 +57,12 @@ for(cluster in colnames(oli_clusters_df)){
   pdf(file.path(cluster_dir, "tm_reduced_GO.pdf"))
   treemapPlot(reducedTerms, title = cluster)
   dev.off()
+
+  
   
   write.table(reducedTerms_uniq, file = paste(cluster_dir, "/reducedTerms_uniq.txt", sep = ""), sep = "\t", row.names = FALSE)
   write.table(reducedTerms, file = paste(cluster_dir, "/reducedTerms.txt", sep = ""), sep = "\t", row.names = FALSE)
   write.table(GO_subset, file = paste(cluster_dir, "/allTerms.txt", sep = ""), sep = "\t", row.names = FALSE)
+  
 }
+
