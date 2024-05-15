@@ -1,0 +1,19 @@
+# BUSCO version is: 5.6.1 
+# The lineage dataset is: metazoa_odb10 (Creation date: 2024-01-08, number of genomes: 65, number of BUSCOs: 954)
+# Summarized benchmarking in BUSCO notation for file /Volumes/oli/RESULTS/data/01_assembly/transrate_results/trinity/good.oli_trinity.95.fasta
+# BUSCO was run in mode: euk_tran
+
+	***** Results: *****
+
+	C:93.7%[S:46.3%,D:47.4%],F:2.3%,M:4.0%,n:954	   
+	894	Complete BUSCOs (C)			   
+	442	Complete and single-copy BUSCOs (S)	   
+	452	Complete and duplicated BUSCOs (D)	   
+	22	Fragmented BUSCOs (F)			   
+	38	Missing BUSCOs (M)			   
+	954	Total BUSCO groups searched		   
+
+Dependencies and versions:
+	hmmsearch: 3.1
+	metaeuk: 6.a5d39d9
+	busco: 5.6.1
