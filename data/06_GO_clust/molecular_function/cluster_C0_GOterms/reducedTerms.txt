@@ -1,0 +1,131 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0003677"	1	"GO:0003677"	11.537602002101	2530	"DNA binding"	"DNA binding"	0.887284615384615	0.344875	0
+"GO:0008094"	2	"GO:0008094"	10.3467874862247	122	"ATP-dependent activity, acting on DNA"	"ATP-dependent activity, acting on DNA"	0.859453846153846	0.383	0
+"GO:0140097"	2	"GO:0008094"	10.1739251972992	248	"catalytic activity, acting on DNA"	"ATP-dependent activity, acting on DNA"	0.852115384615385	0.409666666666667	0.916
+"GO:0003684"	1	"GO:0003677"	9.92081875395237	71	"damaged DNA binding"	"DNA binding"	0.926546153846154	0.576375	0.55
+"GO:0003678"	2	"GO:0008094"	8.06048074738138	58	"DNA helicase activity"	"ATP-dependent activity, acting on DNA"	0.855669230769231	0.403333333333333	0.935
+"GO:0003676"	1	"GO:0003677"	7.63827216398241	4350	"nucleic acid binding"	"DNA binding"	0.897692307692308	0.4276875	0.793
+"GO:0004527"	3	"GO:0004527"	7.08092190762393	81	"exonuclease activity"	"exonuclease activity"	0.803515384615385	0.292083333333333	0
+"GO:0042393"	4	"GO:0042393"	6.92081875395237	252	"histone binding"	"histone binding"	0.961776923076923	1	0
+"GO:0036310"	5	"GO:0036310"	6.74472749489669	5	"ATP-dependent DNA/DNA annealing activity"	"ATP-dependent DNA/DNA annealing activity"	0.931461538461538	0.411666666666667	0
+"GO:1990814"	5	"GO:0036310"	6.74472749489669	8	"DNA/DNA annealing activity"	"ATP-dependent DNA/DNA annealing activity"	0.929592307692308	0.404666666666667	0.978
+"GO:0016796"	3	"GO:0004527"	6.56863623584101	60	"exonuclease activity, active with either ribo- or deoxyribonucleic acids and producing 5'-phosphomonoesters"	"exonuclease activity"	0.809553846153846	0.310833333333333	0.962
+"GO:0140098"	6	"GO:0140098"	6.55284196865778	395	"catalytic activity, acting on RNA"	"catalytic activity, acting on RNA"	0.845661538461538	1	0
+"GO:0008409"	3	"GO:0004527"	6.49485002168009	19	"5'-3' exonuclease activity"	"exonuclease activity"	0.825792307692308	0.369208333333333	0.884
+"GO:0004386"	7	"GO:0004386"	6.4089353929735	154	"helicase activity"	"helicase activity"	0.871838461538462	0.471666666666667	0
+"GO:0000400"	1	"GO:0003677"	6.3767507096021	18	"four-way junction DNA binding"	"DNA binding"	0.925246153846154	0.54975	0.486
+"GO:0005085"	8	"GO:0005085"	6.15490195998574	225	"guanyl-nucleotide exchange factor activity"	"guanyl-nucleotide exchange factor activity"	0.980792307692308	0.37575	0
+"GO:0042162"	1	"GO:0003677"	5.72124639904717	38	"telomeric DNA binding"	"DNA binding"	0.923484615384615	0.5495625	0.542
+"GO:0004540"	3	"GO:0004527"	5.61978875828839	124	"RNA nuclease activity"	"exonuclease activity"	0.789392307692308	0.293083333333333	0.86
+"GO:0003682"	9	"GO:0003682"	5.48148606012211	596	"chromatin binding"	"chromatin binding"	0.977546153846154	0.581	0
+"GO:0008013"	10	"GO:0008013"	5.431798275933	85	"beta-catenin binding"	"beta-catenin binding"	0.971030769230769	1	0
+"GO:0004518"	3	"GO:0004527"	5.39794000867204	208	"nuclease activity"	"exonuclease activity"	0.794723076923077	0.276083333333333	0.913
+"GO:0046332"	11	"GO:0046332"	5.11918640771921	79	"SMAD binding"	"SMAD binding"	0.970746153846154	1	0
+"GO:0009378"	7	"GO:0004386"	5.09691001300806	6	"four-way junction helicase activity"	"helicase activity"	0.880546153846154	0.494666666666667	0.76
+"GO:0000217"	1	"GO:0003677"	5.00436480540245	39	"DNA secondary structure binding"	"DNA binding"	0.9199	0.517625	0.531
+"GO:0043565"	1	"GO:0003677"	4.92081875395237	1672	"sequence-specific DNA binding"	"DNA binding"	0.887469230769231	0.332875	0.878
+"GO:0000405"	1	"GO:0003677"	4.72124639904717	8	"bubble DNA binding"	"DNA binding"	0.930730769230769	0.582625	0.441
+"GO:0004532"	3	"GO:0004527"	4.35654732351381	41	"RNA exonuclease activity"	"exonuclease activity"	0.799676923076923	0.311791666666667	0.934
+"GO:0005515"	12	"GO:0005515"	4.26760624017703	14048	"protein binding"	"protein binding"	0.945546153846154	1	0
+"GO:0043138"	7	"GO:0004386"	4.20760831050175	14	"3'-5' DNA helicase activity"	"helicase activity"	0.870830769230769	0.473	0.825
+"GO:0016896"	3	"GO:0004527"	4.17392519729917	39	"RNA exonuclease activity, producing 5'-phosphomonoesters"	"exonuclease activity"	0.800015384615385	0.311583333333333	0.93
+"GO:0000987"	1	"GO:0003677"	4.09151498112135	1216	"cis-regulatory region sequence-specific DNA binding"	"DNA binding"	0.889184615384615	0.3273125	0.786
+"GO:0003690"	1	"GO:0003677"	3.65757731917779	1658	"double-stranded DNA binding"	"DNA binding"	0.888307692307692	0.3376875	0.868
+"GO:0008134"	13	"GO:0008134"	3.431798275933	599	"transcription factor binding"	"transcription factor binding"	0.947	0.32	0
+"GO:0000175"	3	"GO:0004527"	3.38721614328026	36	"3'-5'-RNA exonuclease activity"	"exonuclease activity"	0.8016	0.315625	0.92
+"GO:0001216"	14	"GO:0001216"	3.3767507096021	475	"DNA-binding transcription activator activity"	"DNA-binding transcription activator activity"	0.9668	0.383428571428571	0
+"GO:0001228"	14	"GO:0001216"	3.3767507096021	471	"DNA-binding transcription activator activity, RNA polymerase II-specific"	"DNA-binding transcription activator activity"	0.966538461538462	0.378571428571429	0.99
+"GO:0004536"	3	"GO:0004527"	3.32790214206428	61	"DNA nuclease activity"	"exonuclease activity"	0.789530769230769	0.340083333333333	0.818
+"GO:0016772"	15	"GO:0016772"	3.1249387366083	895	"transferase activity, transferring phosphorus-containing groups"	"transferase activity, transferring phosphorus-containing groups"	0.804584615384615	0.41095652173913	0
+"GO:1990837"	1	"GO:0003677"	3.10237290870956	1562	"sequence-specific double-stranded DNA binding"	"DNA binding"	0.886823076923077	0.324	0.86
+"GO:0051020"	16	"GO:0051020"	3	313	"GTPase binding"	"GTPase binding"	0.947315384615385	0.449166666666667	0
+"GO:0002039"	17	"GO:0002039"	2.91364016932525	66	"p53 binding"	"p53 binding"	0.972107692307692	1	0
+"GO:0004402"	15	"GO:0016772"	2.8569851997459	43	"histone acetyltransferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.8266	0.419521739130435	0.468
+"GO:0061733"	15	"GO:0016772"	2.82681373158773	47	"peptide-lysine-N-acetyltransferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.824830769230769	0.413652173913043	0.474
+"GO:0030695"	8	"GO:0005085"	2.8153085691824	486	"GTPase regulator activity"	"guanyl-nucleotide exchange factor activity"	0.979830769230769	0.3445	0.915
+"GO:0034212"	15	"GO:0016772"	2.80687540164554	52	"peptide N-acetyltransferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.8292	0.409086956521739	0.48
+"GO:0008408"	3	"GO:0004527"	2.74232142513082	55	"3'-5' exonuclease activity"	"exonuclease activity"	0.810592307692308	0.315333333333333	0.959
+"GO:0001067"	1	"GO:0003677"	2.72584215073632	1501	"transcription regulatory region nucleic acid binding"	"DNA binding"	0.902307692307692	0.42225	0.627
+"GO:0140110"	14	"GO:0001216"	2.6903698325741	1960	"transcription regulator activity"	"DNA-binding transcription activator activity"	0.964230769230769	0.335714285714286	0.71
+"GO:0015020"	15	"GO:0016772"	2.66958622665081	34	"glucuronosyltransferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.869961538461538	0.616521739130435	0.443
+"GO:0016788"	3	"GO:0004527"	2.65955588515988	745	"hydrolase activity, acting on ester bonds"	"exonuclease activity"	0.795538461538462	0.349833333333333	0.726
+"GO:0030159"	18	"GO:0030159"	2.64206515299955	51	"signaling receptor complex adaptor activity"	"signaling receptor complex adaptor activity"	0.980384615384615	0.3625	0
+"GO:0000978"	1	"GO:0003677"	2.61261017366127	1194	"RNA polymerase II cis-regulatory region sequence-specific DNA binding"	"DNA binding"	0.889446153846154	0.328	0.78
+"GO:0008432"	16	"GO:0051020"	2.60730304674033	11	"JUN kinase binding"	"GTPase binding"	0.961861538461538	0.617666666666667	0.449
+"GO:0000976"	1	"GO:0003677"	2.58004425151024	1499	"transcription cis-regulatory region binding"	"DNA binding"	0.885292307692308	0.3048125	0.828
+"GO:0031369"	19	"GO:0031369"	2.57024771999759	33	"translation initiation factor binding"	"translation initiation factor binding"	0.973184615384615	1	0
+"GO:0003697"	5	"GO:0036310"	2.56863623584101	118	"single-stranded DNA binding"	"ATP-dependent DNA/DNA annealing activity"	0.915161538461538	0.468333333333333	0.787
+"GO:0097718"	20	"GO:0097718"	2.41005039867429	32	"disordered domain specific binding"	"disordered domain specific binding"	0.968769230769231	0.6275	0
+"GO:0061630"	15	"GO:0016772"	2.39254497678533	349	"ubiquitin protein ligase activity"	"transferase activity, transferring phosphorus-containing groups"	0.813515384615385	0.399260869565217	0.549
+"GO:0051427"	21	"GO:0051427"	2.3840499483436	32	"hormone receptor binding"	"hormone receptor binding"	0.970184615384615	0.7835	0
+"GO:0140297"	13	"GO:0008134"	2.35556141053216	477	"DNA-binding transcription factor binding"	"transcription factor binding"	0.947515384615385	0.30175	0.954
+"GO:0016773"	15	"GO:0016772"	2.32057210338788	671	"phosphotransferase activity, alcohol group as acceptor"	"transferase activity, transferring phosphorus-containing groups"	0.807638461538462	0.420217391304348	0.932
+"GO:0061629"	13	"GO:0008134"	2.30539480106643	344	"RNA polymerase II-specific DNA-binding transcription factor binding"	"transcription factor binding"	0.948623076923077	0.301	0.917
+"GO:1901363"	1	"GO:0003677"	2.28903688100472	6301	"heterocyclic compound binding"	"DNA binding"	0.911869230769231	0.491	0.705
+"GO:0060589"	8	"GO:0005085"	2.27002571430044	486	"nucleoside-triphosphatase regulator activity"	"guanyl-nucleotide exchange factor activity"	0.979830769230769	0.3445	0.915
+"GO:0019199"	22	"GO:0019199"	2.26841123481326	79	"transmembrane receptor protein kinase activity"	"transmembrane receptor protein kinase activity"	0.842746153846154	0.611	0
+"GO:0019787"	15	"GO:0016772"	2.26360349772336	477	"ubiquitin-like protein transferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.803246153846154	0.368782608695652	0.593
+"GO:0008138"	3	"GO:0004527"	2.20620961530918	44	"protein tyrosine/serine/threonine phosphatase activity"	"exonuclease activity"	0.834476923076923	0.499958333333333	0.53
+"GO:0061659"	15	"GO:0016772"	2.19314197048118	367	"ubiquitin-like protein ligase activity"	"transferase activity, transferring phosphorus-containing groups"	0.812669230769231	0.396913043478261	0.553
+"GO:0004521"	3	"GO:0004527"	2.17134010346468	74	"RNA endonuclease activity"	"exonuclease activity"	0.797384615384615	0.311541666666667	0.813
+"GO:0016922"	13	"GO:0008134"	2.16241156176449	137	"nuclear receptor binding"	"transcription factor binding"	0.951769230769231	0.33525	0.849
+"GO:0003724"	23	"GO:0003724"	2.1605219526258	76	"RNA helicase activity"	"RNA helicase activity"	0.843246153846154	0.505	0
+"GO:0004842"	15	"GO:0016772"	2.13608262304214	448	"ubiquitin-protein transferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.805069230769231	0.374260869565217	0.585
+"GO:0016755"	15	"GO:0016772"	2.01322826573376	494	"aminoacyltransferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.809946153846154	0.368260869565217	0.595
+"GO:0060090"	18	"GO:0030159"	2.01322826573376	587	"molecular adaptor activity"	"signaling receptor complex adaptor activity"	0.980138461538462	0.3545	0.786
+"GO:0035254"	21	"GO:0051427"	2.0096611452124	44	"glutamate receptor binding"	"hormone receptor binding"	0.970130769230769	0.7835	0.433
+"GO:0004520"	3	"GO:0004527"	1.98842955640272	40	"DNA endonuclease activity"	"exonuclease activity"	0.794115384615385	0.346	0.787
+"GO:0016887"	3	"GO:0004527"	1.97305837204097	412	"ATP hydrolysis activity"	"exonuclease activity"	0.838553846153846	0.511708333333333	0.437
+"GO:0008080"	15	"GO:0016772"	1.96577273922945	68	"N-acetyltransferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.825653846153846	0.398434782608696	0.495
+"GO:0034061"	15	"GO:0016772"	1.95860731484178	36	"DNA polymerase activity"	"transferase activity, transferring phosphorus-containing groups"	0.832069230769231	0.57304347826087	0.611
+"GO:0016891"	3	"GO:0004527"	1.95860731484178	34	"RNA endonuclease activity, producing 5'-phosphomonoesters"	"exonuclease activity"	0.808807692307692	0.346083333333333	0.762
+"GO:0004672"	15	"GO:0016772"	1.94846160948467	563	"protein kinase activity"	"transferase activity, transferring phosphorus-containing groups"	0.801661538461538	0.424086956521739	0.911
+"GO:0032182"	24	"GO:0032182"	1.9359165640364	119	"ubiquitin-like protein binding"	"ubiquitin-like protein binding"	0.970469230769231	1	0
+"GO:0019904"	20	"GO:0097718"	1.93554201077308	648	"protein domain specific binding"	"disordered domain specific binding"	0.960592307692308	0.6275	0.745
+"GO:0004519"	3	"GO:0004527"	1.88706002391592	125	"endonuclease activity"	"exonuclease activity"	0.803430769230769	0.298166666666667	0.859
+"GO:0003712"	14	"GO:0001216"	1.88672530753565	507	"transcription coregulator activity"	"DNA-binding transcription activator activity"	0.967184615384615	0.390571428571429	0.587
+"GO:0016462"	3	"GO:0004527"	1.88239730830992	801	"pyrophosphatase activity"	"exonuclease activity"	0.823630769230769	0.470291666666667	0.477
+"GO:0016818"	3	"GO:0004527"	1.88239730830992	802	"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides"	"exonuclease activity"	0.823538461538462	0.470083333333333	0.477
+"GO:0016817"	3	"GO:0004527"	1.88239730830992	802	"hydrolase activity, acting on acid anhydrides"	"exonuclease activity"	0.823523076923077	0.470041666666667	0.477
+"GO:0030674"	18	"GO:0030159"	1.86296254521049	421	"protein-macromolecule adaptor activity"	"signaling receptor complex adaptor activity"	0.979592307692308	0.33675	0.821
+"GO:0140096"	22	"GO:0019199"	1.85418228550817	2280	"catalytic activity, acting on a protein"	"transmembrane receptor protein kinase activity"	0.825715384615385	0.621666666666667	0.545
+"GO:0031267"	16	"GO:0051020"	1.84496777120903	281	"small GTPase binding"	"GTPase binding"	0.947784615384615	0.453	0.986
+"GO:0008186"	23	"GO:0003724"	1.83624247601804	78	"ATP-dependent activity, acting on RNA"	"RNA helicase activity"	0.992384615384615	0.505	0.99
+"GO:0035591"	18	"GO:0030159"	1.79155864356143	98	"signaling adaptor activity"	"signaling receptor complex adaptor activity"	0.979561538461538	0.33575	0.943
+"GO:0035064"	25	"GO:0035064"	1.76548271648731	80	"methylated histone binding"	"methylated histone binding"	0.951646153846154	0.358333333333333	0
+"GO:0140034"	25	"GO:0035064"	1.76548271648731	82	"methylation-dependent protein binding"	"methylated histone binding"	0.957623076923077	0.358	0.997
+"GO:0097159"	26	"GO:0097159"	1.75055703855742	6373	"organic cyclic compound binding"	"organic cyclic compound binding"	0.912361538461538	0.811	0
+"GO:0016746"	15	"GO:0016772"	1.7307206102281	727	"acyltransferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.802907692307692	0.354434782608696	0.642
+"GO:0016410"	15	"GO:0016772"	1.71783122169536	94	"N-acyltransferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.823746153846154	0.397434782608696	0.511
+"GO:0000981"	14	"GO:0001216"	1.71556926615548	1367	"DNA-binding transcription factor activity, RNA polymerase II-specific"	"DNA-binding transcription activator activity"	0.963930769230769	0.330142857142857	0.732
+"GO:0016301"	15	"GO:0016772"	1.70443290003752	726	"kinase activity"	"transferase activity, transferring phosphorus-containing groups"	0.806169230769231	0.415217391304348	0.944
+"GO:0003700"	14	"GO:0001216"	1.70333480973847	1458	"DNA-binding transcription factor activity"	"DNA-binding transcription activator activity"	0.963607692307692	0.324142857142857	0.748
+"GO:0051219"	27	"GO:0051219"	1.69336055897574	93	"phosphoprotein binding"	"phosphoprotein binding"	0.971030769230769	1	0
+"GO:0003713"	14	"GO:0001216"	1.6929320493387	280	"transcription coactivator activity"	"DNA-binding transcription activator activity"	0.969092307692308	0.426	0.549
+"GO:0008375"	15	"GO:0016772"	1.69164905141327	45	"acetylglucosaminyltransferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.865007692307692	0.601869565217391	0.465
+"GO:0019899"	16	"GO:0051020"	1.68676570830528	2095	"enzyme binding"	"GTPase binding"	0.939576923076923	0.436333333333333	0.733
+"GO:0000977"	1	"GO:0003677"	1.68089394069022	1403	"RNA polymerase II transcription regulatory region sequence-specific DNA binding"	"DNA binding"	0.887238461538462	0.3160625	0.807
+"GO:0044877"	9	"GO:0003682"	1.64839692758087	1760	"protein-containing complex binding"	"chromatin binding"	0.975230769230769	0.581	0.838
+"GO:0005488"	28	"GO:0005488"	1.63544900464603	16707	"binding"	"binding"	0.969338461538461	1	0
+"GO:0016893"	3	"GO:0004527"	1.62893213772826	43	"endonuclease activity, active with either ribo- or deoxyribonucleic acids and producing 5'-phosphomonoesters"	"exonuclease activity"	0.819146153846154	0.3495	0.785
+"GO:0016740"	15	"GO:0016772"	1.59397105503638	2256	"transferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.801407692307692	0.424391304347826	0.793
+"GO:0061980"	26	"GO:0097159"	1.57381417475549	56	"regulatory RNA binding"	"organic cyclic compound binding"	0.939192307692308	0.811	0.378
+"GO:0004722"	3	"GO:0004527"	1.57008630223625	100	"protein serine/threonine phosphatase activity"	"exonuclease activity"	0.817992307692308	0.453	0.581
+"GO:0140030"	25	"GO:0035064"	1.5508302678348	184	"modification-dependent protein binding"	"methylated histone binding"	0.956030769230769	0.381	0.928
+"GO:0004713"	22	"GO:0019199"	1.54775342547956	138	"protein tyrosine kinase activity"	"transmembrane receptor protein kinase activity"	0.833230769230769	0.596	0.622
+"GO:0016779"	15	"GO:0016772"	1.54439388741813	147	"nucleotidyltransferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.843	0.520304347826087	0.707
+"GO:0019894"	29	"GO:0019894"	1.54211810326601	44	"kinesin binding"	"kinesin binding"	0.972876923076923	1	0
+"GO:0017111"	3	"GO:0004527"	1.51884412917196	740	"ribonucleoside triphosphate phosphatase activity"	"exonuclease activity"	0.826523076923077	0.477625	0.468
+"GO:0008270"	30	"GO:0008270"	1.51342784948164	834	"zinc ion binding"	"zinc ion binding"	0.983269230769231	1	0
+"GO:0016881"	31	"GO:0016881"	1.50017550416042	22	"acid-amino acid ligase activity"	"acid-amino acid ligase activity"	0.891046153846154	0.397	0
+"GO:0042826"	16	"GO:0051020"	1.49012571499528	127	"histone deacetylase binding"	"GTPase binding"	0.953992307692308	0.5465	0.546
+"GO:0031625"	16	"GO:0051020"	1.46941614035488	308	"ubiquitin protein ligase binding"	"GTPase binding"	0.950392307692308	0.516	0.591
+"GO:0016879"	31	"GO:0016881"	1.46559310086212	48	"ligase activity, forming carbon-nitrogen bonds"	"acid-amino acid ligase activity"	0.884307692307692	0.3745	0.94
+"GO:0016875"	31	"GO:0016881"	1.46268472688799	41	"ligase activity, forming carbon-oxygen bonds"	"acid-amino acid ligase activity"	0.886169230769231	0.371	0.736
+"GO:0004812"	31	"GO:0016881"	1.46268472688799	41	"aminoacyl-tRNA ligase activity"	"acid-amino acid ligase activity"	0.854915384615385	0.371	0.736
+"GO:0019887"	8	"GO:0005085"	1.42492767428619	226	"protein kinase regulator activity"	"guanyl-nucleotide exchange factor activity"	0.983838461538462	0.47475	0.667
+"GO:0001727"	15	"GO:0016772"	1.41987367458842	41	"lipid kinase activity"	"transferase activity, transferring phosphorus-containing groups"	0.850146153846154	0.540217391304348	0.658
+"GO:1902936"	32	"GO:1902936"	1.39254497678533	108	"phosphatidylinositol bisphosphate binding"	"phosphatidylinositol bisphosphate binding"	0.986015384615385	1	0
+"GO:0004721"	3	"GO:0004527"	1.30856484785594	176	"phosphoprotein phosphatase activity"	"exonuclease activity"	0.802107692307692	0.408458333333333	0.631
+"GO:0016407"	15	"GO:0016772"	1.3082114755973	95	"acetyltransferase activity"	"transferase activity, transferring phosphorus-containing groups"	0.824369230769231	0.398826086956522	0.508
+"GO:0052742"	15	"GO:0016772"	1.30539480106643	26	"phosphatidylinositol kinase activity"	"transferase activity, transferring phosphorus-containing groups"	0.854361538461539	0.552565217391304	0.631

@@ -1,0 +1,25 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0005219"	1	"GO:0005219"	13.8860566476932	4	"ryanodine-sensitive calcium-release channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.779548672566372	0.406880952380952	0
+"GO:0016725"	2	"GO:0016725"	7.60205999132796	11	"oxidoreductase activity, acting on CH or CH2 groups"	"oxidoreductase activity, acting on CH or CH2 groups"	0.950725663716814	0.5754	0
+"GO:0008235"	3	"GO:0008235"	7.56863623584101	68	"metalloexopeptidase activity"	"metalloexopeptidase activity"	0.915176991150442	0.41025	0
+"GO:0038023"	4	"GO:0038023"	5.95860731484177	1533	"signaling receptor activity"	"signaling receptor activity"	0.97583185840708	0.31725	0
+"GO:0033218"	5	"GO:0033218"	5.67778070526608	405	"amide binding"	"amide binding"	0.969053097345133	0.5135	0
+"GO:0017046"	6	"GO:0017046"	4.72124639904717	49	"peptide hormone binding"	"peptide hormone binding"	0.964575221238938	0.5185	0
+"GO:0002020"	7	"GO:0002020"	4.65757731917779	142	"protease binding"	"protease binding"	0.943097345132743	0.497	0
+"GO:0003725"	8	"GO:0003725"	4.42021640338319	73	"double-stranded RNA binding"	"double-stranded RNA binding"	0.977185840707965	1	0
+"GO:0003779"	9	"GO:0003779"	4.4089353929735	438	"actin binding"	"actin binding"	0.953955752212389	0.402666666666667	0
+"GO:0005164"	10	"GO:0005164"	4.17392519729917	31	"tumor necrosis factor receptor binding"	"tumor necrosis factor receptor binding"	0.953530973451327	0.42075	0
+"GO:0043621"	11	"GO:0043621"	3.67778070526608	70	"protein self-association"	"protein self-association"	0.972884955752212	1	0
+"GO:0097110"	12	"GO:0097110"	3.65757731917779	68	"scaffold protein binding"	"scaffold protein binding"	0.973008849557522	1	0
+"GO:0043167"	13	"GO:0043167"	3.48148606012211	6071	"ion binding"	"ion binding"	0.93829203539823	0.377285714285714	0
+"GO:0016763"	14	"GO:0016763"	3.431798275933	49	"pentosyltransferase activity"	"pentosyltransferase activity"	0.945867256637168	0.5792	0
+"GO:0005496"	15	"GO:0005496"	3.30102999566398	102	"steroid binding"	"steroid binding"	0.97012389380531	0.6165	0
+"GO:0005516"	16	"GO:0005516"	3.06048074738138	204	"calmodulin binding"	"calmodulin binding"	0.969946902654867	1	0
+"GO:0005178"	17	"GO:0005178"	2.68193666503724	154	"integrin binding"	"integrin binding"	0.945035398230089	0.6375	0
+"GO:0036094"	18	"GO:0036094"	2.57348873863542	2550	"small molecule binding"	"small molecule binding"	0.960805309734513	0.653	0
+"GO:0044325"	19	"GO:0044325"	2.36451625318509	133	"transmembrane transporter binding"	"transmembrane transporter binding"	0.970884955752212	1	0
+"GO:0005539"	20	"GO:0005539"	2.33913452199613	240	"glycosaminoglycan binding"	"glycosaminoglycan binding"	0.967884955752212	0.476	0
+"GO:0061134"	21	"GO:0061134"	2.02502800570193	228	"peptidase regulator activity"	"peptidase regulator activity"	1	1	0
+"GO:0042802"	22	"GO:0042802"	1.91399629438162	2029	"identical protein binding"	"identical protein binding"	0.962300884955752	1	0
+"GO:0030246"	23	"GO:0030246"	1.62196567754267	273	"carbohydrate binding"	"carbohydrate binding"	0.985061946902655	1	0
+"GO:1901681"	24	"GO:1901681"	1.56495235866004	275	"sulfur compound binding"	"sulfur compound binding"	0.985132743362832	1	0

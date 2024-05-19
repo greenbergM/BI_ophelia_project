@@ -1,0 +1,33 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0003677"	1	"GO:0003677"	11.537602002101	2530	"DNA binding"	"DNA binding"	0.887284615384615	0.344875	0
+"GO:0008094"	2	"GO:0008094"	10.3467874862247	122	"ATP-dependent activity, acting on DNA"	"ATP-dependent activity, acting on DNA"	0.859453846153846	0.383	0
+"GO:0004527"	3	"GO:0004527"	7.08092190762393	81	"exonuclease activity"	"exonuclease activity"	0.803515384615385	0.292083333333333	0
+"GO:0042393"	4	"GO:0042393"	6.92081875395237	252	"histone binding"	"histone binding"	0.961776923076923	1	0
+"GO:0036310"	5	"GO:0036310"	6.74472749489669	5	"ATP-dependent DNA/DNA annealing activity"	"ATP-dependent DNA/DNA annealing activity"	0.931461538461538	0.411666666666667	0
+"GO:0140098"	6	"GO:0140098"	6.55284196865778	395	"catalytic activity, acting on RNA"	"catalytic activity, acting on RNA"	0.845661538461538	1	0
+"GO:0004386"	7	"GO:0004386"	6.4089353929735	154	"helicase activity"	"helicase activity"	0.871838461538462	0.471666666666667	0
+"GO:0005085"	8	"GO:0005085"	6.15490195998574	225	"guanyl-nucleotide exchange factor activity"	"guanyl-nucleotide exchange factor activity"	0.980792307692308	0.37575	0
+"GO:0003682"	9	"GO:0003682"	5.48148606012211	596	"chromatin binding"	"chromatin binding"	0.977546153846154	0.581	0
+"GO:0008013"	10	"GO:0008013"	5.431798275933	85	"beta-catenin binding"	"beta-catenin binding"	0.971030769230769	1	0
+"GO:0046332"	11	"GO:0046332"	5.11918640771921	79	"SMAD binding"	"SMAD binding"	0.970746153846154	1	0
+"GO:0005515"	12	"GO:0005515"	4.26760624017703	14048	"protein binding"	"protein binding"	0.945546153846154	1	0
+"GO:0008134"	13	"GO:0008134"	3.431798275933	599	"transcription factor binding"	"transcription factor binding"	0.947	0.32	0
+"GO:0001216"	14	"GO:0001216"	3.3767507096021	475	"DNA-binding transcription activator activity"	"DNA-binding transcription activator activity"	0.9668	0.383428571428571	0
+"GO:0016772"	15	"GO:0016772"	3.1249387366083	895	"transferase activity, transferring phosphorus-containing groups"	"transferase activity, transferring phosphorus-containing groups"	0.804584615384615	0.41095652173913	0
+"GO:0051020"	16	"GO:0051020"	3	313	"GTPase binding"	"GTPase binding"	0.947315384615385	0.449166666666667	0
+"GO:0002039"	17	"GO:0002039"	2.91364016932525	66	"p53 binding"	"p53 binding"	0.972107692307692	1	0
+"GO:0030159"	18	"GO:0030159"	2.64206515299955	51	"signaling receptor complex adaptor activity"	"signaling receptor complex adaptor activity"	0.980384615384615	0.3625	0
+"GO:0031369"	19	"GO:0031369"	2.57024771999759	33	"translation initiation factor binding"	"translation initiation factor binding"	0.973184615384615	1	0
+"GO:0097718"	20	"GO:0097718"	2.41005039867429	32	"disordered domain specific binding"	"disordered domain specific binding"	0.968769230769231	0.6275	0
+"GO:0051427"	21	"GO:0051427"	2.3840499483436	32	"hormone receptor binding"	"hormone receptor binding"	0.970184615384615	0.7835	0
+"GO:0019199"	22	"GO:0019199"	2.26841123481326	79	"transmembrane receptor protein kinase activity"	"transmembrane receptor protein kinase activity"	0.842746153846154	0.611	0
+"GO:0003724"	23	"GO:0003724"	2.1605219526258	76	"RNA helicase activity"	"RNA helicase activity"	0.843246153846154	0.505	0
+"GO:0032182"	24	"GO:0032182"	1.9359165640364	119	"ubiquitin-like protein binding"	"ubiquitin-like protein binding"	0.970469230769231	1	0
+"GO:0035064"	25	"GO:0035064"	1.76548271648731	80	"methylated histone binding"	"methylated histone binding"	0.951646153846154	0.358333333333333	0
+"GO:0097159"	26	"GO:0097159"	1.75055703855742	6373	"organic cyclic compound binding"	"organic cyclic compound binding"	0.912361538461538	0.811	0
+"GO:0051219"	27	"GO:0051219"	1.69336055897574	93	"phosphoprotein binding"	"phosphoprotein binding"	0.971030769230769	1	0
+"GO:0005488"	28	"GO:0005488"	1.63544900464603	16707	"binding"	"binding"	0.969338461538461	1	0
+"GO:0019894"	29	"GO:0019894"	1.54211810326601	44	"kinesin binding"	"kinesin binding"	0.972876923076923	1	0
+"GO:0008270"	30	"GO:0008270"	1.51342784948164	834	"zinc ion binding"	"zinc ion binding"	0.983269230769231	1	0
+"GO:0016881"	31	"GO:0016881"	1.50017550416042	22	"acid-amino acid ligase activity"	"acid-amino acid ligase activity"	0.891046153846154	0.397	0
+"GO:1902936"	32	"GO:1902936"	1.39254497678533	108	"phosphatidylinositol bisphosphate binding"	"phosphatidylinositol bisphosphate binding"	0.986015384615385	1	0

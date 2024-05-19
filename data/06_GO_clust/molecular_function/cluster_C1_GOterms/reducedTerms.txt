@@ -1,0 +1,98 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0003676"	1	"GO:0003676"	13.0268721464003	4350	"nucleic acid binding"	"nucleic acid binding"	0.841567010309278	0.407	0
+"GO:0003682"	2	"GO:0003682"	11.0861861476163	596	"chromatin binding"	"chromatin binding"	0.947587628865979	0.372	0
+"GO:0003677"	1	"GO:0003676"	9.30102999566398	2530	"DNA binding"	"nucleic acid binding"	0.832814432989691	0.323666666666667	0.793
+"GO:1990226"	3	"GO:1990226"	8.88605664769316	15	"histone methyltransferase binding"	"histone methyltransferase binding"	0.96079381443299	0.65825	0
+"GO:1901363"	1	"GO:0003676"	8.02227639471115	6301	"heterocyclic compound binding"	"nucleic acid binding"	0.861536082474227	0.471933333333333	0.802
+"GO:0097159"	4	"GO:0097159"	7.27572413039921	6373	"organic cyclic compound binding"	"organic cyclic compound binding"	0.862371134020619	0.616666666666667	0
+"GO:0140110"	5	"GO:0140110"	6.72124639904717	1960	"transcription regulator activity"	"transcription regulator activity"	0.946072164948454	0.346125	0
+"GO:0042393"	6	"GO:0042393"	6.04575749056067	252	"histone binding"	"histone binding"	0.955371134020619	1	0
+"GO:0043565"	1	"GO:0003676"	5.92081875395237	1672	"sequence-specific DNA binding"	"nucleic acid binding"	0.834247422680412	0.310466666666667	0.734
+"GO:0004674"	7	"GO:0004674"	5.42021640338319	427	"protein serine/threonine kinase activity"	"protein serine/threonine kinase activity"	0.840618556701031	0.438933333333333	0
+"GO:0042054"	7	"GO:0004674"	5.35654732351381	66	"histone methyltransferase activity"	"protein serine/threonine kinase activity"	0.841515463917526	0.367066666666667	0.457
+"GO:0003723"	8	"GO:0003723"	5.30980391997149	2004	"RNA binding"	"RNA binding"	0.851938144329897	0.485	0
+"GO:0003729"	8	"GO:0003723"	5.1249387366083	614	"mRNA binding"	"RNA binding"	0.873639175257732	0.526	0.792
+"GO:0031491"	2	"GO:0003682"	5.10790539730952	71	"nucleosome binding"	"chromatin binding"	0.95580412371134	0.456	0.807
+"GO:0035173"	9	"GO:0035173"	5	20	"histone kinase activity"	"histone kinase activity"	0.885061855670103	0.661	0
+"GO:0001067"	1	"GO:0003676"	5	1501	"transcription regulatory region nucleic acid binding"	"nucleic acid binding"	0.852144329896907	0.400133333333333	0.689
+"GO:0008170"	7	"GO:0004674"	5	101	"N-methyltransferase activity"	"protein serine/threonine kinase activity"	0.843082474226804	0.3478	0.462
+"GO:0003690"	1	"GO:0003676"	4.85387196432176	1658	"double-stranded DNA binding"	"nucleic acid binding"	0.835556701030928	0.315533333333333	0.725
+"GO:1990837"	1	"GO:0003676"	4.56863623584101	1562	"sequence-specific double-stranded DNA binding"	"nucleic acid binding"	0.833711340206186	0.300866666666667	0.717
+"GO:0000976"	1	"GO:0003676"	4.21467016498923	1499	"transcription cis-regulatory region binding"	"nucleic acid binding"	0.832288659793814	0.2802	0.689
+"GO:0005488"	10	"GO:0005488"	4.20760831050175	16707	"binding"	"binding"	0.958773195876289	1	0
+"GO:0004672"	7	"GO:0004674"	4.14874165128092	563	"protein kinase activity"	"protein serine/threonine kinase activity"	0.829536082474227	0.3946	0.888
+"GO:0004407"	11	"GO:0004407"	4.02227639471115	21	"histone deacetylase activity"	"histone deacetylase activity"	0.88219587628866	0.43575	0
+"GO:0036002"	8	"GO:0003723"	4	58	"pre-mRNA binding"	"RNA binding"	0.902721649484536	0.6074	0.586
+"GO:0008276"	7	"GO:0004674"	4	94	"protein methyltransferase activity"	"protein serine/threonine kinase activity"	0.835432989690722	0.342933333333333	0.477
+"GO:0035064"	12	"GO:0035064"	3.92081875395238	80	"methylated histone binding"	"methylated histone binding"	0.941237113402062	0.358333333333333	0
+"GO:0140034"	12	"GO:0035064"	3.92081875395238	82	"methylation-dependent protein binding"	"methylated histone binding"	0.949268041237113	0.358	0.997
+"GO:0003697"	1	"GO:0003676"	3.79588001734407	118	"single-stranded DNA binding"	"nucleic acid binding"	0.886103092783505	0.5396	0.477
+"GO:0003700"	5	"GO:0140110"	3.79588001734407	1458	"DNA-binding transcription factor activity"	"transcription regulator activity"	0.94541237113402	0.338125	0.918
+"GO:0004693"	9	"GO:0035173"	3.76955107862173	29	"cyclin-dependent protein serine/threonine kinase activity"	"histone kinase activity"	0.874876288659794	0.522	0.455
+"GO:0097472"	9	"GO:0035173"	3.76955107862173	29	"cyclin-dependent protein kinase activity"	"histone kinase activity"	0.875762886597938	0.521	0.457
+"GO:0033558"	11	"GO:0004407"	3.69897000433602	22	"protein lysine deacetylase activity"	"histone deacetylase activity"	0.883309278350515	0.48625	0.963
+"GO:0008574"	13	"GO:0008574"	3.48148606012211	16	"plus-end-directed microtubule motor activity"	"plus-end-directed microtubule motor activity"	1	1	0
+"GO:0016780"	7	"GO:0004674"	3.38721614328026	22	"phosphotransferase activity, for other substituted phosphate groups"	"protein serine/threonine kinase activity"	0.886247422680412	0.5798	0.547
+"GO:0003712"	5	"GO:0140110"	3.38721614328026	507	"transcription coregulator activity"	"transcription regulator activity"	0.947381443298969	0.362	0.742
+"GO:0008168"	7	"GO:0004674"	3.38721614328026	215	"methyltransferase activity"	"protein serine/threonine kinase activity"	0.834969072164949	0.3208	0.499
+"GO:0016772"	7	"GO:0004674"	3.33724216831843	895	"transferase activity, transferring phosphorus-containing groups"	"protein serine/threonine kinase activity"	0.83498969072165	0.385133333333333	0.826
+"GO:0019213"	11	"GO:0004407"	3.27572413039921	37	"deacetylase activity"	"histone deacetylase activity"	0.897360824742268	0.48175	0.94
+"GO:0008134"	14	"GO:0008134"	3.27572413039921	599	"transcription factor binding"	"transcription factor binding"	0.917092783505155	0.298285714285714	0
+"GO:0016279"	7	"GO:0004674"	3.21467016498923	62	"protein-lysine N-methyltransferase activity"	"protein serine/threonine kinase activity"	0.839103092783505	0.3476	0.452
+"GO:0016773"	7	"GO:0004674"	3.20065945054642	671	"phosphotransferase activity, alcohol group as acceptor"	"protein serine/threonine kinase activity"	0.836381443298969	0.3918	0.863
+"GO:0016741"	7	"GO:0004674"	3.16115090926274	226	"transferase activity, transferring one-carbon groups"	"protein serine/threonine kinase activity"	0.834886597938144	0.321266666666667	0.501
+"GO:0016278"	7	"GO:0004674"	3.14874165128092	63	"lysine N-methyltransferase activity"	"protein serine/threonine kinase activity"	0.847432989690722	0.362933333333333	0.443
+"GO:0008757"	7	"GO:0004674"	3.07058107428571	187	"S-adenosylmethionine-dependent methyltransferase activity"	"protein serine/threonine kinase activity"	0.838319587628866	0.331933333333333	0.484
+"GO:0000977"	1	"GO:0003676"	3.07058107428571	1403	"RNA polymerase II transcription regulatory region sequence-specific DNA binding"	"nucleic acid binding"	0.835237113402062	0.291933333333333	0.669
+"GO:0000981"	5	"GO:0140110"	2.97469413473523	1367	"DNA-binding transcription factor activity, RNA polymerase II-specific"	"transcription regulator activity"	0.945979381443299	0.345	0.891
+"GO:0016538"	15	"GO:0016538"	2.96257350205938	50	"cyclin-dependent protein serine/threonine kinase regulator activity"	"cyclin-dependent protein serine/threonine kinase regulator activity"	1	1	0
+"GO:0042826"	3	"GO:1990226"	2.94692155651658	127	"histone deacetylase binding"	"histone methyltransferase binding"	0.953948453608247	0.613	0.433
+"GO:0004386"	16	"GO:0004386"	2.94309514866353	154	"helicase activity"	"helicase activity"	0.904030927835052	1	0
+"GO:0140097"	17	"GO:0140097"	2.68402965454308	248	"catalytic activity, acting on DNA"	"catalytic activity, acting on DNA"	0.899237113402062	0.409666666666667	0
+"GO:0044877"	2	"GO:0003682"	2.6615435063954	1760	"protein-containing complex binding"	"chromatin binding"	0.946773195876289	0.4136	0.838
+"GO:0003727"	8	"GO:0003723"	2.5543957967264	88	"single-stranded RNA binding"	"RNA binding"	0.891020618556701	0.49	0.633
+"GO:0140030"	12	"GO:0035064"	2.41793663708829	184	"modification-dependent protein binding"	"methylated histone binding"	0.947505154639175	0.381	0.928
+"GO:0016301"	7	"GO:0004674"	2.41680122603138	726	"kinase activity"	"protein serine/threonine kinase activity"	0.835824742268041	0.389133333333333	0.849
+"GO:0003724"	18	"GO:0003724"	2.39794000867204	76	"RNA helicase activity"	"RNA helicase activity"	0.890154639175258	0.505	0
+"GO:0046915"	19	"GO:0046915"	2.3936186348894	42	"transition metal ion transmembrane transporter activity"	"transition metal ion transmembrane transporter activity"	0.995319587628866	0.773	0
+"GO:0000217"	1	"GO:0003676"	2.39254497678533	39	"DNA secondary structure binding"	"nucleic acid binding"	0.895979381443299	0.58	0.426
+"GO:0003714"	5	"GO:0140110"	2.38510278396687	194	"transcription corepressor activity"	"transcription regulator activity"	0.95219587628866	0.420375	0.649
+"GO:0000987"	1	"GO:0003676"	2.38090666937326	1216	"cis-regulatory region sequence-specific DNA binding"	"nucleic acid binding"	0.838268041237113	0.3038	0.65
+"GO:0031490"	2	"GO:0003682"	2.3777859770337	120	"chromatin DNA binding"	"chromatin binding"	0.861030927835052	0.4378	0.843
+"GO:0050681"	14	"GO:0008134"	2.34486156518862	26	"nuclear androgen receptor binding"	"transcription factor binding"	0.933329896907216	0.396857142857143	0.708
+"GO:0005524"	4	"GO:0097159"	2.29929628285498	1472	"ATP binding"	"organic cyclic compound binding"	0.884855670103093	0.498333333333333	0.562
+"GO:0140297"	14	"GO:0008134"	2.25258819211358	477	"DNA-binding transcription factor binding"	"transcription factor binding"	0.917494845360825	0.288571428571429	0.954
+"GO:0017111"	11	"GO:0004407"	2.16115090926274	740	"ribonucleoside triphosphate phosphatase activity"	"histone deacetylase activity"	0.878938144329897	0.415125	0.422
+"GO:0008186"	18	"GO:0003724"	2.08990945440593	78	"ATP-dependent activity, acting on RNA"	"RNA helicase activity"	0.98979381443299	0.505	0.99
+"GO:0001217"	5	"GO:0140110"	1.97428461609866	334	"DNA-binding transcription repressor activity"	"transcription regulator activity"	0.951773195876289	0.41525	0.676
+"GO:0001227"	5	"GO:0140110"	1.97428461609866	326	"DNA-binding transcription repressor activity, RNA polymerase II-specific"	"transcription regulator activity"	0.951463917525773	0.4115	0.673
+"GO:0000978"	1	"GO:0003676"	1.96818772866963	1194	"RNA polymerase II cis-regulatory region sequence-specific DNA binding"	"nucleic acid binding"	0.838690721649485	0.304533333333333	0.645
+"GO:0005515"	20	"GO:0005515"	1.90903692340427	14048	"protein binding"	"protein binding"	0.937288659793814	1	0
+"GO:0016462"	11	"GO:0004407"	1.87614835903291	801	"pyrophosphatase activity"	"histone deacetylase activity"	0.876670103092783	0.405875	0.428
+"GO:0016817"	11	"GO:0004407"	1.87614835903291	802	"hydrolase activity, acting on acid anhydrides"	"histone deacetylase activity"	0.876577319587629	0.40575	0.429
+"GO:0016818"	11	"GO:0004407"	1.87614835903291	802	"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides"	"histone deacetylase activity"	0.876567010309278	0.405625	0.429
+"GO:0140096"	9	"GO:0035173"	1.86486734862323	2280	"catalytic activity, acting on a protein"	"histone kinase activity"	0.860721649484536	0.658	0.444
+"GO:0003678"	17	"GO:0140097"	1.85356186471423	58	"DNA helicase activity"	"catalytic activity, acting on DNA"	0.896422680412371	0.403333333333333	0.855
+"GO:0003684"	1	"GO:0003676"	1.83386602969489	71	"damaged DNA binding"	"nucleic acid binding"	0.892752577319588	0.566666666666667	0.443
+"GO:0030332"	21	"GO:0030332"	1.79832982035342	34	"cyclin binding"	"cyclin binding"	0.96939175257732	1	0
+"GO:0017025"	14	"GO:0008134"	1.79832982035342	25	"TBP-class protein binding"	"transcription factor binding"	0.933257731958763	0.397428571428571	0.714
+"GO:0008173"	22	"GO:0008173"	1.73025362686923	65	"RNA methyltransferase activity"	"RNA methyltransferase activity"	0.844577319587629	0.5795	0
+"GO:0008094"	17	"GO:0140097"	1.72239078569591	122	"ATP-dependent activity, acting on DNA"	"catalytic activity, acting on DNA"	0.904896907216495	0.383	0.916
+"GO:0016922"	14	"GO:0008134"	1.70796556400526	137	"nuclear receptor binding"	"transcription factor binding"	0.922505154639175	0.310285714285714	0.849
+"GO:0070717"	8	"GO:0003723"	1.70114692359029	33	"poly-purine tract binding"	"RNA binding"	0.901020618556701	0.5216	0.564
+"GO:0140296"	14	"GO:0008134"	1.6836102489268	54	"general transcription initiation factor binding"	"transcription factor binding"	0.92898969072165	0.363857142857143	0.77
+"GO:0043021"	2	"GO:0003682"	1.57675412606319	168	"ribonucleoprotein complex binding"	"chromatin binding"	0.956711340206186	0.5022	0.652
+"GO:0016811"	11	"GO:0004407"	1.56288390695192	71	"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in linear amides"	"histone deacetylase activity"	0.900474226804124	0.549875	0.903
+"GO:1901505"	19	"GO:0046915"	1.55689354326273	55	"carbohydrate derivative transmembrane transporter activity"	"transition metal ion transmembrane transporter activity"	0.995319587628866	0.773	0.454
+"GO:0140098"	22	"GO:0008173"	1.53820144247489	395	"catalytic activity, acting on RNA"	"RNA methyltransferase activity"	0.898144329896907	0.5795	0.841
+"GO:0008157"	3	"GO:1990226"	1.52273400457515	25	"protein phosphatase 1 binding"	"histone methyltransferase binding"	0.959185567010309	0.64725	0.391
+"GO:0019899"	3	"GO:1990226"	1.49471432585587	2095	"enzyme binding"	"histone methyltransferase binding"	0.939948453608247	0.5555	0.543
+"GO:0008017"	23	"GO:0008017"	1.46457928194383	273	"microtubule binding"	"microtubule binding"	0.963525773195876	1	0
+"GO:0035639"	4	"GO:0097159"	1.44009337496389	1818	"purine ribonucleoside triphosphate binding"	"organic cyclic compound binding"	0.88119587628866	0.489666666666667	0.588
+"GO:0051427"	24	"GO:0051427"	1.41128022039994	32	"hormone receptor binding"	"hormone receptor binding"	0.96919587628866	1	0
+"GO:0042162"	1	"GO:0003676"	1.40120949323689	38	"telomeric DNA binding"	"nucleic acid binding"	0.888814432989691	0.537933333333333	0.436
+"GO:0051540"	25	"GO:0051540"	1.40120949323689	70	"metal cluster binding"	"metal cluster binding"	0.972298969072165	0.5005	0
+"GO:0051536"	25	"GO:0051540"	1.40120949323689	70	"iron-sulfur cluster binding"	"metal cluster binding"	0.972298969072165	0.5005	0.999
+"GO:0003713"	5	"GO:0140110"	1.37592426885432	280	"transcription coactivator activity"	"transcription regulator activity"	0.950422680412371	0.398875	0.682
+"GO:0016740"	7	"GO:0004674"	1.34486156518862	2256	"transferase activity"	"protein serine/threonine kinase activity"	0.837247422680412	0.409866666666667	0.668
+"GO:0061629"	14	"GO:0008134"	1.34447740374658	344	"RNA polymerase II-specific DNA-binding transcription factor binding"	"transcription factor binding"	0.918773195876289	0.289	0.917

@@ -1,0 +1,114 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0005219"	1	"GO:0005219"	13.8860566476932	4	"ryanodine-sensitive calcium-release channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.779548672566372	0.406880952380952	0
+"GO:0048763"	1	"GO:0005219"	10.1870866433571	6	"calcium-induced calcium release activity"	"ryanodine-sensitive calcium-release channel activity"	0.770964601769912	0.383785714285714	0.968
+"GO:0015278"	1	"GO:0005219"	8.33724216831843	18	"calcium-release channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.756097345132743	0.343785714285714	0.911
+"GO:0016725"	2	"GO:0016725"	7.60205999132796	11	"oxidoreductase activity, acting on CH or CH2 groups"	"oxidoreductase activity, acting on CH or CH2 groups"	0.950725663716814	0.5754	0
+"GO:0099604"	1	"GO:0005219"	7.58502665202918	27	"ligand-gated calcium channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.753566371681416	0.336976190476191	0.892
+"GO:0008235"	3	"GO:0008235"	7.56863623584101	68	"metalloexopeptidase activity"	"metalloexopeptidase activity"	0.915176991150442	0.41025	0
+"GO:0008233"	3	"GO:0008235"	6	602	"peptidase activity"	"metalloexopeptidase activity"	0.900132743362832	0.33225	0.727
+"GO:0005217"	1	"GO:0005219"	5.95860731484177	30	"intracellular ligand-gated monoatomic ion channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.766840707964602	0.372690476190476	0.88
+"GO:0038023"	4	"GO:0038023"	5.95860731484177	1533	"signaling receptor activity"	"signaling receptor activity"	0.97583185840708	0.31725	0
+"GO:0005343"	1	"GO:0005219"	5.92081875395237	37	"organic acid:sodium symporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.754672566371681	0.339952380952381	0.534
+"GO:0004177"	3	"GO:0008235"	5.82390874094432	40	"aminopeptidase activity"	"metalloexopeptidase activity"	0.918964601769911	0.441583333333333	0.857
+"GO:0060089"	4	"GO:0038023"	5.82390874094432	1533	"molecular transducer activity"	"signaling receptor activity"	0.97583185840708	0.31725	0.961
+"GO:0033218"	5	"GO:0033218"	5.67778070526608	405	"amide binding"	"amide binding"	0.969053097345133	0.5135	0
+"GO:0008395"	2	"GO:0016725"	5.56863623584101	26	"steroid hydroxylase activity"	"oxidoreductase activity, acting on CH or CH2 groups"	0.944132743362832	0.4884	0.464
+"GO:0008238"	3	"GO:0008235"	5.55284196865778	102	"exopeptidase activity"	"metalloexopeptidase activity"	0.911486725663717	0.391416666666667	0.931
+"GO:0008237"	3	"GO:0008235"	5.20760831050175	185	"metallopeptidase activity"	"metalloexopeptidase activity"	0.911194690265487	0.398666666666667	0.888
+"GO:1901702"	1	"GO:0005219"	5.11918640771921	587	"salt transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.75170796460177	0.33197619047619	0.601
+"GO:0003824"	3	"GO:0008235"	5	5582	"catalytic activity"	"metalloexopeptidase activity"	0.926699115044248	0.6255	0.31
+"GO:0046873"	1	"GO:0005219"	5	441	"metal ion transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.729300884955752	0.271690476190476	0.634
+"GO:0004888"	4	"GO:0038023"	4.92081875395237	1311	"transmembrane signaling receptor activity"	"signaling receptor activity"	0.975778761061947	0.31575	0.931
+"GO:0015370"	1	"GO:0005219"	4.85387196432176	80	"solute:sodium symporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.749150442477876	0.325095238095238	0.563
+"GO:0042277"	5	"GO:0033218"	4.74472749489669	325	"peptide binding"	"amide binding"	0.969230088495575	0.5135	0.973
+"GO:0017046"	6	"GO:0017046"	4.72124639904717	49	"peptide hormone binding"	"peptide hormone binding"	0.964575221238938	0.5185	0
+"GO:0002020"	7	"GO:0002020"	4.65757731917779	142	"protease binding"	"protease binding"	0.943097345132743	0.497	0
+"GO:0015293"	1	"GO:0005219"	4.60205999132796	149	"symporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.780106194690265	0.408380952380952	0.405
+"GO:0015294"	1	"GO:0005219"	4.60205999132796	117	"solute:monoatomic cation symporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.754849557522124	0.340428571428571	0.536
+"GO:0140096"	3	"GO:0008235"	4.52287874528034	2280	"catalytic activity, acting on a protein"	"metalloexopeptidase activity"	0.911787610619469	0.49325	0.504
+"GO:0019900"	7	"GO:0002020"	4.45593195564972	784	"kinase binding"	"protease binding"	0.930991150442478	0.383375	0.602
+"GO:0003725"	8	"GO:0003725"	4.42021640338319	73	"double-stranded RNA binding"	"double-stranded RNA binding"	0.977185840707965	1	0
+"GO:0003779"	9	"GO:0003779"	4.4089353929735	438	"actin binding"	"actin binding"	0.953955752212389	0.402666666666667	0
+"GO:0099094"	1	"GO:0005219"	4.26760624017703	110	"ligand-gated monoatomic cation channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.742716814159292	0.307785714285714	0.794
+"GO:0005164"	10	"GO:0005164"	4.17392519729917	31	"tumor necrosis factor receptor binding"	"tumor necrosis factor receptor binding"	0.953530973451327	0.42075	0
+"GO:0019901"	7	"GO:0002020"	4.16115090926274	699	"protein kinase binding"	"protease binding"	0.931769911504425	0.38975	0.595
+"GO:0004497"	2	"GO:0016725"	3.85387196432176	104	"monooxygenase activity"	"oxidoreductase activity, acting on CH or CH2 groups"	0.935637168141593	0.4312	0.525
+"GO:0022834"	1	"GO:0005219"	3.85387196432176	147	"ligand-gated channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.748938053097345	0.32452380952381	0.742
+"GO:0015276"	1	"GO:0005219"	3.85387196432176	146	"ligand-gated monoatomic ion channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.736504424778761	0.291071428571429	0.742
+"GO:0005310"	1	"GO:0005219"	3.79588001734407	31	"dicarboxylic acid transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.813362831858407	0.497857142857143	0.363
+"GO:0032813"	10	"GO:0005164"	3.69897000433602	49	"tumor necrosis factor receptor superfamily binding"	"tumor necrosis factor receptor binding"	0.95124778761062	0.39925	0.951
+"GO:0043621"	11	"GO:0043621"	3.67778070526608	70	"protein self-association"	"protein self-association"	0.972884955752212	1	0
+"GO:0097110"	12	"GO:0097110"	3.65757731917779	68	"scaffold protein binding"	"scaffold protein binding"	0.973008849557522	1	0
+"GO:0004252"	3	"GO:0008235"	3.49485002168009	174	"serine-type endopeptidase activity"	"metalloexopeptidase activity"	0.907929203539823	0.359083333333333	0.619
+"GO:0043167"	13	"GO:0043167"	3.48148606012211	6071	"ion binding"	"ion binding"	0.93829203539823	0.377285714285714	0
+"GO:0016763"	14	"GO:0016763"	3.431798275933	49	"pentosyltransferase activity"	"pentosyltransferase activity"	0.945867256637168	0.5792	0
+"GO:0051015"	9	"GO:0003779"	3.431798275933	208	"actin filament binding"	"actin binding"	0.946274336283186	0.426	0.92
+"GO:0016705"	2	"GO:0016725"	3.4089353929735	179	"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen"	"oxidoreductase activity, acting on CH or CH2 groups"	0.936955752212389	0.4808	0.533
+"GO:0005216"	1	"GO:0005219"	3.32790214206428	443	"monoatomic ion channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.723221238938053	0.255333333333333	0.629
+"GO:0005496"	15	"GO:0005496"	3.30102999566398	102	"steroid binding"	"steroid binding"	0.97012389380531	0.6165	0
+"GO:0022836"	1	"GO:0005219"	3.29242982390206	326	"gated channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.738805309734513	0.297261904761905	0.672
+"GO:0022839"	1	"GO:0005219"	3.29242982390206	325	"monoatomic ion gated channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.725477876106195	0.261404761904762	0.672
+"GO:0015081"	1	"GO:0005219"	3.16115090926274	157	"sodium ion transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.75146017699115	0.331309523809524	0.586
+"GO:0022890"	1	"GO:0005219"	3.16115090926274	564	"inorganic cation transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.74724778761062	0.31997619047619	0.614
+"GO:0005262"	1	"GO:0005219"	3.14266750356873	128	"calcium channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.738654867256637	0.296857142857143	0.784
+"GO:0017171"	3	"GO:0008235"	3.13667713987954	196	"serine hydrolase activity"	"metalloexopeptidase activity"	0.926362831858407	0.505666666666667	0.403
+"GO:0004175"	3	"GO:0008235"	3.11918640771921	389	"endopeptidase activity"	"metalloexopeptidase activity"	0.906159292035398	0.367916666666667	0.679
+"GO:0015318"	1	"GO:0005219"	3.09691001300806	688	"inorganic molecular entity transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.745088495575221	0.314166666666667	0.586
+"GO:0005516"	16	"GO:0005516"	3.06048074738138	204	"calmodulin binding"	"calmodulin binding"	0.969946902654867	1	0
+"GO:0022803"	1	"GO:0005219"	3.05551732784983	504	"passive transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.735681415929204	0.288857142857143	0.616
+"GO:0008236"	3	"GO:0008235"	3.03151705144606	192	"serine-type peptidase activity"	"metalloexopeptidase activity"	0.907061946902655	0.356666666666667	0.633
+"GO:0005261"	1	"GO:0005219"	3	333	"monoatomic cation channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.726300884955752	0.263619047619048	0.673
+"GO:0016491"	2	"GO:0016725"	2.98296666070122	731	"oxidoreductase activity"	"oxidoreductase activity, acting on CH or CH2 groups"	0.92712389380531	0.4286	0.601
+"GO:0008324"	1	"GO:0005219"	2.88941028970075	602	"monoatomic cation transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.731548672566372	0.277738095238095	0.604
+"GO:0015267"	1	"GO:0005219"	2.86966623150499	503	"channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.735681415929204	0.288857142857143	0.616
+"GO:0016787"	3	"GO:0008235"	2.84163750790475	2419	"hydrolase activity"	"metalloexopeptidase activity"	0.913150442477876	0.45525	0.526
+"GO:0046872"	13	"GO:0043167"	2.76447155309245	4299	"metal ion binding"	"ion binding"	0.937867256637168	0.345428571428571	0.817
+"GO:0043169"	13	"GO:0043167"	2.75202673363819	4390	"cation binding"	"ion binding"	0.937778761061947	0.345714285714286	0.822
+"GO:0015075"	1	"GO:0005219"	2.71669877129645	724	"monoatomic ion transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.730840707964602	0.275833333333333	0.572
+"GO:0015291"	1	"GO:0005219"	2.70553377383841	286	"secondary active transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.769265486725664	0.379214285714286	0.424
+"GO:0005178"	17	"GO:0005178"	2.68193666503724	154	"integrin binding"	"integrin binding"	0.945035398230089	0.6375	0
+"GO:0042562"	6	"GO:0017046"	2.67985371388895	85	"hormone binding"	"peptide hormone binding"	0.978230088495575	0.5185	0.963
+"GO:0022843"	1	"GO:0005219"	2.60906489289662	153	"voltage-gated monoatomic cation channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.742283185840708	0.306619047619048	0.629
+"GO:0036094"	18	"GO:0036094"	2.57348873863542	2550	"small molecule binding"	"small molecule binding"	0.960805309734513	0.653	0
+"GO:0022857"	1	"GO:0005219"	2.57348873863542	1122	"transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.741185840707965	0.303666666666667	0.487
+"GO:0019899"	7	"GO:0002020"	2.56383735295924	2095	"enzyme binding"	"protease binding"	0.925495575221239	0.35525	0.673
+"GO:0015085"	1	"GO:0005219"	2.52432881167557	146	"calcium ion transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.750504424778761	0.328738095238095	0.761
+"GO:0005126"	10	"GO:0005164"	2.51427857351842	273	"cytokine receptor binding"	"tumor necrosis factor receptor binding"	0.946212389380531	0.40425	0.789
+"GO:0046914"	13	"GO:0043167"	2.45222529461218	1107	"transition metal ion binding"	"ion binding"	0.947088495575221	0.442571428571429	0.652
+"GO:0008509"	1	"GO:0005219"	2.43770713554353	141	"monoatomic anion transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.77716814159292	0.40047619047619	0.498
+"GO:0044325"	19	"GO:0044325"	2.36451625318509	133	"transmembrane transporter binding"	"transmembrane transporter binding"	0.970884955752212	1	0
+"GO:0005539"	20	"GO:0005539"	2.33913452199613	240	"glycosaminoglycan binding"	"glycosaminoglycan binding"	0.967884955752212	0.476	0
+"GO:0022853"	1	"GO:0005219"	2.26921772433361	244	"active monoatomic ion transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.750079646017699	0.327595238095238	0.52
+"GO:0016757"	14	"GO:0016763"	2.23807216157947	268	"glycosyltransferase activity"	"pentosyltransferase activity"	0.937823008849557	0.5368	0.845
+"GO:0004930"	4	"GO:0038023"	2.21395878975745	872	"G protein-coupled receptor activity"	"signaling receptor activity"	0.977407079646018	0.36175	0.839
+"GO:0022804"	1	"GO:0005219"	2.17587416608345	454	"active transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.761513274336283	0.358357142857143	0.439
+"GO:0022832"	1	"GO:0005219"	2.1536628878702	200	"voltage-gated channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.75324778761062	0.336119047619048	0.64
+"GO:0005244"	1	"GO:0005219"	2.1536628878702	200	"voltage-gated monoatomic ion channel activity"	"ryanodine-sensitive calcium-release channel activity"	0.740769911504425	0.302547619047619	0.64
+"GO:0005342"	1	"GO:0005219"	2.03857890593355	165	"organic acid transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.775150442477876	0.395047619047619	0.423
+"GO:0046943"	1	"GO:0005219"	2.03857890593355	164	"carboxylic acid transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.772610619469027	0.388214285714286	0.422
+"GO:0015103"	1	"GO:0005219"	2.02826040911222	153	"inorganic anion transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.783132743362832	0.41652380952381	0.521
+"GO:0061134"	21	"GO:0061134"	2.02502800570193	228	"peptidase regulator activity"	"peptidase regulator activity"	1	1	0
+"GO:0004713"	14	"GO:0016763"	2.02502800570193	138	"protein tyrosine kinase activity"	"pentosyltransferase activity"	0.930026548672566	0.641	0.397
+"GO:0097367"	20	"GO:0005539"	2.01818139282934	2262	"carbohydrate derivative binding"	"glycosaminoglycan binding"	0.960362831858407	0.371	0.727
+"GO:0005524"	20	"GO:0005539"	1.9931062920521	1472	"ATP binding"	"glycosaminoglycan binding"	0.905380530973451	0.36425	0.682
+"GO:0042802"	22	"GO:0042802"	1.91399629438162	2029	"identical protein binding"	"identical protein binding"	0.962300884955752	1	0
+"GO:0015171"	1	"GO:0005219"	1.90448195767685	85	"amino acid transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.780743362831858	0.410095238095238	0.411
+"GO:0008289"	15	"GO:0005496"	1.81389162018679	841	"lipid binding"	"steroid binding"	0.976159292035398	0.6165	0.767
+"GO:0005509"	13	"GO:0043167"	1.80966830182971	708	"calcium ion binding"	"ion binding"	0.949513274336283	0.468571428571429	0.613
+"GO:0005215"	1	"GO:0005219"	1.7680209731685	1235	"transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.746469026548673	0.317880952380952	0.475
+"GO:0019903"	7	"GO:0002020"	1.73683753503778	142	"protein phosphatase binding"	"protease binding"	0.938991150442478	0.440375	0.518
+"GO:0016755"	14	"GO:0016763"	1.73471037413917	494	"aminoacyltransferase activity"	"pentosyltransferase activity"	0.936469026548673	0.5234	0.434
+"GO:0019902"	7	"GO:0002020"	1.68613277963085	189	"phosphatase binding"	"protease binding"	0.937522123893805	0.427875	0.531
+"GO:0008514"	1	"GO:0005219"	1.6252516539899	242	"organic anion transmembrane transporter activity"	"ryanodine-sensitive calcium-release channel activity"	0.773008849557522	0.389285714285714	0.432
+"GO:0030246"	23	"GO:0030246"	1.62196567754267	273	"carbohydrate binding"	"carbohydrate binding"	0.985061946902655	1	0
+"GO:1901681"	24	"GO:1901681"	1.56495235866004	275	"sulfur compound binding"	"sulfur compound binding"	0.985132743362832	1	0
+"GO:0005102"	10	"GO:0005164"	1.53417118464256	1509	"signaling receptor binding"	"tumor necrosis factor receptor binding"	0.942946902654867	0.51175	0.577
+"GO:0008092"	9	"GO:0003779"	1.52709734819634	991	"cytoskeletal protein binding"	"actin binding"	0.951628318584071	0.442	0.872
+"GO:0035639"	13	"GO:0043167"	1.52316837148774	1818	"purine ribonucleoside triphosphate binding"	"ion binding"	0.929867256637168	0.436142857142857	0.7
+"GO:0044389"	7	"GO:0002020"	1.5066813917679	327	"ubiquitin-like protein ligase binding"	"protease binding"	0.935238938053097	0.411375	0.554
+"GO:0043177"	18	"GO:0036094"	1.44891613481422	207	"organic acid binding"	"small molecule binding"	0.969017699115044	0.653	0.694
+"GO:0043168"	13	"GO:0043167"	1.43062609038495	2421	"anion binding"	"ion binding"	0.94029203539823	0.406285714285714	0.755
+"GO:0004842"	14	"GO:0016763"	1.40549695617991	448	"ubiquitin-protein transferase activity"	"pentosyltransferase activity"	0.919946902654867	0.5252	0.428
+"GO:0044877"	17	"GO:0005178"	1.35144484433733	1760	"protein-containing complex binding"	"integrin binding"	0.969353982300885	0.6375	0.725
+"GO:0032559"	20	"GO:0005539"	1.32771737521108	1533	"adenyl ribonucleotide binding"	"glycosaminoglycan binding"	0.936230088495575	0.36075	0.687
+"GO:0031625"	7	"GO:0002020"	1.30644891440409	308	"ubiquitin protein ligase binding"	"protease binding"	0.935610619469027	0.41425	0.551

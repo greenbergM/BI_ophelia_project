@@ -1,0 +1,188 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0015318"	1	"GO:0015318"	13.9208187539524	688	"inorganic molecular entity transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.769903743315508	0.3544375	0
+"GO:0008236"	2	"GO:0008236"	13.1870866433571	192	"serine-type peptidase activity"	"serine-type peptidase activity"	0.912106951871658	0.389058823529412	0
+"GO:0015075"	1	"GO:0015318"	13.0315170514461	724	"monoatomic ion transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.753320855614973	0.310484375	0.776
+"GO:0017171"	2	"GO:0008236"	13.0177287669604	196	"serine hydrolase activity"	"serine-type peptidase activity"	0.923770053475936	0.518117647058824	0.994
+"GO:0008324"	1	"GO:0015318"	12.1549019599857	602	"monoatomic cation transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.754732620320856	0.313828125	0.75
+"GO:0022890"	1	"GO:0015318"	11.5850266520292	564	"inorganic cation transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.772625668449198	0.36178125	0.949
+"GO:0038023"	3	"GO:0038023"	11.537602002101	1533	"signaling receptor activity"	"signaling receptor activity"	0.947989304812834	0.346357142857143	0
+"GO:0060089"	3	"GO:0038023"	11.2076083105017	1533	"molecular transducer activity"	"signaling receptor activity"	0.947989304812834	0.346357142857143	0.961
+"GO:1901702"	1	"GO:0015318"	11.0087739243075	587	"salt transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.775331550802139	0.369953125	0.752
+"GO:0031014"	4	"GO:0031014"	10.5850266520292	4	"troponin T binding"	"troponin T binding"	0.975187165775401	0.594142857142857	0
+"GO:0030172"	4	"GO:0031014"	10.5850266520292	3	"troponin C binding"	"troponin T binding"	0.974877005347594	0.589142857142857	0.393
+"GO:0005230"	1	"GO:0015318"	9.92081875395237	74	"extracellular ligand-gated monoatomic ion channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.768267379679144	0.36621875	0.597
+"GO:0005231"	1	"GO:0015318"	9.82390874094432	37	"excitatory extracellular ligand-gated monoatomic ion channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.786524064171123	0.416015625	0.536
+"GO:0022857"	1	"GO:0015318"	9.69897000433602	1122	"transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.764459893048128	0.34065625	0.849
+"GO:0022836"	1	"GO:0015318"	9.55284196865778	326	"gated channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.76220320855615	0.343875	0.694
+"GO:0022839"	1	"GO:0015318"	9.55284196865778	325	"monoatomic ion gated channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.749582887700535	0.307	0.694
+"GO:0048306"	5	"GO:0048306"	9.33724216831843	79	"calcium-dependent protein binding"	"calcium-dependent protein binding"	0.984775401069519	1	0
+"GO:0004252"	2	"GO:0008236"	9.31875876262441	174	"serine-type endopeptidase activity"	"serine-type peptidase activity"	0.911930481283422	0.379058823529412	0.972
+"GO:0022835"	3	"GO:0038023"	9.29242982390206	61	"transmitter-gated channel activity"	"signaling receptor activity"	0.745636363636364	0.342214285714286	0.66
+"GO:0022824"	3	"GO:0038023"	9.29242982390206	61	"transmitter-gated monoatomic ion channel activity"	"signaling receptor activity"	0.732620320855615	0.342214285714286	0.66
+"GO:0046873"	1	"GO:0015318"	9.18708664335714	441	"metal ion transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.754807486631016	0.31328125	0.928
+"GO:0030594"	3	"GO:0038023"	8.88605664769316	99	"neurotransmitter receptor activity"	"signaling receptor activity"	0.94524064171123	0.330071428571429	0.691
+"GO:0015081"	1	"GO:0015318"	8.72124639904717	157	"sodium ion transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.772802139037433	0.363140625	0.819
+"GO:0005509"	6	"GO:0005509"	8.65757731917779	708	"calcium ion binding"	"calcium ion binding"	0.966299465240642	0.489571428571429	0
+"GO:0003779"	4	"GO:0031014"	8.49485002168009	438	"actin binding"	"troponin T binding"	0.964090909090909	0.419285714285714	0.52
+"GO:0008233"	2	"GO:0008236"	8.42021640338319	602	"peptidase activity"	"serine-type peptidase activity"	0.903673796791444	0.353294117647059	0.817
+"GO:0008509"	1	"GO:0015318"	8.32790214206428	141	"monoatomic anion transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.78720320855615	0.404625	0.622
+"GO:0022803"	1	"GO:0015318"	8.27572413039921	504	"passive transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.759700534759358	0.333671875	0.74
+"GO:0015267"	1	"GO:0015318"	8.25963731050576	503	"channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.759711229946524	0.333703125	0.74
+"GO:0005216"	1	"GO:0015318"	8.18708664335714	443	"monoatomic ion channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.747711229946524	0.29896875	0.729
+"GO:0008238"	2	"GO:0008236"	8.17392519729917	102	"exopeptidase activity"	"serine-type peptidase activity"	0.913957219251337	0.399588235294118	0.679
+"GO:0043167"	6	"GO:0005509"	8.00436480540245	6071	"ion binding"	"calcium ion binding"	0.960326203208556	0.432	0.613
+"GO:0005215"	1	"GO:0015318"	7.88605664769316	1235	"transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.769262032085561	0.35403125	0.832
+"GO:0022834"	1	"GO:0015318"	7.85387196432176	147	"ligand-gated channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.769823529411765	0.369671875	0.64
+"GO:0098960"	3	"GO:0038023"	7.85387196432176	72	"postsynaptic neurotransmitter receptor activity"	"signaling receptor activity"	0.946459893048128	0.350428571428571	0.641
+"GO:0015276"	1	"GO:0015318"	7.85387196432176	146	"ligand-gated monoatomic ion channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.758016042780749	0.335171875	0.64
+"GO:0015108"	1	"GO:0015318"	7.74472749489669	120	"chloride transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.783032085561497	0.39203125	0.78
+"GO:1904315"	3	"GO:0038023"	7.55284196865778	55	"transmitter-gated monoatomic ion channel activity involved in regulation of postsynaptic membrane potential"	"signaling receptor activity"	0.745871657754011	0.357928571428571	0.613
+"GO:0099529"	3	"GO:0038023"	7.42021640338319	57	"neurotransmitter receptor activity involved in regulation of postsynaptic membrane potential"	"signaling receptor activity"	0.947454545454545	0.366	0.615
+"GO:0016491"	7	"GO:0016491"	7.24412514432751	731	"oxidoreductase activity"	"oxidoreductase activity"	0.898732620320856	0.365944444444444	0
+"GO:0004888"	3	"GO:0038023"	7.18045606445813	1311	"transmembrane signaling receptor activity"	"signaling receptor activity"	0.948262032085561	0.349214285714286	0.931
+"GO:0015370"	1	"GO:0015318"	7.01322826573375	80	"solute:sodium symporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.766245989304813	0.34271875	0.77
+"GO:0051015"	4	"GO:0031014"	6.85387196432176	208	"actin filament binding"	"troponin T binding"	0.963572192513369	0.446857142857143	0.494
+"GO:0005254"	1	"GO:0015318"	6.65757731917779	82	"chloride channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.77720320855615	0.379296875	0.743
+"GO:0005283"	1	"GO:0015318"	6.50863830616573	23	"amino acid:sodium symporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.773657754010695	0.36209375	0.686
+"GO:0015103"	1	"GO:0015318"	6.48148606012211	153	"inorganic anion transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.799839572192513	0.43828125	0.809
+"GO:0004181"	2	"GO:0008236"	6.45593195564972	31	"metallocarboxypeptidase activity"	"serine-type peptidase activity"	0.920053475935829	0.425235294117647	0.594
+"GO:0004497"	7	"GO:0016491"	6.2839966563652	104	"monooxygenase activity"	"oxidoreductase activity"	0.909	0.406055555555556	0.788
+"GO:0005343"	1	"GO:0015318"	6.2518119729938	37	"organic acid:sodium symporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.770101604278075	0.352390625	0.711
+"GO:0005416"	1	"GO:0015318"	6.22184874961636	29	"amino acid:monoatomic cation symporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.778946524064171	0.37784375	0.544
+"GO:0022853"	1	"GO:0015318"	6.22184874961636	244	"active monoatomic ion transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.763572192513369	0.33696875	0.665
+"GO:0038187"	3	"GO:0038023"	6.21467016498923	34	"pattern recognition receptor activity"	"signaling receptor activity"	0.964160427807487	0.550714285714286	0.578
+"GO:0005253"	1	"GO:0015318"	6.18045606445813	95	"monoatomic anion channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.781288770053476	0.391609375	0.59
+"GO:0015291"	1	"GO:0015318"	6.14874165128092	286	"secondary active transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.780727272727273	0.383609375	0.674
+"GO:0022848"	1	"GO:0015318"	6.08092190762393	23	"acetylcholine-gated monoatomic cation-selective channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.753197860962567	0.426890625	0.512
+"GO:0004180"	2	"GO:0008236"	6.06550154875643	47	"carboxypeptidase activity"	"serine-type peptidase activity"	0.920192513368984	0.438823529411765	0.619
+"GO:0005539"	8	"GO:0005539"	5.79588001734407	240	"glycosaminoglycan binding"	"glycosaminoglycan binding"	0.979106951871658	0.4535	0
+"GO:0030246"	9	"GO:0030246"	5.38721614328026	273	"carbohydrate binding"	"carbohydrate binding"	0.981224598930481	0.427	0
+"GO:0015293"	1	"GO:0015318"	5.3767507096021	149	"symporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.789465240641711	0.40778125	0.626
+"GO:0015294"	1	"GO:0015318"	5.3767507096021	117	"solute:monoatomic cation symporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.768566844919786	0.35009375	0.619
+"GO:0005261"	1	"GO:0015318"	5.26760624017703	333	"monoatomic cation channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.751743315508021	0.309421875	0.694
+"GO:0005342"	1	"GO:0015318"	5.16115090926274	165	"organic acid transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.788823529411765	0.407171875	0.671
+"GO:0046943"	1	"GO:0015318"	5.16115090926274	164	"carboxylic acid transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.787331550802139	0.402765625	0.669
+"GO:0008514"	1	"GO:0015318"	5.15490195998574	242	"organic anion transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.786957219251337	0.402390625	0.694
+"GO:0099095"	1	"GO:0015318"	5.11350927482752	19	"ligand-gated monoatomic anion channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.797598930481283	0.443203125	0.499
+"GO:0036094"	10	"GO:0036094"	5.0268721464003	2550	"small molecule binding"	"small molecule binding"	0.959459893048128	0.442875	0
+"GO:0008237"	2	"GO:0008236"	4.88605664769316	185	"metallopeptidase activity"	"serine-type peptidase activity"	0.911625668449198	0.388	0.708
+"GO:0043169"	6	"GO:0005509"	4.88605664769316	4390	"cation binding"	"calcium ion binding"	0.959438502673797	0.382714285714286	0.717
+"GO:0008235"	2	"GO:0008236"	4.82390874094432	68	"metalloexopeptidase activity"	"serine-type peptidase activity"	0.916192513368984	0.401352941176471	0.633
+"GO:0004175"	2	"GO:0008236"	4.79588001734407	389	"endopeptidase activity"	"serine-type peptidase activity"	0.907994652406417	0.371588235294118	0.756
+"GO:0099094"	1	"GO:0015318"	4.72124639904717	110	"ligand-gated monoatomic cation channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.76568449197861	0.355546875	0.601
+"GO:0008307"	11	"GO:0008307"	4.60205999132796	42	"structural constituent of muscle"	"structural constituent of muscle"	0.993005347593583	0.564	0
+"GO:0022804"	1	"GO:0015318"	4.42021640338319	454	"active transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.77479679144385	0.36734375	0.712
+"GO:0046872"	6	"GO:0005509"	4.4089353929735	4299	"metal ion binding"	"calcium ion binding"	0.959475935828877	0.381285714285714	0.724
+"GO:0005326"	1	"GO:0015318"	4.34678748622466	21	"neurotransmitter transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.845187165775401	0.566828125	0.5
+"GO:0030247"	9	"GO:0030246"	4.27572413039921	25	"polysaccharide binding"	"carbohydrate binding"	0.983620320855615	0.473666666666667	0.825
+"GO:0005237"	1	"GO:0015318"	4.20065945054642	14	"inhibitory extracellular ligand-gated monoatomic ion channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.809946524064171	0.480484375	0.472
+"GO:0004930"	3	"GO:0038023"	4.16115090926274	872	"G protein-coupled receptor activity"	"signaling receptor activity"	0.950224598930481	0.372928571428571	0.839
+"GO:0016209"	12	"GO:0016209"	4.10237290870956	83	"antioxidant activity"	"antioxidant activity"	0.990053475935829	1	0
+"GO:0016933"	1	"GO:0015318"	4	4	"extracellularly glycine-gated ion channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.818807486631016	0.504515625	0.442
+"GO:0008395"	7	"GO:0016491"	3.95860731484178	26	"steroid hydroxylase activity"	"oxidoreductase activity"	0.920390374331551	0.4755	0.66
+"GO:0043168"	6	"GO:0005509"	3.92081875395238	2421	"anion binding"	"calcium ion binding"	0.961133689839572	0.491714285714286	0.54
+"GO:0019825"	10	"GO:0036094"	3.82390874094432	39	"oxygen binding"	"small molecule binding"	0.971299465240642	0.59525	0.573
+"GO:0005501"	13	"GO:0005501"	3.82390874094432	38	"retinoid binding"	"retinoid binding"	0.968893048128342	0.377	0
+"GO:0016298"	2	"GO:0008236"	3.72124639904717	128	"lipase activity"	"serine-type peptidase activity"	0.926085561497326	0.546882352941176	0.45
+"GO:0005506"	6	"GO:0005509"	3.72124639904717	153	"iron ion binding"	"calcium ion binding"	0.969491978609626	0.527714285714286	0.506
+"GO:0015171"	1	"GO:0015318"	3.72124639904717	85	"amino acid transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.793588235294118	0.420234375	0.641
+"GO:0005267"	1	"GO:0015318"	3.67778070526608	122	"potassium channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.764561497326203	0.3440625	0.796
+"GO:0031406"	10	"GO:0036094"	3.65757731917779	195	"carboxylic acid binding"	"small molecule binding"	0.944342245989305	0.431625	0.69
+"GO:0015079"	1	"GO:0015318"	3.61978875828839	157	"potassium ion transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.775663101604278	0.371453125	0.816
+"GO:0004364"	14	"GO:0004364"	3.60205999132796	27	"glutathione transferase activity"	"glutathione transferase activity"	0.951032085561497	0.537	0
+"GO:0005178"	15	"GO:0005178"	3.53760200210104	154	"integrin binding"	"integrin binding"	0.974807486631016	0.561	0
+"GO:0004667"	16	"GO:0004667"	3.52287874528034	3	"prostaglandin-D synthase activity"	"prostaglandin-D synthase activity"	0.958475935828877	0.6365	0
+"GO:0019840"	13	"GO:0005501"	3.44369749923271	38	"isoprenoid binding"	"retinoid binding"	0.968893048128342	0.377	0.999
+"GO:0051287"	10	"GO:0036094"	3.3767507096021	53	"NAD binding"	"small molecule binding"	0.969475935828877	0.585625	0.592
+"GO:0016787"	2	"GO:0008236"	3.31875876262441	2419	"hydrolase activity"	"serine-type peptidase activity"	0.906716577540107	0.450529411764706	0.602
+"GO:0043177"	10	"GO:0036094"	3.31875876262441	207	"organic acid binding"	"small molecule binding"	0.96048128342246	0.43075	0.694
+"GO:0016705"	7	"GO:0016491"	3.26760624017703	179	"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen"	"oxidoreductase activity"	0.911454545454545	0.438944444444444	0.808
+"GO:0030343"	7	"GO:0016491"	3.20760831050175	3	"vitamin D3 25-hydroxylase activity"	"oxidoreductase activity"	0.930893048128342	0.532222222222222	0.529
+"GO:0070643"	7	"GO:0016491"	3.20760831050175	4	"vitamin D 25-hydroxylase activity"	"oxidoreductase activity"	0.929491978609626	0.523333333333333	0.542
+"GO:0005328"	1	"GO:0015318"	3.11350927482752	1	"neurotransmitter:sodium symporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.83744385026738	0.542859375	0.493
+"GO:0004602"	7	"GO:0016491"	3.11350927482752	22	"glutathione peroxidase activity"	"oxidoreductase activity"	0.919475935828877	0.4955	0.609
+"GO:0017153"	1	"GO:0015318"	3.11350927482752	3	"sodium:dicarboxylate symporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.807732620320856	0.45825	0.566
+"GO:0004745"	7	"GO:0016491"	3.03151705144606	20	"NAD-retinol dehydrogenase activity"	"oxidoreductase activity"	0.925342245989305	0.510444444444444	0.617
+"GO:0008201"	8	"GO:0005539"	2.99139982823808	174	"heparin binding"	"glycosaminoglycan binding"	0.974812834224599	0.4655	0.961
+"GO:0008528"	3	"GO:0038023"	2.99139982823808	125	"G protein-coupled peptide receptor activity"	"signaling receptor activity"	0.953374331550802	0.41	0.676
+"GO:0003823"	17	"GO:0003823"	2.95860731484178	178	"antigen binding"	"antigen binding"	0.990385026737968	1	0
+"GO:0042805"	4	"GO:0031014"	2.88272870434424	36	"actinin binding"	"troponin T binding"	0.968582887700535	0.464571428571429	0.443
+"GO:0008188"	3	"GO:0038023"	2.81815641205523	47	"neuropeptide receptor activity"	"signaling receptor activity"	0.957053475935829	0.456714285714286	0.605
+"GO:0016620"	7	"GO:0016491"	2.8153085691824	39	"oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor"	"oxidoreductase activity"	0.919609625668449	0.476888888888889	0.684
+"GO:0005200"	11	"GO:0008307"	2.76700388960785	112	"structural constituent of cytoskeleton"	"structural constituent of muscle"	0.99268449197861	0.544	0.595
+"GO:0001653"	3	"GO:0038023"	2.7619538968712	132	"peptide receptor activity"	"signaling receptor activity"	0.954497326203209	0.425142857142857	0.681
+"GO:0140303"	1	"GO:0015318"	2.74232142513082	42	"intramembrane lipid transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.836502673796792	0.5425	0.538
+"GO:0042562"	18	"GO:0042562"	2.64397414280688	85	"hormone binding"	"hormone binding"	0.985957219251337	0.5185	0
+"GO:0008289"	13	"GO:0005501"	2.63264407897398	841	"lipid binding"	"retinoid binding"	0.966877005347594	0.388428571428571	0.718
+"GO:0051393"	4	"GO:0031014"	2.60032627851896	28	"alpha-actinin binding"	"troponin T binding"	0.969245989304813	0.474285714285714	0.434
+"GO:0005249"	1	"GO:0015318"	2.60032627851896	99	"voltage-gated potassium channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.763449197860962	0.343375	0.767
+"GO:0004198"	2	"GO:0008236"	2.59687947882418	16	"calcium-dependent cysteine-type endopeptidase activity"	"serine-type peptidase activity"	0.929625668449198	0.517823529411765	0.568
+"GO:0016765"	14	"GO:0004364"	2.56703070912559	60	"transferase activity, transferring alkyl or aryl (other than methyl) groups"	"glutathione transferase activity"	0.947374331550802	0.537	0.926
+"GO:0099106"	19	"GO:0099106"	2.5543957967264	134	"ion channel regulator activity"	"ion channel regulator activity"	0.97779679144385	0.406857142857143	0
+"GO:0031996"	20	"GO:0031996"	2.54060751224077	10	"thioesterase binding"	"thioesterase binding"	0.986844919786096	1	0
+"GO:0005507"	6	"GO:0005509"	2.53017798402184	63	"copper ion binding"	"calcium ion binding"	0.971272727272727	0.556142857142857	0.473
+"GO:0004601"	7	"GO:0016491"	2.51004152057517	55	"peroxidase activity"	"oxidoreductase activity"	0.912385026737968	0.454055555555556	0.679
+"GO:0015179"	1	"GO:0015318"	2.4907974776689	66	"L-amino acid transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.803513368983957	0.4481875	0.603
+"GO:0032794"	21	"GO:0032794"	2.45967052520913	12	"GTPase activating protein binding"	"GTPase activating protein binding"	0.986764705882353	1	0
+"GO:0005544"	13	"GO:0005501"	2.45967052520913	53	"calcium-dependent phospholipid binding"	"retinoid binding"	0.972983957219251	0.486	0.564
+"GO:0016684"	7	"GO:0016491"	2.45842075605342	57	"oxidoreductase activity, acting on peroxide as acceptor"	"oxidoreductase activity"	0.917144385026738	0.451611111111111	0.685
+"GO:0017046"	18	"GO:0042562"	2.44249279809434	49	"peptide hormone binding"	"hormone binding"	0.977716577540107	0.5185	0.963
+"GO:0042165"	22	"GO:0042165"	2.4294570601181	17	"neurotransmitter binding"	"neurotransmitter binding"	0.992053475935829	1	0
+"GO:0005496"	13	"GO:0005501"	2.3840499483436	102	"steroid binding"	"retinoid binding"	0.970850267379679	0.472857142857143	0.595
+"GO:0022832"	1	"GO:0015318"	2.36754270781528	200	"voltage-gated channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.774834224598931	0.37853125	0.642
+"GO:0005244"	1	"GO:0015318"	2.36754270781528	200	"voltage-gated monoatomic ion channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.762973262032086	0.343875	0.642
+"GO:0042625"	1	"GO:0015318"	2.36653154442041	24	"ATPase-coupled ion transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.831368983957219	0.526234375	0.493
+"GO:0016247"	19	"GO:0099106"	2.32605800136591	139	"channel regulator activity"	"ion channel regulator activity"	0.977764705882353	0.406	0.994
+"GO:0005310"	1	"GO:0015318"	2.30803489723264	31	"dicarboxylic acid transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.822636363636364	0.5019375	0.532
+"GO:0016645"	7	"GO:0016491"	2.27654432796481	28	"oxidoreductase activity, acting on the CH-NH group of donors"	"oxidoreductase activity"	0.92303743315508	0.508166666666667	0.672
+"GO:0016614"	7	"GO:0016491"	2.26841123481326	135	"oxidoreductase activity, acting on CH-OH group of donors"	"oxidoreductase activity"	0.909064171122995	0.411222222222222	0.801
+"GO:0001972"	13	"GO:0005501"	2.18508681872493	20	"retinoic acid binding"	"retinoid binding"	0.93275935828877	0.416571428571429	0.923
+"GO:0015297"	1	"GO:0015318"	2.16557929631847	135	"antiporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.799149732620321	0.435484375	0.605
+"GO:0022843"	1	"GO:0015318"	2.16557929631847	153	"voltage-gated monoatomic cation channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.763989304812834	0.34603125	0.624
+"GO:0016903"	7	"GO:0016491"	2.12842706445412	48	"oxidoreductase activity, acting on the aldehyde or oxo group of donors"	"oxidoreductase activity"	0.91844385026738	0.469944444444444	0.697
+"GO:0016616"	7	"GO:0016491"	2.12609840213554	125	"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor"	"oxidoreductase activity"	0.909459893048128	0.413388888888889	0.795
+"GO:0019829"	1	"GO:0015318"	2.11918640771921	52	"ATPase-coupled monoatomic cation transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.789385026737968	0.40884375	0.558
+"GO:0016829"	23	"GO:0016829"	2.07417242537526	196	"lyase activity"	"lyase activity"	0.936304812834225	0.34925	0
+"GO:0009975"	24	"GO:0009975"	1.98716277529483	22	"cyclase activity"	"cyclase activity"	0.954529411764706	1	0
+"GO:0043394"	8	"GO:0005539"	1.95039438740503	36	"proteoglycan binding"	"glycosaminoglycan binding"	0.977609625668449	0.6045	0.498
+"GO:0016849"	23	"GO:0016829"	1.93516778026143	23	"phosphorus-oxygen lyase activity"	"lyase activity"	0.945016042780749	0.41	0.842
+"GO:0050997"	25	"GO:0050997"	1.89688074645429	54	"quaternary ammonium group binding"	"quaternary ammonium group binding"	0.991256684491979	1	0
+"GO:0008092"	4	"GO:0031014"	1.84193920606339	991	"cytoskeletal protein binding"	"troponin T binding"	0.962294117647059	0.410571428571429	0.557
+"GO:0001786"	13	"GO:0005501"	1.84073366890651	62	"phosphatidylserine binding"	"retinoid binding"	0.973085561497326	0.487857142857143	0.562
+"GO:0016831"	23	"GO:0016829"	1.83713700667807	34	"carboxy-lyase activity"	"lyase activity"	0.944181818181818	0.4035	0.856
+"GO:0019842"	10	"GO:0036094"	1.83297820420974	150	"vitamin binding"	"small molecule binding"	0.967903743315508	0.549125	0.669
+"GO:0003824"	26	"GO:0003824"	1.82188674768537	5582	"catalytic activity"	"catalytic activity"	0.921550802139037	1	0
+"GO:0033218"	27	"GO:0033218"	1.8153085691824	405	"amide binding"	"amide binding"	0.980411764705882	0.5135	0
+"GO:0004222"	2	"GO:0008236"	1.81191562628506	110	"metalloendopeptidase activity"	"serine-type peptidase activity"	0.913882352941176	0.394588235294118	0.67
+"GO:0008028"	1	"GO:0015318"	1.7972393126068	62	"monocarboxylic acid transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.815251336898396	0.4813125	0.564
+"GO:1901681"	28	"GO:1901681"	1.78015361397564	275	"sulfur compound binding"	"sulfur compound binding"	0.985219251336898	1	0
+"GO:0048029"	9	"GO:0030246"	1.77520804350732	75	"monosaccharide binding"	"carbohydrate binding"	0.961058823529412	0.450666666666667	0.894
+"GO:0004553"	2	"GO:0008236"	1.73612732313478	93	"hydrolase activity, hydrolyzing O-glycosyl compounds"	"serine-type peptidase activity"	0.930967914438503	0.590117647058824	0.436
+"GO:0005198"	11	"GO:0008307"	1.708409174342	820	"structural molecule activity"	"structural constituent of muscle"	0.992053475935829	0.504666666666667	0.713
+"GO:0042803"	29	"GO:0042803"	1.67162039656126	709	"protein homodimerization activity"	"protein homodimerization activity"	0.978219251336898	0.581	0
+"GO:0052890"	7	"GO:0016491"	1.60783085051026	12	"oxidoreductase activity, acting on the CH-CH group of donors, with a flavin as acceptor"	"oxidoreductase activity"	0.924631016042781	0.505277777777778	0.623
+"GO:0003995"	7	"GO:0016491"	1.60783085051026	12	"acyl-CoA dehydrogenase activity"	"oxidoreductase activity"	0.924631016042781	0.505277777777778	0.623
+"GO:0030546"	19	"GO:0099106"	1.57073233356683	512	"signaling receptor activator activity"	"ion channel regulator activity"	0.979133689839572	0.442571428571429	0.586
+"GO:0042887"	1	"GO:0015318"	1.56591036158211	47	"amide transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.829470588235294	0.52309375	0.572
+"GO:0005548"	1	"GO:0015318"	1.56447414850135	64	"phospholipid transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.831614973262032	0.528796875	0.557
+"GO:0097110"	30	"GO:0097110"	1.54378584464201	68	"scaffold protein binding"	"scaffold protein binding"	0.985021390374332	1	0
+"GO:0043178"	10	"GO:0036094"	1.536704390038	89	"alcohol binding"	"small molecule binding"	0.968855614973262	0.56175	0.641
+"GO:0097367"	8	"GO:0005539"	1.52753610339301	2262	"carbohydrate derivative binding"	"glycosaminoglycan binding"	0.977641711229946	0.4945	0.727
+"GO:0015459"	19	"GO:0099106"	1.52491019661099	48	"potassium channel regulator activity"	"ion channel regulator activity"	0.979213903743316	0.444714285714286	0.92
+"GO:0016725"	7	"GO:0016491"	1.50962007999682	11	"oxidoreductase activity, acting on CH or CH2 groups"	"oxidoreductase activity"	0.929604278074866	0.548111111111111	0.601
+"GO:0015662"	1	"GO:0015318"	1.45742352373947	23	"P-type ion transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.817550802139037	0.48721875	0.537
+"GO:0140358"	1	"GO:0015318"	1.45742352373947	23	"P-type transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.817379679144385	0.486734375	0.538
+"GO:0004620"	2	"GO:0008236"	1.4467239538629	104	"phospholipase activity"	"serine-type peptidase activity"	0.927914438502674	0.557823529411765	0.438
+"GO:0005217"	1	"GO:0015318"	1.44623830161	30	"intracellular ligand-gated monoatomic ion channel activity"	"inorganic molecular entity transmembrane transporter activity"	0.790352941176471	0.424265625	0.539
+"GO:0061134"	19	"GO:0099106"	1.42922363120525	228	"peptidase regulator activity"	"ion channel regulator activity"	0.979823529411765	0.461	0.537
+"GO:0042802"	29	"GO:0042803"	1.4246966665776	2029	"identical protein binding"	"protein homodimerization activity"	0.976112299465241	0.581	0.838
+"GO:0016836"	23	"GO:0016829"	1.41839163396794	61	"hydro-lyase activity"	"lyase activity"	0.941385026737968	0.38225	0.905
+"GO:0050839"	15	"GO:0005178"	1.39859193946532	557	"cell adhesion molecule binding"	"integrin binding"	0.977935828877005	0.561	0.878
+"GO:0004866"	19	"GO:0099106"	1.39685562737982	168	"endopeptidase inhibitor activity"	"ion channel regulator activity"	0.980213903743316	0.471428571428571	0.524
+"GO:0016597"	10	"GO:0036094"	1.37965570024551	51	"amino acid binding"	"small molecule binding"	0.950080213903743	0.481	0.598
+"GO:0016810"	2	"GO:0008236"	1.34630520468492	136	"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds"	"serine-type peptidase activity"	0.928941176470588	0.578117647058824	0.45
+"GO:0001664"	31	"GO:0001664"	1.33498217458753	291	"G protein-coupled receptor binding"	"G protein-coupled receptor binding"	0.979877005347594	1	0
+"GO:0030545"	19	"GO:0099106"	1.33142773081544	561	"signaling receptor regulator activity"	"ion channel regulator activity"	0.979016042780749	0.439428571428571	0.591
+"GO:0046915"	1	"GO:0015318"	1.3253225321268	42	"transition metal ion transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.800374331550802	0.441203125	0.723
+"GO:0042277"	27	"GO:0033218"	1.31184724440843	325	"peptide binding"	"amide binding"	0.980465240641711	0.5135	0.973
+"GO:0016853"	16	"GO:0004667"	1.31042478424006	158	"isomerase activity"	"prostaglandin-D synthase activity"	0.944839572192513	0.6365	0.727

@@ -1,0 +1,3 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0008168"	1	"GO:0008168"	2.12551818230053	215	"methyltransferase activity"	"methyltransferase activity"	0.584333333333333	0.506	0
+"GO:0016874"	2	"GO:0016874"	1.63657606708282	166	"ligase activity"	"ligase activity"	0.827	1	0

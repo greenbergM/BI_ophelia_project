@@ -1,0 +1,32 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0015318"	1	"GO:0015318"	13.9208187539524	688	"inorganic molecular entity transmembrane transporter activity"	"inorganic molecular entity transmembrane transporter activity"	0.769903743315508	0.3544375	0
+"GO:0008236"	2	"GO:0008236"	13.1870866433571	192	"serine-type peptidase activity"	"serine-type peptidase activity"	0.912106951871658	0.389058823529412	0
+"GO:0038023"	3	"GO:0038023"	11.537602002101	1533	"signaling receptor activity"	"signaling receptor activity"	0.947989304812834	0.346357142857143	0
+"GO:0031014"	4	"GO:0031014"	10.5850266520292	4	"troponin T binding"	"troponin T binding"	0.975187165775401	0.594142857142857	0
+"GO:0048306"	5	"GO:0048306"	9.33724216831843	79	"calcium-dependent protein binding"	"calcium-dependent protein binding"	0.984775401069519	1	0
+"GO:0005509"	6	"GO:0005509"	8.65757731917779	708	"calcium ion binding"	"calcium ion binding"	0.966299465240642	0.489571428571429	0
+"GO:0016491"	7	"GO:0016491"	7.24412514432751	731	"oxidoreductase activity"	"oxidoreductase activity"	0.898732620320856	0.365944444444444	0
+"GO:0005539"	8	"GO:0005539"	5.79588001734407	240	"glycosaminoglycan binding"	"glycosaminoglycan binding"	0.979106951871658	0.4535	0
+"GO:0030246"	9	"GO:0030246"	5.38721614328026	273	"carbohydrate binding"	"carbohydrate binding"	0.981224598930481	0.427	0
+"GO:0036094"	10	"GO:0036094"	5.0268721464003	2550	"small molecule binding"	"small molecule binding"	0.959459893048128	0.442875	0
+"GO:0008307"	11	"GO:0008307"	4.60205999132796	42	"structural constituent of muscle"	"structural constituent of muscle"	0.993005347593583	0.564	0
+"GO:0016209"	12	"GO:0016209"	4.10237290870956	83	"antioxidant activity"	"antioxidant activity"	0.990053475935829	1	0
+"GO:0005501"	13	"GO:0005501"	3.82390874094432	38	"retinoid binding"	"retinoid binding"	0.968893048128342	0.377	0
+"GO:0004364"	14	"GO:0004364"	3.60205999132796	27	"glutathione transferase activity"	"glutathione transferase activity"	0.951032085561497	0.537	0
+"GO:0005178"	15	"GO:0005178"	3.53760200210104	154	"integrin binding"	"integrin binding"	0.974807486631016	0.561	0
+"GO:0004667"	16	"GO:0004667"	3.52287874528034	3	"prostaglandin-D synthase activity"	"prostaglandin-D synthase activity"	0.958475935828877	0.6365	0
+"GO:0003823"	17	"GO:0003823"	2.95860731484178	178	"antigen binding"	"antigen binding"	0.990385026737968	1	0
+"GO:0042562"	18	"GO:0042562"	2.64397414280688	85	"hormone binding"	"hormone binding"	0.985957219251337	0.5185	0
+"GO:0099106"	19	"GO:0099106"	2.5543957967264	134	"ion channel regulator activity"	"ion channel regulator activity"	0.97779679144385	0.406857142857143	0
+"GO:0031996"	20	"GO:0031996"	2.54060751224077	10	"thioesterase binding"	"thioesterase binding"	0.986844919786096	1	0
+"GO:0032794"	21	"GO:0032794"	2.45967052520913	12	"GTPase activating protein binding"	"GTPase activating protein binding"	0.986764705882353	1	0
+"GO:0042165"	22	"GO:0042165"	2.4294570601181	17	"neurotransmitter binding"	"neurotransmitter binding"	0.992053475935829	1	0
+"GO:0016829"	23	"GO:0016829"	2.07417242537526	196	"lyase activity"	"lyase activity"	0.936304812834225	0.34925	0
+"GO:0009975"	24	"GO:0009975"	1.98716277529483	22	"cyclase activity"	"cyclase activity"	0.954529411764706	1	0
+"GO:0050997"	25	"GO:0050997"	1.89688074645429	54	"quaternary ammonium group binding"	"quaternary ammonium group binding"	0.991256684491979	1	0
+"GO:0003824"	26	"GO:0003824"	1.82188674768537	5582	"catalytic activity"	"catalytic activity"	0.921550802139037	1	0
+"GO:0033218"	27	"GO:0033218"	1.8153085691824	405	"amide binding"	"amide binding"	0.980411764705882	0.5135	0
+"GO:1901681"	28	"GO:1901681"	1.78015361397564	275	"sulfur compound binding"	"sulfur compound binding"	0.985219251336898	1	0
+"GO:0042803"	29	"GO:0042803"	1.67162039656126	709	"protein homodimerization activity"	"protein homodimerization activity"	0.978219251336898	0.581	0
+"GO:0097110"	30	"GO:0097110"	1.54378584464201	68	"scaffold protein binding"	"scaffold protein binding"	0.985021390374332	1	0
+"GO:0001664"	31	"GO:0001664"	1.33498217458753	291	"G protein-coupled receptor binding"	"G protein-coupled receptor binding"	0.979877005347594	1	0
