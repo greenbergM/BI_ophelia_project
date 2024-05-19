@@ -7,8 +7,8 @@ WORKING_DIR="/home/embr/oli/RESULTS/data/01_assembly"
 cd ${WORKING_DIR}
 
 # Data
-SPADES="/home/embr/oli/RESULTS/data/01_assembly/oli_spades.95.fa" # Clustered spades assmbly
-TRINITY="/home/embr/oli/RESULTS/data/01_assembly/oli_trinity.95.fa"  # Clustered trinity assmbly
+SPADES="/home/embr/oli/RESULTS/data/01_assembly/oli_spades95.fa" # Clustered spades assmbly
+TRINITY="/home/embr/oli/RESULTS/data/01_assembly/oli_trinity95.fa"  # Clustered trinity assmbly
 
 MERGED_READS_1="/home/embr/oli/reads_kraken2/M1.fq.gz" # Merged decontaminated forward reads
 MERGED_READS_2="/home/embr/oli/reads_kraken2/M2.fq.gz" # Merged decontaminated reverse reads
