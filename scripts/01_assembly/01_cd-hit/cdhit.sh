@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# Script for clustering simillar transcripts (95% identity) in transcriptome assembly.
+
 SPADES_ASSEMBLY="/Volumes/oli/RESULTS/data/01_assembly/spades/oli_spades.fasta"
 TRINITY_ASSEMBLY="/Volumes/oli/RESULTS/data/01_assembly/trinity/oli_trinity.fasta"
 
+# Environment
 source activate cdhit
 
 cd $(dirname "$SPADES_ASSEMBLY")

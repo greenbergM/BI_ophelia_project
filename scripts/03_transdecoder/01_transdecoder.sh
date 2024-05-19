@@ -1,16 +1,25 @@
 #!/bin/bash
 
+# Script for identifying cds in transcriptome assembly
+
+# Working directory
 WORKING_DIR="/Volumes/oli/RESULTS/data/03_transdecoder"
 cd ${WORKING_DIR}
 
-ASSEMBLY="/Volumes/oli/RESULTS/data/01_assembly/oli_assembly.fasta"
-PFAM_DB="/Volumes/oli/databases/pfam_database/Pfam-A.hmm"
-UNIREF_DB="/Volumes/oli/databases/uniref90_database/uniref90/uniref90.dmnd"
+# Tools
+LongOrfs="~/tools/TransDecoder-TransDecoder-v5.7.1/TransDecoder.LongOrfs"
+Predict="~/tools/TransDecoder-TransDecoder-v5.7.1/TransDecoder.Predict"
 
+# Data
+ASSEMBLY="/Volumes/oli/RESULTS/data/01_assembly/oli_assembly.fasta"
+PFAM_DB="/Volumes/oli/databases/pfam_database/Pfam-A.hmm" # Pfam database
+UNIREF_DB="/Volumes/oli/databases/uniref90_database/uniref90/uniref90.dmnd" # Uniref90 database
+
+# Environment
 source activate transdecoder
 
 
-~/tools/TransDecoder-TransDecoder-v5.7.1/TransDecoder.LongOrfs -t $ASSEMBLY -m 100
+${LongOrfs} -t $ASSEMBLY -m 100
 ASSEMBLY_NAME=$(basename "$ASSEMBLY")
 
 mkdir hmmer_search
@@ -25,7 +34,7 @@ diamond blastp --db $UNIREF_DB --query $WORKING_DIR/$ASSEMBLY_NAME.transdecoder_
 cd ..
 
 
-~/tools/TransDecoder-TransDecoder-v5.7.1/TransDecoder.Predict -t $ASSEMBLY --retain_pfam_hits ./hmmer_search/longORFs_vs_pfama.domtblout --retain_blastp_hits ./uniref90_search/longORFs_vs_uniref90.diamond.outfmt6 --single_best_only
+${Predict} -t $ASSEMBLY --retain_pfam_hits ./hmmer_search/longORFs_vs_pfama.domtblout --retain_blastp_hits ./uniref90_search/longORFs_vs_uniref90.diamond.outfmt6 --single_best_only
 
 wait
 echo "JOB DONE ヽ(・∀・)ﾉ"
