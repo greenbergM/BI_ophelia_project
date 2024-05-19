@@ -3,8 +3,8 @@ title: "Deseq2_Oli_analysis"
 author: "Гринберг Михаил"
 date: "2024-03-28"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -124,6 +124,8 @@ dds_vs_egg <- DESeq(dds)
 
 ### Plots
 
+Volcano plots for all stages vs egg comparisons:
+
 ```{r deseq2_results_vs_egg}
 contrast1 = c("condition", "blastula","egg")
 contrast2 = c("condition", "gastrula","egg")
@@ -147,7 +149,7 @@ volcano_plot(gastr_vs_egg$all, contrast2)
 volcano_plot(troch_vs_egg$all, contrast3)
 volcano_plot(adult_vs_egg$all, contrast4)
 ```
-Venn diagramm for all DEGs:
+Venn diagram for all DEGs in stages vs egg comparisons:
 
 ```{r venn_all_vs_egg}
 blast_vs_egg_sig <- blast_vs_egg$all[blast_vs_egg$all$DEGs != "Non-DEG", ]
@@ -170,7 +172,7 @@ ggVennDiagram(list(blast_vs_egg_sig_names, gastr_vs_egg_sig_names, troch_vs_egg_
   scale_fill_gradient(low="blue",high = "red")
 ```
 
-UpsetR plots for upregulated and downregulated DEGs:
+UpsetR plots for upregulated and downregulated DEGs in stages vs egg comparisons:
 
 ```{r upsetr_all_vs_egg, message=FALSE, warning=FALSE}
 upregulated <- list(blastula = blast_vs_egg$up$gene, 
@@ -292,15 +294,22 @@ pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0,
          main = "Ectodermal placode morphogenesis (GO:0071697)")
 ```
 
+
 ```{r dds_vs_blast, message=FALSE, warning=FALSE}
 dds$condition = relevel(dds$condition, "blastula")
 dds_vs_blast <- DESeq(dds)
-```
 
-```{r deseq_results_gastr_vs_blast, message=FALSE, warning=FALSE}
 contrast = c("condition", "gastrula","blastula")
+
+troch_vs_blast <- results(dds_vs_blast, contrast = contrast)
+troch_vs_blast <- classify_DEGs(troch_vs_blast)
+
+adult_vs_blast <- results(dds_vs_blast, contrast = contrast)
+adult_vs_blast <- classify_DEGs(adult_vs_blast)
+
 gastr_vs_blast <- results(dds_vs_blast, contrast = contrast)
 gastr_vs_blast <- classify_DEGs(gastr_vs_blast)
+
 volcano_plot(gastr_vs_blast$all, contrast)
 ```
 
@@ -421,6 +430,10 @@ dds$condition = relevel(dds$condition, "gastrula")
 dds_vs_gastr <- DESeq(dds)
 
 contrast = c("condition", "trochophore","gastrula")
+
+adult_vs_gastr <- results(dds_vs_gastr, contrast = contrast)
+adult_vs_gastr <- classify_DEGs(adult_vs_gastr)
+
 troch_vs_gastr <- results(dds_vs_gastr, contrast = contrast)
 troch_vs_gastr <- classify_DEGs(troch_vs_gastr)
 
@@ -550,6 +563,40 @@ plot_GO_hist(adult_vs_troch_down_allTerms, "adult vs troch: Upregulated")
 
 ### Signaling pathway and transcription factor genes analysis 
 
+Heatmap with all DEGs from all comparsions:
+```{r}
+all_DEGs_list <- list(blast_vs_egg$up,
+                 blast_vs_egg$down,
+                 gastr_vs_egg$up,
+                 gastr_vs_egg$down,
+                 gastr_vs_blast$up,
+                 gastr_vs_blast$down,
+                 troch_vs_egg$up,
+                 troch_vs_egg$down,
+                 troch_vs_blast$up,
+                 troch_vs_blast$down,
+                 troch_vs_gastr$up,
+                 troch_vs_gastr$down,
+                 adult_vs_egg$up,
+                 adult_vs_egg$down,
+                 adult_vs_blast$up,
+                 adult_vs_blast$down,
+                 adult_vs_gastr$up,
+                 adult_vs_gastr$down,
+                 adult_vs_troch$up,
+                 adult_vs_troch$down
+)
+
+
+all_DEGs <- get_genes_by_name(name="|",datasets = all_DEGs_list)
+zscore <- make_zscore_matrix(all_DEGs, normalized_counts)
+
+pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
+         treeheight_row = 90,
+         main = "all_DEGs", show_rownames = FALSE)
+
+```
+List of DEGs from all comparsions that are involved in signaling pathways or/and are transcription factors involved in development:
 ```{r all_degs}
 blast_vs_egg_up_interesting <- get_important_development_genes(blast_vs_egg$up)
 blast_vs_egg_down_interesting <- get_important_development_genes(blast_vs_egg$down)
@@ -563,11 +610,20 @@ gastr_vs_blast_down_interesting <- get_important_development_genes(gastr_vs_blas
 troch_vs_egg_up_interesting <- get_important_development_genes(troch_vs_egg$up)
 troch_vs_egg_down_interesting <- get_important_development_genes(troch_vs_egg$down)
 
+troch_vs_blast_up_interesting <- get_important_development_genes(troch_vs_blast$up)
+troch_vs_blast_down_interesting <- get_important_development_genes(troch_vs_blast$down)
+
 troch_vs_gastr_up_interesting <- get_important_development_genes(troch_vs_gastr$up)
 troch_vs_gastr_down_interesting <- get_important_development_genes(troch_vs_gastr$down)
 
 adult_vs_egg_up_interesting <- get_important_development_genes(adult_vs_egg$up)
 adult_vs_egg_down_interesting <- get_important_development_genes(adult_vs_egg$down)
+
+adult_vs_blast_up_interesting <- get_important_development_genes(adult_vs_blast$up)
+adult_vs_blast_down_interesting <- get_important_development_genes(adult_vs_blast$down)
+
+adult_vs_gastr_up_interesting <- get_important_development_genes(adult_vs_gastr$up)
+adult_vs_gastr_down_interesting <- get_important_development_genes(adult_vs_gastr$down)
 
 adult_vs_troch_up_interesting <- get_important_development_genes(adult_vs_troch$up)
 adult_vs_troch_down_interesting <- get_important_development_genes(adult_vs_troch$down)
@@ -576,21 +632,28 @@ adult_vs_troch_down_interesting <- get_important_development_genes(adult_vs_troc
 interesting_DEGs_list <- list(
   blast_vs_egg_up_interesting,
   blast_vs_egg_down_interesting,
-  gastr_vs_blast_up_interesting,
-  gastr_vs_blast_down_interesting,
-  troch_vs_gastr_up_interesting,
-  troch_vs_gastr_down_interesting,
-  adult_vs_troch_up_interesting,
-  adult_vs_troch_down_interesting,
   gastr_vs_egg_up_interesting,
   gastr_vs_egg_down_interesting,
+  gastr_vs_blast_up_interesting,
+  gastr_vs_blast_down_interesting,
   troch_vs_egg_up_interesting,
   troch_vs_egg_down_interesting,
+  troch_vs_blast_up_interesting,
+  troch_vs_blast_down_interesting,
+  troch_vs_gastr_up_interesting,
+  troch_vs_gastr_down_interesting,
   adult_vs_egg_up_interesting,
-  adult_vs_egg_down_interesting
+  adult_vs_egg_down_interesting,
+  adult_vs_blast_up_interesting,
+  adult_vs_blast_down_interesting,
+  adult_vs_gastr_up_interesting,
+  adult_vs_gastr_down_interesting,
+  adult_vs_troch_up_interesting,
+  adult_vs_troch_down_interesting
 ) 
 ```
 
+Some important genes involved in body patterning:
 ```{r hox_anterior}
 body_pattern <- get_genes_by_name(name = 'HOX|cad|GATA|FOXA|EVX|OTX|foxq|SIX3|TWIST|FOXC|Foxd|SOX2|otx1', datasets = interesting_DEGs_list)
 zscore <- make_zscore_matrix(body_pattern, normalized_counts)
@@ -655,31 +718,4 @@ zscore <- make_zscore_matrix(fgf_pathway, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
          main = "FGF/MAPK pathway")
-```
-
-```{r}
-all_DEGs_list <- list(blast_vs_egg$up,
-                 blast_vs_egg$down,
-                 gastr_vs_blast$up,
-                 gastr_vs_blast$down,
-                 gastr_vs_egg$up,
-                 gastr_vs_egg$down,
-                 troch_vs_gastr$up,
-                 troch_vs_gastr$down,
-                 troch_vs_egg$up,
-                 troch_vs_egg$down,
-                 adult_vs_troch$up,
-                 adult_vs_troch$down,
-                 adult_vs_egg$up,
-                 adult_vs_egg$down
-)
-
-
-all_DEGs <- get_genes_by_name(name="|",datasets = all_DEGs_list)
-zscore <- make_zscore_matrix(all_DEGs, normalized_counts)
-
-pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
-         treeheight_row = 90,
-         main = "all_DEGs", show_rownames = FALSE)
-
 ```
