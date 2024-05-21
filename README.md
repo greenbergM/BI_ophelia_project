@@ -18,5 +18,5 @@ One of the most intriguing and poorly understood issues of spiralian embryogenes
 ## Results
 
 ## References
-[^1]: Chou, H. J., Donnard, E., Gustafsson, H. T., Garber, M., & Rando, O. J. (2017). Transcriptome-wide Analysis of Roles for tRNA Modifications in Translational Regulation. Molecular cell, 68(5), 978–992.e4. https://doi.org/10.1016/j.molcel.2017.11.002
+[^1]: Chou, H. C., Pruitt, M. M., Bastin, B. R., & Schneider, S. Q. (2016). A transcriptional blueprint for a spiral-cleaving embryo. BMC genomics, 17, 552. https://doi.org/10.1186/s12864-016-2860-6
 [^2]: Martín-Zamora, F. M., Liang, Y., Guynes, K., Carrillo-Baltodano, A. M., Davies, B. E., Donnellan, R. D., Tan, Y., Moggioli, G., Seudre, O., Tran, M., Mortimer, K., Luscombe, N. M., Hejnol, A., Marlétaz, F., & Martín-Durán, J. M. (2023). Annelid functional genomics reveal the origins of bilaterian life cycles. Nature, 615(7950), 105–110. https://doi.org/10.1038/s41586-022-05636-7
