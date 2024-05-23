@@ -256,6 +256,7 @@ blast_vs_egg_down_allTerms <- blast_vs_egg_down_GO$GO_subset
 treemapPlot(blast_vs_egg_down_rTerms, size = "score")
 plot_GO_hist(blast_vs_egg_down_rTerms_uniq, "blastula vs egg: Downregulated")
 ```
+
 ### Gastrula analysis
 
 ```{r gastr_vs_egg_up_GO, message=FALSE, warning=FALSE}
@@ -324,6 +325,13 @@ gastr_vs_blast_up_allTerms <- gastr_vs_blast_up_GO$GO_subset
 ```{r gastr_vs_blast_up_plot}
 treemapPlot(gastr_vs_blast_up_rTerms, size = "score")
 plot_GO_hist(gastr_vs_blast_up_rTerms_uniq, "gastrula vs blastula: Upregulated")
+```
+```{r GO:0023019_heatmap2}
+signal_transduction2 <- get_term_genes(gastr_vs_blast$up, "GO:0023019", oli_geneID2GO, annotation)
+zscore <- make_zscore_matrix(signal_transduction, normalized_counts)
+pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
+         treeheight_row = 30,
+         main = "Signal transduction (GO:0023019)")
 ```
 
 ```{r GO:0048505_heatmap}
@@ -510,8 +518,8 @@ treemapPlot(adult_vs_egg_up_rTerms, size = "score")
 plot_GO_hist(adult_vs_egg_up_allTerms, "adult vs egg: Upregulated")
 ```
 
-```{r GO:0023019_heatmap2}
-signal_transduction <- get_term_genes(adult_vs_egg$up, "GO:0023019", oli_geneID2GO, annotation)
+```{r GO:0023019_heatmap3}
+signal_transduction3 <- get_term_genes(adult_vs_egg$up, "GO:0023019", oli_geneID2GO, annotation)
 zscore <- make_zscore_matrix(signal_transduction, normalized_counts)
 pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0, 
          treeheight_row = 30,
@@ -596,7 +604,9 @@ pheatmap(zscore, cluster_cols = FALSE, fontsize = 8, angle_col = 0,
          main = "all_DEGs", show_rownames = FALSE)
 
 ```
+
 List of DEGs from all comparsions that are involved in signaling pathways or/and are transcription factors involved in development:
+
 ```{r all_degs}
 blast_vs_egg_up_interesting <- get_important_development_genes(blast_vs_egg$up)
 blast_vs_egg_down_interesting <- get_important_development_genes(blast_vs_egg$down)
