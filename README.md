@@ -96,7 +96,7 @@ Volcano-plot for blastula vs egg comparison
 :----------------------------------:
 ![](pics/blast_vs_egg_volcano.png)
 
-GeneOntology (GO) terms enrichment analysis for biological processes was performed for upregulated blastula genes (compared to unfertilised egg) using the [topGO](https://bioconductor.org/packages/release/bioc/html/topGO.html) (v.2.56.0) R package. Only processes with more than 10 genes were considered. Similar GO terms were grouped using the [rrvgo](https://bioconductor.org/packages/release/bioc/html/rrvgo.html) (v.1.16.0) R package. The same package was used to visualize the results in treemap plots. Treemap plots are used to visualise all significant biological processes based on their enrichment score (-log10(Fisher's test p-values)), while a custom GO term histogram shows the top 25 terms based on their fold enrichment. 
+GeneOntology (GO) terms enrichment analysis for biological processes was performed for upregulated blastula genes (compared to unfertilised egg) using the [topGO](https://bioconductor.org/packages/release/bioc/html/topGO.html) (v.2.56.0) R package. Only processes with more than 10 genes were considered. Similar GO terms were grouped using the [rrvgo](https://bioconductor.org/packages/release/bioc/html/rrvgo.html) (v.1.16.0) R package. The same package was used to visualize the results in treemap plots. Treemap plots are used to visualise all significant biological processes based on their enrichment score (-log10(Fisher's test p-values)), while a custom GO terms histogram shows the top 25 terms based on their fold enrichment. 
 
 Upregulated processes include those related to the regulation of mRNA transcription and cell differentiation, mainly associated with the development of the nervous system.
 
@@ -104,11 +104,27 @@ Treemap plot
 :------------------------:
 ![](pics/treemanplot_blast_vs_egg.png) 
 
-GO term histogram    
+GO terms histogram    
 :------------------------------:
 ![](pics/GO_hist_blast_vs_egg.png)
 
 A similar approach was used to compare other stages. To gain a deeper understanding of specific biological processes, the genes involved in some of these processes were examined. This approach, combined with the filtering of DEGs in different comparisons based on specific interesting GO terms involved in development (see [DESeq2_utils](/scripts/07_GO_deseq2/deseq2_utils.R) script and [terms](/scripts/07_GO_deseq2/interesting_terms.txt) used for filtering), allowed the identification of many differentially expressed developmental regulators and components of signalling pathways (see [notebook](/data/07_GO_deseq2/) for full analysis). 
+
+Summary heatmaps:
+
+Differentially expressed developmental regulators 
+:------------------------------:
+![](pics/body_patterning.png)
+
+**Differentially expressed components of signaling pathways:**
+|        TGF-beta         |       WNT        |
+|:------------------------:|:------------------------------:|
+| ![TGF-beta](pics/tgf.png) | ![WNT](pics/wnt.png) |
+
+Expression of various cell differentiation genes begins at the blastula stage. The expression of anterior neural markers (such as Foxq2, Otx2, Sox2) starts earliest, whereas the peak expression of endodermal (such as GATA4, GATA6) and mesodermal markers (Foxd3, TWIST) occurs later. At the same stage, many TGF-beta and WNT components are expressed.
+
+
+
 
 ## References
 [^1]: Henry J. Q. (2014). Spiralian model systems. The International journal of developmental biology, 58(6-8), 389–401. https://doi.org/10.1387/ijdb.140127jh
