@@ -47,7 +47,23 @@ All reads were decontaminated using [Kraken2](https://github.com/DerrickWood/kra
 **Kraken2 report visualisation for merged reads:**
 ![](pics/kraken2_results.png) 
 
-For *de novo* transcriptome assembly were used 2 different assemblers: [rnaSPAdes](https://cab.spbu.ru/software/rnaspades/) (v.3.15.5) and [Trinity](https://github.com/trinityrnaseq/trinityrnaseq/wiki)(v.2.15.1). **Both decontamination and assembly were performed using public [Galaxy](https://github.com/galaxyproject) servers**.
+For *de novo* transcriptome assembly were used 2 different assemblers: [rnaSPAdes](https://cab.spbu.ru/software/rnaspades/) (v.3.15.5) and [Trinity](https://github.com/trinityrnaseq/)(v.2.15.1). **Both decontamination and assembly were performed using public [Galaxy](https://github.com/galaxyproject) servers**.
+
+Contigs in each assembly were clustered using [CDHIT-est](https://github.com/weizhongli/cdhit) (v.4.8.1). Contigs with 95% identity were clustered (both strands compared). Contig filtration was performed using [Transrate] (https://hibberdlab.com/transrate/) (v.1.0.3). Assemblies were checked for completeness using [BUSCO](https://gitlab.com/ezlab/busco) (v.5.4.4) against the Metazoa odb10. 
+
+Final assembly was picked based on Transrate scores and BUSCO results:
+
+![](data/01_assembly/busco/busco_figure.png) 
+
+| Transrate Metric | rnaSPAdes assembly after clusterization | Trinity assembly after clusterisation |
+|---|---|---|
+| Contigs before filtering | 536541 | 531911 |
+| Contigs after filtering | 532844 | 399678 |
+| Percent of well-assembled contigs | **99,3%** | 75,1% |
+| Percent of fragments mapped | **95,8%** | 93,1% |
+| GC-content | 42,2% | 42% |
+| Assembly score | 0.65593 | 0.34640 |
+| Optimal score | **0.67449** | 0.54867  |
 
 ## References
 [^1]: Henry J. Q. (2014). Spiralian model systems. The International journal of developmental biology, 58(6-8), 389–401. https://doi.org/10.1387/ijdb.140127jh
