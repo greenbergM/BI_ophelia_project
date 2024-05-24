@@ -74,7 +74,7 @@ BUSCO results for different assemblies
 
 Protein-coding contigs were identified with [Transdecoder](https://github.com/TransDecoder/) (v.5.7.1). Expression levels for transcripts were quantified with [Salmon](https://github.com/COMBINE-lab/salmon) (v.1.10.2). For subsequent analysis we used only contigs contigs with with protein length >= 100 aminoacids and expression level at least 1 TPM in any sample. Annotation was performed with [eggNOG-mapper](http://eggnog-mapper.embl.de/) online tool. 
 
-### Differential expression analysis
+### Differential expression analysis and GeneOntology enrichment analysis
 
 Differential expression analysis was carried out with [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) R package (v.1.44.0). Salmon pseudocounts were imported into DESeq2 with [tximport](https://bioconductor.org/packages/release/bioc/html/tximport.html) (v.1.32.0). 
 
@@ -84,16 +84,24 @@ Stage clustering prior to DEA revealed that replicates for each stage were simil
 |:------------------------:|:------------------------------:|
 | ![](pics/PCA_stages.png) | ![](pics/distances_stages.png) |
 
-Differential expression analysis revealed an upregulation of gene expression at the blastula stage, suggesting the onset of zygotic expression at this stage. The most upregulated genes compared to egg stage included Otx2 (anterior neural marker) and Sox2 (neural marker).
+Differential expression analysis revealed an upregulation of gene expression at the blastula stage, suggesting the onset of zygotic expression at this stage:
 
 Whole workflow overview
 :-------------------------:
 ![](pics/all_DEGs_heatmap.png) 
 
+The most upregulated genes compared to egg stage included Otx2 (anterior neural marker) and Sox2 (neural marker):
 
 Volcano-plot for blastula vs egg comparison
 :----------------------------------:
 ![](pics/blast_vs_egg_volcano.png)
+
+GeneOntology (GO) terms enrichment analysis for biological processes was performed for upregulated blastula genes (compared to unfertilised egg) using the [topGO](https://bioconductor.org/packages/release/bioc/html/topGO.html) (v.2.56.0) R package. Only processes with more than 10 genes were considered. Similar GO terms were grouped using the [rrvgo](https://bioconductor.org/packages/release/bioc/html/rrvgo.html) (v.1.16.0) R package. The same package was used to visualize the results in treemap charts.
+
+|         Treemap chart        |       GO terms histogram       |
+|:------------------------:|:------------------------------:|
+| ![]() | ![]() |
+
 
 ## References
 [^1]: Henry J. Q. (2014). Spiralian model systems. The International journal of developmental biology, 58(6-8), 389–401. https://doi.org/10.1387/ijdb.140127jh
