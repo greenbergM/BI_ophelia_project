@@ -62,36 +62,38 @@ BUSCO results for different assemblies
 :-------------------------:
 ![](pics/busco_results.pmg.png) 
 
-| Transrate Metric | rnaSPAdes assembly after clusterization | Trinity assembly after clusterisation |
-|---|---|---|
-| Contigs before filtering | 536541 | 531911 |
-| Contigs after filtering | 532844 | 399678 |
-| Percent of well-assembled contigs | **99,3%** | 75,1% |
-| Percent of fragments mapped | **95,8%** | 93,1% |
-| GC-content | 42,2% | 42% |
-| Assembly score | 0.65593 | 0.34640 |
-| Optimal score | **0.67449** | 0.54867  | there are my picture and table
+| Transrate Metric                  | rnaSPAdes assembly after clusterization | Trinity assembly after clusterisation |
+|-----------------------------------|-----------------------------------------|---------------------------------------|
+| Contigs before filtering          | 536541                                  | 531911                                |
+| Contigs after filtering           | 532844                                  | 399678                                |
+| Percent of well-assembled contigs | **99,3%**                               | 75,1%                                 |
+| Percent of fragments mapped       | **95,8%**                               | 93,1%                                 |
+| GC-content                        | 42,2%                                   | 42%                                   |
+| Assembly score                    | 0.65593                                 | 0.34640                               |
+| Optimal score                     | **0.67449**                             | 0.54867                               | there are my picture and table
 
 Protein-coding contigs were identified with [Transdecoder](https://github.com/TransDecoder/) (v.5.7.1). Expression levels for transcripts were quantified with [Salmon](https://github.com/COMBINE-lab/salmon) (v.1.10.2). For subsequent analysis we used only contigs contigs with with protein length >= 100 aminoacids and expression level at least 1 TPM in any sample. Annotation was performed with [eggNOG-mapper](http://eggnog-mapper.embl.de/) online tool. 
 
 ### Differential expression analysis
 
-Differential expression analysis was caried out with [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) R package (v.1.44.0). Salmon pseudocounts were imported into DESeq2 with [tximport](https://bioconductor.org/packages/release/bioc/html/tximport.html) (v.1.32.0). 
+Differential expression analysis was carried out with [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) R package (v.1.44.0). Salmon pseudocounts were imported into DESeq2 with [tximport](https://bioconductor.org/packages/release/bioc/html/tximport.html) (v.1.32.0). 
 
 Stage clustering prior to DEA revealed that replicates for each stage were similar. Comparison of stages showed that trochophore and adult stages were least similar to others:
 
-PCA-plot | Distances heatmap
-:-------------------------:|:-------------------------:
-![](pics/PCA_stages.png)   | ![](pics/distances_stages.png)
-
+|         PCA-plot         |       Distances heatmap        |
+|:------------------------:|:------------------------------:|
+| ![](pics/PCA_stages.png) | ![](pics/distances_stages.png) |
 
 Differential expression analysis revealed an upregulation of gene expression at the blastula stage, suggesting the onset of zygotic expression at this stage. The most upregulated genes compared to egg stage included Otx2 (anterior neural marker) and Sox2 (neural marker).
 
+Whole workflow overview
+:-------------------------:
+![](pics/all_DEGs_heatmap.png) 
 
-Heatmap for all DEGs in all comparisons | Volcano-plot for blastula vs egg
-:-------------------------:|:-------------------------:
-![](pics/all_DEGs_heatmap.png)   | ![](pics/blast_vs_egg_volcano.png)
 
+Volcano-plot for blastula vs egg comparison
+:----------------------------------:
+![](pics/blast_vs_egg_volcano.png)
 
 ## References
 [^1]: Henry J. Q. (2014). Spiralian model systems. The International journal of developmental biology, 58(6-8), 389–401. https://doi.org/10.1387/ijdb.140127jh
