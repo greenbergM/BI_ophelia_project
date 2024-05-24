@@ -127,6 +127,15 @@ Expression of various cell differentiation genes begins at the blastula stage. T
 
 Clustering of genes with similar temporal expression patterns was performed using [Clust](https://github.com/BaselAbujamous/clust) (v.1.18.1). 5 clusters were obtained using default parameters. For each cluster we performed GeneOntology (GO) terms enrichment analysis similar to that in [DEA](#differential-expression-analysis-and-geneontology-enrichment-analysis)
 
+Here are presented clusters with genes with early peak expression and their enriched **molecular functions**:
+
+Big early clusters 
+:------------------------------:
+![](pics/early_clusters.png)
+
+|        cluster 0         |      cluster 1        |
+|:------------------------:|:------------------------------:|
+| ![TGF-beta](pics/treemanplot_c0.png) | ![WNT](pics/treemanplot_c0.png) |
 
 ## References
 [^1]: Henry J. Q. (2014). Spiralian model systems. The International journal of developmental biology, 58(6-8), 389–401. https://doi.org/10.1387/ijdb.140127jh
