@@ -32,7 +32,7 @@ The data available at the start of the project were: paired reads (bulk RNA-seq 
 - 10 hpf - **32-cell blastula**
 - 24 hpf - **100+ cell gastrula**
 - 4 dpf - **trochophore larvae**
-- 3 years - **adult male**.
+- 3 years - **adult male**
 
 There were 3 biological replicates for each stage. 
 
