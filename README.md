@@ -125,6 +125,7 @@ Expression of various cell differentiation genes begins at the blastula stage. T
 
 ### Analysis of co-expressed gene clusters and GeneOntology enrichment analysis
 
+Clustering of genes with similar temporal expression patterns was performed using [Clust](https://github.com/BaselAbujamous/clust) (v.1.18.1). 5 clusters were obtained using default parameters. 
 
 ## References
 [^1]: Henry J. Q. (2014). Spiralian model systems. The International journal of developmental biology, 58(6-8), 389–401. https://doi.org/10.1387/ijdb.140127jh
