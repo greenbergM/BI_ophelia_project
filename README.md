@@ -90,7 +90,7 @@ Differential expression analysis revealed an upregulation of gene expression at 
 
 Heatmap for all DEGs in all comparisons | Volcano-plot for blastula vs egg
 :-------------------------:|:-------------------------:
-![]()   | ![]()
+![](pics/all_DEGs_heatmap.png)   | ![](pics/blast_vs_egg_volcano.png)
 
 
 ## References
