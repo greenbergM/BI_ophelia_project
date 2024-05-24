@@ -37,14 +37,16 @@ The data available at the start of the project were: paired reads (bulk RNA-seq 
 There were 3 biological replicates for each stage. 
 
 ## Workflow
-### Whole workflow overview:
+Whole workflow overview
+:-------------------------:
 ![](pics/workflow.png)
 
 ### Decontamination and assembly
 
 All reads were decontaminated using [Kraken2](https://github.com/DerrickWood/kraken2). The PlusPF (standard plus protozoa and fungi; 2022-09-04T165121Z) Kraken2 database was used for classification. Kraken2 reports visualisation performed with the online tool [Pavian](https://fbreitwieser.shinyapps.io/pavian/).
 
-**Kraken2 report visualisation for merged reads:**
+Kraken2 report visualisation for merged reads
+:-------------------------:
 ![](pics/kraken2_results.png) 
 
 For *de novo* transcriptome assembly were used 2 different assemblers: [rnaSPAdes](https://cab.spbu.ru/software/rnaspades/) (v.3.15.5) and [Trinity](https://github.com/trinityrnaseq/)(v.2.15.1). **Both decontamination and assembly were performed using public [Galaxy](https://github.com/galaxyproject) servers**.
@@ -56,6 +58,8 @@ Final assembly was picked based on Transrate scores and BUSCO results:
 *good_oli_<...> - assembly after clusterization and Transrate filtration*
 *Best assembly is highlighted with green frame*
 
+BUSCO results for different assemblies
+:-------------------------:
 ![](pics/busco_results.pmg.png) 
 
 | Transrate Metric | rnaSPAdes assembly after clusterization | Trinity assembly after clusterisation |
@@ -76,7 +80,11 @@ Differential expression analysis was caried out with [DESeq2](https://bioconduct
 
 Stage clustering prior to DEA revealed that replicates for each stage were similar. Comparison of stages showed that trochophore and adult stages were least similar to others.
 
-![](pics/) 
+PCA-plot | Distances heatmap
+:-------------------------:|:-------------------------:
+![](pics/PCA_stages.png)   | ![](pics/distances_stages.png)
+
+
 
 
 ## References
