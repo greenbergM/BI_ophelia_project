@@ -86,7 +86,7 @@ Stage clustering prior to DEA revealed that replicates for each stage were simil
 
 Differential expression analysis revealed an upregulation of gene expression at the blastula stage, suggesting the onset of zygotic expression at this stage:
 
-Whole workflow overview
+Heatmap of all DEGs
 :-------------------------:
 ![](pics/all_DEGs_heatmap.png) 
 
@@ -104,7 +104,7 @@ Upregulated processes include those related to the regulation of mRNA transcript
 |:------------------------:|:------------------------------:|
 | ![](pics/treemanplot_blast_vs_egg.png) | ![](pics/GO_hist_blast_vs_egg.png) |
 
-A similar approach was used for other stage comparisons. For a deeper understanding of specific biological processes, the genes in some of them were examined. This approach, combined with the filtering of DEGs in different comparisons based on specific interesting GO terms involved in development (see (DESeq2_utils)[/scripts/07_GO_deseq2/] script), allowed the identification of many differentially expressed developmental regulators and components of signalling pathways. 
+A similar approach was used for other stage comparisons. For a deeper understanding of specific biological processes, the genes in some of them were examined. This approach, combined with the filtering of DEGs in different comparisons based on specific interesting GO terms involved in development (see [DESeq2_utils](/scripts/07_GO_deseq2/deseq2_utils.R) script and [terms](/scripts/07_GO_deseq2/interesting_terms.txt) used for filtration ), allowed the identification of many differentially expressed developmental regulators and components of signalling pathways. 
 
 ## References
 [^1]: Henry J. Q. (2014). Spiralian model systems. The International journal of developmental biology, 58(6-8), 389–401. https://doi.org/10.1387/ijdb.140127jh
