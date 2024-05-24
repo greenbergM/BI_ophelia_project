@@ -22,7 +22,15 @@ One of the most intriguing and poorly understood aspects of Spiralian embryogene
   * Gene set enrichment analysis (GSEA) for clustered genes
 
 
-## Data and methods
+## Workflow
+
+**Data**
+*hpf - hours post fertilisation*
+*dpf - days post fertilisation*
+
+Bulk RNA-seq reads for 5 stages of *O. limacina* life cycle: 0 hpf - unfertilised egg, 10 hpf - 32 cell blastula, 24 hpf - 100+ cell gastrula, 4 dpf - trochophore larvae, 3 years - adult male.
+
+Whole workflow overview:
 ![](pics/workflow.png)
 
 ## Results
