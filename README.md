@@ -121,7 +121,7 @@ Differentially expressed developmental regulators
 |:------------------------:|:------------------------------:|
 | ![TGF-beta](pics/tgf.png) | ![WNT](pics/wnt.png) |
 
-Expression of various cell differentiation genes begins at the blastula stage. The expression of anterior neural markers (such as Foxq2, Otx2, Sox2) starts earliest, whereas the peak expression of endodermal (such as GATA4, GATA6) and mesodermal markers (Foxd3, TWIST) occurs later. At the same stage, many TGF-beta and WNT components are expressed.
+Expression of various cell differentiation genes begins at the blastula stage. The expression of anterior neural markers (such as Foxq2, Otx2, Sox2) starts earliest, whereas the peak expression of endodermal (such as GATA4, GATA6) and mesodermal markers (Foxd3, TWIST) occurs later. Many TGF-beta and WNT components are also expressed at the blastula stage.
 
 
 
