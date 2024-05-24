@@ -100,11 +100,15 @@ GeneOntology (GO) terms enrichment analysis for biological processes was perform
 
 Upregulated processes include those related to the regulation of mRNA transcription and cell differentiation, mainly associated with the development of the nervous system.
 
-|         Treemap plot        |       GO term histogram       |
-|:------------------------:|:------------------------------:|
-| ![](pics/treemanplot_blast_vs_egg.png) | ![](pics/GO_hist_blast_vs_egg.png) |
+Treemap plot   
+:------------------------:
+![](pics/treemanplot_blast_vs_egg.png) 
 
-A similar approach was used for other stage comparisons. For a deeper understanding of specific biological processes, the genes in some of them were examined. This approach, combined with the filtering of DEGs in different comparisons based on specific interesting GO terms involved in development (see [DESeq2_utils](/scripts/07_GO_deseq2/deseq2_utils.R) script and [terms](/scripts/07_GO_deseq2/interesting_terms.txt) used for filtration ), allowed the identification of many differentially expressed developmental regulators and components of signalling pathways. 
+GO term histogram    
+:------------------------------:
+![](pics/GO_hist_blast_vs_egg.png)
+
+A similar approach was used to compare other stages. To gain a deeper understanding of specific biological processes, the genes involved in some of these processes were examined. This approach, combined with the filtering of DEGs in different comparisons based on specific interesting GO terms involved in development (see [DESeq2_utils](/scripts/07_GO_deseq2/deseq2_utils.R) script and [terms](/scripts/07_GO_deseq2/interesting_terms.txt) used for filtering), allowed the identification of many differentially expressed developmental regulators and components of signalling pathways (see [notebook](/data/07_GO_deseq2/) for full analysis). 
 
 ## References
 [^1]: Henry J. Q. (2014). Spiralian model systems. The International journal of developmental biology, 58(6-8), 389–401. https://doi.org/10.1387/ijdb.140127jh
