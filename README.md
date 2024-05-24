@@ -78,13 +78,19 @@ Protein-coding contigs were identified with [Transdecoder](https://github.com/Tr
 
 Differential expression analysis was caried out with [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) R package (v.1.44.0). Salmon pseudocounts were imported into DESeq2 with [tximport](https://bioconductor.org/packages/release/bioc/html/tximport.html) (v.1.32.0). 
 
-Stage clustering prior to DEA revealed that replicates for each stage were similar. Comparison of stages showed that trochophore and adult stages were least similar to others.
+Stage clustering prior to DEA revealed that replicates for each stage were similar. Comparison of stages showed that trochophore and adult stages were least similar to others:
 
 PCA-plot | Distances heatmap
 :-------------------------:|:-------------------------:
 ![](pics/PCA_stages.png)   | ![](pics/distances_stages.png)
 
 
+Differential expression analysis revealed an upregulation of gene expression at the blastula stage, suggesting the onset of zygotic expression at this stage. The most upregulated genes compared to egg stage included Otx2 (anterior neural marker) and Sox2 (neural marker).
+
+
+Heatmap for all DEGs in all comparisons | Volcano-plot for blastula vs egg
+:-------------------------:|:-------------------------:
+![]()   | ![]()
 
 
 ## References
