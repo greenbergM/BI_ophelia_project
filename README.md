@@ -137,6 +137,9 @@ Big early clusters
 |:------------------------:|:------------------------------:|
 | ![TGF-beta](pics/treemanplot_c0.png) | ![WNT](pics/treemanplot_c0.png) |
 
+These early clusters are enriched with molecular functions involved in signal trunsduction (smad binding, beta-catenin binding, transcription factor binding, signaling
+receptor complex adaptor activity, transmembrane receptor protein kinase activity, hormone receptor binding, etc) and chromatine modiffications (histone binding, methylated histone binding, chromatin binding, histone methyltransferase activity, histone deacetylase activity, etc). 
+
 ## References
 [^1]: Henry J. Q. (2014). Spiralian model systems. The International journal of developmental biology, 58(6-8), 389–401. https://doi.org/10.1387/ijdb.140127jh
 [^2]: Lee, M. T., Bonneau, A. R., & Giraldez, A. J. (2014). Zygotic genome activation during the maternal-to-zygotic transition. Annual review of cell and developmental biology, 30, 581–613. https://doi.org/10.1146/annurev-cellbio-100913-013027
