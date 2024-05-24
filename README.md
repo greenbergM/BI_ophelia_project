@@ -98,11 +98,13 @@ Volcano-plot for blastula vs egg comparison
 
 GeneOntology (GO) terms enrichment analysis for biological processes was performed for upregulated blastula genes (compared to unfertilised egg) using the [topGO](https://bioconductor.org/packages/release/bioc/html/topGO.html) (v.2.56.0) R package. Only processes with more than 10 genes were considered. Similar GO terms were grouped using the [rrvgo](https://bioconductor.org/packages/release/bioc/html/rrvgo.html) (v.1.16.0) R package. The same package was used to visualize the results in treemap plots. Treemap plots are used to visualise all significant biological processes based on their enrichment score (-log10(Fisher's test p-values)), while a custom GO term histogram shows the top 25 terms based on their fold enrichment. 
 
+Upregulated processes include those related to the regulation of mRNA transcription and cell differentiation, mainly associated with the development of the nervous system.
 
 |         Treemap plot        |       GO term histogram       |
 |:------------------------:|:------------------------------:|
 | ![](pics/treemanplot_blast_vs_egg.png) | ![](pics/GO_hist_blast_vs_egg.png) |
 
+A similar approach was used for other stage comparisons. For a deeper understanding of specific biological processes, the genes in some of them were examined. This approach, combined with the filtering of DEGs in different comparisons based on specific interesting GO terms involved in development (see (DESeq2_utils)[/scripts/07_GO_deseq2/] script), allowed the identification of many differentially expressed developmental regulators and components of signalling pathways. 
 
 ## References
 [^1]: Henry J. Q. (2014). Spiralian model systems. The International journal of developmental biology, 58(6-8), 389–401. https://doi.org/10.1387/ijdb.140127jh
