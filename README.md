@@ -40,7 +40,12 @@ There were 3 biological replicates for each stage.
 ### Whole workflow overview:
 ![](pics/workflow.png)
 
-## Results
+### Decontamination and assembly
+
+All reads were decontaminated using [Kraken2](https://github.com/DerrickWood/kraken2). The PlusPF (standard plus protozoa and fungi; 2022-09-04T165121Z) Kraken2 database was used for classification. Kraken2 reports visualisation performed with the online tool [Pavian](https://fbreitwieser.shinyapps.io/pavian/).
+
+**Kraken2 report visualisation for merged reads:**
+![](pics/kraken2_results.png) 
 
 ## References
 [^1]: Henry J. Q. (2014). Spiralian model systems. The International journal of developmental biology, 58(6-8), 389–401. https://doi.org/10.1387/ijdb.140127jh
