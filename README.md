@@ -15,7 +15,7 @@ One of the most intriguing and poorly understood aspects of Spiralian embryogene
 
 **Objectives:**  
 * Transcriptome assembly for different stages of *O. limacina* life cycle
-* Differential gene expression analysis (DE) for *O. limacina* stages
+* Differential gene expression analysis (DEA) for *O. limacina* stages
 	* Gene set enrichment analysis (GSEA) for differentially expressed genes (DEGs)
 	* Identification of developmental genes in DEGs
 * Identification of co-expressed gene clusters
@@ -53,7 +53,8 @@ Contigs in each assembly were clustered using [CDHIT-est](https://github.com/wei
 
 Final assembly was picked based on Transrate scores and BUSCO results:
 
-*good_oli<...> - assembly after clusterization and Transrate filtration*
+*good_oli_<...> - assembly after clusterization and Transrate filtration*
+*Best assembly is highlighted with green frame*
 
 ![](pics/busco_results.pmg.png) 
 
@@ -65,7 +66,18 @@ Final assembly was picked based on Transrate scores and BUSCO results:
 | Percent of fragments mapped | **95,8%** | 93,1% |
 | GC-content | 42,2% | 42% |
 | Assembly score | 0.65593 | 0.34640 |
-| Optimal score | **0.67449** | 0.54867  |
+| Optimal score | **0.67449** | 0.54867  | there are my picture and table
+
+Protein-coding contigs were identified with [Transdecoder](https://github.com/TransDecoder/) (v.5.7.1). Expression levels for transcripts were quantified with [Salmon](https://github.com/COMBINE-lab/salmon) (v.1.10.2). For subsequent analysis we used only contigs contigs with with protein length >= 100 aminoacids and expression level at least 1 TPM in any sample. Annotation was performed with [eggNOG-mapper](http://eggnog-mapper.embl.de/) online tool. 
+
+### Differential expression analysis
+
+Differential expression analysis was caried out with [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) R package (v.1.44.0). Salmon pseudocounts were imported into DESeq2 with [tximport](https://bioconductor.org/packages/release/bioc/html/tximport.html) (v.1.32.0). 
+
+Stage clustering prior to DEA revealed that replicates for each stage were similar. Comparison of stages showed that trochophore and adult stages were least similar to others.
+
+![](pics/) 
+
 
 ## References
 [^1]: Henry J. Q. (2014). Spiralian model systems. The International journal of developmental biology, 58(6-8), 389–401. https://doi.org/10.1387/ijdb.140127jh
