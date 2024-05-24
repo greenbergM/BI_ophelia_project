@@ -26,7 +26,7 @@ One of the most intriguing and poorly understood aspects of Spiralian embryogene
 
 *dpf - days post fertilisation*
 
-Bulk RNA-seq reads for 5 stages of *O. limacina* life cycle: 0 hpf - **unfertilised egg**, 10 hpf - **32-cell blastula**, 24 hpf - **100+ cell gastrula**, 4 dpf - **trochophore larvae**, 3 years - **adult male**.
+The data available at the start of the project were: paired reads (bulk RNA-seq data) after basic quality check and trimming for 5 stages of the *O. limacina* life cycle: 0 hpf - **unfertilised egg**, 10 hpf - **32-cell blastula**, 24 hpf - **100+ cell gastrula**, 4 dpf - **trochophore larvae**, 3 years - **adult male**. There were 3 biological replicates for each stage. 
 
 ## Workflow
 ### Whole workflow overview:
