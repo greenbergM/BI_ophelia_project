@@ -96,9 +96,10 @@ Volcano-plot for blastula vs egg comparison
 :----------------------------------:
 ![](pics/blast_vs_egg_volcano.png)
 
-GeneOntology (GO) terms enrichment analysis for biological processes was performed for upregulated blastula genes (compared to unfertilised egg) using the [topGO](https://bioconductor.org/packages/release/bioc/html/topGO.html) (v.2.56.0) R package. Only processes with more than 10 genes were considered. Similar GO terms were grouped using the [rrvgo](https://bioconductor.org/packages/release/bioc/html/rrvgo.html) (v.1.16.0) R package. The same package was used to visualize the results in treemap charts.
+GeneOntology (GO) terms enrichment analysis for biological processes was performed for upregulated blastula genes (compared to unfertilised egg) using the [topGO](https://bioconductor.org/packages/release/bioc/html/topGO.html) (v.2.56.0) R package. Only processes with more than 10 genes were considered. Similar GO terms were grouped using the [rrvgo](https://bioconductor.org/packages/release/bioc/html/rrvgo.html) (v.1.16.0) R package. The same package was used to visualize the results in treemap plots. Treemap plots are used to visualise all significant biological processes based on their enrichment score (-log10(Fisher's test p-values)), while a custom GO term histogram shows the top 25 terms based on their fold enrichment. 
 
-|         Treemap chart        |       GO terms histogram       |
+
+|         Treemap plot        |       GO term histogram       |
 |:------------------------:|:------------------------------:|
 | ![](pics/treemanplot_blast_vs_egg.png) | ![](pics/GO_hist_blast_vs_egg.png) |
 
