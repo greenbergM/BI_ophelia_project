@@ -53,7 +53,7 @@ Contigs in each assembly were clustered using [CDHIT-est](https://github.com/wei
 
 Final assembly was picked based on Transrate scores and BUSCO results:
 
-![](data/01_assembly/busco/busco_figure.png) 
+![](pics/busco_results.pmg.png) 
 
 | Transrate Metric | rnaSPAdes assembly after clusterization | Trinity assembly after clusterisation |
 |---|---|---|
