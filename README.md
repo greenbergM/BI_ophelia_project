@@ -100,7 +100,7 @@ GeneOntology (GO) terms enrichment analysis for biological processes was perform
 
 |         Treemap chart        |       GO terms histogram       |
 |:------------------------:|:------------------------------:|
-| ![]() | ![]() |
+| ![](pics/treemanplot_blast_vs_egg.png) | ![](pics/GO_hist_blast_vs_egg.png) |
 
 
 ## References
