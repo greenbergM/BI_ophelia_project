@@ -11,6 +11,8 @@ The Spiralia group is one of the three major bilaterian clades. One of the key f
 
 One of the most intriguing and poorly understood aspects of Spiralian embryogenesis is zygotic genome activation (ZGA), which has been shown to act as a trigger for the initiation of complex developmental processes in other Bilateria groups [^2]. However, It is unclear how ZGA is associated with different developmental modes in Spiralia. Transcriptome profiling of early developmental stages of the unequally cleaving annelid *Platynereis* revealed that ZGA proceeds in several waves, with the major transition to the zygotic landscape coinciding with the completion of the spiral cleavage programme after autonomous specification of different cell lineages [^3][^4]. Investigating whether these developmental processes in the equally cleaving annelid *Ophelia limacina* have similar dynamics would contribute substantially to the field of evolutionary developmental biology of the Spiralia clade.
 
+### Aim and Objectives:
+
 **Aim:** Investigate temporal expression patterns of developmental genes throughout the life cycle of Ophelia limacina.
 
 **Objectives:**  
