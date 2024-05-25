@@ -9,8 +9,3 @@ GO:0007178 - cell surface receptor protein serine/threonine kinase signaling pat
 GO:0000165 - MAPK cascade
 GO:0000978, GO:0000980 - RNA polymerase II cis-regulatory region sequence-specific DNA binding
 GO:0003002 - regionalisation
-
-
-GO:0050793 - regulation of development
-GO:0032502, GO:0044767 - developmental process
-GO:0040007, GO:0048590 - growth
