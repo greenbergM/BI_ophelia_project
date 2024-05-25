@@ -13,15 +13,15 @@ One of the most intriguing and poorly understood aspects of Spiralian embryogene
 
 ### Aim and Objectives:
 
-**Aim:** Investigate temporal expression patterns of developmental genes throughout the life cycle of Ophelia limacina.
+**Aim:** Investigate temporal expression patterns of developmental genes throughout the life cycle of *Ophelia limacina*.
 
 **Objectives:**  
 * Transcriptome assembly for different stages of *O. limacina* life cycle
 * Differential gene expression analysis (DEA) for *O. limacina* stages
-	* Gene set enrichment analysis (GSEA) for differentially expressed genes (DEGs)
+	* GeneOntology (GO) enrichment analysis for differentially expressed genes (DEGs)
 	* Identification of developmental genes in DEGs
 * Identification of co-expressed gene clusters
-  * Gene set enrichment analysis (GSEA) for clustered genes
+  * GeneOntology (GO) enrichment analysis for clustered genes
 
 ### Data
 *hpf - hours post fertilisation*
@@ -72,7 +72,9 @@ BUSCO results for different assemblies
 | Percent of fragments mapped       | **95,8%**                               | 93,1%                                 |
 | GC-content                        | 42,2%                                   | 42%                                   |
 | Assembly score                    | 0.65593                                 | 0.34640                               |
-| Optimal score                     | **0.67449**                             | 0.54867                               | there are my picture and table
+| Optimal score                     | **0.67449**                             | 0.54867                               | 
+
+**The best assembly was produced by rnaSPAdes.**
 
 Protein-coding contigs in best assembly were identified with [Transdecoder](https://github.com/TransDecoder/) (v.5.7.1). Expression levels for transcripts were quantified with [Salmon](https://github.com/COMBINE-lab/salmon) (v.1.10.2). For subsequent analysis we used only contigs contigs with with protein length >= 100 aminoacids and expression level at least 1 TPM in any sample. Annotation was performed with [eggNOG-mapper](http://eggnog-mapper.embl.de/) online tool. 
 
@@ -86,7 +88,7 @@ Stage clustering prior to DEA revealed that replicates for each stage were simil
 |:------------------------:|:------------------------------:|
 | ![](pics/PCA_stages.png) | ![](pics/distances_stages.png) |
 
-Differential expression analysis revealed an upregulation of gene expression at the blastula stage, suggesting the onset of zygotic expression at this stage:
+Differential expression analysis revealed an upregulation of gene expression at the blastula stage.
 
 Heatmap of all DEGs
 :-------------------------:
@@ -98,7 +100,7 @@ Volcano-plot for blastula vs egg comparison
 :----------------------------------:
 ![](pics/blast_vs_egg_volcano.png)
 
-GeneOntology (GO) terms enrichment analysis for biological processes was performed for upregulated blastula genes (compared to unfertilised egg) using the [topGO](https://bioconductor.org/packages/release/bioc/html/topGO.html) (v.2.56.0) R package. Only processes with more than 10 genes were considered. Similar GO terms were grouped using the [rrvgo](https://bioconductor.org/packages/release/bioc/html/rrvgo.html) (v.1.16.0) R package. The same package was used to visualize the results in treemap plots. Such plots show all significant biological processes based on their enrichment score (-log10(Fisher's test p-values)), while a custom GO terms histogram shows the top 25 terms based on their fold enrichment. 
+GO terms enrichment analysis for biological processes was performed for upregulated blastula genes (compared to unfertilised egg) using the [topGO](https://bioconductor.org/packages/release/bioc/html/topGO.html) (v.2.56.0) R package. Only processes with more than 10 genes were considered. Similar GO terms were grouped using the [rrvgo](https://bioconductor.org/packages/release/bioc/html/rrvgo.html) (v.1.16.0) R package. The same package was used to visualize the results in treemap plots. Such plots show all significant biological processes based on their enrichment score (-log10(Fisher's test p-values)), while a custom GO terms histogram shows the top 25 terms based on their fold enrichment. 
 
 Upregulated processes include those related to the regulation of mRNA transcription and cell differentiation, mainly associated with the development of the nervous system.
 
@@ -127,7 +129,7 @@ Expression of various cell differentiation genes begins at the blastula stage. T
 
 ### Analysis of co-expressed gene clusters and GeneOntology enrichment analysis
 
-Clustering of genes with similar temporal expression patterns was performed using [Clust](https://github.com/BaselAbujamous/clust) (v.1.18.1). 5 clusters were obtained using default parameters. For each cluster we performed GeneOntology (GO) terms enrichment analysis similar to that in [DEA](#differential-expression-analysis-and-geneontology-enrichment-analysis)
+Clustering of genes with similar temporal expression patterns was performed using [Clust](https://github.com/BaselAbujamous/clust) (v.1.18.1). 5 clusters were obtained using default parameters. For each cluster we performed GO terms enrichment analysis similar to that in [DEA](#differential-expression-analysis-and-geneontology-enrichment-analysis)
 
 Here are presented clusters with genes with early peak expression and their enriched **molecular functions**:
 
@@ -139,15 +141,19 @@ Big early clusters
 |:------------------------:|:------------------------------:|
 | ![TGF-beta](pics/treemanplot_c0.png) | ![WNT](pics/treemanplot_c0.png) |
 
-These early clusters are enriched with molecular functions involved in signal trunsduction (smad binding, beta-catenin binding, transcription factor binding, signaling
-receptor complex adaptor activity, transmembrane receptor protein kinase activity, hormone receptor binding, etc) and chromatine modiffications (histone binding, methylated histone binding, chromatin binding, histone methyltransferase activity, histone deacetylase activity, etc). 
+These early clusters are enriched with molecular functions involved in signal trunsduction (smad binding, beta-catenin binding, transcription factor binding, signaling receptor complex adaptor activity, transmembrane receptor protein kinase activity, hormone receptor binding, etc) and chromatine modiffications (histone binding, methylated histone binding, chromatin binding, histone methyltransferase activity, histone deacetylase activity, etc). 
 
 ## Discussion
 
+Acquired data suggest that the onset of zygotic expression in Ophelia limacina development occurs at the 32-cell blastula stage, when numerous genes being activated. This is further supported by the expression of transcription regulators and chromatin modifications at this stage, which is considered a marker of ZGA [2]. The expression of different genes involved in cell fate specification also begins at the blastula stage, primarily neural and anterior genes, while many of other developmental regulators are expressed later. This contrasts with Platynereis development, where the main cell fate specification occurs before ZGA [3, 4]. It can also be proposed that the early expression of developmental genes in Ophelia limacina is primarily regulated by signaling cascades rather than solely by maternal factors. This is evidenced by the early expression of components of the TGF-beta and WNT pathways, which are considered conservative regulators of embryo patterning [^5].
+
 ## Future plans
+
+
 
 ## References
 [^1]: Henry J. Q. (2014). Spiralian model systems. The International journal of developmental biology, 58(6-8), 389–401. https://doi.org/10.1387/ijdb.140127jh
 [^2]: Lee, M. T., Bonneau, A. R., & Giraldez, A. J. (2014). Zygotic genome activation during the maternal-to-zygotic transition. Annual review of cell and developmental biology, 30, 581–613. https://doi.org/10.1146/annurev-cellbio-100913-013027
 [^3]: Chou, H. C., Pruitt, M. M., Bastin, B. R., & Schneider, S. Q. (2016). A transcriptional blueprint for a spiral-cleaving embryo. BMC genomics, 17, 552. https://doi.org/10.1186/s12864-016-2860-6 ↩
 [^4]: Vopalensky, P., Tosches, M. A., Achim, K., Handberg-Thorsager, M., & Arendt, D. (2019). From spiral cleavage to bilateral symmetry: the developmental cell lineage of the annelid brain. BMC biology, 17(1), 81. https://doi.org/10.1186/s12915-019-0705-x 
+[^5]: Genikhovich, G., & Technau, U. (2017). On the evolution of bilaterality. Development (Cambridge, England), 144(19), 3392–3404. https://doi.org/10.1242/dev.141507 
