@@ -2,9 +2,10 @@
 
 Authors: 
 
-- Mikhail Greenberg, SPbU Embryology department (student)
-- Vitaly Kozin, SPbU Embryology department (supervisor)
-- Ilya Borisenko, SPbU Embryology department (supervisor)
+- Mikhail Greenberg, SPbU Embryology department (**student**)
+
+- Vitaly Kozin, SPbU Embryology department (**supervisor**)
+- Ilya Borisenko, SPbU Embryology department (**supervisor**)
 
 ## Introduction
 The Spiralia group is one of the three major bilaterian clades. One of the key features of this group is its stereotypical embryonic development with early establishment of cell fates [^1] with different Spiralia species utilizing autonomous (dependent on maternal factors) and conditional (dependent on cell-cell interactions) modes of cell specification. Annelids are one of the main model taxa for studying development and evolution of Spiralia, due to of their diverse life cycles and embryonic patterns [^1].
@@ -41,7 +42,8 @@ There were 3 biological replicates for each stage.
 ## Workflow
 Whole workflow overview
 :-------------------------:
-![](pics/workflow.png)
+![](pics/workflow_light.png#gh-light-mode-only)
+![](pics/workflow_dark.png#gh-dark-mode-only)
 
 ### Decontamination and assembly
 
@@ -49,7 +51,7 @@ All reads were decontaminated using [Kraken2](https://github.com/DerrickWood/kra
 
 Kraken2 report visualisation for merged reads
 :-------------------------:
-![](pics/kraken2_results.png) 
+![](pics/assembly/kraken2_results.png) 
 
 For *de novo* transcriptome assembly were used 2 different assemblers: [rnaSPAdes](https://cab.spbu.ru/software/rnaspades/) (v.3.15.5) and [Trinity](https://github.com/trinityrnaseq/)(v.2.15.1). **Both decontamination and assembly were performed using public [Galaxy](https://github.com/galaxyproject) servers**.
 
@@ -62,7 +64,7 @@ Final assembly was picked based on Transrate scores and BUSCO results:
 
 BUSCO results for different assemblies
 :-------------------------:
-![](pics/busco_results.pmg.png) 
+![](pics/assembly/busco_results.pmg.png) 
 
 | Transrate Metric                  | rnaSPAdes assembly after clusterization | Trinity assembly after clusterisation |
 |-----------------------------------|-----------------------------------------|---------------------------------------|
@@ -86,19 +88,19 @@ Stage clustering prior to DEA revealed that replicates for each stage were simil
 
 |         PCA-plot         |       Distances heatmap        |
 |:------------------------:|:------------------------------:|
-| ![](pics/PCA_stages.png) | ![](pics/distances_stages.png) |
+| ![](pics/DEA/PCA_stages.png) | ![](pics/DEA/distances_stages.png) |
 
 Differential expression analysis revealed an upregulation of gene expression at the blastula stage.
 
 Heatmap of all DEGs
 :-------------------------:
-![](pics/all_DEGs_heatmap.png) 
+![](pics/DEA/all_DEGs_heatmap.png) 
 
 The most upregulated genes compared to egg stage included Otx2 (anterior neural marker) and Sox2 (neural marker):
 
 Volcano-plot for blastula vs egg comparison
 :----------------------------------:
-![](pics/blast_vs_egg_volcano.png)
+![](pics/DEA/blast_vs_egg_volcano.png)
 
 GO terms enrichment analysis for biological processes was performed for upregulated blastula genes (compared to unfertilised egg) using the [topGO](https://bioconductor.org/packages/release/bioc/html/topGO.html) (v.2.56.0) R package. Only processes with more than 10 genes were considered. Similar GO terms were grouped using the [rrvgo](https://bioconductor.org/packages/release/bioc/html/rrvgo.html) (v.1.16.0) R package. The same package was used to visualize the results in treemap plots. Such plots show all significant biological processes based on their enrichment score (-log10(Fisher's test p-values)), while a custom GO terms histogram shows the top 25 terms based on their fold enrichment. 
 
@@ -106,11 +108,11 @@ Upregulated processes include those related to the regulation of mRNA transcript
 
 Treemap plot   
 :------------------------:
-![](pics/treemanplot_blast_vs_egg.png) 
+![](pics/DEA/treemanplot_blast_vs_egg.png) 
 
 GO terms histogram    
 :------------------------------:
-![](pics/GO_hist_blast_vs_egg.png)
+![](pics/DEA/GO_hist_blast_vs_egg.png)
 
 A similar approach was used to compare other stages. To gain a deeper understanding of specific biological processes, the genes involved in some of these processes were examined. This approach, combined with the filtering of DEGs in different comparisons based on specific interesting GO terms involved in development (see [DESeq2_utils](/scripts/07_GO_deseq2/deseq2_utils.R) script and [terms](/scripts/07_GO_deseq2/interesting_terms.txt) used for filtering), allowed the identification of many differentially expressed developmental regulators and components of signalling pathways (see [notebook](/data/07_GO_deseq2/) for full analysis). 
 
@@ -118,12 +120,12 @@ Summary heatmaps:
 
 Differentially expressed developmental regulators 
 :------------------------------:
-![](pics/body_patterning.png)
+![](pics/DEA/body_patterning.png)
 
 **Differentially expressed components of signaling pathways:**
 |        TGF-beta         |       WNT        |
 |:------------------------:|:------------------------------:|
-| ![TGF-beta](pics/tgf.png) | ![WNT](pics/wnt.png) |
+| ![TGF-beta](pics/DEA/tgf.png) | ![WNT](pics/DEA/wnt.png) |
 
 Expression of various cell differentiation genes begins at the blastula stage. The expression of anterior neural markers (such as Foxq2, Otx2, Sox2) starts earliest, whereas the peak expression of endodermal (such as GATA4, GATA6) and mesodermal markers (Foxd3, TWIST) occurs later. Many TGF-beta and WNT components are also expressed at the blastula stage.
 
@@ -135,11 +137,11 @@ Here are presented clusters with genes with early peak expression and their enri
 
 Big early clusters 
 :------------------------------:
-![](pics/early_clusters.png)
+![](pics/clusters/early_clusters.png)
 
 |        Molecular functions enriched in cluster 0         |     Molecular functions enriched in cluster 1        |
 |:------------------------:|:------------------------------:|
-| ![TGF-beta](pics/treemanplot_c0.png) | ![WNT](pics/treemanplot_c1.png) |
+| ![TGF-beta](pics/clusters/treemanplot_c0.png) | ![WNT](pics/clusters/treemanplot_c1.png) |
 
 These early clusters are enriched with molecular functions involved in signal trunsduction (smad binding, beta-catenin binding, transcription factor binding, signaling receptor complex adaptor activity, transmembrane receptor protein kinase activity, hormone receptor binding, etc) and chromatine modiffications (histone binding, methylated histone binding, chromatin binding, histone methyltransferase activity, histone deacetylase activity, etc). 
 
