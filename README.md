@@ -1,11 +1,11 @@
 # Gene expression dynamics in the life cycle of the annelid *Ophelia limacina*
 
-Authors: 
+**Author:**
+- Mikhail Greenberg, SPbU Embryology department
 
-- Mikhail Greenberg, SPbU Embryology department (**student**)
-
-- Vitaly Kozin, SPbU Embryology department (**supervisor**)
-- Ilya Borisenko, SPbU Embryology department (**supervisor**)
+**Supervisors:**
+- Vitaly Kozin, SPbU Embryology department
+- Ilya Borisenko, SPbU Embryology department
 
 ## Introduction
 The Spiralia group is one of the three major bilaterian clades. One of the key features of this group is its stereotypical embryonic development with early establishment of cell fates [^1] with different Spiralia species utilizing autonomous (dependent on maternal factors) and conditional (dependent on cell-cell interactions) modes of cell specification. Annelids are one of the main model taxa for studying development and evolution of Spiralia, due to of their diverse life cycles and embryonic patterns [^1].
