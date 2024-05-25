@@ -139,7 +139,7 @@ Big early clusters
 
 |        cluster 0         |      cluster 1        |
 |:------------------------:|:------------------------------:|
-| ![TGF-beta](pics/treemanplot_c0.png) | ![WNT](pics/treemanplot_c0.png) |
+| ![TGF-beta](pics/treemanplot_c0.png) | ![WNT](pics/treemanplot_c1.png) |
 
 These early clusters are enriched with molecular functions involved in signal trunsduction (smad binding, beta-catenin binding, transcription factor binding, signaling receptor complex adaptor activity, transmembrane receptor protein kinase activity, hormone receptor binding, etc) and chromatine modiffications (histone binding, methylated histone binding, chromatin binding, histone methyltransferase activity, histone deacetylase activity, etc). 
 
