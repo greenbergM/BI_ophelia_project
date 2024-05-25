@@ -42,8 +42,7 @@ There were 3 biological replicates for each stage.
 ## Workflow
 Whole workflow overview
 :-------------------------:
-![](pics/workflow_light.png#gh-light-mode-only)
-![](pics/workflow_dark.png#gh-dark-mode-only)
+![](pics/workflow_light.png)
 
 ### Decontamination and assembly
 
@@ -127,7 +126,7 @@ Differentially expressed developmental regulators
 |:------------------------:|:------------------------------:|
 | ![TGF-beta](pics/DEA/tgf.png) | ![WNT](pics/DEA/wnt.png) |
 
-Expression of various cell differentiation genes begins at the blastula stage. The expression of anterior neural markers (such as Foxq2, Otx2, Sox2) starts earliest, whereas the peak expression of endodermal (such as GATA4, GATA6) and mesodermal markers (Foxd3, TWIST) occurs later. Many TGF-beta and WNT components are also expressed at the blastula stage.
+Expression of various cell differentiation genes begins at the blastula stage. The expression of several anterior and neural markers (such as Foxq2, Otx2, Sox2)[^6][^7] starts earliest, whereas the peak expression of endodermal (such as GATA4, GATA6, FOXA)[^8] and mesodermal markers (FoxC, TWIST)[^8] occurs later. Many TGF-beta and WNT components are also expressed at the blastula stage.
 
 ### Analysis of co-expressed gene clusters and GeneOntology enrichment analysis
 
@@ -159,3 +158,7 @@ Acquired data suggest that the onset of zygotic expression in Ophelia limacina d
 [^3]: Chou, H. C., Pruitt, M. M., Bastin, B. R., & Schneider, S. Q. (2016). A transcriptional blueprint for a spiral-cleaving embryo. BMC genomics, 17, 552. https://doi.org/10.1186/s12864-016-2860-6 ↩
 [^4]: Vopalensky, P., Tosches, M. A., Achim, K., Handberg-Thorsager, M., & Arendt, D. (2019). From spiral cleavage to bilateral symmetry: the developmental cell lineage of the annelid brain. BMC biology, 17(1), 81. https://doi.org/10.1186/s12915-019-0705-x 
 [^5]: Genikhovich, G., & Technau, U. (2017). On the evolution of bilaterality. Development (Cambridge, England), 144(19), 3392–3404. https://doi.org/10.1242/dev.141507 
+[^6]: Liang, Y., Carrillo-Baltodano, A. M., & Martín-Durán, J. M. (2023). Emerging trends in the study of spiralian larvae. Evolution & development, e12459. Advance online publication. https://doi.org/10.1111/ede.12459
+[^7]: Sur, A., Renfro, A., Bergmann, P. J., & Meyer, N. P. (2020). Investigating cellular and molecular mechanisms of neurogenesis in Capitella teleta sheds light on the ancestor of Annelida. BMC evolutionary biology, 20(1), 84. https://doi.org/10.1186/s12862-020-01636-1
+[^8]: Martín-Durán, J. M., Passamaneck, Y. J., Martindale, M. Q., & Hejnol, A. (2016). The developmental basis for the recurrent evolution of deuterostomy and protostomy. Nature ecology & evolution, 1(1), 5. https://doi.org/10.1038/s41559-016-0005
+
