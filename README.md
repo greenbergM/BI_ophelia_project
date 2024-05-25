@@ -137,7 +137,7 @@ Big early clusters
 :------------------------------:
 ![](pics/early_clusters.png)
 
-|        cluster 0         |      cluster 1        |
+|        Molecular functions enriched in cluster 0         |     Molecular functions enriched in cluster 1        |
 |:------------------------:|:------------------------------:|
 | ![TGF-beta](pics/treemanplot_c0.png) | ![WNT](pics/treemanplot_c1.png) |
 
