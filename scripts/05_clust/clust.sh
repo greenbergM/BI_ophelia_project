@@ -17,7 +17,7 @@ CLUST_REPLICATES="/Volumes/oli/RESULTS/scripts/05_clust/replicates_info.txt" # C
 CLUSTER_TIGHTNESS=2
 
 # Environment
-source activate clust
+source activate oli_env
 
 clust "$TPM_TABLE" -r "$CLUST_REPLICATES" -t "$CLUSTER_TIGHTNESS" -o "oli_clust_${CLUSTER_TIGHTNESS}" 
 

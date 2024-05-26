@@ -16,7 +16,7 @@ PFAM_DB="/Volumes/oli/databases/pfam_database/Pfam-A.hmm" # Pfam database
 UNIREF_DB="/Volumes/oli/databases/uniref90_database/uniref90/uniref90.dmnd" # Uniref90 database
 
 # Environment
-source activate transdecoder
+source activate oli_env
 
 
 ${LongOrfs} -t $ASSEMBLY -m 100

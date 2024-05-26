@@ -21,7 +21,7 @@ BUSCO_PLOT="~/miniconda3/envs/busco/bin/generate_plot.py" # BUSCO script for plo
 MAKE_BUSCO_SUMMARIES="/Volumes/oli/RESULTS/scripts/01_assembly/03_busco/make_BUSCO_summaries.py"
 
 # Environment
-source activate busco
+source activate oli_env
 
 busco -m transcriptome -i ${SPADES} -l metazoa_odb10 --offline --download_path ${BUSCO_DB} -c 6 -f
 busco -m transcriptome -i ${SPADES95_GOOD} -l metazoa_odb10 --offline --download_path ${BUSCO_DB} -c 6 -f

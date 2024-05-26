@@ -18,7 +18,7 @@ INTERESTING_GOs="GO:0032502|GO:0044767" # GOs for filtering TPM table
 NAME_INTERESTING_TPM="development" # name tag for TPM table subset
 
 # Environment
-source activate clustGO
+source activate oli_env
 
 # Delete unnecessary lines from annotation file and save it under new name (oli_annot.csv) in same directory
 ANNOTATION_DIR=$(dirname "${ANNOTATION}")

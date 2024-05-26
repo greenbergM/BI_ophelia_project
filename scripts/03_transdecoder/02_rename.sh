@@ -14,7 +14,7 @@ PROTEINS="/Volumes/oli/RESULTS/data/03_transdecoder/oli_assembly.fasta.transdeco
 CDS="/Volumes/oli/RESULTS/data/03_transdecoder/oli_assembly.fasta.transdecoder.cds"
 
 # Environment
-source activate transdecoder
+source activate oli_env
 
 # Results folder in working directory
 mkdir renamed

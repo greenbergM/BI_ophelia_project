@@ -17,7 +17,7 @@ TPM_TABLE="/Volumes/oli/RESULTS/data/02_salmon/tpm_table.csv" # TPM table for al
 OUTPUT_DIR=$(dirname "$TPM_TABLE")
 
 # Environment
-source activate transdecoder
+source activate oli_env
 
 python ${tpm_filtrator} --pep ${ANNOTATED_PEP} --cds ${ANNOTATED_CDS} -t ${TPM_TABLE} -o ${OUTPUT_DIR}
 
