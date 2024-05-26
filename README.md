@@ -8,9 +8,11 @@
 - Ilya Borisenko, SPbU Embryology department
 
 ## Introduction
-The Spiralia group is one of the three major bilaterian clades. One of the key features of this group is its stereotypical embryonic development with early establishment of cell fates [^1] with different Spiralia species utilizing autonomous (dependent on maternal factors) and conditional (dependent on cell-cell interactions) modes of cell specification. Annelids are one of the main model taxa for studying development and evolution of Spiralia, due to of their diverse life cycles and embryonic patterns [^1].
 
-One of the most intriguing and poorly understood aspects of Spiralian embryogenesis is zygotic genome activation (ZGA), which has been shown to act as a trigger for the initiation of complex developmental processes in other Bilateria groups [^2]. However, It is unclear how ZGA is associated with different developmental modes in Spiralia. Transcriptome profiling of early developmental stages of the unequally cleaving annelid *Platynereis* revealed that ZGA proceeds in several waves, with the major transition to the zygotic landscape coinciding with the completion of the spiral cleavage programme after autonomous specification of different cell lineages [^3][^4]. Investigating whether these developmental processes in the equally cleaving annelid *Ophelia limacina* have similar dynamics would contribute substantially to the field of evolutionary developmental biology of the Spiralia clade.
+The Spiralia group is one of the three major bilaterian clades. One of the key features of this group is stereotypical embryonic development with early establishment of cell fates [^1]. Different spiralian species utilize either more autonomous (dependent on maternal factors) or conditional (dependent on cell-cell interactions) mode of cell specification. Annelids are one of the main model taxon for studying development and evolution of Spiralia, due to their diverse life cycles and embryonic patterns [^1].
+ 
+One of the most intriguing and poorly understood aspects of spiralian embryogenesis is zygotic genome activation (ZGA), which has been shown to act as a trigger for the initiation of complex developmental processes in other Bilateria groups [2]. However, it is unclear how ZGA depends on the different developmental modes in Spiralia. Transcriptome profiling of early developmental stages of the unequally cleaving annelid *Platynereis* revealed that ZGA proceeds in several waves, with the major transition to the zygotic landscape coinciding with the completion of the spiral cleavage programme after autonomous specification of different cell lineages [^3][^4]. Investigating whether these developmental processes in the equally cleaving annelid *Ophelia limacina* have similar dynamics would contribute substantially to the field of evolutionary developmental biology of the Spiralia clade. The aim of our work is to investigate temporal expression patterns of developmental genes throughout the life cycle of *Ophelia limacina*.
+
 
 ### Aim and Objectives:
 
@@ -52,9 +54,9 @@ Kraken2 report visualisation for merged reads
 :-------------------------:
 ![](pics/assembly/kraken2_results.png) 
 
-For *de novo* transcriptome assembly were used 2 different assemblers: [rnaSPAdes](https://cab.spbu.ru/software/rnaspades/) (v.3.15.5) and [Trinity](https://github.com/trinityrnaseq/)(v.2.15.1). **Both decontamination and assembly were performed using public [Galaxy](https://github.com/galaxyproject) servers**.
+For *de novo* transcriptome assembly were used 2 different assemblers, [rnaSPAdes](https://cab.spbu.ru/software/rnaspades/) (v.3.15.5) and [Trinity](https://github.com/trinityrnaseq/)(v.2.15.1). **Both decontamination and assembly were performed using public [Galaxy](https://github.com/galaxyproject) servers**.
 
-Contigs in each assembly were clustered using [CDHIT-est](https://github.com/weizhongli/cdhit) (v.4.8.1). Contigs with 95% identity were clustered (both strands compared). Contig filtration was performed using [Transrate](https://hibberdlab.com/transrate/) (v.1.0.3). Assemblies were checked for completeness using [BUSCO](https://gitlab.com/ezlab/busco) (v.5.4.4) against the Metazoa odb10. 
+Contigs in each assembly were clustered using [CD-HIT-est](https://github.com/weizhongli/cdhit) (v.4.8.1). Contigs with 95% identity were clustered (both strands compared). Contig filtration was performed using [Transrate](https://hibberdlab.com/transrate/) (v.1.0.3). Assemblies were checked for completeness using [BUSCO](https://gitlab.com/ezlab/busco) (v.5.4.4) against the Metazoa odb10. 
 
 Final assembly was picked based on Transrate scores and BUSCO results:
 
@@ -77,7 +79,7 @@ BUSCO results for different assemblies
 
 **The best assembly was produced by rnaSPAdes.**
 
-Protein-coding contigs in best assembly were identified with [Transdecoder](https://github.com/TransDecoder/) (v.5.7.1). Expression levels for transcripts were quantified with [Salmon](https://github.com/COMBINE-lab/salmon) (v.1.10.2). For subsequent analysis we used only contigs contigs with with protein length >= 100 aminoacids and expression level at least 1 TPM in any sample. Annotation was performed with [eggNOG-mapper](http://eggnog-mapper.embl.de/) online tool. 
+Protein-coding contigs in best assembly were identified with [Transdecoder](https://github.com/TransDecoder/) (v.5.7.1). Expression levels for transcripts were quantified with [Salmon](https://github.com/COMBINE-lab/salmon) (v.1.10.2). For subsequent analysis we used only contigs contigs with with protein length >= 100 aminoacids and expression level at least 1 TPM in any sample. Annotation was performed with [eggNOG-mapper](http://eggnog-mapper.embl.de/) (v.2) online tool. 
 
 ### Differential expression analysis and GeneOntology enrichment analysis
 
@@ -95,7 +97,7 @@ Heatmap of all DEGs
 :-------------------------:
 ![](pics/DEA/all_DEGs_heatmap.png) 
 
-The most upregulated genes compared to egg stage included Otx2 (anterior neural marker) and Sox2 (neural marker):
+Among upregulated genes there were several neural markers such as Otx2 and Sox2 [^6][^7]:
 
 Volcano-plot for blastula vs egg comparison
 :----------------------------------:
@@ -103,7 +105,7 @@ Volcano-plot for blastula vs egg comparison
 
 GO terms enrichment analysis for biological processes was performed for upregulated blastula genes (compared to unfertilised egg) using the [topGO](https://bioconductor.org/packages/release/bioc/html/topGO.html) (v.2.56.0) R package. Only processes with more than 10 genes were considered. Similar GO terms were grouped using the [rrvgo](https://bioconductor.org/packages/release/bioc/html/rrvgo.html) (v.1.16.0) R package. The same package was used to visualize the results in treemap plots. Such plots show all significant biological processes based on their enrichment score (-log10(Fisher's test p-values)), while a custom GO terms histogram shows the top 25 terms based on their fold enrichment. 
 
-Upregulated processes include those related to the regulation of mRNA transcription and cell differentiation, mainly associated with the development of the nervous system.
+Upregulated processes include those related to the regulation of mRNA transcription and cell differentiation, mainly associated with the development of the nervous system:
 
 Treemap plot   
 :------------------------:
@@ -126,7 +128,7 @@ Differentially expressed developmental regulators
 |:------------------------:|:------------------------------:|
 | ![TGF-beta](pics/DEA/tgf.png) | ![WNT](pics/DEA/wnt.png) |
 
-Expression of various cell differentiation genes begins at the blastula stage. The expression of several anterior neural markers (such as Foxq2, Otx2, Otx1, Sox2)[^6][^7] starts earliest, whereas the peak expression of endodermal (such as GATA4, GATA6, FOXA)[^8] and mesodermal markers (FoxC, TWIST)[^8] occurs later at the gastrula and trochophore stages. Many TGF-beta and WNT components are also expressed at the blastula stage.
+Expression of various cell differentiation genes begins at the blastula stage. The expression of several anterior neural markers (such as Foxq2, Otx2, Otx1, Sox2)[^6][^7] starts earliest, whereas the peak expression of endodermal (such as GATA4, GATA6, FOXA)[^8] and mesodermal markers (FoxC, TWIST)[^8] occurs later at the gastrula and trochophore stages. Expression of components of several signaling pathways (such as TGF-beta and WNT) also occurs at the blastula stage.
 
 ### Analysis of co-expressed gene clusters and GeneOntology enrichment analysis
 
@@ -148,8 +150,7 @@ These early clusters are enriched with molecular functions involved in signal tr
 
 Acquired data suggest that the onset of zygotic expression in *Ophelia limacina* development occurs at the 32-cell blastula stage, when numerous genes being activated. This is further supported by the expression of transcription regulators and chromatin modifications at this stage, which is considered a marker of ZGA [2]. The expression of different genes involved in cell fate specification also begins at the blastula stage, primarily neural and anterior genes, while many of other developmental regulators are expressed later. This contrasts with *Platynereis* development, where the main cell fate specification occurs before ZGA [^3][^4]. It can also be proposed that the early expression of developmental genes in *Ophelia limacina* is primarily regulated by signaling cascades rather than solely by maternal factors. This is evidenced by the early expression of components of the TGF-beta and WNT pathways, which are considered conservative regulators of embryo patterning [^5].
 
-## Future plans
-
+Acquired data suggest that the onset of zygotic expression in *Ophelia limacina* development occurs prior to the 32-cell blastula stage, when numerous genes were already upregulated. This is further supported by the expression of transcription regulators and chromatin modifications at this stage, which is considered to be a marker of ZGA [^2]. The expression of different genes involved in cell fate specification, primarily neural and anterior genes were also upregulated at the blastula stage, while many of other developmental regulators were activated later. This contrasts with *Platynereis* development, where the main cell fate specification occurs before ZGA [^3][^4]. It can also be proposed that the early expression of developmental genes in *Ophelia limacina* is primarily regulated by signaling cascades rather than solely by maternal factors. This is evidenced by the early expression of components of the TGF-beta and WNT pathways, suggesting involvement of these conservative regulators in the early embryo patterning [^5]. *Whether these signaling components are used in autonomous specification mechanisms or respond to external signals remains to be determined in the future...*
 
 
 ## References
