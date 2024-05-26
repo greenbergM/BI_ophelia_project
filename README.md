@@ -79,7 +79,8 @@ BUSCO results for different assemblies
 
 **The best assembly was produced by rnaSPAdes.**
 
-Protein-coding contigs in best assembly were identified with [Transdecoder](https://github.com/TransDecoder/) (v.5.7.1). Expression levels for transcripts were quantified with [Salmon](https://github.com/COMBINE-lab/salmon) (v.1.10.2). For subsequent analysis we used only contigs contigs with with protein length >= 100 aminoacids and expression level at least 1 TPM in any sample. Annotation was performed with [eggNOG-mapper](http://eggnog-mapper.embl.de/) (v.2) online tool. 
+Protein-coding contigs in best assembly were identified with [Transdecoder](https://github.com/TransDecoder/) (v.5.7.1). Expression levels for transcripts were quantified with [Salmon](https://github.com/COMBINE-lab/salmon) (v.1.10.2). For subsequent analysis we used only contigs contigs with with protein length >= 100 aminoacids and expression level at least 1 TPM in any sample. Annotation was performed with [eggNOG-mapper](http://eggnog-mapper.embl.de/) (v.2) online tool. **67963** (12.8%) coding sequences with a significant expression level were found in this assembly and **28551** (5.36%) of them were annotated. 
+
 
 ### Differential expression analysis and GeneOntology enrichment analysis
 
