@@ -1,0 +1,64 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0008033"	1	"GO:0008033"	4.74472749489669	134	"tRNA processing"	"tRNA processing"	0.712285714285714	0.431857142857143	0
+"GO:0006399"	1	"GO:0008033"	4.67778070526608	197	"tRNA metabolic process"	"tRNA processing"	0.70968253968254	0.444	0.961
+"GO:0034660"	1	"GO:0008033"	3.55284196865778	631	"ncRNA metabolic process"	"tRNA processing"	0.679920634920635	0.399071428571429	0.855
+"GO:0034470"	1	"GO:0008033"	3.50863830616573	439	"ncRNA processing"	"tRNA processing"	0.683904761904762	0.387285714285714	0.899
+"GO:0140053"	2	"GO:0140053"	3.49485002168009	163	"mitochondrial gene expression"	"mitochondrial gene expression"	0.827873015873016	1	0
+"GO:1901657"	3	"GO:1901657"	3.11918640771921	82	"glycosyl compound metabolic process"	"glycosyl compound metabolic process"	0.827333333333333	0.4542	0
+"GO:0006364"	1	"GO:0008033"	3.03151705144606	225	"rRNA processing"	"tRNA processing"	0.62947619047619	0.419714285714286	0.837
+"GO:0009451"	1	"GO:0008033"	2.92081875395238	180	"RNA modification"	"tRNA processing"	0.744873015873016	0.613357142857143	0.374
+"GO:0042254"	4	"GO:0042254"	2.91721462968355	325	"ribosome biogenesis"	"ribosome biogenesis"	0.904507936507936	0.525222222222222	0
+"GO:0016072"	1	"GO:0008033"	2.87942606879415	264	"rRNA metabolic process"	"tRNA processing"	0.709444444444444	0.443285714285714	0.779
+"GO:0009259"	3	"GO:1901657"	2.59176003468815	385	"ribonucleotide metabolic process"	"glycosyl compound metabolic process"	0.53584126984127	0.2984	0.666
+"GO:0009123"	5	"GO:0009123"	2.58670023591875	77	"nucleoside monophosphate metabolic process"	"nucleoside monophosphate metabolic process"	0.596698412698413	0.3088	0
+"GO:0009150"	3	"GO:1901657"	2.53017798402184	365	"purine ribonucleotide metabolic process"	"glycosyl compound metabolic process"	0.529904761904762	0.3038	0.66
+"GO:0009161"	5	"GO:0009123"	2.42712839779952	59	"ribonucleoside monophosphate metabolic process"	"nucleoside monophosphate metabolic process"	0.605968253968254	0.32205	0.977
+"GO:0034641"	6	"GO:0034641"	2.42021640338319	6825	"cellular nitrogen compound metabolic process"	"cellular nitrogen compound metabolic process"	0.646174603174603	0.529333333333333	0
+"GO:0019693"	3	"GO:1901657"	2.41680122603138	393	"ribose phosphate metabolic process"	"glycosyl compound metabolic process"	0.674126984126984	0.2982	0.667
+"GO:0044237"	6	"GO:0034641"	2.29242982390206	10950	"cellular metabolic process"	"cellular nitrogen compound metabolic process"	0.703111111111111	0.488166666666667	0.619
+"GO:0060271"	4	"GO:0042254"	2.28149831113273	378	"cilium assembly"	"ribosome biogenesis"	0.88131746031746	0.319333333333333	0.573
+"GO:0009167"	5	"GO:0009123"	2.27654432796481	40	"purine ribonucleoside monophosphate metabolic process"	"nucleoside monophosphate metabolic process"	0.613460317460317	0.33225	0.957
+"GO:0055086"	5	"GO:0009123"	2.26841123481326	601	"nucleobase-containing small molecule metabolic process"	"nucleoside monophosphate metabolic process"	0.550952380952381	0.2531	0.828
+"GO:0009126"	5	"GO:0009123"	2.26680273489343	42	"purine nucleoside monophosphate metabolic process"	"nucleoside monophosphate metabolic process"	0.611063492063492	0.3294	0.965
+"GO:0044782"	4	"GO:0042254"	2.12726117252733	407	"cilium organization"	"ribosome biogenesis"	0.902666666666667	0.447555555555556	0.36
+"GO:0006753"	5	"GO:0009123"	2.06398920428479	533	"nucleoside phosphate metabolic process"	"nucleoside monophosphate metabolic process"	0.542730158730159	0.24855	0.849
+"GO:0006163"	1	"GO:0008033"	1.96377045591371	463	"purine nucleotide metabolic process"	"tRNA processing"	0.542222222222222	0.569428571428571	0.341
+"GO:0006396"	1	"GO:0008033"	1.91328433605512	1467	"RNA processing"	"tRNA processing"	0.671365079365079	0.452071428571429	0.757
+"GO:0032259"	7	"GO:0032259"	1.89997426989214	282	"methylation"	"methylation"	0.849952380952381	0.5105	0
+"GO:0009117"	5	"GO:0009123"	1.88306035344924	524	"nucleotide metabolic process"	"nucleoside monophosphate metabolic process"	0.544285714285714	0.25105	0.845
+"GO:0019752"	5	"GO:0009123"	1.88074411072206	949	"carboxylic acid metabolic process"	"nucleoside monophosphate metabolic process"	0.623539682539683	0.3065	0.613
+"GO:0070925"	4	"GO:0042254"	1.87975520445363	988	"organelle assembly"	"ribosome biogenesis"	0.891047619047619	0.400444444444444	0.622
+"GO:0006082"	5	"GO:0009123"	1.8703101078007	978	"organic acid metabolic process"	"nucleoside monophosphate metabolic process"	0.622952380952381	0.30595	0.615
+"GO:0044281"	5	"GO:0009123"	1.85078088734462	1864	"small molecule metabolic process"	"nucleoside monophosphate metabolic process"	0.631873015873016	0.3081	0.66
+"GO:0043414"	7	"GO:0032259"	1.83713700667807	210	"macromolecule methylation"	"methylation"	0.830857142857143	0.5105	0.979
+"GO:0046483"	1	"GO:0008033"	1.83179725315737	6336	"heterocycle metabolic process"	"tRNA processing"	0.651444444444444	0.506071428571429	0.455
+"GO:0072521"	1	"GO:0008033"	1.79805693659835	493	"purine-containing compound metabolic process"	"tRNA processing"	0.709126984126984	0.568857142857143	0.339
+"GO:0009062"	5	"GO:0009123"	1.7864822430037	106	"fatty acid catabolic process"	"nucleoside monophosphate metabolic process"	0.681603174603175	0.40755	0.501
+"GO:0043436"	5	"GO:0009123"	1.78330640083025	972	"oxoacid metabolic process"	"nucleoside monophosphate metabolic process"	0.62315873015873	0.3061	0.614
+"GO:0008152"	6	"GO:0034641"	1.78251605578609	12339	"metabolic process"	"cellular nitrogen compound metabolic process"	0.744269841269841	0.481	0.523
+"GO:1901360"	1	"GO:0008033"	1.75129126439908	6635	"organic cyclic compound metabolic process"	"tRNA processing"	0.670888888888889	0.523285714285714	0.444
+"GO:0006631"	5	"GO:0009123"	1.72262002533275	401	"fatty acid metabolic process"	"nucleoside monophosphate metabolic process"	0.640603174603175	0.3455	0.565
+"GO:0006725"	1	"GO:0008033"	1.70952018666933	6390	"cellular aromatic compound metabolic process"	"tRNA processing"	0.652095238095238	0.508	0.453
+"GO:0009141"	5	"GO:0009123"	1.70774392864352	184	"nucleoside triphosphate metabolic process"	"nucleoside monophosphate metabolic process"	0.583365079365079	0.28585	0.76
+"GO:0045333"	8	"GO:0045333"	1.6848696828164	243	"cellular respiration"	"cellular respiration"	0.832	1	0
+"GO:0006139"	1	"GO:0008033"	1.65995268233861	6165	"nucleobase-containing compound metabolic process"	"tRNA processing"	0.615253968253968	0.442571428571429	0.46
+"GO:0006412"	9	"GO:0006412"	1.63638802010786	835	"translation"	"translation"	0.722492063492064	0.5145	0
+"GO:1901135"	3	"GO:1901657"	1.63189914829065	1037	"carbohydrate derivative metabolic process"	"glycosyl compound metabolic process"	0.774365079365079	0.3366	0.736
+"GO:0009144"	5	"GO:0009123"	1.61101121487529	167	"purine nucleoside triphosphate metabolic process"	"nucleoside monophosphate metabolic process"	0.590571428571429	0.29535	0.747
+"GO:0030031"	4	"GO:0042254"	1.56575054760352	590	"cell projection assembly"	"ribosome biogenesis"	0.888587301587302	0.376	0.594
+"GO:0019827"	10	"GO:0019827"	1.52085675202139	183	"stem cell population maintenance"	"stem cell population maintenance"	0.984190476190476	0.502	0
+"GO:0071704"	6	"GO:0034641"	1.51913107631283	11835	"organic substance metabolic process"	"cellular nitrogen compound metabolic process"	0.730095238095238	0.493333333333333	0.509
+"GO:0044089"	4	"GO:0042254"	1.50976051475371	503	"positive regulation of cellular component biogenesis"	"ribosome biogenesis"	0.91	0.519777777777778	0.571
+"GO:0046034"	5	"GO:0009123"	1.50072541810778	137	"ATP metabolic process"	"nucleoside monophosphate metabolic process"	0.56468253968254	0.3031	0.737
+"GO:0044238"	6	"GO:0034641"	1.49241396023699	10643	"primary metabolic process"	"cellular nitrogen compound metabolic process"	0.719253968253968	0.517666666666667	0.483
+"GO:0098727"	10	"GO:0019827"	1.48651604329574	187	"maintenance of cell number"	"stem cell population maintenance"	0.984190476190476	0.502	0.996
+"GO:0006996"	4	"GO:0042254"	1.4550642341185	3613	"organelle organization"	"ribosome biogenesis"	0.900507936507936	0.470888888888889	0.459
+"GO:0072329"	5	"GO:0009123"	1.45358073316481	131	"monocarboxylic acid catabolic process"	"nucleoside monophosphate metabolic process"	0.68931746031746	0.4047	0.507
+"GO:0043604"	9	"GO:0006412"	1.44940479251067	1004	"amide biosynthetic process"	"translation"	0.726238095238095	0.5145	0.971
+"GO:0009205"	5	"GO:0009123"	1.44648105985103	161	"purine ribonucleoside triphosphate metabolic process"	"nucleoside monophosphate metabolic process"	0.591587301587302	0.29625	0.744
+"GO:0032787"	5	"GO:0009123"	1.42308304403479	632	"monocarboxylic acid metabolic process"	"nucleoside monophosphate metabolic process"	0.638	0.3233	0.587
+"GO:0120031"	4	"GO:0042254"	1.39523411529611	578	"plasma membrane bounded cell projection assembly"	"ribosome biogenesis"	0.888634920634921	0.376111111111111	0.593
+"GO:0030258"	11	"GO:0030258"	1.38184726662148	192	"lipid modification"	"lipid modification"	0.816142857142857	1	0
+"GO:0071840"	4	"GO:0042254"	1.36713795989977	6747	"cellular component organization or biogenesis"	"ribosome biogenesis"	0.902809523809524	0.504	0.501
+"GO:0009199"	5	"GO:0009123"	1.36301089818777	168	"ribonucleoside triphosphate metabolic process"	"nucleoside monophosphate metabolic process"	0.587301587301587	0.29105	0.753
+"GO:0006807"	6	"GO:0034641"	1.34141628459294	10095	"nitrogen compound metabolic process"	"cellular nitrogen compound metabolic process"	0.708285714285714	0.4935	0.69

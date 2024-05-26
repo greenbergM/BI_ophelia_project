@@ -1,0 +1,99 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0098660"	1	"GO:0098660"	16.7447274948967	938	"inorganic ion transmembrane transport"	"inorganic ion transmembrane transport"	0.911040570175438	0.3171	0
+"GO:0006811"	2	"GO:0006811"	16.698970004336	1269	"monoatomic ion transport"	"monoatomic ion transport"	0.914940789473684	0.280205128205128	0
+"GO:0006936"	3	"GO:0006936"	15.9586073148418	351	"muscle contraction"	"muscle contraction"	0.925042763157895	0.360020408163265	0
+"GO:0009605"	4	"GO:0009605"	12.8538719643218	2784	"response to external stimulus"	"response to external stimulus"	0.934186403508772	0.421090909090909	0
+"GO:0006873"	5	"GO:0006873"	12.0177287669604	535	"intracellular monoatomic ion homeostasis"	"intracellular monoatomic ion homeostasis"	0.978797149122807	0.167555555555556	0
+"GO:0032787"	6	"GO:0032787"	10.4559319556497	632	"monocarboxylic acid metabolic process"	"monocarboxylic acid metabolic process"	0.918710526315789	0.328966666666667	0
+"GO:0007186"	7	"GO:0007186"	10.4089353929735	1287	"G protein-coupled receptor signaling pathway"	"G protein-coupled receptor signaling pathway"	0.907132675438596	0.3759	0
+"GO:0050896"	8	"GO:0050896"	10.397940008672	9207	"response to stimulus"	"response to stimulus"	0.940554824561403	0.6994	0
+"GO:0065008"	9	"GO:0065008"	10.3467874862247	2985	"regulation of biological quality"	"regulation of biological quality"	0.938115131578947	0.4148	0
+"GO:0007610"	10	"GO:0007610"	10.2924298239021	648	"behavior"	"behavior"	0.940010964912281	0.308714285714286	0
+"GO:0009636"	11	"GO:0009636"	9.82390874094432	258	"response to toxic substance"	"response to toxic substance"	0.941656798245614	0.519931034482759	0
+"GO:1901615"	12	"GO:1901615"	9.31875876262441	567	"organic hydroxy compound metabolic process"	"organic hydroxy compound metabolic process"	0.952349780701754	0.228052631578947	0
+"GO:0015837"	13	"GO:0015837"	9.0268721464003	108	"amine transport"	"amine transport"	0.934875	0.458047619047619	0
+"GO:0006721"	14	"GO:0006721"	8.30980391997149	98	"terpenoid metabolic process"	"terpenoid metabolic process"	0.939256578947368	0.385111111111111	0
+"GO:0055002"	15	"GO:0055002"	7.85387196432176	73	"striated muscle cell development"	"striated muscle cell development"	0.945457236842105	0.2588125	0
+"GO:0030049"	17	"GO:0030049"	7.69897000433602	14	"muscle filament sliding"	"muscle filament sliding"	0.913810307017544	0.342882352941177	0
+"GO:0099537"	16	"GO:0099537"	7.69897000433602	756	"trans-synaptic signaling"	"trans-synaptic signaling"	0.939476973684211	0.239421052631579	0
+"GO:0120254"	18	"GO:0120254"	7.48148606012211	162	"olefinic compound metabolic process"	"olefinic compound metabolic process"	0.968189692982456	1	0
+"GO:0070482"	19	"GO:0070482"	6.95860731484177	343	"response to oxygen levels"	"response to oxygen levels"	0.955862938596491	0.318909090909091	0
+"GO:0014866"	20	"GO:0014866"	6.92081875395237	10	"skeletal myofibril assembly"	"skeletal myofibril assembly"	0.904299342105263	0.4726	0
+"GO:0032780"	21	"GO:0032780"	6.76955107862173	17	"negative regulation of ATP-dependent activity"	"negative regulation of ATP-dependent activity"	0.972876096491228	0.471923076923077	0
+"GO:0015711"	22	"GO:0015711"	6.69897000433602	443	"organic anion transport"	"organic anion transport"	0.922788377192982	0.269421052631579	0
+"GO:0003009"	23	"GO:0003009"	6.45593195564972	46	"skeletal muscle contraction"	"skeletal muscle contraction"	0.931797149122807	0.343	0
+"GO:0061041"	24	"GO:0061041"	6.19382002601611	133	"regulation of wound healing"	"regulation of wound healing"	0.916280701754386	0.365666666666667	0
+"GO:0042401"	25	"GO:0042401"	6.13667713987954	38	"biogenic amine biosynthetic process"	"biogenic amine biosynthetic process"	0.948987938596491	0.252714285714286	0
+"GO:0051764"	26	"GO:0051764"	6.11918640771921	13	"actin crosslink formation"	"actin crosslink formation"	0.950709429824561	0.397666666666667	0
+"GO:0071324"	27	"GO:0071324"	6.11350927482752	1	"cellular response to disaccharide stimulus"	"cellular response to disaccharide stimulus"	0.946145833333333	0.463	0
+"GO:0050819"	28	"GO:0050819"	6.0268721464003	52	"negative regulation of coagulation"	"negative regulation of coagulation"	0.917378289473684	0.380333333333333	0
+"GO:0006956"	29	"GO:0006956"	6	67	"complement activation"	"complement activation"	0.912949561403509	0.2959375	0
+"GO:0042574"	30	"GO:0042574"	5.92081875395237	18	"retinal metabolic process"	"retinal metabolic process"	0.945058114035088	0.546	0
+"GO:0044282"	31	"GO:0044282"	5.85387196432176	375	"small molecule catabolic process"	"small molecule catabolic process"	0.931006578947368	0.23125	0
+"GO:0009617"	32	"GO:0009617"	5.74472749489669	739	"response to bacterium"	"response to bacterium"	0.938888157894737	0.2962	0
+"GO:0046677"	33	"GO:0046677"	5.72124639904717	37	"response to antibiotic"	"response to antibiotic"	0.951241228070176	0.535	0
+"GO:0022617"	34	"GO:0022617"	5.72124639904717	62	"extracellular matrix disassembly"	"extracellular matrix disassembly"	0.962189692982456	0.3306	0
+"GO:0010035"	35	"GO:0010035"	5.63827216398241	531	"response to inorganic substance"	"response to inorganic substance"	0.934135964912281	0.306375	0
+"GO:0072376"	36	"GO:0072376"	5.39794000867204	19	"protein activation cascade"	"protein activation cascade"	0.955285087719298	0.469285714285714	0
+"GO:0046903"	37	"GO:0046903"	5.39794000867204	964	"secretion"	"secretion"	0.925541666666667	0.299411764705882	0
+"GO:0060279"	38	"GO:0060279"	5.08618614761628	2	"positive regulation of ovulation"	"positive regulation of ovulation"	0.931059210526316	0.389375	0
+"GO:0006836"	39	"GO:0006836"	4.95860731484177	207	"neurotransmitter transport"	"neurotransmitter transport"	0.941901315789474	0.5768	0
+"GO:0006805"	40	"GO:0006805"	4.48148606012211	125	"xenobiotic metabolic process"	"xenobiotic metabolic process"	0.906555921052632	0.34725	0
+"GO:0032757"	41	"GO:0032757"	4.35654732351381	63	"positive regulation of interleukin-8 production"	"positive regulation of interleukin-8 production"	0.884095394736842	0.357833333333333	0
+"GO:0019430"	42	"GO:0019430"	4.31875876262441	23	"removal of superoxide radicals"	"removal of superoxide radicals"	0.894622807017544	0.190222222222222	0
+"GO:0097164"	43	"GO:0097164"	4.21467016498923	23	"ammonium ion metabolic process"	"ammonium ion metabolic process"	0.974816885964912	1	0
+"GO:0008037"	44	"GO:0008037"	4.09691001300806	154	"cell recognition"	"cell recognition"	0.988981359649123	0.37475	0
+"GO:0055010"	45	"GO:0055010"	4.05551732784983	47	"ventricular cardiac muscle tissue morphogenesis"	"ventricular cardiac muscle tissue morphogenesis"	0.913362938596491	0.426823529411765	0
+"GO:0042136"	46	"GO:0042136"	3.95860731484178	14	"neurotransmitter biosynthetic process"	"neurotransmitter biosynthetic process"	0.965015350877193	0.519	0
+"GO:0031099"	47	"GO:0031099"	3.95860731484178	191	"regeneration"	"regeneration"	0.96321600877193	0.240714285714286	0
+"GO:0032271"	48	"GO:0032271"	3.92081875395238	204	"regulation of protein polymerization"	"regulation of protein polymerization"	0.925106359649123	0.309454545454545	0
+"GO:0001525"	49	"GO:0001525"	3.74472749489669	617	"angiogenesis"	"angiogenesis"	0.90927850877193	0.230428571428571	0
+"GO:0010631"	50	"GO:0010631"	3.65757731917779	372	"epithelial cell migration"	"epithelial cell migration"	0.932371710526316	0.15725	0
+"GO:0007417"	51	"GO:0007417"	3.61978875828839	1028	"central nervous system development"	"central nervous system development"	0.911137061403509	0.3989	0
+"GO:0033058"	52	"GO:0033058"	3.56863623584101	3	"directional locomotion"	"directional locomotion"	0.991	0.546181818181818	0
+"GO:0032501"	53	"GO:0032501"	3.55284196865778	7882	"multicellular organismal process"	"multicellular organismal process"	0.931309210526316	0.816	0
+"GO:0002752"	54	"GO:0002752"	3.50863830616573	70	"cell surface pattern recognition receptor signaling pathway"	"cell surface pattern recognition receptor signaling pathway"	0.877985745614035	0.278	0
+"GO:0030032"	55	"GO:0030032"	3.49485002168009	72	"lamellipodium assembly"	"lamellipodium assembly"	0.95303399122807	0.417125	0
+"GO:0006575"	56	"GO:0006575"	3.48148606012211	126	"cellular modified amino acid metabolic process"	"cellular modified amino acid metabolic process"	0.955628289473684	0.573	0
+"GO:0050906"	57	"GO:0050906"	3.3767507096021	546	"detection of stimulus involved in sensory perception"	"detection of stimulus involved in sensory perception"	0.88993201754386	0.252833333333333	0
+"GO:0044245"	58	"GO:0044245"	3.36653154442041	4	"polysaccharide digestion"	"polysaccharide digestion"	0.965703947368421	0.493	0
+"GO:0006855"	59	"GO:0006855"	3.35654732351381	16	"xenobiotic transmembrane transport"	"xenobiotic transmembrane transport"	0.939575657894737	0.55	0
+"GO:0016999"	60	"GO:0016999"	3.32790214206428	1	"antibiotic metabolic process"	"antibiotic metabolic process"	0.981680921052632	1	0
+"GO:0019932"	61	"GO:0019932"	3.2518119729938	310	"second-messenger-mediated signaling"	"second-messenger-mediated signaling"	0.919189692982456	0.4215	0
+"GO:0009250"	62	"GO:0009250"	3.20760831050175	46	"glucan biosynthetic process"	"glucan biosynthetic process"	0.951310307017544	0.204636363636364	0
+"GO:0051495"	63	"GO:0051495"	3.18045606445813	184	"positive regulation of cytoskeleton organization"	"positive regulation of cytoskeleton organization"	0.915282894736842	0.535666666666667	0
+"GO:0043312"	64	"GO:0043312"	3.16749108729376	12	"neutrophil degranulation"	"neutrophil degranulation"	0.86266447368421	0.28525	0
+"GO:0010810"	65	"GO:0010810"	3.13667713987954	220	"regulation of cell-substrate adhesion"	"regulation of cell-substrate adhesion"	0.954311403508772	0.2784	0
+"GO:0021884"	66	"GO:0021884"	3.06048074738138	25	"forebrain neuron development"	"forebrain neuron development"	0.918517543859649	0.335857142857143	0
+"GO:0042335"	67	"GO:0042335"	3.05060999335509	3	"cuticle development"	"cuticle development"	0.951532894736842	1	0
+"GO:0072593"	68	"GO:0072593"	3.04575749056068	234	"reactive oxygen species metabolic process"	"reactive oxygen species metabolic process"	0.96178399122807	0.5435	0
+"GO:0007009"	69	"GO:0007009"	2.9100948885606	170	"plasma membrane organization"	"plasma membrane organization"	0.963996710526316	0.49225	0
+"GO:0019748"	70	"GO:0019748"	2.89619627904404	57	"secondary metabolic process"	"secondary metabolic process"	0.974081140350877	0.388666666666667	0
+"GO:0060465"	71	"GO:0060465"	2.79048498545737	4	"pharynx development"	"pharynx development"	0.94675	0.634	0
+"GO:0051241"	72	"GO:0051241"	2.73282827159699	1247	"negative regulation of multicellular organismal process"	"negative regulation of multicellular organismal process"	0.896987938596491	0.42775	0
+"GO:0030879"	73	"GO:0030879"	2.60730304674033	133	"mammary gland development"	"mammary gland development"	0.958723684210526	0.476636363636364	0
+"GO:1901685"	74	"GO:1901685"	2.52432881167557	4	"glutathione derivative metabolic process"	"glutathione derivative metabolic process"	0.963836622807018	0.4176	0
+"GO:0019363"	75	"GO:0019363"	2.4294570601181	28	"pyridine nucleotide biosynthetic process"	"pyridine nucleotide biosynthetic process"	0.928685307017544	0.17525	0
+"GO:0009820"	76	"GO:0009820"	2.41793663708829	7	"alkaloid metabolic process"	"alkaloid metabolic process"	0.97059649122807	1	0
+"GO:0042440"	77	"GO:0042440"	2.4089353929735	81	"pigment metabolic process"	"pigment metabolic process"	0.974457236842105	1	0
+"GO:0001667"	78	"GO:0001667"	2.37059040089728	497	"ameboidal-type cell migration"	"ameboidal-type cell migration"	0.976598684210526	0.356333333333333	0
+"GO:1901334"	79	"GO:1901334"	2.19791074211827	10	"lactone metabolic process"	"lactone metabolic process"	0.965251096491228	0.5	0
+"GO:0042698"	80	"GO:0042698"	2.13966199342901	71	"ovulation cycle"	"ovulation cycle"	0.95143201754386	0.3415	0
+"GO:0045879"	81	"GO:0045879"	2.13846558914096	34	"negative regulation of smoothened signaling pathway"	"negative regulation of smoothened signaling pathway"	0.916114035087719	0.8055	0
+"GO:0034394"	82	"GO:0034394"	2.06803388527183	68	"protein localization to cell surface"	"protein localization to cell surface"	0.94515899122807	0.646142857142857	0
+"GO:0006026"	83	"GO:0006026"	1.96537154337468	34	"aminoglycan catabolic process"	"aminoglycan catabolic process"	0.956828947368421	0.529	0
+"GO:0030011"	84	"GO:0030011"	1.95078197732982	18	"maintenance of cell polarity"	"maintenance of cell polarity"	0.989735745614035	0.392833333333333	0
+"GO:0006749"	85	"GO:0006749"	1.94962024373854	58	"glutathione metabolic process"	"glutathione metabolic process"	0.973751096491228	1	0
+"GO:0052652"	86	"GO:0052652"	1.92959267825988	40	"cyclic purine nucleotide metabolic process"	"cyclic purine nucleotide metabolic process"	0.931469298245614	0.3494	0
+"GO:0048384"	87	"GO:0048384"	1.92226882034761	32	"retinoic acid receptor signaling pathway"	"retinoic acid receptor signaling pathway"	0.934219298245614	1	0
+"GO:0150115"	88	"GO:0150115"	1.81930079870397	102	"cell-substrate junction organization"	"cell-substrate junction organization"	0.963115131578947	0.220166666666667	0
+"GO:0042537"	89	"GO:0042537"	1.8153085691824	26	"benzene-containing compound metabolic process"	"benzene-containing compound metabolic process"	0.963667763157895	1	0
+"GO:0030431"	90	"GO:0030431"	1.77494930386195	22	"sleep"	"sleep"	0.96334649122807	1	0
+"GO:0033013"	91	"GO:0033013"	1.76421912967244	62	"tetrapyrrole metabolic process"	"tetrapyrrole metabolic process"	0.955929824561404	1	0
+"GO:0032963"	92	"GO:0032963"	1.72955409198204	106	"collagen metabolic process"	"collagen metabolic process"	0.975384868421053	1	0
+"GO:0046718"	93	"GO:0046718"	1.66234110897386	156	"viral entry into host cell"	"viral entry into host cell"	0.990459429824561	0.662	0
+"GO:0048771"	94	"GO:0048771"	1.63152716155964	184	"tissue remodeling"	"tissue remodeling"	0.957333333333333	1	0
+"GO:1990138"	95	"GO:1990138"	1.61888491929015	179	"neuron projection extension"	"neuron projection extension"	0.880335526315789	0.353	0
+"GO:0006625"	96	"GO:0006625"	1.49390104007156	20	"protein targeting to peroxisome"	"protein targeting to peroxisome"	0.903169956140351	0.261	0
+"GO:0044706"	97	"GO:0044706"	1.41646118074565	216	"multi-multicellular organism process"	"multi-multicellular organism process"	0.955837719298246	0.5075	0
+"GO:0006112"	98	"GO:0006112"	1.41195250301392	89	"energy reserve metabolic process"	"energy reserve metabolic process"	0.963718201754386	1	0

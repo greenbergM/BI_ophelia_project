@@ -1,0 +1,70 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0090304"	2	"GO:0090304"	30	5652	"nucleic acid metabolic process"	"nucleic acid metabolic process"	0.8526276849642	0.382416666666667	0
+"GO:0051276"	1	"GO:0051276"	30	626	"chromosome organization"	"chromosome organization"	0.888484486873508	0.36346511627907	0
+"GO:0022402"	3	"GO:0022402"	28.0809219076239	1308	"cell cycle process"	"cell cycle process"	0.871680190930787	0.296369863013699	0
+"GO:0019219"	4	"GO:0019219"	21.6777807052661	4121	"regulation of nucleobase-containing compound metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.796766109785203	0.373155172413793	0
+"GO:0071824"	5	"GO:0071824"	21.5086383061657	880	"protein-DNA complex organization"	"protein-DNA complex organization"	0.913824582338902	0.27185	0
+"GO:0000377"	6	"GO:0000377"	18.8860566476932	332	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.878163484486874	0.354307692307692	0
+"GO:0043170"	7	"GO:0043170"	18.7212463990472	10222	"macromolecule metabolic process"	"macromolecule metabolic process"	0.890752983293556	0.497777777777778	0
+"GO:1902850"	8	"GO:1902850"	17.9208187539524	163	"microtubule cytoskeleton organization involved in mitosis"	"microtubule cytoskeleton organization involved in mitosis"	0.839270883054892	0.31412	0
+"GO:0009059"	9	"GO:0009059"	16.5850266520292	7788	"macromolecule biosynthetic process"	"macromolecule biosynthetic process"	0.86681861575179	0.358	0
+"GO:0006996"	10	"GO:0006996"	15.8860566476932	3613	"organelle organization"	"organelle organization"	0.889698090692124	0.3944375	0
+"GO:0140013"	11	"GO:0140013"	15.5528419686578	194	"meiotic nuclear division"	"meiotic nuclear division"	0.81559785202864	0.288615384615385	0
+"GO:0006259"	12	"GO:0006259"	14.7695510786217	1037	"DNA metabolic process"	"DNA metabolic process"	0.859731503579952	0.332756756756757	0
+"GO:0050794"	13	"GO:0050794"	13.0705810742857	11770	"regulation of cellular process"	"regulation of cellular process"	0.902084725536993	0.6292	0
+"GO:0051781"	14	"GO:0051781"	12.8538719643218	94	"positive regulation of cell division"	"positive regulation of cell division"	0.91703937947494	0.324294117647059	0
+"GO:0006974"	15	"GO:0006974"	11.698970004336	884	"DNA damage response"	"DNA damage response"	0.940429594272076	0.367818181818182	0
+"GO:0008608"	16	"GO:0008608"	10.568636235841	49	"attachment of spindle microtubules to kinetochore"	"attachment of spindle microtubules to kinetochore"	0.870202863961814	0.264066666666667	0
+"GO:0048523"	17	"GO:0048523"	8.63827216398241	5526	"negative regulation of cellular process"	"negative regulation of cellular process"	0.884408114558473	0.512	0
+"GO:0016570"	18	"GO:0016570"	7.67778070526608	120	"histone modification"	"histone modification"	0.905754176610978	0.391864864864865	0
+"GO:0051169"	19	"GO:0051169"	7.30980391997149	330	"nuclear transport"	"nuclear transport"	0.956651551312649	0.2484	0
+"GO:0051129"	20	"GO:0051129"	6.95860731484177	731	"negative regulation of cellular component organization"	"negative regulation of cellular component organization"	0.844982100238663	0.393	0
+"GO:0009790"	21	"GO:0009790"	6.88605664769316	1124	"embryo development"	"embryo development"	0.914498806682578	0.311785714285714	0
+"GO:0043414"	22	"GO:0043414"	6.36653154442041	210	"macromolecule methylation"	"macromolecule methylation"	0.911964200477327	0.5105	0
+"GO:0035019"	23	"GO:0035019"	5.60205999132796	69	"somatic stem cell population maintenance"	"somatic stem cell population maintenance"	0.950193317422434	0.34275	0
+"GO:0035987"	24	"GO:0035987"	5.24412514432751	49	"endodermal cell differentiation"	"endodermal cell differentiation"	0.910144391408115	0.465166666666667	0
+"GO:0045165"	25	"GO:0045165"	5.14266750356873	286	"cell fate commitment"	"cell fate commitment"	0.924559665871122	0.3585	0
+"GO:0007221"	26	"GO:0007221"	4.95860731484177	7	"positive regulation of transcription of Notch receptor target"	"positive regulation of transcription of Notch receptor target"	0.84972076372315	0.5605	0
+"GO:0045652"	27	"GO:0045652"	4.95860731484177	38	"regulation of megakaryocyte differentiation"	"regulation of megakaryocyte differentiation"	0.877719570405728	0.522857142857143	0
+"GO:0072331"	28	"GO:0072331"	4.82390874094432	175	"signal transduction by p53 class mediator"	"signal transduction by p53 class mediator"	0.911768496420048	0.459052631578947	0
+"GO:0006491"	29	"GO:0006491"	4.72124639904717	17	"N-glycan processing"	"N-glycan processing"	0.930866348448687	0.469333333333333	0
+"GO:0045732"	30	"GO:0045732"	4.60205999132796	210	"positive regulation of protein catabolic process"	"positive regulation of protein catabolic process"	0.840502386634845	0.274857142857143	0
+"GO:0080135"	31	"GO:0080135"	4.53760200210104	655	"regulation of cellular response to stress"	"regulation of cellular response to stress"	0.897889021479714	0.4906	0
+"GO:0051101"	32	"GO:0051101"	4.53760200210104	85	"regulation of DNA binding"	"regulation of DNA binding"	0.950369928400955	0.384136363636364	0
+"GO:0097711"	33	"GO:0097711"	4.34678748622466	2	"ciliary basal body-plasma membrane docking"	"ciliary basal body-plasma membrane docking"	0.90909307875895	0.475	0
+"GO:0007077"	34	"GO:0007077"	4.24412514432751	7	"mitotic nuclear membrane disassembly"	"mitotic nuclear membrane disassembly"	0.874073985680191	0.350333333333333	0
+"GO:0034502"	35	"GO:0034502"	4.15490195998574	119	"protein localization to chromosome"	"protein localization to chromosome"	0.960819809069212	0.348142857142857	0
+"GO:0032502"	37	"GO:0032502"	4.11350927482752	6549	"developmental process"	"developmental process"	0.923943914081145	0.474466666666667	0
+"GO:0090090"	36	"GO:0090090"	4.11350927482752	140	"negative regulation of canonical Wnt signaling pathway"	"negative regulation of canonical Wnt signaling pathway"	0.890165871121718	0.245	0
+"GO:0007389"	38	"GO:0007389"	3.95860731484178	475	"pattern specification process"	"pattern specification process"	0.927284009546539	0.267142857142857	0
+"GO:0050793"	40	"GO:0050793"	3.82390874094432	2562	"regulation of developmental process"	"regulation of developmental process"	0.869731503579952	0.32628	0
+"GO:0006406"	39	"GO:0006406"	3.82390874094432	70	"mRNA export from nucleus"	"mRNA export from nucleus"	0.88886754176611	0.309125	0
+"GO:0016310"	41	"GO:0016310"	3.72124639904717	1588	"phosphorylation"	"phosphorylation"	0.905578758949881	0.279384615384615	0
+"GO:0001841"	42	"GO:0001841"	3.69897000433602	104	"neural tube formation"	"neural tube formation"	0.909799522673031	0.269384615384615	0
+"GO:0008361"	43	"GO:0008361"	3.65757731917779	187	"regulation of cell size"	"regulation of cell size"	0.903609785202864	0.3618	0
+"GO:0040010"	44	"GO:0040010"	3.38721614328026	2	"positive regulation of growth rate"	"positive regulation of growth rate"	0.95054415274463	0.437285714285714	0
+"GO:0030218"	45	"GO:0030218"	3.26760624017703	131	"erythrocyte differentiation"	"erythrocyte differentiation"	0.915311455847255	0.215166666666667	0
+"GO:0021872"	46	"GO:0021872"	3.14874165128092	53	"forebrain generation of neurons"	"forebrain generation of neurons"	0.914307875894988	0.438777777777778	0
+"GO:2000177"	47	"GO:2000177"	2.86966623150499	100	"regulation of neural precursor cell proliferation"	"regulation of neural precursor cell proliferation"	0.936529832935561	0.46435	0
+"GO:0048565"	48	"GO:0048565"	2.86012091359876	134	"digestive tract development"	"digestive tract development"	0.930590692124105	0.359333333333333	0
+"GO:1904888"	49	"GO:1904888"	2.77989191195995	72	"cranial skeletal system development"	"cranial skeletal system development"	0.95086276849642	0.5175	0
+"GO:0090162"	50	"GO:0090162"	2.76955107862173	34	"establishment of epithelial cell polarity"	"establishment of epithelial cell polarity"	0.987534606205251	0.5545	0
+"GO:0051642"	51	"GO:0051642"	2.71669877129645	32	"centrosome localization"	"centrosome localization"	0.973883054892601	0.5	0
+"GO:0070301"	52	"GO:0070301"	2.6252516539899	67	"cellular response to hydrogen peroxide"	"cellular response to hydrogen peroxide"	0.955177804295943	0.598	0
+"GO:0006111"	53	"GO:0006111"	2.51427857351842	53	"regulation of gluconeogenesis"	"regulation of gluconeogenesis"	0.89154892601432	0.2454	0
+"GO:0001736"	54	"GO:0001736"	2.3840499483436	70	"establishment of planar polarity"	"establishment of planar polarity"	0.93472553699284	0.533	0
+"GO:0006101"	55	"GO:0006101"	2.2839966563652	5	"citrate metabolic process"	"citrate metabolic process"	0.941021479713604	0.529	0
+"GO:0048634"	56	"GO:0048634"	2.22767829327708	23	"regulation of muscle organ development"	"regulation of muscle organ development"	0.903788782816229	0.219888888888889	0
+"GO:0035051"	57	"GO:0035051"	2.17457388223218	165	"cardiocyte differentiation"	"cardiocyte differentiation"	0.912292362768496	0.5365	0
+"GO:0006972"	58	"GO:0006972"	2.14691047014813	27	"hyperosmotic response"	"hyperosmotic response"	0.974608591885442	0.583	0
+"GO:0009987"	59	"GO:0009987"	2.07314329105031	17593	"cellular process"	"cellular process"	0.977704057279236	1	0
+"GO:0006099"	60	"GO:0006099"	2.03905380426617	33	"tricarboxylic acid cycle"	"tricarboxylic acid cycle"	0.938535799522673	1	0
+"GO:0045217"	61	"GO:0045217"	2.0301183562535	17	"cell-cell junction maintenance"	"cell-cell junction maintenance"	0.943718377088306	0.748	0
+"GO:0030513"	62	"GO:0030513"	1.83505262737816	42	"positive regulation of BMP signaling pathway"	"positive regulation of BMP signaling pathway"	0.903473747016706	0.52175	0
+"GO:0034446"	63	"GO:0034446"	1.67080558491155	100	"substrate adhesion-dependent cell spreading"	"substrate adhesion-dependent cell spreading"	0.98967661097852	1	0
+"GO:0008543"	64	"GO:0008543"	1.56928011213672	86	"fibroblast growth factor receptor signaling pathway"	"fibroblast growth factor receptor signaling pathway"	0.921184964200477	0.511	0
+"GO:0010501"	65	"GO:0010501"	1.48412615628832	9	"RNA secondary structure unwinding"	"RNA secondary structure unwinding"	0.921887828162291	1	0
+"GO:0031503"	66	"GO:0031503"	1.43806423668622	188	"protein-containing complex localization"	"protein-containing complex localization"	0.98127446300716	1	0
+"GO:0008355"	67	"GO:0008355"	1.36622865391744	2	"olfactory learning"	"olfactory learning"	0.962215990453461	1	0
+"GO:0071577"	68	"GO:0071577"	1.34237056861105	27	"zinc ion transmembrane transport"	"zinc ion transmembrane transport"	0.972601431980907	1	0
+"GO:0006890"	69	"GO:0006890"	1.33752549624969	52	"retrograde vesicle-mediated transport, Golgi to endoplasmic reticulum"	"retrograde vesicle-mediated transport, Golgi to endoplasmic reticulum"	0.97273508353222	1	0

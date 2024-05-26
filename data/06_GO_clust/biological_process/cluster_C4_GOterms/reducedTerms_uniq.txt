@@ -1,0 +1,67 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0071313"	1	"GO:0071313"	9.69897000433602	11	"cellular response to caffeine"	"cellular response to caffeine"	0.922237051792829	0.341588235294118	0
+"GO:0035994"	2	"GO:0035994"	7.61978875828839	25	"response to muscle stretch"	"response to muscle stretch"	0.941988047808765	0.4632	0
+"GO:0071466"	3	"GO:0071466"	7.30102999566398	192	"cellular response to xenobiotic stimulus"	"cellular response to xenobiotic stimulus"	0.917121513944223	0.51125	0
+"GO:0003013"	4	"GO:0003013"	7.05060999335509	601	"circulatory system process"	"circulatory system process"	0.924129482071713	0.2975	0
+"GO:0009605"	5	"GO:0009605"	6.88605664769316	2784	"response to external stimulus"	"response to external stimulus"	0.910966135458167	0.392636363636364	0
+"GO:0043171"	6	"GO:0043171"	6.49485002168009	23	"peptide catabolic process"	"peptide catabolic process"	0.964593625498008	0.7305	0
+"GO:0006952"	7	"GO:0006952"	6.44369749923271	1850	"defense response"	"defense response"	0.918211155378486	0.3595	0
+"GO:0050896"	8	"GO:0050896"	6.06550154875643	9207	"response to stimulus"	"response to stimulus"	0.919713147410359	0.64175	0
+"GO:0014808"	9	"GO:0014808"	6	36	"release of sequestered calcium ion into cytosol by sarcoplasmic reticulum"	"release of sequestered calcium ion into cytosol by sarcoplasmic reticulum"	0.859486055776892	0.360285714285714	0
+"GO:0055008"	10	"GO:0055008"	5.92081875395237	61	"cardiac muscle tissue morphogenesis"	"cardiac muscle tissue morphogenesis"	0.9025796812749	0.29575	0
+"GO:0002702"	11	"GO:0002702"	5.76955107862173	136	"positive regulation of production of molecular mediator of immune response"	"positive regulation of production of molecular mediator of immune response"	0.876559760956175	0.36440625	0
+"GO:0042359"	12	"GO:0042359"	5.60205999132796	20	"vitamin D metabolic process"	"vitamin D metabolic process"	0.956651394422311	0.3995	0
+"GO:0009617"	13	"GO:0009617"	5.60205999132796	739	"response to bacterium"	"response to bacterium"	0.916252988047809	0.27975	0
+"GO:0086002"	14	"GO:0086002"	5.52287874528034	53	"cardiac muscle cell action potential involved in contraction"	"cardiac muscle cell action potential involved in contraction"	0.878414342629482	0.2765	0
+"GO:0006508"	15	"GO:0006508"	5.2839966563652	1648	"proteolysis"	"proteolysis"	0.953338645418327	0.387555555555556	0
+"GO:0055010"	16	"GO:0055010"	5.2518119729938	47	"ventricular cardiac muscle tissue morphogenesis"	"ventricular cardiac muscle tissue morphogenesis"	0.902924302788845	0.4195	0
+"GO:0070296"	17	"GO:0070296"	5.18708664335714	43	"sarcoplasmic reticulum calcium ion transport"	"sarcoplasmic reticulum calcium ion transport"	0.927872509960159	0.511363636363636	0
+"GO:0051240"	18	"GO:0051240"	4.95860731484177	1682	"positive regulation of multicellular organismal process"	"positive regulation of multicellular organismal process"	0.878250996015936	0.4784	0
+"GO:0044419"	19	"GO:0044419"	4.92081875395237	1755	"biological process involved in interspecies interaction between organisms"	"biological process involved in interspecies interaction between organisms"	0.975408366533865	0.4174	0
+"GO:0060760"	20	"GO:0060760"	4.79588001734407	67	"positive regulation of response to cytokine stimulus"	"positive regulation of response to cytokine stimulus"	0.8834203187251	0.488	0
+"GO:1904019"	21	"GO:1904019"	4.65757731917779	144	"epithelial cell apoptotic process"	"epithelial cell apoptotic process"	0.986474103585657	0.474142857142857	0
+"GO:0043588"	22	"GO:0043588"	4.60205999132796	317	"skin development"	"skin development"	0.950077689243028	0.713	0
+"GO:0098771"	23	"GO:0098771"	4.60205999132796	537	"inorganic ion homeostasis"	"inorganic ion homeostasis"	0.970745019920319	0.200833333333333	0
+"GO:0007204"	24	"GO:0007204"	4.56863623584101	173	"positive regulation of cytosolic calcium ion concentration"	"positive regulation of cytosolic calcium ion concentration"	0.955169322709163	0.5132	0
+"GO:0051091"	25	"GO:0051091"	4.52287874528034	244	"positive regulation of DNA-binding transcription factor activity"	"positive regulation of DNA-binding transcription factor activity"	0.915996015936255	0.3876	0
+"GO:0046847"	26	"GO:0046847"	4.48148606012211	70	"filopodium assembly"	"filopodium assembly"	0.963884462151394	0.539428571428571	0
+"GO:0043123"	27	"GO:0043123"	4.11350927482752	196	"positive regulation of canonical NF-kappaB signal transduction"	"positive regulation of canonical NF-kappaB signal transduction"	0.872635458167331	0.4255	0
+"GO:0003208"	28	"GO:0003208"	4.10237290870956	71	"cardiac ventricle morphogenesis"	"cardiac ventricle morphogenesis"	0.913970119521912	0.458058823529412	0
+"GO:0006706"	29	"GO:0006706"	3.74472749489669	25	"steroid catabolic process"	"steroid catabolic process"	0.967109561752988	0.526444444444444	0
+"GO:0001819"	30	"GO:0001819"	3.72124639904717	499	"positive regulation of cytokine production"	"positive regulation of cytokine production"	0.849344621513944	0.335571428571429	0
+"GO:0001503"	31	"GO:0001503"	3.58502665202918	444	"ossification"	"ossification"	0.955408366533865	0.563	0
+"GO:0007565"	32	"GO:0007565"	3.49485002168009	186	"female pregnancy"	"female pregnancy"	0.953474103585657	0.566	0
+"GO:0040011"	33	"GO:0040011"	3.44369749923271	1334	"locomotion"	"locomotion"	0.998239043824701	0.558	0
+"GO:0007314"	34	"GO:0007314"	3.3767507096021	6	"oocyte anterior/posterior axis specification"	"oocyte anterior/posterior axis specification"	0.915249003984064	0.176636363636364	0
+"GO:0023052"	35	"GO:0023052"	3.34678748622466	6571	"signaling"	"signaling"	0.93090438247012	0.434909090909091	0
+"GO:0042908"	36	"GO:0042908"	3.30102999566398	60	"xenobiotic transport"	"xenobiotic transport"	0.947370517928287	0.55	0
+"GO:0007267"	37	"GO:0007267"	3.24412514432751	1706	"cell-cell signaling"	"cell-cell signaling"	0.930637450199203	0.4345	0
+"GO:0140352"	38	"GO:0140352"	3.10237290870956	907	"export from cell"	"export from cell"	0.922067729083665	0.370833333333333	0
+"GO:0003007"	39	"GO:0003007"	3.08618614761628	264	"heart morphogenesis"	"heart morphogenesis"	0.902442231075697	0.460888888888889	0
+"GO:1901615"	40	"GO:1901615"	3.05060999335509	567	"organic hydroxy compound metabolic process"	"organic hydroxy compound metabolic process"	0.964378486055777	0.239625	0
+"GO:1904398"	41	"GO:1904398"	2.93554201077308	3	"positive regulation of neuromuscular junction development"	"positive regulation of neuromuscular junction development"	0.923155378486056	0.354545454545454	0
+"GO:0009593"	42	"GO:0009593"	2.91721462968355	513	"detection of chemical stimulus"	"detection of chemical stimulus"	0.925211155378486	0.519	0
+"GO:0021700"	43	"GO:0021700"	2.86646109162978	330	"developmental maturation"	"developmental maturation"	0.953870517928287	0.511	0
+"GO:0072347"	44	"GO:0072347"	2.80687540164554	1	"response to anesthetic"	"response to anesthetic"	0.953057768924303	1	0
+"GO:2000241"	45	"GO:2000241"	2.71219827006977	207	"regulation of reproductive process"	"regulation of reproductive process"	0.96158764940239	0.5096	0
+"GO:0055057"	47	"GO:0055057"	2.57348873863542	14	"neuroblast division"	"neuroblast division"	0.922478087649402	0.52775	0
+"GO:0036445"	46	"GO:0036445"	2.57348873863542	1	"neuronal stem cell division"	"neuronal stem cell division"	0.990286852589641	0.46725	0
+"GO:0072089"	48	"GO:0072089"	2.48678239993206	125	"stem cell proliferation"	"stem cell proliferation"	0.984918326693227	0.592333333333333	0
+"GO:0043062"	49	"GO:0043062"	2.44611697335613	322	"extracellular structure organization"	"extracellular structure organization"	0.974490039840637	0.57225	0
+"GO:0007028"	50	"GO:0007028"	2.44369749923271	15	"cytoplasm organization"	"cytoplasm organization"	0.979296812749004	1	0
+"GO:0120254"	51	"GO:0120254"	2.43770713554353	162	"olefinic compound metabolic process"	"olefinic compound metabolic process"	0.977856573705179	1	0
+"GO:0022603"	52	"GO:0022603"	2.38510278396687	935	"regulation of anatomical structure morphogenesis"	"regulation of anatomical structure morphogenesis"	0.901713147410359	0.487666666666667	0
+"GO:1901565"	53	"GO:1901565"	2.3269790928711	1329	"organonitrogen compound catabolic process"	"organonitrogen compound catabolic process"	0.958663346613546	0.36475	0
+"GO:0040007"	54	"GO:0040007"	2.19517932127884	923	"growth"	"growth"	0.992125498007968	0.33725	0
+"GO:0007155"	55	"GO:0007155"	2.10623823794206	1529	"cell adhesion"	"cell adhesion"	0.988581673306773	0.454333333333333	0
+"GO:0016477"	56	"GO:0016477"	2.02090709936167	1602	"cell migration"	"cell migration"	0.990127490039841	0.5855	0
+"GO:0035194"	57	"GO:0035194"	1.99225222199926	635	"regulatory ncRNA-mediated post-transcriptional gene silencing"	"regulatory ncRNA-mediated post-transcriptional gene silencing"	0.916677290836653	0.4295	0
+"GO:0022404"	58	"GO:0022404"	1.95039438740503	96	"molting cycle process"	"molting cycle process"	0.962382470119522	1	0
+"GO:0006081"	59	"GO:0006081"	1.94962024373854	70	"cellular aldehyde metabolic process"	"cellular aldehyde metabolic process"	0.973117529880478	1	0
+"GO:0072524"	60	"GO:0072524"	1.87909718238547	85	"pyridine-containing compound metabolic process"	"pyridine-containing compound metabolic process"	0.963175298804781	1	0
+"GO:0019748"	61	"GO:0019748"	1.66454209931062	57	"secondary metabolic process"	"secondary metabolic process"	0.981480079681275	1	0
+"GO:0008038"	62	"GO:0008038"	1.65876337676131	45	"neuron recognition"	"neuron recognition"	0.92401593625498	0.5445	0
+"GO:0048066"	63	"GO:0048066"	1.48798303050387	50	"developmental pigmentation"	"developmental pigmentation"	1	1	0
+"GO:0043112"	64	"GO:0043112"	1.46457928194383	73	"receptor metabolic process"	"receptor metabolic process"	0.977346613545817	1	0
+"GO:0051674"	65	"GO:0051674"	1.38679264789624	3	"localization of cell"	"localization of cell"	0.958760956175299	1	0
+"GO:0019058"	66	"GO:0019058"	1.35291057128345	321	"viral life cycle"	"viral life cycle"	1	1	0

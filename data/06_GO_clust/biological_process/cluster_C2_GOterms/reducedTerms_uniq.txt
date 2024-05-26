@@ -1,0 +1,12 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0008033"	1	"GO:0008033"	4.74472749489669	134	"tRNA processing"	"tRNA processing"	0.712285714285714	0.431857142857143	0
+"GO:0140053"	2	"GO:0140053"	3.49485002168009	163	"mitochondrial gene expression"	"mitochondrial gene expression"	0.827873015873016	1	0
+"GO:1901657"	3	"GO:1901657"	3.11918640771921	82	"glycosyl compound metabolic process"	"glycosyl compound metabolic process"	0.827333333333333	0.4542	0
+"GO:0042254"	4	"GO:0042254"	2.91721462968355	325	"ribosome biogenesis"	"ribosome biogenesis"	0.904507936507936	0.525222222222222	0
+"GO:0009123"	5	"GO:0009123"	2.58670023591875	77	"nucleoside monophosphate metabolic process"	"nucleoside monophosphate metabolic process"	0.596698412698413	0.3088	0
+"GO:0034641"	6	"GO:0034641"	2.42021640338319	6825	"cellular nitrogen compound metabolic process"	"cellular nitrogen compound metabolic process"	0.646174603174603	0.529333333333333	0
+"GO:0032259"	7	"GO:0032259"	1.89997426989214	282	"methylation"	"methylation"	0.849952380952381	0.5105	0
+"GO:0045333"	8	"GO:0045333"	1.6848696828164	243	"cellular respiration"	"cellular respiration"	0.832	1	0
+"GO:0006412"	9	"GO:0006412"	1.63638802010786	835	"translation"	"translation"	0.722492063492064	0.5145	0
+"GO:0019827"	10	"GO:0019827"	1.52085675202139	183	"stem cell population maintenance"	"stem cell population maintenance"	0.984190476190476	0.502	0
+"GO:0030258"	11	"GO:0030258"	1.38184726662148	192	"lipid modification"	"lipid modification"	0.816142857142857	1	0

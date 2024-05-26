@@ -1,0 +1,839 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0090304"	2	"GO:0090304"	30	5652	"nucleic acid metabolic process"	"nucleic acid metabolic process"	0.8526276849642	0.382416666666667	0
+"GO:0051276"	1	"GO:0051276"	30	626	"chromosome organization"	"chromosome organization"	0.888484486873508	0.36346511627907	0
+"GO:0022402"	3	"GO:0022402"	28.0809219076239	1308	"cell cycle process"	"cell cycle process"	0.871680190930787	0.296369863013699	0
+"GO:1903047"	3	"GO:0022402"	27.0362121726544	774	"mitotic cell cycle process"	"cell cycle process"	0.871486873508353	0.280972602739726	0.899
+"GO:0000278"	3	"GO:0022402"	26.1249387366083	928	"mitotic cell cycle"	"cell cycle process"	0.876964200477327	0.311205479452055	0.837
+"GO:0006139"	2	"GO:0090304"	25.6197887582884	6165	"nucleobase-containing compound metabolic process"	"nucleic acid metabolic process"	0.855392601431981	0.389958333333333	0.875
+"GO:0010564"	3	"GO:0022402"	23.9586073148418	745	"regulation of cell cycle process"	"cell cycle process"	0.827461813842482	0.241041095890411	0.887
+"GO:0016070"	2	"GO:0090304"	23.8538719643218	5098	"RNA metabolic process"	"nucleic acid metabolic process"	0.852631264916468	0.367291666666667	0.858
+"GO:0007049"	3	"GO:0022402"	23.1549019599857	1824	"cell cycle"	"cell cycle process"	0.877417661097852	0.33054794520548	0.933
+"GO:0007059"	3	"GO:0022402"	22.8860566476932	424	"chromosome segregation"	"cell cycle process"	0.876059665871122	0.302109589041096	0.847
+"GO:0000280"	1	"GO:0051276"	22.8538719643218	441	"nuclear division"	"chromosome organization"	0.895926014319809	0.47253488372093	0.552
+"GO:0033044"	1	"GO:0051276"	22.4089353929735	247	"regulation of chromosome organization"	"chromosome organization"	0.846243436754177	0.338348837209302	0.887
+"GO:0098813"	3	"GO:0022402"	21.8860566476932	312	"nuclear chromosome segregation"	"cell cycle process"	0.877526252983293	0.308397260273973	0.818
+"GO:0140014"	1	"GO:0051276"	21.698970004336	274	"mitotic nuclear division"	"chromosome organization"	0.830183770883055	0.470906976744186	0.523
+"GO:0019219"	4	"GO:0019219"	21.6777807052661	4121	"regulation of nucleobase-containing compound metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.796766109785203	0.373155172413793	0
+"GO:0071824"	5	"GO:0071824"	21.5086383061657	880	"protein-DNA complex organization"	"protein-DNA complex organization"	0.913824582338902	0.27185	0
+"GO:0051726"	3	"GO:0022402"	21.2518119729938	1119	"regulation of cell cycle"	"cell cycle process"	0.83108353221957	0.274164383561644	0.847
+"GO:0000819"	3	"GO:0022402"	21.1739251972992	225	"sister chromatid segregation"	"cell cycle process"	0.827103818615752	0.317575342465753	0.785
+"GO:0006725"	2	"GO:0090304"	21.0757207139381	6390	"cellular aromatic compound metabolic process"	"nucleic acid metabolic process"	0.868529832935561	0.461791666666667	0.864
+"GO:0051171"	4	"GO:0019219"	20.9586073148418	5608	"regulation of nitrogen compound metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.825245823389021	0.377896551724138	0.848
+"GO:0000070"	3	"GO:0022402"	20.6575773191778	184	"mitotic sister chromatid segregation"	"cell cycle process"	0.81793675417661	0.283821917808219	0.773
+"GO:0048285"	1	"GO:0051276"	20.4685210829577	488	"organelle fission"	"chromosome organization"	0.895662291169451	0.472209302325581	0.557
+"GO:0046483"	2	"GO:0090304"	20.2218487496164	6336	"heterocycle metabolic process"	"nucleic acid metabolic process"	0.86832338902148	0.460041666666667	0.867
+"GO:0060255"	4	"GO:0019219"	19.0969100130081	6624	"regulation of macromolecule metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.828929594272077	0.405068965517241	0.709
+"GO:0000377"	6	"GO:0000377"	18.8860566476932	332	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.878163484486874	0.354307692307692	0
+"GO:0000398"	6	"GO:0000377"	18.8860566476932	332	"mRNA splicing, via spliceosome"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.873394988066826	0.228153846153846	0.995
+"GO:0000375"	6	"GO:0000377"	18.8239087409443	336	"RNA splicing, via transesterification reactions"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.877844868735083	0.353730769230769	0.992
+"GO:0044770"	3	"GO:0022402"	18.8239087409443	574	"cell cycle phase transition"	"cell cycle process"	0.874206443914081	0.25941095890411	0.857
+"GO:0043170"	7	"GO:0043170"	18.7212463990472	10222	"macromolecule metabolic process"	"macromolecule metabolic process"	0.890752983293556	0.497777777777778	0
+"GO:0006325"	5	"GO:0071824"	18.6197887582884	782	"chromatin organization"	"protein-DNA complex organization"	0.91440692124105	0.26695	0.979
+"GO:0051252"	4	"GO:0019219"	18.5528419686578	3833	"regulation of RNA metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.794501193317422	0.375172413793103	0.919
+"GO:1902850"	8	"GO:1902850"	17.9208187539524	163	"microtubule cytoskeleton organization involved in mitosis"	"microtubule cytoskeleton organization involved in mitosis"	0.839270883054892	0.31412	0
+"GO:0080090"	4	"GO:0019219"	17.8538719643218	5780	"regulation of primary metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.829110978520286	0.388844827586207	0.835
+"GO:0006397"	6	"GO:0000377"	17.8538719643218	518	"mRNA processing"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.870881861575179	0.2595	0.77
+"GO:0044772"	3	"GO:0022402"	17.6382721639824	470	"mitotic cell cycle phase transition"	"cell cycle process"	0.871206443914081	0.241287671232877	0.835
+"GO:0007346"	3	"GO:0022402"	17.5850266520292	520	"regulation of mitotic cell cycle"	"cell cycle process"	0.835889021479714	0.271383561643836	0.764
+"GO:0031323"	4	"GO:0019219"	17.4948500216801	6630	"regulation of cellular metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.820752983293556	0.40951724137931	0.758
+"GO:0009059"	9	"GO:0009059"	16.5850266520292	7788	"macromolecule biosynthetic process"	"macromolecule biosynthetic process"	0.86681861575179	0.358	0
+"GO:0051983"	3	"GO:0022402"	16.4436974992327	131	"regulation of chromosome segregation"	"cell cycle process"	0.841674224343675	0.264506849315069	0.735
+"GO:1901360"	2	"GO:0090304"	16.4202164033832	6635	"organic cyclic compound metabolic process"	"nucleic acid metabolic process"	0.882214797136038	0.478041666666667	0.85
+"GO:1901989"	3	"GO:0022402"	16.0705810742857	119	"positive regulation of cell cycle phase transition"	"cell cycle process"	0.829596658711217	0.270520547945206	0.707
+"GO:0030261"	1	"GO:0051276"	15.9586073148418	47	"chromosome condensation"	"chromosome organization"	0.909464200477327	0.473604651162791	0.761
+"GO:0006996"	10	"GO:0006996"	15.8860566476932	3613	"organelle organization"	"organelle organization"	0.889698090692124	0.3944375	0
+"GO:0008380"	6	"GO:0000377"	15.7212463990472	478	"RNA splicing"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.874289976133652	0.349576923076923	0.957
+"GO:0140013"	11	"GO:0140013"	15.5528419686578	194	"meiotic nuclear division"	"meiotic nuclear division"	0.81559785202864	0.288615384615385	0
+"GO:0007051"	8	"GO:1902850"	15.5086383061657	202	"spindle organization"	"microtubule cytoskeleton organization involved in mitosis"	0.841695704057279	0.26528	0.738
+"GO:1901987"	3	"GO:0022402"	15.3187587626244	456	"regulation of cell cycle phase transition"	"cell cycle process"	0.830420047732697	0.217342465753425	0.83
+"GO:0090068"	3	"GO:0022402"	15.1426675035687	262	"positive regulation of cell cycle process"	"cell cycle process"	0.822334128878282	0.278821917808219	0.776
+"GO:0019222"	4	"GO:0019219"	14.8538719643218	7148	"regulation of metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.841334128878282	0.418189655172414	0.725
+"GO:0006259"	12	"GO:0006259"	14.7695510786217	1037	"DNA metabolic process"	"DNA metabolic process"	0.859731503579952	0.332756756756757	0
+"GO:0010467"	9	"GO:0009059"	14.6382721639824	7319	"gene expression"	"macromolecule biosynthetic process"	0.86686276849642	0.362166666666667	0.85
+"GO:0045931"	3	"GO:0022402"	14.6382721639824	128	"positive regulation of mitotic cell cycle"	"cell cycle process"	0.834883054892602	0.319767123287671	0.648
+"GO:0032774"	2	"GO:0090304"	14.3872161432803	3599	"RNA biosynthetic process"	"nucleic acid metabolic process"	0.848875894988067	0.319	0.796
+"GO:0051984"	3	"GO:0022402"	14.1366771398795	27	"positive regulation of chromosome segregation"	"cell cycle process"	0.842922434367542	0.328575342465753	0.626
+"GO:0006351"	2	"GO:0090304"	14.1249387366083	3568	"DNA-templated transcription"	"nucleic acid metabolic process"	0.848694510739857	0.318958333333333	0.795
+"GO:0051383"	1	"GO:0051276"	13.8538719643218	21	"kinetochore organization"	"chromosome organization"	0.916072792362768	0.506720930232558	0.698
+"GO:0051128"	10	"GO:0006996"	13.8538719643218	2451	"regulation of cellular component organization"	"organelle organization"	0.850468973747017	0.3965625	0.613
+"GO:1902101"	3	"GO:0022402"	13.8538719643218	15	"positive regulation of metaphase/anaphase transition of cell cycle"	"cell cycle process"	0.799699284009547	0.29986301369863	0.593
+"GO:0006338"	5	"GO:0071824"	13.698970004336	638	"chromatin remodeling"	"protein-DNA complex organization"	0.91568138424821	0.2649	0.956
+"GO:1903046"	11	"GO:0140013"	13.6575773191778	214	"meiotic cell cycle process"	"meiotic nuclear division"	0.862852028639618	0.283102564102564	0.983
+"GO:1905820"	3	"GO:0022402"	13.5850266520292	29	"positive regulation of chromosome separation"	"cell cycle process"	0.842276849642005	0.316465753424658	0.623
+"GO:0045787"	3	"GO:0022402"	13.568636235841	334	"positive regulation of cell cycle"	"cell cycle process"	0.827461813842482	0.31513698630137	0.724
+"GO:1901992"	3	"GO:0022402"	13.5228787452803	98	"positive regulation of mitotic cell cycle phase transition"	"cell cycle process"	0.828571599045346	0.259684931506849	0.692
+"GO:0033043"	10	"GO:0006996"	13.5086383061657	1176	"regulation of organelle organization"	"organelle organization"	0.843303102625298	0.3726875	0.752
+"GO:0051783"	1	"GO:0051276"	13.3767507096021	146	"regulation of nuclear division"	"chromosome organization"	0.857805489260143	0.438674418604651	0.481
+"GO:0050794"	13	"GO:0050794"	13.0705810742857	11770	"regulation of cellular process"	"regulation of cellular process"	0.902084725536993	0.6292	0
+"GO:0033045"	3	"GO:0022402"	13	104	"regulation of sister chromatid segregation"	"cell cycle process"	0.789571599045346	0.26813698630137	0.716
+"GO:1901990"	3	"GO:0022402"	12.9586073148418	355	"regulation of mitotic cell cycle phase transition"	"cell cycle process"	0.830008353221957	0.209972602739726	0.804
+"GO:0006396"	6	"GO:0000377"	12.9208187539524	1467	"RNA processing"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.864229116945107	0.364576923076923	0.847
+"GO:0007088"	1	"GO:0051276"	12.8538719643218	118	"regulation of mitotic nuclear division"	"chromosome organization"	0.795554892601432	0.429813953488372	0.472
+"GO:0051781"	14	"GO:0051781"	12.8538719643218	94	"positive regulation of cell division"	"positive regulation of cell division"	0.91703937947494	0.324294117647059	0
+"GO:0034641"	7	"GO:0043170"	12.698970004336	6825	"cellular nitrogen compound metabolic process"	"macromolecule metabolic process"	0.861619331742243	0.483888888888889	0.479
+"GO:2001141"	4	"GO:0019219"	12.6575773191778	3474	"regulation of RNA biosynthetic process"	"regulation of nucleobase-containing compound metabolic process"	0.789989260143198	0.359655172413793	0.903
+"GO:0071103"	1	"GO:0051276"	12.5850266520292	92	"DNA conformation change"	"chromosome organization"	0.905834128878282	0.44153488372093	0.795
+"GO:0006310"	12	"GO:0006259"	12.5528419686578	340	"DNA recombination"	"DNA metabolic process"	0.876961813842482	0.33672972972973	0.812
+"GO:0051321"	11	"GO:0140013"	12.5528419686578	287	"meiotic cell cycle"	"meiotic nuclear division"	0.868252983293556	0.279974358974359	0.964
+"GO:0045842"	3	"GO:0022402"	12.537602002101	14	"positive regulation of mitotic metaphase/anaphase transition"	"cell cycle process"	0.790904534606205	0.268493150684932	0.59
+"GO:0051304"	3	"GO:0022402"	12.4559319556497	81	"chromosome separation"	"cell cycle process"	0.890325775656324	0.371972602739726	0.702
+"GO:0051052"	12	"GO:0006259"	12.3872161432803	527	"regulation of DNA metabolic process"	"DNA metabolic process"	0.819187350835322	0.315243243243243	0.856
+"GO:1901970"	3	"GO:0022402"	12.2924298239021	18	"positive regulation of mitotic sister chromatid separation"	"cell cycle process"	0.802696897374702	0.320561643835616	0.601
+"GO:0045934"	4	"GO:0019219"	12.2596373105058	1574	"negative regulation of nucleobase-containing compound metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.800242243436754	0.412586206896552	0.752
+"GO:0010556"	4	"GO:0019219"	12.0604807473814	5594	"regulation of macromolecule biosynthetic process"	"regulation of nucleobase-containing compound metabolic process"	0.807840095465394	0.388172413793103	0.721
+"GO:0007052"	8	"GO:1902850"	11.9586073148418	130	"mitotic spindle organization"	"microtubule cytoskeleton organization involved in mitosis"	0.840640811455847	0.27236	0.979
+"GO:0071840"	10	"GO:0006996"	11.7447274948967	6747	"cellular component organization or biogenesis"	"organelle organization"	0.904824582338902	0.43125	0.762
+"GO:0051301"	14	"GO:0051781"	11.7447274948967	639	"cell division"	"positive regulation of cell division"	0.973412887828162	0.271941176470588	0.832
+"GO:0006974"	15	"GO:0006974"	11.698970004336	884	"DNA damage response"	"DNA damage response"	0.940429594272076	0.367818181818182	0
+"GO:0016043"	10	"GO:0006996"	11.6575773191778	6536	"cellular component organization"	"organelle organization"	0.903650357995227	0.4261875	0.772
+"GO:2001252"	1	"GO:0051276"	11.431798275933	109	"positive regulation of chromosome organization"	"chromosome organization"	0.838959427207637	0.370348837209302	0.805
+"GO:0016071"	6	"GO:0000377"	11.3565473235138	829	"mRNA metabolic process"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.873711217183771	0.358692307692308	0.479
+"GO:0045786"	3	"GO:0022402"	11.3279021420643	407	"negative regulation of cell cycle"	"cell cycle process"	0.823120525059666	0.289917808219178	0.747
+"GO:0045132"	11	"GO:0140013"	11.1611509092627	91	"meiotic chromosome segregation"	"meiotic nuclear division"	0.821344868735084	0.335	0.928
+"GO:0010948"	3	"GO:0022402"	11.1079053973095	320	"negative regulation of cell cycle process"	"cell cycle process"	0.818311455847255	0.256109589041096	0.799
+"GO:0006355"	4	"GO:0019219"	11.0043648054024	3456	"regulation of DNA-templated transcription"	"regulation of nucleobase-containing compound metabolic process"	0.789929594272076	0.35951724137931	0.902
+"GO:0000226"	8	"GO:1902850"	10.9586073148418	652	"microtubule cytoskeleton organization"	"microtubule cytoskeleton organization involved in mitosis"	0.893824582338902	0.26484	0.835
+"GO:0051302"	14	"GO:0051781"	10.8538719643218	186	"regulation of cell division"	"positive regulation of cell division"	0.932937947494033	0.297352941176471	0.943
+"GO:0034654"	2	"GO:0090304"	10.8239087409443	4027	"nucleobase-containing compound biosynthetic process"	"nucleic acid metabolic process"	0.853737470167064	0.3345	0.776
+"GO:0031326"	4	"GO:0019219"	10.7212463990472	5722	"regulation of cellular biosynthetic process"	"regulation of nucleobase-containing compound metabolic process"	0.814757756563246	0.399224137931035	0.725
+"GO:0044784"	3	"GO:0022402"	10.6575773191778	97	"metaphase/anaphase transition of cell cycle"	"cell cycle process"	0.787963007159905	0.238904109589041	0.709
+"GO:0008608"	16	"GO:0008608"	10.568636235841	49	"attachment of spindle microtubules to kinetochore"	"attachment of spindle microtubules to kinetochore"	0.870202863961814	0.264066666666667	0
+"GO:1905818"	3	"GO:0022402"	10.537602002101	74	"regulation of chromosome separation"	"cell cycle process"	0.847272076372315	0.281438356164384	0.695
+"GO:0051306"	3	"GO:0022402"	10.4948500216801	62	"mitotic sister chromatid separation"	"cell cycle process"	0.832084725536993	0.326561643835616	0.687
+"GO:1902099"	3	"GO:0022402"	10.4948500216801	93	"regulation of metaphase/anaphase transition of cell cycle"	"cell cycle process"	0.787698090692124	0.227082191780822	0.704
+"GO:2001251"	1	"GO:0051276"	10.4436974992327	94	"negative regulation of chromosome organization"	"chromosome organization"	0.83726491646778	0.375093023255814	0.804
+"GO:0010468"	4	"GO:0019219"	10.3098039199715	5467	"regulation of gene expression"	"regulation of nucleobase-containing compound metabolic process"	0.807784009546539	0.389758620689655	0.717
+"GO:0045935"	4	"GO:0019219"	10.1023729087096	2092	"positive regulation of nucleobase-containing compound metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.793924821002387	0.362155172413793	0.8
+"GO:0009889"	4	"GO:0019219"	9.88605664769316	5753	"regulation of biosynthetic process"	"regulation of nucleobase-containing compound metabolic process"	0.833033412887828	0.406	0.68
+"GO:0033047"	3	"GO:0022402"	9.79588001734407	54	"regulation of mitotic sister chromatid segregation"	"cell cycle process"	0.791356801909308	0.282246575342466	0.681
+"GO:0007098"	8	"GO:1902850"	9.79588001734407	138	"centrosome cycle"	"microtubule cytoskeleton organization involved in mitosis"	0.844562052505966	0.26584	0.722
+"GO:0051173"	4	"GO:0019219"	9.76955107862173	3074	"positive regulation of nitrogen compound metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.818244630071599	0.359465517241379	0.727
+"GO:0010965"	3	"GO:0022402"	9.60205999132796	59	"regulation of mitotic sister chromatid separation"	"cell cycle process"	0.798014319809069	0.273561643835616	0.684
+"GO:0007091"	3	"GO:0022402"	9.60205999132796	94	"metaphase/anaphase transition of mitotic cell cycle"	"cell cycle process"	0.786415274463008	0.228671232876712	0.706
+"GO:0050789"	13	"GO:0050794"	9.44369749923271	12318	"regulation of biological process"	"regulation of cellular process"	0.923978520286396	0.6318	0.553
+"GO:0062033"	3	"GO:0022402"	9.431798275933	6	"positive regulation of mitotic sister chromatid segregation"	"cell cycle process"	0.808761336515513	0.372931506849315	0.552
+"GO:0030071"	3	"GO:0022402"	9.431798275933	90	"regulation of mitotic metaphase/anaphase transition"	"cell cycle process"	0.785010739856802	0.209753424657534	0.702
+"GO:0006366"	2	"GO:0090304"	9.3767507096021	2693	"transcription by RNA polymerase II"	"nucleic acid metabolic process"	0.856527446300716	0.341041666666667	0.727
+"GO:0051303"	16	"GO:0008608"	9.31875876262441	108	"establishment of chromosome localization"	"attachment of spindle microtubules to kinetochore"	0.956645584725537	0.233933333333333	0.941
+"GO:0061983"	11	"GO:0140013"	9.30102999566398	1	"meiosis II cell cycle process"	"meiotic nuclear division"	0.905624105011933	0.497358974358974	0.655
+"GO:0018130"	2	"GO:0090304"	9.25963731050576	4104	"heterocycle biosynthetic process"	"nucleic acid metabolic process"	0.865378281622912	0.398291666666667	0.768
+"GO:0051225"	8	"GO:1902850"	9.11350927482752	133	"spindle assembly"	"microtubule cytoskeleton organization involved in mitosis"	0.836263723150358	0.28812	0.705
+"GO:0031023"	8	"GO:1902850"	9.06048074738138	154	"microtubule organizing center organization"	"microtubule cytoskeleton organization involved in mitosis"	0.904404534606206	0.26444	0.729
+"GO:0010604"	4	"GO:0019219"	8.92081875395237	3496	"positive regulation of macromolecule metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.821741050119332	0.383551724137931	0.601
+"GO:0050684"	6	"GO:0000377"	8.92081875395237	129	"regulation of mRNA processing"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.84518138424821	0.265346153846154	0.656
+"GO:0044839"	3	"GO:0022402"	8.88605664769316	155	"cell cycle G2/M phase transition"	"cell cycle process"	0.886165871121718	0.324246575342466	0.739
+"GO:0000086"	3	"GO:0022402"	8.88605664769316	140	"G2/M transition of mitotic cell cycle"	"cell cycle process"	0.882173031026253	0.300643835616438	0.732
+"GO:0051253"	4	"GO:0019219"	8.82390874094432	1452	"negative regulation of RNA metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.798021479713604	0.412810344827586	0.741
+"GO:0040029"	5	"GO:0071824"	8.72124639904717	229	"epigenetic regulation of gene expression"	"protein-DNA complex organization"	0.816982100238663	0.2909	0.861
+"GO:0050000"	16	"GO:0008608"	8.67778070526608	116	"chromosome localization"	"attachment of spindle microtubules to kinetochore"	0.972215990453461	0.248	0.936
+"GO:0048523"	17	"GO:0048523"	8.63827216398241	5526	"negative regulation of cellular process"	"negative regulation of cellular process"	0.884408114558473	0.512	0
+"GO:0019438"	2	"GO:0090304"	8.58502665202918	4117	"aromatic compound biosynthetic process"	"nucleic acid metabolic process"	0.865634844868735	0.3995	0.764
+"GO:0006807"	7	"GO:0043170"	8.55284196865778	10095	"nitrogen compound metabolic process"	"macromolecule metabolic process"	0.88922076372315	0.463666666666667	0.556
+"GO:0006281"	15	"GO:0006974"	8.48148606012211	601	"DNA repair"	"DNA damage response"	0.832805489260143	0.380863636363636	0.939
+"GO:0061982"	11	"GO:0140013"	8.48148606012211	136	"meiosis I cell cycle process"	"meiotic nuclear division"	0.867385441527446	0.30574358974359	0.947
+"GO:0051310"	16	"GO:0008608"	8.39794000867204	96	"metaphase chromosome alignment"	"attachment of spindle microtubules to kinetochore"	0.863816229116945	0.236933333333333	0.951
+"GO:1902679"	4	"GO:0019219"	8.30980391997149	1337	"negative regulation of RNA biosynthetic process"	"regulation of nucleobase-containing compound metabolic process"	0.793927207637231	0.400120689655172	0.732
+"GO:0045892"	4	"GO:0019219"	8.0268721464003	1323	"negative regulation of DNA-templated transcription"	"regulation of nucleobase-containing compound metabolic process"	0.794057279236277	0.400568965517241	0.731
+"GO:0051172"	4	"GO:0019219"	8	2410	"negative regulation of nitrogen compound metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.821910501193317	0.409086206896552	0.685
+"GO:0044238"	7	"GO:0043170"	7.88605664769316	10643	"primary metabolic process"	"macromolecule metabolic process"	0.894789976133652	0.502555555555556	0.573
+"GO:0051785"	1	"GO:0051276"	7.82390874094432	60	"positive regulation of nuclear division"	"chromosome organization"	0.849719570405728	0.460674418604651	0.441
+"GO:0043484"	6	"GO:0000377"	7.72124639904717	181	"regulation of RNA splicing"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.844028639618138	0.366038461538462	0.839
+"GO:0016570"	18	"GO:0016570"	7.67778070526608	120	"histone modification"	"histone modification"	0.905754176610978	0.391864864864865	0
+"GO:1903311"	6	"GO:0000377"	7.58502665202918	362	"regulation of mRNA metabolic process"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.834886634844869	0.332	0.431
+"GO:0045840"	1	"GO:0051276"	7.52287874528034	44	"positive regulation of mitotic nuclear division"	"chromosome organization"	0.793547732696897	0.456093023255814	0.429
+"GO:0051254"	4	"GO:0019219"	7.45593195564972	1900	"positive regulation of RNA metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.79244630071599	0.365844827586207	0.782
+"GO:0031507"	5	"GO:0071824"	7.39794000867204	91	"heterochromatin formation"	"protein-DNA complex organization"	0.812015513126492	0.3	0.791
+"GO:0120261"	5	"GO:0071824"	7.36653154442041	23	"regulation of heterochromatin organization"	"protein-DNA complex organization"	0.890120525059666	0.32675	0.704
+"GO:0031445"	5	"GO:0071824"	7.36653154442041	23	"regulation of heterochromatin formation"	"protein-DNA complex organization"	0.818089498806683	0.3007	0.704
+"GO:0044249"	9	"GO:0009059"	7.30980391997149	8670	"cellular biosynthetic process"	"macromolecule biosynthetic process"	0.876952267303102	0.362833333333333	0.824
+"GO:0051169"	19	"GO:0051169"	7.30980391997149	330	"nuclear transport"	"nuclear transport"	0.956651551312649	0.2484	0
+"GO:0000380"	6	"GO:0000377"	7.30102999566398	71	"alternative mRNA splicing, via spliceosome"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.893045346062052	0.325961538461538	0.836
+"GO:0006302"	15	"GO:0006974"	7.29242982390206	307	"double-strand break repair"	"DNA damage response"	0.845170644391408	0.418545454545455	0.855
+"GO:0048024"	6	"GO:0000377"	7.2518119729938	107	"regulation of mRNA splicing, via spliceosome"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.844139618138425	0.207923076923077	0.863
+"GO:0006357"	2	"GO:0090304"	7.24412514432751	2581	"regulation of transcription by RNA polymerase II"	"nucleic acid metabolic process"	0.801251789976134	0.349541666666667	0.712
+"GO:0031325"	4	"GO:0019219"	7.18045606445813	3426	"positive regulation of cellular metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.813930787589499	0.388534482758621	0.641
+"GO:1902275"	5	"GO:0071824"	7.08092190762393	49	"regulation of chromatin organization"	"protein-DNA complex organization"	0.886003579952267	0.3395	0.742
+"GO:2000060"	4	"GO:0019219"	6.95860731484177	113	"positive regulation of ubiquitin-dependent protein catabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.846421241050119	0.46451724137931	0.449
+"GO:0051129"	20	"GO:0051129"	6.95860731484177	731	"negative regulation of cellular component organization"	"negative regulation of cellular component organization"	0.844982100238663	0.393	0
+"GO:1901576"	9	"GO:0009059"	6.92081875395237	8759	"organic substance biosynthetic process"	"macromolecule biosynthetic process"	0.891445107398568	0.365	0.818
+"GO:0009790"	21	"GO:0009790"	6.88605664769316	1124	"embryo development"	"embryo development"	0.914498806682578	0.311785714285714	0
+"GO:0006913"	19	"GO:0051169"	6.88605664769316	330	"nucleocytoplasmic transport"	"nuclear transport"	0.956651551312649	0.2484	0.996
+"GO:0009893"	4	"GO:0019219"	6.79588001734407	3810	"positive regulation of metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.83272553699284	0.394844827586207	0.613
+"GO:0010032"	11	"GO:0140013"	6.74472749489669	6	"meiotic chromosome condensation"	"meiotic nuclear division"	0.854463007159905	0.455051282051282	0.727
+"GO:0010639"	20	"GO:0051129"	6.74472749489669	363	"negative regulation of organelle organization"	"negative regulation of cellular component organization"	0.837232696897375	0.4128	0.929
+"GO:0007135"	11	"GO:0140013"	6.72124639904717	1	"meiosis II"	"meiotic nuclear division"	0.872130071599045	0.49451282051282	0.674
+"GO:0007017"	8	"GO:1902850"	6.69897000433602	940	"microtubule-based process"	"microtubule cytoskeleton organization involved in mitosis"	0.962552505966587	0.30424	0.787
+"GO:0048519"	17	"GO:0048523"	6.61978875828839	5874	"negative regulation of biological process"	"negative regulation of cellular process"	0.902659904534606	0.508	0.864
+"GO:0022412"	11	"GO:0140013"	6.61978875828839	471	"cellular process involved in reproduction in multicellular organism"	"meiotic nuclear division"	0.9223138424821	0.302794871794872	0.673
+"GO:0007143"	11	"GO:0140013"	6.60205999132796	38	"female meiotic nuclear division"	"meiotic nuclear division"	0.816557279236277	0.313102564102564	0.849
+"GO:0032436"	4	"GO:0019219"	6.58502665202918	93	"positive regulation of proteasomal ubiquitin-dependent protein catabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.848073985680191	0.472275862068966	0.44
+"GO:0000075"	3	"GO:0022402"	6.58502665202918	192	"cell cycle checkpoint signaling"	"cell cycle process"	0.796139618138425	0.231479452054794	0.764
+"GO:0009058"	9	"GO:0009059"	6.56863623584101	8807	"biosynthetic process"	"macromolecule biosynthetic process"	0.895881861575179	0.366333333333333	0.814
+"GO:0007093"	3	"GO:0022402"	6.56863623584101	142	"mitotic cell cycle checkpoint signaling"	"cell cycle process"	0.797809069212411	0.232917808219178	0.74
+"GO:0045814"	5	"GO:0071824"	6.55284196865778	120	"negative regulation of gene expression, epigenetic"	"protein-DNA complex organization"	0.807747016706444	0.3132	0.814
+"GO:1901362"	2	"GO:0090304"	6.52287874528034	4272	"organic cyclic compound biosynthetic process"	"nucleic acid metabolic process"	0.877233890214797	0.41025	0.75
+"GO:0000018"	12	"GO:0006259"	6.3767507096021	136	"regulation of DNA recombination"	"DNA metabolic process"	0.841028639618138	0.324702702702703	0.718
+"GO:0043414"	22	"GO:0043414"	6.36653154442041	210	"macromolecule methylation"	"macromolecule methylation"	0.911964200477327	0.5105	0
+"GO:0031570"	3	"GO:0022402"	6.36653154442041	135	"DNA integrity checkpoint signaling"	"cell cycle process"	0.802656324582339	0.251808219178082	0.732
+"GO:0007076"	1	"GO:0051276"	6.32790214206428	19	"mitotic chromosome condensation"	"chromosome organization"	0.844556085918855	0.410790697674419	0.711
+"GO:0034968"	18	"GO:0016570"	6.31875876262441	33	"histone lysine methylation"	"histone modification"	0.907520286396181	0.309135135135135	0.91
+"GO:1901800"	4	"GO:0019219"	6.30980391997149	117	"positive regulation of proteasomal protein catabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.845847255369928	0.463879310344828	0.45
+"GO:0051382"	1	"GO:0051276"	6.29242982390206	17	"kinetochore assembly"	"chromosome organization"	0.903878281622912	0.513	0.687
+"GO:0051053"	12	"GO:0006259"	6.2839966563652	146	"negative regulation of DNA metabolic process"	"DNA metabolic process"	0.820348448687351	0.37272972972973	0.73
+"GO:0070192"	11	"GO:0140013"	6.2839966563652	65	"chromosome organization involved in meiotic cell cycle"	"meiotic nuclear division"	0.827261336515513	0.351205128205128	0.876
+"GO:0051640"	16	"GO:0008608"	6.16115090926274	607	"organelle localization"	"attachment of spindle microtubules to kinetochore"	0.970461813842482	0.261666666666667	0.788
+"GO:0019953"	11	"GO:0140013"	6.13667713987954	1077	"sexual reproduction"	"meiotic nuclear division"	0.959826968973747	0.271205128205128	0.832
+"GO:0000003"	11	"GO:0140013"	6.1249387366083	1530	"reproduction"	"meiotic nuclear division"	0.961301909307876	0.294666666666667	0.773
+"GO:0051054"	12	"GO:0006259"	6.08618614761628	298	"positive regulation of DNA metabolic process"	"DNA metabolic process"	0.811025059665871	0.345027027027027	0.788
+"GO:0051299"	8	"GO:1902850"	6.03621217265444	15	"centrosome separation"	"microtubule cytoskeleton organization involved in mitosis"	0.868952267303103	0.36468	0.603
+"GO:0032467"	14	"GO:0051781"	6.0268721464003	47	"positive regulation of cytokinesis"	"positive regulation of cell division"	0.836564439140811	0.275235294117647	0.958
+"GO:0046606"	8	"GO:1902850"	6.00436480540245	12	"negative regulation of centrosome cycle"	"microtubule cytoskeleton organization involved in mitosis"	0.811650357995227	0.34568	0.594
+"GO:0000082"	3	"GO:0022402"	6	252	"G1/S transition of mitotic cell cycle"	"cell cycle process"	0.877306682577566	0.268794520547945	0.769
+"GO:0010605"	4	"GO:0019219"	5.95860731484177	3258	"negative regulation of macromolecule metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.821900954653938	0.423931034482759	0.584
+"GO:0007100"	8	"GO:1902850"	5.92081875395237	14	"mitotic centrosome separation"	"microtubule cytoskeleton organization involved in mitosis"	0.858645584725537	0.35856	0.597
+"GO:1905268"	5	"GO:0071824"	5.88605664769316	6	"negative regulation of chromatin organization"	"protein-DNA complex organization"	0.88390214797136	0.422	0.63
+"GO:1903052"	4	"GO:0019219"	5.85387196432176	139	"positive regulation of proteolysis involved in protein catabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.846221957040573	0.456620689655172	0.459
+"GO:1902680"	4	"GO:0019219"	5.85387196432176	1690	"positive regulation of RNA biosynthetic process"	"regulation of nucleobase-containing compound metabolic process"	0.788843675417661	0.351913793103448	0.768
+"GO:0016571"	18	"GO:0016570"	5.82390874094432	38	"histone methylation"	"histone modification"	0.909115751789976	0.360918918918919	0.919
+"GO:0065007"	13	"GO:0050794"	5.76955107862173	12729	"biological regulation"	"regulation of cellular process"	0.931103818615752	0.6538	0.509
+"GO:0070507"	8	"GO:1902850"	5.74472749489669	161	"regulation of microtubule cytoskeleton organization"	"microtubule cytoskeleton organization involved in mitosis"	0.856566825775656	0.303	0.721
+"GO:0009892"	4	"GO:0019219"	5.72124639904717	3467	"negative regulation of metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.833106205250597	0.436896551724138	0.593
+"GO:0031324"	4	"GO:0019219"	5.69897000433602	3213	"negative regulation of cellular metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.814926014319809	0.429051724137931	0.623
+"GO:0051231"	8	"GO:1902850"	5.67778070526608	14	"spindle elongation"	"microtubule cytoskeleton organization involved in mitosis"	0.860471360381862	0.36856	0.611
+"GO:0051988"	16	"GO:0008608"	5.67778070526608	21	"regulation of attachment of spindle microtubules to kinetochore"	"attachment of spindle microtubules to kinetochore"	0.842232696897375	0.306733333333333	0.938
+"GO:0040001"	16	"GO:0008608"	5.67778070526608	40	"establishment of mitotic spindle localization"	"attachment of spindle microtubules to kinetochore"	0.831634844868735	0.285	0.68
+"GO:1901988"	3	"GO:0022402"	5.67778070526608	277	"negative regulation of cell cycle phase transition"	"cell cycle process"	0.816231503579952	0.219712328767123	0.787
+"GO:0045448"	21	"GO:0009790"	5.65757731917779	4	"mitotic cell cycle, embryonic"	"embryo development"	0.865661097852029	0.503071428571429	0.57
+"GO:0010557"	4	"GO:0019219"	5.63827216398241	2610	"positive regulation of macromolecule biosynthetic process"	"regulation of nucleobase-containing compound metabolic process"	0.805108591885441	0.376775862068966	0.603
+"GO:0045930"	3	"GO:0022402"	5.63827216398241	248	"negative regulation of mitotic cell cycle"	"cell cycle process"	0.823595465393795	0.271931506849315	0.707
+"GO:0044774"	3	"GO:0022402"	5.63827216398241	87	"mitotic DNA integrity checkpoint signaling"	"cell cycle process"	0.806800715990454	0.262054794520548	0.697
+"GO:0048522"	13	"GO:0050794"	5.61978875828839	5813	"positive regulation of cellular process"	"regulation of cellular process"	0.884076372315036	0.6138	0.43
+"GO:0009792"	21	"GO:0009790"	5.61978875828839	675	"embryo development ending in birth or egg hatching"	"embryo development"	0.918998806682578	0.3025	0.9
+"GO:0008213"	18	"GO:0016570"	5.60205999132796	80	"protein alkylation"	"histone modification"	0.910236276849642	0.461405405405405	0.433
+"GO:0006479"	18	"GO:0016570"	5.60205999132796	80	"protein methylation"	"histone modification"	0.908232696897375	0.449432432432432	0.433
+"GO:0000022"	8	"GO:1902850"	5.60205999132796	12	"mitotic spindle elongation"	"microtubule cytoskeleton organization involved in mitosis"	0.843566825775656	0.35352	0.835
+"GO:0043933"	5	"GO:0071824"	5.60205999132796	2426	"protein-containing complex organization"	"protein-DNA complex organization"	0.909620525059666	0.3524	0.859
+"GO:0035019"	23	"GO:0035019"	5.60205999132796	69	"somatic stem cell population maintenance"	"somatic stem cell population maintenance"	0.950193317422434	0.34275	0
+"GO:0051653"	16	"GO:0008608"	5.60205999132796	62	"spindle localization"	"attachment of spindle microtubules to kinetochore"	0.882608591885442	0.288066666666667	0.658
+"GO:0018022"	18	"GO:0016570"	5.56863623584101	53	"peptidyl-lysine methylation"	"histone modification"	0.906849642004773	0.362783783783784	0.42
+"GO:0022414"	11	"GO:0140013"	5.56863623584101	1520	"reproductive process"	"meiotic nuclear division"	0.96127446300716	0.294230769230769	0.774
+"GO:0070828"	5	"GO:0071824"	5.55284196865778	100	"heterochromatin organization"	"protein-DNA complex organization"	0.926602625298329	0.32415	0.798
+"GO:0044843"	3	"GO:0022402"	5.55284196865778	279	"cell cycle G1/S phase transition"	"cell cycle process"	0.881207637231503	0.29145205479452	0.777
+"GO:0051305"	16	"GO:0008608"	5.52287874528034	7	"chromosome movement towards spindle pole"	"attachment of spindle microtubules to kinetochore"	0.887934367541766	0.377066666666667	0.767
+"GO:0000725"	12	"GO:0006259"	5.52287874528034	179	"recombinational repair"	"DNA metabolic process"	0.852427207637231	0.358891891891892	0.748
+"GO:0000724"	12	"GO:0006259"	5.52287874528034	175	"double-strand break repair via homologous recombination"	"DNA metabolic process"	0.852285202863962	0.356567567567568	0.745
+"GO:0007127"	11	"GO:0140013"	5.52287874528034	129	"meiosis I"	"meiotic nuclear division"	0.820886634844869	0.307538461538462	0.966
+"GO:0000132"	16	"GO:0008608"	5.52287874528034	35	"establishment of mitotic spindle orientation"	"attachment of spindle microtubules to kinetochore"	0.83122553699284	0.2886	0.674
+"GO:0031124"	6	"GO:0000377"	5.50863830616573	56	"mRNA 3'-end processing"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.894939140811456	0.348423076923077	0.618
+"GO:0000910"	14	"GO:0051781"	5.50863830616573	188	"cytokinesis"	"positive regulation of cell division"	0.884797136038186	0.236235294117647	0.768
+"GO:0044085"	10	"GO:0006996"	5.46852108295774	3344	"cellular component biogenesis"	"organelle organization"	0.907742243436754	0.3999375	0.629
+"GO:0003006"	11	"GO:0140013"	5.36653154442041	1000	"developmental process involved in reproduction"	"meiotic nuclear division"	0.909029832935561	0.29648717948718	0.731
+"GO:0000122"	4	"GO:0019219"	5.30102999566398	980	"negative regulation of transcription by RNA polymerase II"	"regulation of nucleobase-containing compound metabolic process"	0.803229116945107	0.432724137931034	0.683
+"GO:0051293"	16	"GO:0008608"	5.30102999566398	57	"establishment of spindle localization"	"attachment of spindle microtubules to kinetochore"	0.834414081145584	0.272133333333333	0.696
+"GO:0006260"	12	"GO:0006259"	5.26760624017703	278	"DNA replication"	"DNA metabolic process"	0.879144391408115	0.350108108108108	0.797
+"GO:0035987"	24	"GO:0035987"	5.24412514432751	49	"endodermal cell differentiation"	"endodermal cell differentiation"	0.910144391408115	0.465166666666667	0
+"GO:0034508"	5	"GO:0071824"	5.24412514432751	30	"centromere complex assembly"	"protein-DNA complex organization"	0.902643198090692	0.4113	0.718
+"GO:0065004"	5	"GO:0071824"	5.23657200643706	240	"protein-DNA complex assembly"	"protein-DNA complex organization"	0.917483293556086	0.31995	0.858
+"GO:0000381"	6	"GO:0000377"	5.18045606445813	54	"regulation of alternative mRNA splicing, via spliceosome"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.852224343675418	0.235653846153846	0.815
+"GO:0045165"	25	"GO:0045165"	5.14266750356873	286	"cell fate commitment"	"cell fate commitment"	0.924559665871122	0.3585	0
+"GO:0043412"	18	"GO:0016570"	5.09691001300806	3253	"macromolecule modification"	"histone modification"	0.889436754176611	0.444837837837838	0.586
+"GO:0007276"	11	"GO:0140013"	5.08618614761628	805	"gamete generation"	"meiotic nuclear division"	0.929288782816229	0.263871794871795	0.794
+"GO:0006282"	12	"GO:0006259"	5.06550154875643	215	"regulation of DNA repair"	"DNA metabolic process"	0.80122553699284	0.348918918918919	0.766
+"GO:0007140"	11	"GO:0140013"	5.06550154875643	55	"male meiotic nuclear division"	"meiotic nuclear division"	0.812356801909308	0.322974358974359	0.875
+"GO:0006266"	12	"GO:0006259"	5.06048074738138	16	"DNA ligation"	"DNA metabolic process"	0.907007159904535	0.51827027027027	0.602
+"GO:1902749"	3	"GO:0022402"	5.05551732784983	116	"regulation of cell cycle G2/M phase transition"	"cell cycle process"	0.84771599045346	0.287506849315069	0.716
+"GO:0010558"	4	"GO:0019219"	5.03621217265444	2751	"negative regulation of macromolecule biosynthetic process"	"regulation of nucleobase-containing compound metabolic process"	0.802570405727924	0.407	0.604
+"GO:0070925"	10	"GO:0006996"	5.03151705144607	988	"organelle assembly"	"organelle organization"	0.897943914081146	0.39125	0.738
+"GO:0008156"	12	"GO:0006259"	5.03151705144607	25	"negative regulation of DNA replication"	"DNA metabolic process"	0.842531026252983	0.38745945945946	0.614
+"GO:0044271"	7	"GO:0043170"	5.0268721464003	4944	"cellular nitrogen compound biosynthetic process"	"macromolecule metabolic process"	0.858182577565633	0.533222222222222	0.423
+"GO:0007221"	26	"GO:0007221"	4.95860731484177	7	"positive regulation of transcription of Notch receptor target"	"positive regulation of transcription of Notch receptor target"	0.84972076372315	0.5605	0
+"GO:0045652"	27	"GO:0045652"	4.95860731484177	38	"regulation of megakaryocyte differentiation"	"regulation of megakaryocyte differentiation"	0.877719570405728	0.522857142857143	0
+"GO:0001556"	11	"GO:0140013"	4.95860731484177	33	"oocyte maturation"	"meiotic nuclear division"	0.902754176610979	0.348769230769231	0.605
+"GO:0046605"	8	"GO:1902850"	4.95860731484177	54	"regulation of centrosome cycle"	"microtubule cytoskeleton organization involved in mitosis"	0.812755369928401	0.27888	0.662
+"GO:0010389"	3	"GO:0022402"	4.95860731484177	104	"regulation of G2/M transition of mitotic cell cycle"	"cell cycle process"	0.844934367541766	0.27058904109589	0.708
+"GO:0044773"	3	"GO:0022402"	4.92081875395237	83	"mitotic DNA damage checkpoint signaling"	"cell cycle process"	0.799698090692124	0.268287671232877	0.688
+"GO:0045893"	4	"GO:0019219"	4.85387196432176	1687	"positive regulation of DNA-templated transcription"	"regulation of nucleobase-containing compound metabolic process"	0.788751789976134	0.351655172413793	0.768
+"GO:0072331"	28	"GO:0072331"	4.82390874094432	175	"signal transduction by p53 class mediator"	"signal transduction by p53 class mediator"	0.911768496420048	0.459052631578947	0
+"GO:0044237"	7	"GO:0043170"	4.72124639904717	10950	"cellular metabolic process"	"macromolecule metabolic process"	0.886355608591886	0.484	0.586
+"GO:0006491"	29	"GO:0006491"	4.72124639904717	17	"N-glycan processing"	"N-glycan processing"	0.930866348448687	0.469333333333333	0
+"GO:0032259"	22	"GO:0043414"	4.69897000433602	282	"methylation"	"macromolecule methylation"	0.94000477326969	0.5105	0.979
+"GO:0031327"	4	"GO:0019219"	4.69897000433602	2801	"negative regulation of cellular biosynthetic process"	"regulation of nucleobase-containing compound metabolic process"	0.808698090692124	0.416672413793103	0.607
+"GO:0001709"	25	"GO:0045165"	4.69897000433602	42	"cell fate determination"	"cell fate commitment"	0.935596658711217	0.384333333333333	0.84
+"GO:0007548"	11	"GO:0140013"	4.67778070526608	288	"sex differentiation"	"meiotic nuclear division"	0.917991646778043	0.352641025641026	0.649
+"GO:0090307"	8	"GO:1902850"	4.67778070526608	71	"mitotic spindle assembly"	"microtubule cytoskeleton organization involved in mitosis"	0.822334128878281	0.2946	0.929
+"GO:0006261"	12	"GO:0006259"	4.65757731917779	161	"DNA-templated DNA replication"	"DNA metabolic process"	0.883742243436754	0.362216216216216	0.758
+"GO:0000077"	3	"GO:0022402"	4.63827216398241	126	"DNA damage checkpoint signaling"	"cell cycle process"	0.795719570405728	0.259739726027397	0.72
+"GO:0071704"	7	"GO:0043170"	4.61978875828839	11835	"organic substance metabolic process"	"macromolecule metabolic process"	0.903658711217184	0.481333333333333	0.677
+"GO:0000083"	3	"GO:0022402"	4.60205999132796	22	"regulation of transcription involved in G1/S transition of mitotic cell cycle"	"cell cycle process"	0.789502386634845	0.387835616438356	0.614
+"GO:0045732"	30	"GO:0045732"	4.60205999132796	210	"positive regulation of protein catabolic process"	"positive regulation of protein catabolic process"	0.840502386634845	0.274857142857143	0
+"GO:0051294"	16	"GO:0008608"	4.56863623584101	42	"establishment of spindle orientation"	"attachment of spindle microtubules to kinetochore"	0.835817422434368	0.283133333333333	0.682
+"GO:0009890"	4	"GO:0019219"	4.55284196865778	2815	"negative regulation of biosynthetic process"	"regulation of nucleobase-containing compound metabolic process"	0.825021479713604	0.422413793103448	0.569
+"GO:0080135"	31	"GO:0080135"	4.53760200210104	655	"regulation of cellular response to stress"	"regulation of cellular response to stress"	0.897889021479714	0.4906	0
+"GO:0051101"	32	"GO:0051101"	4.53760200210104	85	"regulation of DNA binding"	"regulation of DNA binding"	0.950369928400955	0.384136363636364	0
+"GO:0048518"	13	"GO:0050794"	4.52287874528034	6375	"positive regulation of biological process"	"regulation of cellular process"	0.903305489260143	0.6186	0.362
+"GO:0051103"	12	"GO:0006259"	4.52287874528034	5	"DNA ligation involved in DNA repair"	"DNA metabolic process"	0.886615751789976	0.530324324324324	0.561
+"GO:0033206"	14	"GO:0051781"	4.50863830616573	8	"meiotic cytokinesis"	"positive regulation of cell division"	0.885412887828162	0.337823529411765	0.617
+"GO:0036211"	18	"GO:0016570"	4.49485002168009	3023	"protein modification process"	"histone modification"	0.877579952267303	0.434945945945946	0.599
+"GO:0031328"	4	"GO:0019219"	4.49485002168009	2699	"positive regulation of cellular biosynthetic process"	"regulation of nucleobase-containing compound metabolic process"	0.810967780429594	0.385706896551724	0.606
+"GO:0090306"	8	"GO:1902850"	4.49485002168009	12	"meiotic spindle assembly"	"microtubule cytoskeleton organization involved in mitosis"	0.837317422434368	0.38368	0.586
+"GO:0045944"	4	"GO:0019219"	4.46852108295774	1243	"positive regulation of transcription by RNA polymerase II"	"regulation of nucleobase-containing compound metabolic process"	0.797521479713604	0.384103448275862	0.72
+"GO:0033554"	15	"GO:0006974"	4.44369749923271	1968	"cellular response to stress"	"DNA damage response"	0.939205250596659	0.365227272727273	0.88
+"GO:0042770"	15	"GO:0006974"	4.431798275933	189	"signal transduction in response to DNA damage"	"DNA damage response"	0.903175417661098	0.452363636363636	0.788
+"GO:0007010"	10	"GO:0006996"	4.431798275933	1510	"cytoskeleton organization"	"organelle organization"	0.893379474940334	0.4501875	0.804
+"GO:0032434"	4	"GO:0019219"	4.42021640338319	143	"regulation of proteasomal ubiquitin-dependent protein catabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.859761336515513	0.50898275862069	0.462
+"GO:0051307"	3	"GO:0022402"	4.42021640338319	8	"meiotic chromosome separation"	"cell cycle process"	0.84800477326969	0.459671232876712	0.573
+"GO:0007281"	11	"GO:0140013"	4.36653154442041	359	"germ cell development"	"meiotic nuclear division"	0.885325775656325	0.269769230769231	0.734
+"GO:0097711"	33	"GO:0097711"	4.34678748622466	2	"ciliary basal body-plasma membrane docking"	"ciliary basal body-plasma membrane docking"	0.90909307875895	0.475	0
+"GO:0061640"	14	"GO:0051781"	4.34678748622466	117	"cytoskeleton-dependent cytokinesis"	"positive regulation of cell division"	0.88831861575179	0.238117647058824	0.742
+"GO:0009891"	4	"GO:0019219"	4.33724216831843	2720	"positive regulation of biosynthetic process"	"regulation of nucleobase-containing compound metabolic process"	0.827970167064439	0.39151724137931	0.569
+"GO:0051246"	4	"GO:0019219"	4.32790214206428	2356	"regulation of protein metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.825931980906921	0.388965517241379	0.693
+"GO:0001706"	24	"GO:0035987"	4.30102999566398	58	"endoderm formation"	"endodermal cell differentiation"	0.92413245823389	0.458083333333333	0.986
+"GO:0032465"	14	"GO:0051781"	4.30102999566398	93	"regulation of cytokinesis"	"positive regulation of cell division"	0.847997613365155	0.248588235294118	0.9
+"GO:0090224"	8	"GO:1902850"	4.27572413039921	46	"regulation of spindle organization"	"microtubule cytoskeleton organization involved in mitosis"	0.812108591885442	0.29364	0.653
+"GO:0035561"	32	"GO:0051101"	4.2518119729938	11	"regulation of chromatin binding"	"regulation of DNA binding"	0.957486873508353	0.480272727272727	0.732
+"GO:0007077"	34	"GO:0007077"	4.24412514432751	7	"mitotic nuclear membrane disassembly"	"mitotic nuclear membrane disassembly"	0.874073985680191	0.350333333333333	0
+"GO:0021915"	21	"GO:0009790"	4.21467016498923	162	"neural tube development"	"embryo development"	0.91104892601432	0.359857142857143	0.772
+"GO:0048863"	27	"GO:0045652"	4.20760831050175	246	"stem cell differentiation"	"regulation of megakaryocyte differentiation"	0.928344868735084	0.534	0.346
+"GO:0051247"	4	"GO:0019219"	4.20760831050175	1306	"positive regulation of protein metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.817046539379475	0.363413793103448	0.622
+"GO:0051298"	8	"GO:1902850"	4.20760831050175	75	"centrosome duplication"	"microtubule cytoskeleton organization involved in mitosis"	0.851110978520287	0.2888	0.689
+"GO:0000912"	14	"GO:0051781"	4.20065945054642	9	"assembly of actomyosin apparatus involved in cytokinesis"	"positive regulation of cell division"	0.875967780429594	0.328529411764706	0.613
+"GO:0006369"	2	"GO:0090304"	4.18708664335714	16	"termination of RNA polymerase II transcription"	"nucleic acid metabolic process"	0.912022673031026	0.5925	0.369
+"GO:0008406"	11	"GO:0140013"	4.17392519729917	233	"gonad development"	"meiotic nuclear division"	0.900472553699284	0.364897435897436	0.635
+"GO:0034502"	35	"GO:0034502"	4.15490195998574	119	"protein localization to chromosome"	"protein localization to chromosome"	0.960819809069212	0.348142857142857	0
+"GO:0045137"	11	"GO:0140013"	4.1249387366083	238	"development of primary sexual characteristics"	"meiotic nuclear division"	0.908471360381861	0.364051282051282	0.636
+"GO:0032502"	37	"GO:0032502"	4.11350927482752	6549	"developmental process"	"developmental process"	0.923943914081145	0.474466666666667	0
+"GO:0090090"	36	"GO:0090090"	4.11350927482752	140	"negative regulation of canonical Wnt signaling pathway"	"negative regulation of canonical Wnt signaling pathway"	0.890165871121718	0.245	0
+"GO:0051443"	32	"GO:0051101"	4.10237290870956	22	"positive regulation of ubiquitin-protein transferase activity"	"regulation of DNA binding"	0.851273269689737	0.401454545454546	0.45
+"GO:0010628"	4	"GO:0019219"	4.07058107428571	1201	"positive regulation of gene expression"	"regulation of nucleobase-containing compound metabolic process"	0.821381861575179	0.439224137931034	0.531
+"GO:0032886"	8	"GO:1902850"	4.07058107428571	258	"regulation of microtubule-based process"	"microtubule cytoskeleton organization involved in mitosis"	0.921602625298329	0.32764	0.681
+"GO:2000058"	4	"GO:0019219"	4.06048074738138	178	"regulation of ubiquitin-dependent protein catabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.857760143198091	0.499793103448276	0.474
+"GO:0010638"	10	"GO:0006996"	4.03621217265444	507	"positive regulation of organelle organization"	"organelle organization"	0.834622911694511	0.41125	0.659
+"GO:0022607"	10	"GO:0006996"	4.0268721464003	3073	"cellular component assembly"	"organelle organization"	0.906967780429594	0.3978125	0.631
+"GO:0010629"	4	"GO:0019219"	4.01772876696043	1623	"negative regulation of gene expression"	"regulation of nucleobase-containing compound metabolic process"	0.811644391408115	0.444137931034483	0.559
+"GO:0016233"	1	"GO:0051276"	4.01322826573375	39	"telomere capping"	"chromosome organization"	0.828485680190931	0.442325581395349	0.751
+"GO:0006275"	12	"GO:0006259"	4	124	"regulation of DNA replication"	"DNA metabolic process"	0.843398568019093	0.336081081081081	0.707
+"GO:0033301"	3	"GO:0022402"	3.95860731484178	1	"cell cycle comprising mitosis without cytokinesis"	"cell cycle process"	0.924694510739857	0.582630136986301	0.446
+"GO:0044703"	11	"GO:0140013"	3.95860731484178	206	"multi-organism reproductive process"	"meiotic nuclear division"	0.968428400954654	0.426717948717949	0.619
+"GO:0071459"	35	"GO:0034502"	3.95860731484178	40	"protein localization to chromosome, centromeric region"	"protein localization to chromosome"	0.963624105011933	0.383	0.922
+"GO:0000212"	8	"GO:1902850"	3.95860731484178	19	"meiotic spindle organization"	"microtubule cytoskeleton organization involved in mitosis"	0.846935560859189	0.37348	0.605
+"GO:2000779"	12	"GO:0006259"	3.95860731484178	133	"regulation of double-strand break repair"	"DNA metabolic process"	0.809750596658711	0.368972972972973	0.724
+"GO:0000915"	14	"GO:0051781"	3.95860731484178	9	"actomyosin contractile ring assembly"	"positive regulation of cell division"	0.869620525059666	0.311176470588235	0.613
+"GO:0007389"	38	"GO:0007389"	3.95860731484178	475	"pattern specification process"	"pattern specification process"	0.927284009546539	0.267142857142857	0
+"GO:0032204"	1	"GO:0051276"	3.88605664769316	104	"regulation of telomere maintenance"	"chromosome organization"	0.759647971360382	0.340209302325581	0.826
+"GO:0051168"	19	"GO:0051169"	3.88605664769316	168	"nuclear export"	"nuclear transport"	0.95840692124105	0.2627	0.938
+"GO:0019827"	23	"GO:0035019"	3.85387196432176	183	"stem cell population maintenance"	"somatic stem cell population maintenance"	0.945917661097852	0.308	0.919
+"GO:0051338"	32	"GO:0051101"	3.85387196432176	692	"regulation of transferase activity"	"regulation of DNA binding"	0.939853221957041	0.282318181818182	0.586
+"GO:0051656"	16	"GO:0008608"	3.85387196432176	469	"establishment of organelle localization"	"attachment of spindle microtubules to kinetochore"	0.969979713603819	0.248666666666667	0.817
+"GO:0050793"	40	"GO:0050793"	3.82390874094432	2562	"regulation of developmental process"	"regulation of developmental process"	0.869731503579952	0.32628	0
+"GO:0006406"	39	"GO:0006406"	3.82390874094432	70	"mRNA export from nucleus"	"mRNA export from nucleus"	0.88886754176611	0.309125	0
+"GO:0051170"	19	"GO:0051169"	3.82390874094432	166	"import into nucleus"	"nuclear transport"	0.95923031026253	0.279	0.92
+"GO:0044837"	14	"GO:0051781"	3.79588001734407	10	"actomyosin contractile ring organization"	"positive regulation of cell division"	0.872508353221957	0.336	0.617
+"GO:0060284"	40	"GO:0050793"	3.79588001734407	842	"regulation of cell development"	"regulation of developmental process"	0.85519093078759	0.2886	0.801
+"GO:0007292"	11	"GO:0140013"	3.76955107862173	163	"female gamete generation"	"meiotic nuclear division"	0.935943914081146	0.309589743589744	0.689
+"GO:2000026"	40	"GO:0050793"	3.76955107862173	1480	"regulation of multicellular organismal development"	"regulation of developmental process"	0.862114558472554	0.30116	0.872
+"GO:0009994"	11	"GO:0140013"	3.74472749489669	65	"oocyte differentiation"	"meiotic nuclear division"	0.898188544152745	0.320794871794872	0.636
+"GO:0030219"	27	"GO:0045652"	3.72124639904717	66	"megakaryocyte differentiation"	"regulation of megakaryocyte differentiation"	0.925939140811456	0.534714285714286	0.956
+"GO:0016310"	41	"GO:0016310"	3.72124639904717	1588	"phosphorylation"	"phosphorylation"	0.905578758949881	0.279384615384615	0
+"GO:0030154"	37	"GO:0032502"	3.69897000433602	4401	"cell differentiation"	"developmental process"	0.901917661097852	0.4974	0.678
+"GO:0007062"	1	"GO:0051276"	3.69897000433602	59	"sister chromatid cohesion"	"chromosome organization"	0.850868735083532	0.436976744186046	0.776
+"GO:0098727"	23	"GO:0035019"	3.69897000433602	187	"maintenance of cell number"	"somatic stem cell population maintenance"	0.949194510739857	0.30925	0.916
+"GO:0001841"	42	"GO:0001841"	3.69897000433602	104	"neural tube formation"	"neural tube formation"	0.909799522673031	0.269384615384615	0
+"GO:0060828"	36	"GO:0090090"	3.69897000433602	262	"regulation of canonical Wnt signaling pathway"	"negative regulation of canonical Wnt signaling pathway"	0.904899761336516	0.224666666666667	0.95
+"GO:0008361"	43	"GO:0008361"	3.65757731917779	187	"regulation of cell size"	"regulation of cell size"	0.903609785202864	0.3618	0
+"GO:0007223"	36	"GO:0090090"	3.63827216398241	5	"Wnt signaling pathway, calcium modulating pathway"	"negative regulation of canonical Wnt signaling pathway"	0.934508353221957	0.419777777777778	0.596
+"GO:0051081"	34	"GO:0007077"	3.63827216398241	10	"nuclear membrane disassembly"	"mitotic nuclear membrane disassembly"	0.929874701670644	0.342666666666667	0.977
+"GO:0035282"	38	"GO:0007389"	3.63827216398241	103	"segmentation"	"pattern specification process"	0.937020286396181	0.309285714285714	0.841
+"GO:0006265"	1	"GO:0051276"	3.61978875828839	9	"DNA topological change"	"chromosome organization"	0.847001193317423	0.514953488372093	0.668
+"GO:0008152"	7	"GO:0043170"	3.61978875828839	12339	"metabolic process"	"macromolecule metabolic process"	0.909665871121718	0.481444444444444	0.63
+"GO:0018193"	18	"GO:0016570"	3.61978875828839	941	"peptidyl-amino acid modification"	"histone modification"	0.890947494033413	0.402702702702703	0.525
+"GO:0060236"	8	"GO:1902850"	3.61978875828839	42	"regulation of mitotic spindle organization"	"microtubule cytoskeleton organization involved in mitosis"	0.811482100238663	0.284	0.892
+"GO:0046822"	19	"GO:0051169"	3.61978875828839	109	"regulation of nucleocytoplasmic transport"	"nuclear transport"	0.91977923627685	0.2789	0.879
+"GO:0030111"	36	"GO:0090090"	3.61978875828839	338	"regulation of Wnt signaling pathway"	"negative regulation of canonical Wnt signaling pathway"	0.901968973747017	0.221777777777778	0.916
+"GO:0006468"	41	"GO:0016310"	3.60205999132796	1319	"protein phosphorylation"	"phosphorylation"	0.870591885441527	0.282769230769231	0.958
+"GO:0000281"	14	"GO:0051781"	3.60205999132796	88	"mitotic cytokinesis"	"positive regulation of cell division"	0.884408114558473	0.254882352941176	0.723
+"GO:1901796"	28	"GO:0072331"	3.58502665202918	107	"regulation of signal transduction by p53 class mediator"	"signal transduction by p53 class mediator"	0.908868735083532	0.400947368421053	0.95
+"GO:1902531"	28	"GO:0072331"	3.58502665202918	1794	"regulation of intracellular signal transduction"	"signal transduction by p53 class mediator"	0.883619331742243	0.332473684210526	0.624
+"GO:0045792"	43	"GO:0008361"	3.56863623584101	9	"negative regulation of cell size"	"regulation of cell size"	0.922529832935561	0.457	0.802
+"GO:0032212"	1	"GO:0051276"	3.56863623584101	34	"positive regulation of telomere maintenance via telomerase"	"chromosome organization"	0.765307875894988	0.384790697674419	0.72
+"GO:0006611"	19	"GO:0051169"	3.56863623584101	61	"protein export from nucleus"	"nuclear transport"	0.958824582338902	0.3026	0.85
+"GO:0003002"	38	"GO:0007389"	3.56863623584101	430	"regionalization"	"pattern specification process"	0.927806682577565	0.262142857142857	0.985
+"GO:0051028"	39	"GO:0006406"	3.55284196865778	127	"mRNA transport"	"mRNA export from nucleus"	0.971952267303103	0.299875	0.968
+"GO:0007492"	24	"GO:0035987"	3.53760200210104	83	"endoderm development"	"endodermal cell differentiation"	0.942016706443914	0.467583333333333	0.96
+"GO:0043543"	18	"GO:0016570"	3.53760200210104	147	"protein acylation"	"histone modification"	0.90650477326969	0.454594594594595	0.453
+"GO:0048513"	37	"GO:0032502"	3.52287874528034	3070	"animal organ development"	"developmental process"	0.918355608591885	0.509333333333333	0.655
+"GO:1904666"	32	"GO:0051101"	3.52287874528034	18	"regulation of ubiquitin protein ligase activity"	"regulation of DNA binding"	0.954576372315036	0.426863636363636	0.445
+"GO:0051098"	32	"GO:0051101"	3.52287874528034	262	"regulation of binding"	"regulation of DNA binding"	0.94623508353222	0.352727272727273	0.91
+"GO:0030397"	34	"GO:0007077"	3.52287874528034	11	"membrane disassembly"	"mitotic nuclear membrane disassembly"	0.944287589498807	0.344333333333333	0.972
+"GO:0010971"	3	"GO:0022402"	3.52287874528034	29	"positive regulation of G2/M transition of mitotic cell cycle"	"cell cycle process"	0.841875894988067	0.308547945205479	0.621
+"GO:0007063"	1	"GO:0051276"	3.50863830616573	17	"regulation of sister chromatid cohesion"	"chromosome organization"	0.823292362768496	0.431790697674419	0.685
+"GO:1904358"	1	"GO:0051276"	3.50863830616573	37	"positive regulation of telomere maintenance via telomere lengthening"	"chromosome organization"	0.768714797136038	0.380744186046512	0.727
+"GO:0006977"	3	"GO:0022402"	3.50863830616573	18	"DNA damage response, signal transduction by p53 class mediator resulting in cell cycle arrest"	"cell cycle process"	0.815321002386635	0.314561643835616	0.603
+"GO:0051960"	40	"GO:0050793"	3.48148606012211	466	"regulation of nervous system development"	"regulation of developmental process"	0.869237470167064	0.3412	0.742
+"GO:0045639"	40	"GO:0050793"	3.48148606012211	103	"positive regulation of myeloid cell differentiation"	"regulation of developmental process"	0.849602625298329	0.33676	0.63
+"GO:0060070"	36	"GO:0090090"	3.48148606012211	316	"canonical Wnt signaling pathway"	"negative regulation of canonical Wnt signaling pathway"	0.909349642004773	0.232666666666667	0.914
+"GO:0061136"	4	"GO:0019219"	3.46852108295774	196	"regulation of proteasomal protein catabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.856668257756563	0.497396551724138	0.478
+"GO:0048856"	37	"GO:0032502"	3.46852108295774	5971	"anatomical structure development"	"developmental process"	0.919554892601432	0.4522	0.812
+"GO:1904353"	1	"GO:0051276"	3.431798275933	26	"regulation of telomere capping"	"chromosome organization"	0.790565632458234	0.412093023255814	0.708
+"GO:0051973"	12	"GO:0006259"	3.431798275933	34	"positive regulation of telomerase activity"	"DNA metabolic process"	0.824415274463007	0.403567567567568	0.634
+"GO:0006405"	39	"GO:0006406"	3.431798275933	92	"RNA export from nucleus"	"mRNA export from nucleus"	0.954658711217184	0.30225	0.976
+"GO:0001704"	21	"GO:0009790"	3.4089353929735	128	"formation of primary germ layer"	"embryo development"	0.92449045346062	0.349642857142857	0.756
+"GO:0040010"	44	"GO:0040010"	3.38721614328026	2	"positive regulation of growth rate"	"positive regulation of growth rate"	0.95054415274463	0.437285714285714	0
+"GO:0032506"	14	"GO:0051781"	3.38721614328026	43	"cytokinetic process"	"positive regulation of cell division"	0.896409307875895	0.285764705882353	0.688
+"GO:0048869"	37	"GO:0032502"	3.3767507096021	4403	"cellular developmental process"	"developmental process"	0.901927207637232	0.497333333333333	0.678
+"GO:0045995"	40	"GO:0050793"	3.3767507096021	93	"regulation of embryonic development"	"regulation of developmental process"	0.884156324582339	0.456	0.624
+"GO:0006997"	1	"GO:0051276"	3.36653154442041	144	"nucleus organization"	"chromosome organization"	0.917311455847255	0.577837209302326	0.484
+"GO:0048468"	37	"GO:0032502"	3.36653154442041	2794	"cell development"	"developmental process"	0.899491646778043	0.515133333333333	0.593
+"GO:0071897"	12	"GO:0006259"	3.35654732351381	194	"DNA biosynthetic process"	"DNA metabolic process"	0.876699284009547	0.395864864864865	0.761
+"GO:0061647"	18	"GO:0016570"	3.32790214206428	6	"histone H3-K9 modification"	"histone modification"	0.924102625298329	0.490162162162162	0.812
+"GO:0043161"	30	"GO:0045732"	3.31875876262441	458	"proteasome-mediated ubiquitin-dependent protein catabolic process"	"positive regulation of protein catabolic process"	0.89885799522673	0.279357142857143	0.75
+"GO:0032206"	1	"GO:0051276"	3.30102999566398	70	"positive regulation of telomere maintenance"	"chromosome organization"	0.754655131264916	0.356302325581395	0.779
+"GO:0032392"	1	"GO:0051276"	3.29242982390206	85	"DNA geometric change"	"chromosome organization"	0.906678997613365	0.44593023255814	0.787
+"GO:0051445"	11	"GO:0140013"	3.27572413039921	66	"regulation of meiotic cell cycle"	"meiotic nuclear division"	0.842853221957041	0.342	0.829
+"GO:2000736"	27	"GO:0045652"	3.26760624017703	78	"regulation of stem cell differentiation"	"regulation of megakaryocyte differentiation"	0.888084725536993	0.509571428571429	0.502
+"GO:0030218"	45	"GO:0030218"	3.26760624017703	131	"erythrocyte differentiation"	"erythrocyte differentiation"	0.915311455847255	0.215166666666667	0
+"GO:0044786"	12	"GO:0006259"	3.25963731050576	44	"cell cycle DNA replication"	"DNA metabolic process"	0.817121718377088	0.425702702702703	0.639
+"GO:0018205"	18	"GO:0016570"	3.25963731050576	219	"peptidyl-lysine modification"	"histone modification"	0.901726730310263	0.405837837837838	0.467
+"GO:0048477"	11	"GO:0140013"	3.22914798835786	110	"oogenesis"	"meiotic nuclear division"	0.894292362768496	0.300666666666667	0.664
+"GO:0014020"	42	"GO:0001841"	3.22914798835786	97	"primary neural tube formation"	"neural tube formation"	0.910211217183771	0.271692307692308	0.995
+"GO:1902751"	3	"GO:0022402"	3.20760831050175	32	"positive regulation of cell cycle G2/M phase transition"	"cell cycle process"	0.84327923627685	0.319849315068493	0.632
+"GO:0071166"	19	"GO:0051169"	3.18708664335714	8	"ribonucleoprotein complex localization"	"nuclear transport"	0.972649164677804	0.686	0.375
+"GO:0032210"	1	"GO:0051276"	3.16749108729376	53	"regulation of telomere maintenance via telomerase"	"chromosome organization"	0.770100238663484	0.370395348837209	0.762
+"GO:0051347"	32	"GO:0051101"	3.16749108729376	414	"positive regulation of transferase activity"	"regulation of DNA binding"	0.942026252983294	0.291090909090909	0.56
+"GO:0021872"	46	"GO:0021872"	3.14874165128092	53	"forebrain generation of neurons"	"forebrain generation of neurons"	0.914307875894988	0.438777777777778	0
+"GO:0007004"	12	"GO:0006259"	3.14874165128092	69	"telomere maintenance via telomerase"	"DNA metabolic process"	0.812084725536993	0.433189189189189	0.692
+"GO:0040009"	44	"GO:0040010"	3.14266750356873	5	"regulation of growth rate"	"positive regulation of growth rate"	0.963288782816229	0.429428571428571	0.958
+"GO:0051569"	18	"GO:0016570"	3.14266750356873	13	"regulation of histone H3-K4 methylation"	"histone modification"	0.871594272076372	0.335	0.851
+"GO:0051567"	18	"GO:0016570"	3.13667713987954	6	"histone H3-K9 methylation"	"histone modification"	0.917657517899761	0.371108108108108	0.812
+"GO:0001738"	24	"GO:0035987"	3.1249387366083	92	"morphogenesis of a polarized epithelium"	"endodermal cell differentiation"	0.934266109785203	0.485666666666667	0.453
+"GO:0034101"	45	"GO:0030218"	3.11918640771921	140	"erythrocyte homeostasis"	"erythrocyte differentiation"	0.962312649164678	0.215166666666667	0.995
+"GO:0007275"	37	"GO:0032502"	3.10790539730952	4728	"multicellular organism development"	"developmental process"	0.90772553699284	0.426666666666667	0.752
+"GO:0033046"	3	"GO:0022402"	3.09151498112135	48	"negative regulation of sister chromatid segregation"	"cell cycle process"	0.781452267303103	0.267630136986301	0.671
+"GO:0048608"	37	"GO:0032502"	3.03621217265444	305	"reproductive structure development"	"developmental process"	0.901994033412888	0.571	0.407
+"GO:0045646"	45	"GO:0030218"	3.03151705144606	46	"regulation of erythrocyte differentiation"	"erythrocyte differentiation"	0.873380668257757	0.2415	0.919
+"GO:0009966"	28	"GO:0072331"	3.0268721464003	3094	"regulation of signal transduction"	"signal transduction by p53 class mediator"	0.883375894988067	0.424421052631579	0.414
+"GO:0018105"	18	"GO:0016570"	3.02227639471115	295	"peptidyl-serine phosphorylation"	"histone modification"	0.888536992840095	0.458702702702703	0.467
+"GO:0016055"	36	"GO:0090090"	3.02227639471115	459	"Wnt signaling pathway"	"negative regulation of canonical Wnt signaling pathway"	0.904874701670644	0.222333333333333	0.858
+"GO:1903313"	6	"GO:0000377"	3.01322826573376	203	"positive regulation of mRNA metabolic process"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.824945107398568	0.352576923076923	0.404
+"GO:0014009"	46	"GO:0021872"	3.00436480540245	59	"glial cell proliferation"	"forebrain generation of neurons"	0.91080906921241	0.483888888888889	0.465
+"GO:1904356"	1	"GO:0051276"	3.00436480540245	61	"regulation of telomere maintenance via telomere lengthening"	"chromosome organization"	0.772526252983294	0.362953488372093	0.774
+"GO:0030178"	36	"GO:0090090"	3.00436480540245	173	"negative regulation of Wnt signaling pathway"	"negative regulation of canonical Wnt signaling pathway"	0.887521479713604	0.246222222222222	0.973
+"GO:0001843"	42	"GO:0001841"	2.99567862621736	91	"neural tube closure"	"neural tube formation"	0.910551312649164	0.268692307692308	0.99
+"GO:1903083"	35	"GO:0034502"	2.99139982823808	15	"protein localization to condensed chromosome"	"protein localization to chromosome"	0.965336515513126	0.405571428571429	0.873
+"GO:0034501"	35	"GO:0034502"	2.99139982823808	15	"protein localization to kinetochore"	"protein localization to chromosome"	0.96517183770883	0.395714285714286	0.873
+"GO:0007096"	1	"GO:0051276"	2.98716277529483	18	"regulation of exit from mitosis"	"chromosome organization"	0.828169451073986	0.563255813953488	0.4
+"GO:0007264"	28	"GO:0072331"	2.98296666070122	491	"small GTPase mediated signal transduction"	"signal transduction by p53 class mediator"	0.905986873508353	0.441473684210526	0.543
+"GO:0043392"	32	"GO:0051101"	2.97881070093006	35	"negative regulation of DNA binding"	"regulation of DNA binding"	0.953035799522673	0.406318181818182	0.943
+"GO:0061458"	37	"GO:0032502"	2.97469413473523	309	"reproductive system development"	"developmental process"	0.92963245823389	0.570466666666667	0.407
+"GO:0006998"	1	"GO:0051276"	2.96657624451305	54	"nuclear envelope organization"	"chromosome organization"	0.922236276849642	0.596279069767442	0.441
+"GO:0006278"	12	"GO:0006259"	2.96657624451305	75	"RNA-templated DNA biosynthetic process"	"DNA metabolic process"	0.885383054892601	0.430594594594595	0.696
+"GO:0060606"	42	"GO:0001841"	2.95860731484178	92	"tube closure"	"neural tube formation"	0.929505966587112	0.31	0.929
+"GO:0021983"	46	"GO:0021872"	2.93930215964639	42	"pituitary gland development"	"forebrain generation of neurons"	0.931145584725537	0.4905	0.684
+"GO:0031399"	4	"GO:0019219"	2.92811799269387	1309	"regulation of protein modification process"	"regulation of nucleobase-containing compound metabolic process"	0.828712410501193	0.426896551724138	0.625
+"GO:0034504"	35	"GO:0034502"	2.92445303860747	310	"protein localization to nucleus"	"protein localization to chromosome"	0.958762529832936	0.368214285714286	0.715
+"GO:0035556"	28	"GO:0072331"	2.9100948885606	2698	"intracellular signal transduction"	"signal transduction by p53 class mediator"	0.88680906921241	0.412736842105263	0.66
+"GO:0140527"	12	"GO:0006259"	2.9100948885606	60	"reciprocal homologous recombination"	"DNA metabolic process"	0.894503579952267	0.408162162162162	0.674
+"GO:0007131"	12	"GO:0006259"	2.9100948885606	60	"reciprocal meiotic recombination"	"DNA metabolic process"	0.747483293556086	0.407486486486486	0.674
+"GO:0051093"	40	"GO:0050793"	2.90308998699194	1005	"negative regulation of developmental process"	"regulation of developmental process"	0.858285202863962	0.35608	0.82
+"GO:0048609"	11	"GO:0140013"	2.88941028970075	915	"multicellular organismal reproductive process"	"meiotic nuclear division"	0.930471360381862	0.288846153846154	0.716
+"GO:0017145"	14	"GO:0051781"	2.88272870434424	31	"stem cell division"	"positive regulation of cell division"	0.978270883054893	0.382470588235294	0.664
+"GO:0007080"	16	"GO:0008608"	2.87942606879415	57	"mitotic metaphase chromosome alignment"	"attachment of spindle microtubules to kinetochore"	0.812248210023866	0.266333333333333	0.911
+"GO:0010608"	9	"GO:0009059"	2.87614835903291	1093	"post-transcriptional regulation of gene expression"	"macromolecule biosynthetic process"	0.845317422434368	0.559666666666667	0.546
+"GO:2000177"	47	"GO:2000177"	2.86966623150499	100	"regulation of neural precursor cell proliferation"	"regulation of neural precursor cell proliferation"	0.936529832935561	0.46435	0
+"GO:0070303"	15	"GO:0006974"	2.86012091359876	49	"negative regulation of stress-activated protein kinase signaling cascade"	"DNA damage response"	0.888016706443914	0.375818181818182	0.571
+"GO:0032873"	15	"GO:0006974"	2.86012091359876	49	"negative regulation of stress-activated MAPK cascade"	"DNA damage response"	0.88799522673031	0.375	0.571
+"GO:0048565"	48	"GO:0048565"	2.86012091359876	134	"digestive tract development"	"digestive tract development"	0.930590692124105	0.359333333333333	0
+"GO:0051568"	18	"GO:0016570"	2.86012091359876	20	"histone H3-K4 methylation"	"histone modification"	0.911102625298329	0.331756756756757	0.876
+"GO:0097150"	23	"GO:0035019"	2.8569851997459	23	"neuronal stem cell population maintenance"	"somatic stem cell population maintenance"	0.953673031026253	0.3755	0.794
+"GO:2000045"	3	"GO:0022402"	2.85387196432176	183	"regulation of G1/S transition of mitotic cell cycle"	"cell cycle process"	0.83944630071599	0.241520547945205	0.737
+"GO:0010824"	8	"GO:1902850"	2.84771165561694	47	"regulation of centrosome duplication"	"microtubule cytoskeleton organization involved in mitosis"	0.813861575178998	0.27692	0.657
+"GO:0198738"	36	"GO:0090090"	2.84163750790475	461	"cell-cell signaling by wnt"	"negative regulation of canonical Wnt signaling pathway"	0.923860381861575	0.223222222222222	0.857
+"GO:0045637"	40	"GO:0050793"	2.83863199776503	213	"regulation of myeloid cell differentiation"	"regulation of developmental process"	0.859881861575179	0.31372	0.68
+"GO:0070897"	2	"GO:0090304"	2.81815641205523	82	"transcription preinitiation complex assembly"	"nucleic acid metabolic process"	0.840288782816229	0.468041666666667	0.433
+"GO:0010720"	40	"GO:0050793"	2.81815641205523	444	"positive regulation of cell development"	"regulation of developmental process"	0.842978520286396	0.29932	0.734
+"GO:0035825"	12	"GO:0006259"	2.8153085691824	68	"homologous recombination"	"DNA metabolic process"	0.893353221957041	0.403027027027027	0.683
+"GO:0006606"	19	"GO:0051169"	2.81247927916354	161	"protein import into nucleus"	"nuclear transport"	0.953963007159905	0.2813	0.916
+"GO:0031123"	6	"GO:0000377"	2.80134291304558	102	"RNA 3'-end processing"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.893977326968974	0.446923076923077	0.653
+"GO:0032504"	11	"GO:0140013"	2.79588001734407	963	"multicellular organism reproduction"	"meiotic nuclear division"	0.930336515513126	0.289179487179487	0.719
+"GO:0030330"	15	"GO:0006974"	2.79317412396815	73	"DNA damage response, signal transduction by p53 class mediator"	"DNA damage response"	0.907841288782816	0.491454545454545	0.719
+"GO:1904888"	49	"GO:1904888"	2.77989191195995	72	"cranial skeletal system development"	"cranial skeletal system development"	0.95086276849642	0.5175	0
+"GO:0016575"	18	"GO:0016570"	2.77728352885242	23	"histone deacetylation"	"histone modification"	0.915520286396181	0.414837837837838	0.884
+"GO:0090162"	50	"GO:0090162"	2.76955107862173	34	"establishment of epithelial cell polarity"	"establishment of epithelial cell polarity"	0.987534606205251	0.5545	0
+"GO:0014013"	46	"GO:0021872"	2.76955107862173	110	"regulation of gliogenesis"	"forebrain generation of neurons"	0.862343675417661	0.467888888888889	0.484
+"GO:0046329"	15	"GO:0006974"	2.7619538968712	37	"negative regulation of JNK cascade"	"DNA damage response"	0.890538186157518	0.3835	0.555
+"GO:1905269"	5	"GO:0071824"	2.7619538968712	14	"positive regulation of chromatin organization"	"protein-DNA complex organization"	0.851322195704057	0.38055	0.685
+"GO:0007099"	8	"GO:1902850"	2.75696195131371	43	"centriole replication"	"microtubule cytoskeleton organization involved in mitosis"	0.851183770883055	0.30556	0.665
+"GO:0051642"	51	"GO:0051642"	2.71669877129645	32	"centrosome localization"	"centrosome localization"	0.973883054892601	0.5	0
+"GO:1903050"	4	"GO:0019219"	2.70333480973847	235	"regulation of proteolysis involved in protein catabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.856226730310263	0.489586206896552	0.488
+"GO:0048599"	11	"GO:0140013"	2.70114692359029	61	"oocyte development"	"meiotic nuclear division"	0.898573985680191	0.322923076923077	0.633
+"GO:0010458"	1	"GO:0051276"	2.69897000433602	32	"exit from mitosis"	"chromosome organization"	0.85281861575179	0.548558139534884	0.42
+"GO:0007064"	1	"GO:0051276"	2.69897000433602	31	"mitotic sister chromatid cohesion"	"chromosome organization"	0.858412887828162	0.464093023255814	0.729
+"GO:0098534"	8	"GO:1902850"	2.69897000433602	48	"centriole assembly"	"microtubule cytoskeleton organization involved in mitosis"	0.906361575178998	0.31012	0.672
+"GO:2000104"	12	"GO:0006259"	2.69250396208679	9	"negative regulation of DNA-templated DNA replication"	"DNA metabolic process"	0.853850835322196	0.417810810810811	0.561
+"GO:0007350"	38	"GO:0007389"	2.68193666503724	25	"blastoderm segmentation"	"pattern specification process"	0.935474940334129	0.326142857142857	0.749
+"GO:0006353"	2	"GO:0090304"	2.67985371388895	30	"DNA-templated transcription termination"	"nucleic acid metabolic process"	0.908175417661098	0.586833333333333	0.394
+"GO:0043687"	18	"GO:0016570"	2.67778070526608	1092	"post-translational protein modification"	"histone modification"	0.887077565632458	0.414810810810811	0.747
+"GO:0055123"	48	"GO:0048565"	2.67778070526608	146	"digestive system development"	"digestive tract development"	0.935266109785203	0.361333333333333	0.993
+"GO:1903312"	6	"GO:0000377"	2.67162039656126	99	"negative regulation of mRNA metabolic process"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.834096658711217	0.379653846153846	0.378
+"GO:0010833"	1	"GO:0051276"	2.66554624884907	81	"telomere maintenance via telomere lengthening"	"chromosome organization"	0.81763723150358	0.404441860465116	0.802
+"GO:0051985"	3	"GO:0022402"	2.66554624884907	50	"negative regulation of chromosome segregation"	"cell cycle process"	0.832665871121718	0.275123287671233	0.674
+"GO:0009896"	30	"GO:0045732"	2.64206515299955	601	"positive regulation of catabolic process"	"positive regulation of protein catabolic process"	0.858304295942721	0.310285714285714	0.892
+"GO:0071168"	35	"GO:0034502"	2.64016451766011	59	"protein localization to chromatin"	"protein localization to chromosome"	0.962829355608592	0.378642857142857	0.946
+"GO:0030324"	42	"GO:0001841"	2.64016451766011	188	"lung development"	"neural tube formation"	0.923147971360382	0.328307692307692	0.604
+"GO:0050767"	40	"GO:0050793"	2.63264407897398	390	"regulation of neurogenesis"	"regulation of developmental process"	0.849027446300716	0.27904	0.723
+"GO:0061842"	51	"GO:0051642"	2.62708799702989	32	"microtubule organizing center localization"	"centrosome localization"	0.973883054892601	0.5	1
+"GO:0051100"	32	"GO:0051101"	2.62708799702989	121	"negative regulation of binding"	"regulation of DNA binding"	0.949303102625298	0.377636363636364	0.857
+"GO:0071763"	1	"GO:0051276"	2.6252516539899	44	"nuclear membrane organization"	"chromosome organization"	0.92363723150358	0.603418604651163	0.431
+"GO:0070301"	52	"GO:0070301"	2.6252516539899	67	"cellular response to hydrogen peroxide"	"cellular response to hydrogen peroxide"	0.955177804295943	0.598	0
+"GO:1904029"	32	"GO:0051101"	2.6252516539899	85	"regulation of cyclin-dependent protein kinase activity"	"regulation of DNA binding"	0.75999522673031	0.372181818181818	0.497
+"GO:0060441"	42	"GO:0001841"	2.62342304294349	30	"epithelial tube branching involved in lung morphogenesis"	"neural tube formation"	0.923917661097852	0.292923076923077	0.737
+"GO:0031571"	3	"GO:0022402"	2.61978875828839	29	"mitotic G1 DNA damage checkpoint signaling"	"cell cycle process"	0.812014319809069	0.29372602739726	0.626
+"GO:0032508"	1	"GO:0051276"	2.61261017366127	79	"DNA duplex unwinding"	"chromosome organization"	0.907605011933174	0.451232558139535	0.777
+"GO:1902806"	3	"GO:0022402"	2.60032627851896	209	"regulation of cell cycle G1/S phase transition"	"cell cycle process"	0.841570405727924	0.255013698630137	0.749
+"GO:0030323"	42	"GO:0001841"	2.59006687666871	192	"respiratory tube development"	"neural tube formation"	0.924513126491647	0.327846153846154	0.606
+"GO:0045910"	12	"GO:0006259"	2.58502665202918	50	"negative regulation of DNA recombination"	"DNA metabolic process"	0.834295942720764	0.357324324324324	0.651
+"GO:0031398"	4	"GO:0019219"	2.58169870868025	110	"positive regulation of protein ubiquitination"	"regulation of nucleobase-containing compound metabolic process"	0.844431980906921	0.494189655172414	0.45
+"GO:1900193"	11	"GO:0140013"	2.57675412606319	7	"regulation of oocyte maturation"	"meiotic nuclear division"	0.872721957040573	0.391846153846154	0.544
+"GO:0022613"	10	"GO:0006996"	2.57024771999759	504	"ribonucleoprotein complex biogenesis"	"organelle organization"	0.921215990453461	0.5138125	0.482
+"GO:0031331"	30	"GO:0045732"	2.56863623584101	396	"positive regulation of cellular catabolic process"	"positive regulation of protein catabolic process"	0.846384248210024	0.311357142857143	0.864
+"GO:0045648"	45	"GO:0030218"	2.5543957967264	33	"positive regulation of erythrocyte differentiation"	"erythrocyte differentiation"	0.860494033412888	0.2595	0.892
+"GO:0051493"	10	"GO:0006996"	2.54975089168064	516	"regulation of cytoskeleton organization"	"organelle organization"	0.849374701670644	0.411625	0.671
+"GO:0018209"	18	"GO:0016570"	2.54363396687096	308	"peptidyl-serine modification"	"histone modification"	0.903671837708831	0.456810810810811	0.469
+"GO:0006475"	18	"GO:0016570"	2.53760200210104	58	"internal protein amino acid acetylation"	"histone modification"	0.913687350835322	0.471594594594595	0.416
+"GO:0000079"	32	"GO:0051101"	2.52724355068279	82	"regulation of cyclin-dependent protein serine/threonine kinase activity"	"regulation of DNA binding"	0.76090214797136	0.370409090909091	0.496
+"GO:0045595"	40	"GO:0050793"	2.52724355068279	1627	"regulation of cell differentiation"	"regulation of developmental process"	0.851659904534606	0.2994	0.89
+"GO:0007549"	5	"GO:0071824"	2.51999305704285	33	"dosage compensation"	"protein-DNA complex organization"	0.845036992840095	0.38795	0.718
+"GO:2000179"	47	"GO:2000177"	2.51712641639125	63	"positive regulation of neural precursor cell proliferation"	"regulation of neural precursor cell proliferation"	0.920143198090692	0.4594	0.965
+"GO:0006111"	53	"GO:0006111"	2.51427857351842	53	"regulation of gluconeogenesis"	"regulation of gluconeogenesis"	0.89154892601432	0.2454	0
+"GO:0000723"	1	"GO:0051276"	2.51144928349956	156	"telomere maintenance"	"chromosome organization"	0.802213603818616	0.372093023255814	0.884
+"GO:0007265"	28	"GO:0072331"	2.50863830616573	341	"Ras protein signal transduction"	"signal transduction by p53 class mediator"	0.909068019093079	0.456052631578947	0.525
+"GO:0042327"	41	"GO:0016310"	2.49757288001557	661	"positive regulation of phosphorylation"	"phosphorylation"	0.83805369928401	0.210461538461538	0.859
+"GO:0050686"	6	"GO:0000377"	2.49485002168009	24	"negative regulation of mRNA processing"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.848511933174224	0.339615384615385	0.563
+"GO:0006378"	6	"GO:0000377"	2.48945498979339	30	"mRNA polyadenylation"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.901652744630072	0.3855	0.577
+"GO:0048731"	37	"GO:0032502"	2.48678239993206	4044	"system development"	"developmental process"	0.905966587112172	0.416266666666667	0.714
+"GO:0032200"	1	"GO:0051276"	2.48545224733971	187	"telomere organization"	"chromosome organization"	0.895356801909308	0.37106976744186	0.891
+"GO:0006473"	18	"GO:0016570"	2.48280410205003	106	"protein acetylation"	"histone modification"	0.909352028639618	0.458378378378378	0.438
+"GO:0044819"	3	"GO:0022402"	2.48280410205003	29	"mitotic G1/S transition checkpoint signaling"	"cell cycle process"	0.820087112171838	0.296602739726027	0.629
+"GO:0019538"	7	"GO:0043170"	2.47886191629596	5056	"protein metabolic process"	"macromolecule metabolic process"	0.878805489260143	0.526111111111111	0.596
+"GO:1901976"	3	"GO:0022402"	2.47495519296315	46	"regulation of cell cycle checkpoint"	"cell cycle process"	0.814412887828162	0.320027397260274	0.65
+"GO:0043967"	18	"GO:0016570"	2.46980030179692	14	"histone H4 acetylation"	"histone modification"	0.912557279236277	0.331054054054054	0.874
+"GO:0048025"	6	"GO:0000377"	2.46852108295775	22	"negative regulation of mRNA splicing, via spliceosome"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.845979713603819	0.275461538461538	0.748
+"GO:0060271"	47	"GO:2000177"	2.46344155742847	378	"cilium assembly"	"regulation of neural precursor cell proliferation"	0.893748210023867	0.4791	0.473
+"GO:0001837"	24	"GO:0035987"	2.46344155742847	178	"epithelial to mesenchymal transition"	"endodermal cell differentiation"	0.914288782816229	0.45925	0.469
+"GO:0010569"	12	"GO:0006259"	2.45345733652187	73	"regulation of double-strand break repair via homologous recombination"	"DNA metabolic process"	0.818804295942721	0.338297297297297	0.671
+"GO:0017038"	39	"GO:0006406"	2.44369749923271	8	"protein import"	"mRNA export from nucleus"	0.968579952267303	0.55825	0.418
+"GO:0006303"	15	"GO:0006974"	2.431798275933	65	"double-strand break repair via nonhomologous end joining"	"DNA damage response"	0.86527446300716	0.488590909090909	0.729
+"GO:0007369"	21	"GO:0009790"	2.4294570601181	197	"gastrulation"	"embryo development"	0.922366348448687	0.331428571428571	0.793
+"GO:0001838"	42	"GO:0001841"	2.42596873227228	125	"embryonic epithelial tube formation"	"neural tube formation"	0.915795942720764	0.263307692307692	0.983
+"GO:0042176"	30	"GO:0045732"	2.42481215507234	364	"regulation of protein catabolic process"	"positive regulation of protein catabolic process"	0.851143198090692	0.274857142857143	0.949
+"GO:0045927"	44	"GO:0040010"	2.41793663708829	256	"positive regulation of growth"	"positive regulation of growth rate"	0.931742243436754	0.352	0.716
+"GO:0044782"	47	"GO:2000177"	2.4089353929735	407	"cilium organization"	"regulation of neural precursor cell proliferation"	0.899379474940334	0.47265	0.479
+"GO:0018393"	18	"GO:0016570"	2.4089353929735	55	"internal peptidyl-lysine acetylation"	"histone modification"	0.910183770883055	0.385972972972973	0.415
+"GO:0048706"	21	"GO:0009790"	2.4089353929735	128	"embryonic skeletal system development"	"embryo development"	0.926918854415274	0.368785714285714	0.751
+"GO:2000134"	3	"GO:0022402"	2.4089353929735	86	"negative regulation of G1/S transition of mitotic cell cycle"	"cell cycle process"	0.828678997613365	0.251972602739726	0.69
+"GO:0010498"	30	"GO:0045732"	2.40560744962457	531	"proteasomal protein catabolic process"	"positive regulation of protein catabolic process"	0.897101431980907	0.286571428571429	0.766
+"GO:1902115"	10	"GO:0006996"	2.40230481407449	218	"regulation of organelle assembly"	"organelle organization"	0.859890214797136	0.3661875	0.595
+"GO:0008356"	14	"GO:0051781"	2.40011692792631	19	"asymmetric cell division"	"positive regulation of cell division"	0.979276849642005	0.418588235294118	0.645
+"GO:0046580"	28	"GO:0072331"	2.39577394691553	48	"negative regulation of Ras protein signal transduction"	"signal transduction by p53 class mediator"	0.898387828162291	0.398263157894737	0.448
+"GO:0009794"	21	"GO:0009790"	2.39469495385889	4	"regulation of mitotic cell cycle, embryonic"	"embryo development"	0.836245823389022	0.503071428571429	0.57
+"GO:0072091"	47	"GO:2000177"	2.39254497678533	95	"regulation of stem cell proliferation"	"regulation of neural precursor cell proliferation"	0.937514319809069	0.48745	0.497
+"GO:0001736"	54	"GO:0001736"	2.3840499483436	70	"establishment of planar polarity"	"establishment of planar polarity"	0.93472553699284	0.533	0
+"GO:0035295"	42	"GO:0001841"	2.35951856302958	1168	"tube development"	"neural tube formation"	0.917449880668258	0.327923076923077	0.717
+"GO:1902807"	3	"GO:0022402"	2.34008379993015	95	"negative regulation of cell cycle G1/S phase transition"	"cell cycle process"	0.831115751789976	0.267342465753425	0.698
+"GO:0042023"	12	"GO:0006259"	2.33724216831843	4	"DNA endoreduplication"	"DNA metabolic process"	0.843831742243436	0.503405405405405	0.53
+"GO:0006312"	12	"GO:0006259"	2.33724216831843	25	"mitotic recombination"	"DNA metabolic process"	0.90204415274463	0.455783783783784	0.623
+"GO:0051438"	32	"GO:0051101"	2.32882715728492	39	"regulation of ubiquitin-protein transferase activity"	"regulation of DNA binding"	0.951952267303103	0.395636363636364	0.469
+"GO:0033120"	6	"GO:0000377"	2.32057210338788	46	"positive regulation of RNA splicing"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.846025059665871	0.425076923076923	0.731
+"GO:0031056"	18	"GO:0016570"	2.31336373073771	40	"regulation of histone modification"	"histone modification"	0.867173031026253	0.41627027027027	0.923
+"GO:2000573"	12	"GO:0006259"	2.31247103878537	69	"positive regulation of DNA biosynthetic process"	"DNA metabolic process"	0.825667064439141	0.370405405405405	0.686
+"GO:0002262"	45	"GO:0030218"	2.30364361126667	173	"myeloid cell homeostasis"	"erythrocyte differentiation"	0.961763723150358	0.221666666666667	0.976
+"GO:0007164"	54	"GO:0001736"	2.29073003902417	70	"establishment of tissue polarity"	"establishment of planar polarity"	0.943767303102625	0.533	0.999
+"GO:0016573"	18	"GO:0016570"	2.29073003902417	50	"histone acetylation"	"histone modification"	0.905298329355609	0.282027027027027	0.942
+"GO:0006101"	55	"GO:0006101"	2.2839966563652	5	"citrate metabolic process"	"citrate metabolic process"	0.941021479713604	0.529	0
+"GO:1901991"	3	"GO:0022402"	2.27818938478745	196	"negative regulation of mitotic cell cycle phase transition"	"cell cycle process"	0.817505966587112	0.217534246575342	0.757
+"GO:0006352"	2	"GO:0090304"	2.26841123481326	154	"DNA-templated transcription initiation"	"nucleic acid metabolic process"	0.890473747016706	0.432708333333333	0.483
+"GO:0072175"	42	"GO:0001841"	2.25414480482627	137	"epithelial tube formation"	"neural tube formation"	0.921058472553699	0.261384615384615	0.974
+"GO:0044087"	10	"GO:0006996"	2.23957751657679	984	"regulation of cellular component biogenesis"	"organelle organization"	0.875522673031026	0.4559375	0.514
+"GO:0031060"	18	"GO:0016570"	2.23657200643706	19	"regulation of histone methylation"	"histone modification"	0.870408114558473	0.375054054054054	0.874
+"GO:0090329"	12	"GO:0006259"	2.23657200643706	47	"regulation of DNA-templated DNA replication"	"DNA metabolic process"	0.854330548926014	0.367162162162162	0.647
+"GO:0070302"	15	"GO:0006974"	2.23062267392386	189	"regulation of stress-activated protein kinase signaling cascade"	"DNA damage response"	0.895726730310263	0.330181818181818	0.643
+"GO:0032872"	15	"GO:0006974"	2.23062267392386	186	"regulation of stress-activated MAPK cascade"	"DNA damage response"	0.895806682577566	0.329772727272727	0.642
+"GO:0018394"	18	"GO:0016570"	2.22841251911874	68	"peptidyl-lysine acetylation"	"histone modification"	0.90885322195704	0.382405405405405	0.421
+"GO:0048634"	56	"GO:0048634"	2.22767829327708	23	"regulation of muscle organ development"	"regulation of muscle organ development"	0.903788782816229	0.219888888888889	0
+"GO:0060251"	46	"GO:0021872"	2.22257317761069	41	"regulation of glial cell proliferation"	"forebrain generation of neurons"	0.881019093078759	0.499055555555556	0.451
+"GO:0048583"	31	"GO:0080135"	2.22184874961636	4092	"regulation of response to stimulus"	"regulation of cellular response to stress"	0.910640811455847	0.5184	0.66
+"GO:2000001"	3	"GO:0022402"	2.20760831050175	24	"regulation of DNA damage checkpoint"	"cell cycle process"	0.813433174224344	0.345095890410959	0.614
+"GO:0043549"	32	"GO:0051101"	2.19928292171761	581	"regulation of kinase activity"	"regulation of DNA binding"	0.849486873508353	0.285545454545455	0.577
+"GO:0051716"	15	"GO:0006974"	2.19517932127884	7599	"cellular response to stimulus"	"DNA damage response"	0.944625298329356	0.618318181818182	0.512
+"GO:0045859"	32	"GO:0051101"	2.19044028536473	503	"regulation of protein kinase activity"	"regulation of DNA binding"	0.816069212410501	0.291227272727273	0.57
+"GO:0051130"	10	"GO:0006996"	2.18976748200492	1115	"positive regulation of cellular component organization"	"organelle organization"	0.839915274463007	0.4350625	0.532
+"GO:0031401"	4	"GO:0019219"	2.18575240426808	813	"positive regulation of protein modification process"	"regulation of nucleobase-containing compound metabolic process"	0.817236276849642	0.390103448275862	0.58
+"GO:0006476"	18	"GO:0016570"	2.18243463044022	58	"protein deacetylation"	"histone modification"	0.916224343675418	0.551621621621622	0.422
+"GO:0045862"	4	"GO:0019219"	2.18177410638604	350	"positive regulation of proteolysis"	"regulation of nucleobase-containing compound metabolic process"	0.83749522673031	0.42398275862069	0.513
+"GO:0002562"	12	"GO:0006259"	2.17522353752445	72	"somatic diversification of immune receptors via germline recombination within a single locus"	"DNA metabolic process"	0.831001193317422	0.408432432432432	0.685
+"GO:0035051"	57	"GO:0035051"	2.17457388223218	165	"cardiocyte differentiation"	"cardiocyte differentiation"	0.912292362768496	0.5365	0
+"GO:0048569"	57	"GO:0035051"	2.16367588429325	18	"post-embryonic animal organ development"	"cardiocyte differentiation"	0.950665871121719	0.714875	0.346
+"GO:0048872"	45	"GO:0030218"	2.1605219526258	316	"homeostasis of number of cells"	"erythrocyte differentiation"	0.962892601431981	0.254	0.927
+"GO:0006972"	58	"GO:0006972"	2.14691047014813	27	"hyperosmotic response"	"hyperosmotic response"	0.974608591885442	0.583	0
+"GO:0031145"	30	"GO:0045732"	2.14691047014813	24	"anaphase-promoting complex-dependent catabolic process"	"positive regulation of protein catabolic process"	0.920071599045346	0.418928571428571	0.602
+"GO:1902253"	28	"GO:0072331"	2.14691047014813	35	"regulation of intrinsic apoptotic signaling pathway by p53 class mediator"	"signal transduction by p53 class mediator"	0.915821002386635	0.403368421052632	0.867
+"GO:0009880"	38	"GO:0007389"	2.14086170270547	74	"embryonic pattern specification"	"pattern specification process"	0.93062291169451	0.324571428571429	0.817
+"GO:0048546"	48	"GO:0048565"	2.13966199342901	49	"digestive tract morphogenesis"	"digestive tract development"	0.931994033412888	0.382666666666667	0.929
+"GO:0001708"	25	"GO:0045165"	2.13548891894161	110	"cell fate specification"	"cell fate commitment"	0.930492840095466	0.389333333333333	0.914
+"GO:0051972"	12	"GO:0006259"	2.13194363817696	46	"regulation of telomerase activity"	"DNA metabolic process"	0.837674224343675	0.397810810810811	0.652
+"GO:0001934"	41	"GO:0016310"	2.13018179202067	609	"positive regulation of protein phosphorylation"	"phosphorylation"	0.803922434367542	0.210923076923077	0.849
+"GO:0048762"	24	"GO:0035987"	2.1249387366083	262	"mesenchymal cell differentiation"	"endodermal cell differentiation"	0.9113138424821	0.443083333333333	0.484
+"GO:0006298"	15	"GO:0006974"	2.12147820449879	35	"mismatch repair"	"DNA damage response"	0.871983293556086	0.516590909090909	0.692
+"GO:0046328"	15	"GO:0006974"	2.12147820449879	132	"regulation of JNK cascade"	"DNA damage response"	0.899238663484487	0.345681818181818	0.616
+"GO:0050685"	6	"GO:0000377"	2.12147820449879	37	"positive regulation of mRNA processing"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.845614558472554	0.331538461538462	0.581
+"GO:0046824"	19	"GO:0051169"	2.12033079436795	62	"positive regulation of nucleocytoplasmic transport"	"nuclear transport"	0.904010739856802	0.3048	0.839
+"GO:0050770"	47	"GO:2000177"	2.1157712303674	157	"regulation of axonogenesis"	"regulation of neural precursor cell proliferation"	0.799124105011933	0.44695	0.518
+"GO:0042325"	41	"GO:0016310"	2.11294562194904	1049	"regulation of phosphorylation"	"phosphorylation"	0.852744630071599	0.198846153846154	0.909
+"GO:0007165"	15	"GO:0006974"	2.10347378251044	6102	"signal transduction"	"DNA damage response"	0.882674224343675	0.583545454545455	0.483
+"GO:0030010"	50	"GO:0090162"	2.10292299679058	156	"establishment of cell polarity"	"establishment of epithelial cell polarity"	0.986089498806683	0.5545	0.891
+"GO:2001243"	28	"GO:0072331"	2.10182351650232	114	"negative regulation of intrinsic apoptotic signaling pathway"	"signal transduction by p53 class mediator"	0.890702863961814	0.358368421052632	0.481
+"GO:0043388"	32	"GO:0051101"	2.09636748391576	41	"positive regulation of DNA binding"	"regulation of DNA binding"	0.95232816229117	0.393181818181818	0.951
+"GO:1903706"	40	"GO:0050793"	2.08830984124614	417	"regulation of hemopoiesis"	"regulation of developmental process"	0.851412887828162	0.27784	0.741
+"GO:2000772"	15	"GO:0006974"	2.08777794346758	54	"regulation of cellular senescence"	"DNA damage response"	0.875102625298329	0.533136363636364	0.566
+"GO:0007224"	26	"GO:0007221"	2.08565684288056	148	"smoothened signaling pathway"	"positive regulation of transcription of Notch receptor target"	0.919214797136038	0.5504	0.368
+"GO:2001234"	28	"GO:0072331"	2.08460016478773	243	"negative regulation of apoptotic signaling pathway"	"signal transduction by p53 class mediator"	0.890094272076372	0.426894736842105	0.317
+"GO:0002832"	31	"GO:0080135"	2.08144546944973	150	"negative regulation of response to biotic stimulus"	"regulation of cellular response to stress"	0.917412887828162	0.5766	0.439
+"GO:0042771"	28	"GO:0072331"	2.07417242537526	44	"intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator"	"signal transduction by p53 class mediator"	0.912073985680191	0.463157894736842	0.891
+"GO:0009987"	59	"GO:0009987"	2.07314329105031	17593	"cellular process"	"cellular process"	0.977704057279236	1	0
+"GO:0021879"	46	"GO:0021872"	2.07211658966929	44	"forebrain neuron differentiation"	"forebrain generation of neurons"	0.915262529832936	0.430666666666667	0.984
+"GO:0033048"	3	"GO:0022402"	2.07058107428571	48	"negative regulation of mitotic sister chromatid segregation"	"cell cycle process"	0.775374701670645	0.253876712328767	0.671
+"GO:0060281"	11	"GO:0140013"	2.05799194697769	3	"regulation of oocyte development"	"meiotic nuclear division"	0.878347255369928	0.413205128205128	0.517
+"GO:1903708"	40	"GO:0050793"	2.05453141486818	185	"positive regulation of hemopoiesis"	"regulation of developmental process"	0.842122911694511	0.30192	0.673
+"GO:0006367"	2	"GO:0090304"	2.05256627811295	112	"transcription initiation at RNA polymerase II promoter"	"nucleic acid metabolic process"	0.892005966587112	0.430083333333333	0.47
+"GO:0016072"	2	"GO:0090304"	2.04431224968649	264	"rRNA metabolic process"	"nucleic acid metabolic process"	0.897359188544153	0.559541666666667	0.504
+"GO:0006099"	60	"GO:0006099"	2.03905380426617	33	"tricarboxylic acid cycle"	"tricarboxylic acid cycle"	0.938535799522673	1	0
+"GO:0016444"	12	"GO:0006259"	2.03905380426617	72	"somatic cell DNA recombination"	"DNA metabolic process"	0.893390214797136	0.408432432432432	0.685
+"GO:0021537"	46	"GO:0021872"	2.03479829897409	276	"telencephalon development"	"forebrain generation of neurons"	0.920147971360382	0.409944444444444	0.783
+"GO:0045217"	61	"GO:0045217"	2.0301183562535	17	"cell-cell junction maintenance"	"cell-cell junction maintenance"	0.943718377088306	0.748	0
+"GO:0051657"	16	"GO:0008608"	2.02136305161553	13	"maintenance of organelle location"	"attachment of spindle microtubules to kinetochore"	0.965467780429594	0.4282	0.6
+"GO:0031098"	15	"GO:0006974"	2.00568284733036	238	"stress-activated protein kinase signaling cascade"	"DNA damage response"	0.900793556085919	0.323681818181818	0.666
+"GO:0051961"	40	"GO:0050793"	2.00348832784582	155	"negative regulation of nervous system development"	"regulation of developmental process"	0.859984486873508	0.3732	0.651
+"GO:0009953"	38	"GO:0007389"	2	97	"dorsal/ventral pattern formation"	"pattern specification process"	0.937247016706444	0.341857142857143	0.842
+"GO:0006417"	4	"GO:0019219"	1.99913227846877	537	"regulation of translation"	"regulation of nucleobase-containing compound metabolic process"	0.824879474940334	0.460120689655172	0.554
+"GO:1902667"	47	"GO:2000177"	1.995248844409	13	"regulation of axon guidance"	"regulation of neural precursor cell proliferation"	0.817677804295943	0.53575	0.44
+"GO:0008284"	47	"GO:2000177"	1.9888526392242	1286	"positive regulation of cell population proliferation"	"regulation of neural precursor cell proliferation"	0.896551312649165	0.39415	0.624
+"GO:0051403"	15	"GO:0006974"	1.98213228103649	230	"stress-activated MAPK cascade"	"DNA damage response"	0.901057279236277	0.324136363636364	0.664
+"GO:0051962"	40	"GO:0050793"	1.97633608180221	290	"positive regulation of nervous system development"	"regulation of developmental process"	0.855768496420048	0.34384	0.697
+"GO:0072698"	35	"GO:0034502"	1.97305837204097	55	"protein localization to microtubule cytoskeleton"	"protein localization to chromosome"	0.963668257756563	0.432928571428571	0.631
+"GO:0032205"	1	"GO:0051276"	1.97305837204097	35	"negative regulation of telomere maintenance"	"chromosome organization"	0.760705250596659	0.378837209302326	0.748
+"GO:0046825"	19	"GO:0051169"	1.97305837204097	34	"regulation of protein export from nucleus"	"nuclear transport"	0.923073985680191	0.2947	0.803
+"GO:0090398"	15	"GO:0006974"	1.96778429670202	110	"cellular senescence"	"DNA damage response"	0.90677923627685	0.506909090909091	0.606
+"GO:0140056"	33	"GO:0097711"	1.96778429670202	82	"organelle localization by membrane tethering"	"ciliary basal body-plasma membrane docking"	0.963968973747017	0.405666666666667	0.791
+"GO:0006487"	29	"GO:0006491"	1.96098267800259	70	"protein N-linked glycosylation"	"N-glycan processing"	0.896665871121718	0.407833333333333	0.664
+"GO:0035601"	18	"GO:0016570"	1.95860731484178	67	"protein deacylation"	"histone modification"	0.914114558472554	0.542918918918919	0.432
+"GO:0060485"	24	"GO:0035987"	1.95860731484178	327	"mesenchyme development"	"endodermal cell differentiation"	0.928931980906922	0.435166666666667	0.495
+"GO:0048103"	14	"GO:0051781"	1.95860731484178	11	"somatic stem cell division"	"positive regulation of cell division"	0.979650357995227	0.417941176470588	0.621
+"GO:0019941"	30	"GO:0045732"	1.94846160948467	650	"modification-dependent protein catabolic process"	"positive regulation of protein catabolic process"	0.895108591885442	0.263714285714286	0.779
+"GO:0072332"	28	"GO:0072331"	1.94119451332409	84	"intrinsic apoptotic signaling pathway by p53 class mediator"	"signal transduction by p53 class mediator"	0.916461813842482	0.439052631578947	0.932
+"GO:0055024"	56	"GO:0048634"	1.94119451332409	5	"regulation of cardiac muscle tissue development"	"regulation of muscle organ development"	0.899078758949881	0.252888888888889	0.918
+"GO:1900424"	31	"GO:0080135"	1.92591531097176	20	"regulation of defense response to bacterium"	"regulation of cellular response to stress"	0.938939140811456	0.542	0.574
+"GO:0048286"	42	"GO:0001841"	1.92591531097176	49	"lung alveolus development"	"neural tube formation"	0.932349642004773	0.400615384615385	0.534
+"GO:0008283"	47	"GO:2000177"	1.92445303860747	3323	"cell population proliferation"	"regulation of neural precursor cell proliferation"	0.969589498806683	0.43345	0.577
+"GO:0002052"	47	"GO:2000177"	1.91973437266016	37	"positive regulation of neuroblast proliferation"	"regulation of neural precursor cell proliferation"	0.850013126491647	0.4536	0.928
+"GO:0048483"	46	"GO:0021872"	1.911155437273	46	"autonomic nervous system development"	"forebrain generation of neurons"	0.935927207637232	0.611777777777778	0.393
+"GO:0022618"	5	"GO:0071824"	1.911155437273	235	"protein-RNA complex assembly"	"protein-DNA complex organization"	0.919379474940334	0.415	0.671
+"GO:0040020"	11	"GO:0140013"	1.911155437273	33	"regulation of meiotic nuclear division"	"meiotic nuclear division"	0.797227923627685	0.361384615384615	0.843
+"GO:0072350"	55	"GO:0006101"	1.90483064856824	15	"tricarboxylic acid metabolic process"	"citrate metabolic process"	0.943770883054893	0.529	0.942
+"GO:0051784"	1	"GO:0051276"	1.90483064856824	63	"negative regulation of nuclear division"	"chromosome organization"	0.844706443914081	0.454441860465116	0.452
+"GO:0043009"	21	"GO:0009790"	1.90413354652146	653	"chordate embryonic development"	"embryo development"	0.919164677804296	0.302714285714286	0.897
+"GO:0048232"	11	"GO:0140013"	1.9037854146536	642	"male gamete generation"	"meiotic nuclear division"	0.930954653937948	0.28148717948718	0.772
+"GO:0071826"	5	"GO:0071824"	1.8955128886876	243	"protein-RNA complex organization"	"protein-DNA complex organization"	0.92517661097852	0.4254	0.673
+"GO:0033119"	6	"GO:0000377"	1.8921119748172	27	"negative regulation of RNA splicing"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.848805489260143	0.424076923076923	0.707
+"GO:0007498"	24	"GO:0035987"	1.88107424717422	136	"mesoderm development"	"endodermal cell differentiation"	0.940207637231503	0.496916666666667	0.458
+"GO:1900087"	3	"GO:0022402"	1.87975520445363	52	"positive regulation of G1/S transition of mitotic cell cycle"	"cell cycle process"	0.835002386634845	0.275986301369863	0.652
+"GO:0006094"	53	"GO:0006111"	1.8784401558125	90	"gluconeogenesis"	"regulation of gluconeogenesis"	0.929636038186157	0.2628	0.942
+"GO:1901875"	4	"GO:0019219"	1.87778412172717	159	"positive regulation of post-translational protein modification"	"regulation of nucleobase-containing compound metabolic process"	0.840187350835322	0.478931034482759	0.466
+"GO:0042127"	47	"GO:2000177"	1.87451873429941	2291	"regulation of cell population proliferation"	"regulation of neural precursor cell proliferation"	0.915918854415274	0.389	0.662
+"GO:1901873"	4	"GO:0019219"	1.87289520163519	284	"regulation of post-translational protein modification"	"regulation of nucleobase-containing compound metabolic process"	0.849822195704057	0.509689655172414	0.501
+"GO:0098732"	18	"GO:0016570"	1.87095494011204	70	"macromolecule deacylation"	"histone modification"	0.922674224343675	0.551702702702703	0.421
+"GO:0000387"	5	"GO:0071824"	1.86838133565087	52	"spliceosomal snRNP assembly"	"protein-DNA complex organization"	0.838909307875895	0.46765	0.596
+"GO:0048598"	21	"GO:0009790"	1.86806070478958	616	"embryonic morphogenesis"	"embryo development"	0.914208830548926	0.306642857142857	0.916
+"GO:0051058"	28	"GO:0072331"	1.8639139026159	55	"negative regulation of small GTPase mediated signal transduction"	"signal transduction by p53 class mediator"	0.897426014319809	0.395473684210526	0.452
+"GO:0010001"	46	"GO:0021872"	1.86201326727647	252	"glial cell differentiation"	"forebrain generation of neurons"	0.90736754176611	0.436333333333333	0.52
+"GO:0031440"	6	"GO:0000377"	1.85356186471423	12	"regulation of mRNA 3'-end processing"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.872288782816229	0.351153846153846	0.533
+"GO:0033260"	12	"GO:0006259"	1.85108900689064	40	"nuclear DNA replication"	"DNA metabolic process"	0.818218377088306	0.428837837837838	0.635
+"GO:1902117"	10	"GO:0006996"	1.84224111395314	83	"positive regulation of organelle assembly"	"organelle organization"	0.851247016706444	0.3975625	0.535
+"GO:0030513"	62	"GO:0030513"	1.83505262737816	42	"positive regulation of BMP signaling pathway"	"positive regulation of BMP signaling pathway"	0.903473747016706	0.52175	0
+"GO:0044380"	35	"GO:0034502"	1.83505262737816	59	"protein localization to cytoskeleton"	"protein localization to chromosome"	0.963471360381862	0.430071428571429	0.635
+"GO:0007422"	46	"GO:0021872"	1.82973828460504	81	"peripheral nervous system development"	"forebrain generation of neurons"	0.934515513126492	0.604055555555556	0.401
+"GO:0048864"	27	"GO:0045652"	1.82973828460504	88	"stem cell development"	"regulation of megakaryocyte differentiation"	0.92727923627685	0.503714285714286	0.414
+"GO:1902692"	47	"GO:2000177"	1.82885884897162	53	"regulation of neuroblast proliferation"	"regulation of neural precursor cell proliferation"	0.878789976133652	0.4733	0.952
+"GO:0043488"	30	"GO:0045732"	1.82217502813532	235	"regulation of mRNA stability"	"positive regulation of protein catabolic process"	0.804970167064439	0.270571428571429	0.725
+"GO:0007219"	26	"GO:0007221"	1.81872822844054	181	"Notch signaling pathway"	"positive regulation of transcription of Notch receptor target"	0.917059665871122	0.4612	0.774
+"GO:0001932"	41	"GO:0016310"	1.81844222613721	960	"regulation of protein phosphorylation"	"phosphorylation"	0.815577565632458	0.199384615384615	0.898
+"GO:0046039"	29	"GO:0006491"	1.81730009666396	24	"GTP metabolic process"	"N-glycan processing"	0.905346062052506	0.5665	0.47
+"GO:0050769"	40	"GO:0050793"	1.8153085691824	242	"positive regulation of neurogenesis"	"regulation of developmental process"	0.835761336515513	0.28076	0.681
+"GO:1990823"	52	"GO:0070301"	1.81332613250025	106	"response to leukemia inhibitory factor"	"cellular response to hydrogen peroxide"	0.980205250596659	0.5754	0.407
+"GO:1990830"	52	"GO:0070301"	1.81332613250025	104	"cellular response to leukemia inhibitory factor"	"cellular response to hydrogen peroxide"	0.964829355608592	0.5594	0.419
+"GO:0021543"	46	"GO:0021872"	1.81107151623915	191	"pallium development"	"forebrain generation of neurons"	0.922980906921241	0.424944444444444	0.756
+"GO:0045839"	1	"GO:0051276"	1.8093882021864	56	"negative regulation of mitotic nuclear division"	"chromosome organization"	0.785931980906921	0.441697674418605	0.448
+"GO:0090102"	57	"GO:0035051"	1.80604102198081	47	"cochlea development"	"cardiocyte differentiation"	0.946324582338903	0.642625	0.37
+"GO:0072089"	47	"GO:2000177"	1.80465394165158	125	"stem cell proliferation"	"regulation of neural precursor cell proliferation"	0.976640811455847	0.527	0.425
+"GO:0018107"	18	"GO:0016570"	1.80354745829661	100	"peptidyl-threonine phosphorylation"	"histone modification"	0.898424821002387	0.505108108108108	0.431
+"GO:0006511"	30	"GO:0045732"	1.80354745829661	640	"ubiquitin-dependent protein catabolic process"	"positive regulation of protein catabolic process"	0.895213603818616	0.263928571428571	0.779
+"GO:0048704"	21	"GO:0009790"	1.7972393126068	94	"embryonic skeletal system morphogenesis"	"embryo development"	0.920405727923628	0.347142857142857	0.731
+"GO:0061013"	6	"GO:0000377"	1.79425445905734	252	"regulation of mRNA catabolic process"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.80781861575179	0.343038461538462	0.416
+"GO:0042306"	35	"GO:0034502"	1.7864822430037	58	"regulation of protein import into nucleus"	"protein localization to chromosome"	0.918710023866348	0.417785714285714	0.625
+"GO:0060996"	47	"GO:2000177"	1.77910775078048	95	"dendritic spine development"	"regulation of neural precursor cell proliferation"	0.856430787589499	0.5175	0.415
+"GO:0003279"	57	"GO:0035051"	1.77910775078048	108	"cardiac septum development"	"cardiocyte differentiation"	0.929678997613365	0.465625	0.683
+"GO:0003281"	57	"GO:0035051"	1.7788466780453	74	"ventricular septum development"	"cardiocyte differentiation"	0.933138424821002	0.485	0.648
+"GO:0051056"	28	"GO:0072331"	1.77520804350732	295	"regulation of small GTPase mediated signal transduction"	"signal transduction by p53 class mediator"	0.903113365155131	0.378736842105263	0.515
+"GO:0009888"	24	"GO:0035987"	1.77006231409207	2031	"tissue development"	"endodermal cell differentiation"	0.921470167064439	0.40775	0.59
+"GO:0009968"	28	"GO:0072331"	1.76929568638743	1359	"negative regulation of signal transduction"	"signal transduction by p53 class mediator"	0.8708138424821	0.413052631578947	0.376
+"GO:0051964"	20	"GO:0051129"	1.7687853520374	8	"negative regulation of synapse assembly"	"negative regulation of cellular component organization"	0.82253937947494	0.3554	0.674
+"GO:0051123"	2	"GO:0090304"	1.76776647888527	68	"RNA polymerase II preinitiation complex assembly"	"nucleic acid metabolic process"	0.841303102625298	0.460166666666667	0.427
+"GO:0040007"	44	"GO:0040010"	1.7667499904589	923	"growth"	"positive regulation of growth rate"	0.992656324582339	0.340428571428571	0.596
+"GO:0060795"	21	"GO:0009790"	1.76649623965887	32	"cell fate commitment involved in formation of primary germ layer"	"embryo development"	0.913737470167065	0.405642857142857	0.67
+"GO:0046425"	26	"GO:0007221"	1.76598918241282	106	"regulation of receptor signaling pathway via JAK-STAT"	"positive regulation of transcription of Notch receptor target"	0.914739856801909	0.4623	0.356
+"GO:1904892"	26	"GO:0007221"	1.76598918241282	119	"regulation of receptor signaling pathway via STAT"	"positive regulation of transcription of Notch receptor target"	0.913979713603819	0.4596	0.358
+"GO:0007399"	37	"GO:0032502"	1.76573587562121	2510	"nervous system development"	"developmental process"	0.90614200477327	0.4744	0.61
+"GO:0045685"	46	"GO:0021872"	1.76497684050478	79	"regulation of glial cell differentiation"	"forebrain generation of neurons"	0.872618138424821	0.474333333333333	0.473
+"GO:0002244"	27	"GO:0045652"	1.76472412331295	133	"hematopoietic progenitor cell differentiation"	"regulation of megakaryocyte differentiation"	0.9236276849642	0.530142857142857	0.583
+"GO:0019220"	41	"GO:0016310"	1.75970041799729	1183	"regulation of phosphate metabolic process"	"phosphorylation"	0.851741050119332	0.228076923076923	0.769
+"GO:0043632"	30	"GO:0045732"	1.75870261289001	661	"modification-dependent macromolecule catabolic process"	"positive regulation of protein catabolic process"	0.913575178997614	0.284142857142857	0.704
+"GO:0051174"	41	"GO:0016310"	1.75227216709028	1184	"regulation of phosphorus metabolic process"	"phosphorylation"	0.851751789976134	0.228846153846154	0.767
+"GO:0048701"	49	"GO:1904888"	1.74232142513082	45	"embryonic cranial skeleton morphogenesis"	"cranial skeletal system development"	0.923536992840096	0.5175	0.965
+"GO:0060411"	57	"GO:0035051"	1.74232142513082	72	"cardiac septum morphogenesis"	"cardiocyte differentiation"	0.926682577565633	0.477375	0.662
+"GO:1903322"	4	"GO:0019219"	1.74184180665921	132	"positive regulation of protein modification by small protein conjugation or removal"	"regulation of nucleobase-containing compound metabolic process"	0.842527446300716	0.487189655172414	0.457
+"GO:2000142"	2	"GO:0090304"	1.73612732313478	80	"regulation of DNA-templated transcription initiation"	"nucleic acid metabolic process"	0.859991646778043	0.478208333333333	0.426
+"GO:0007517"	56	"GO:0048634"	1.73353310455976	354	"muscle organ development"	"regulation of muscle organ development"	0.934155131264917	0.330222222222222	0.797
+"GO:0030900"	46	"GO:0021872"	1.72262002533275	407	"forebrain development"	"forebrain generation of neurons"	0.916683770883055	0.396777777777778	0.815
+"GO:0006270"	12	"GO:0006259"	1.71964930695399	37	"DNA replication initiation"	"DNA metabolic process"	0.898215990453461	0.431378378378378	0.649
+"GO:0007112"	14	"GO:0051781"	1.71964930695399	1	"male meiosis cytokinesis"	"positive regulation of cell division"	0.846459427207637	0.409294117647059	0.543
+"GO:1905879"	11	"GO:0140013"	1.71579493229821	3	"regulation of oogenesis"	"meiotic nuclear division"	0.878655131264916	0.419820512820513	0.517
+"GO:0035567"	36	"GO:0090090"	1.71579493229821	68	"non-canonical Wnt signaling pathway"	"negative regulation of canonical Wnt signaling pathway"	0.919215990453461	0.300555555555556	0.731
+"GO:0007254"	15	"GO:0006974"	1.71556926615548	163	"JNK cascade"	"DNA damage response"	0.904427207637232	0.340818181818182	0.636
+"GO:0048636"	56	"GO:0048634"	1.71534371721148	3	"positive regulation of muscle organ development"	"regulation of muscle organ development"	0.897899761336515	0.270888888888889	0.894
+"GO:0042074"	21	"GO:0009790"	1.70663744528855	15	"cell migration involved in gastrulation"	"embryo development"	0.927768496420048	0.439357142857143	0.629
+"GO:0061387"	43	"GO:0008361"	1.68973163336755	109	"regulation of extent of cell growth"	"regulation of cell size"	0.879385441527446	0.3792	0.958
+"GO:0010562"	41	"GO:0016310"	1.6884580415988	728	"positive regulation of phosphorus metabolic process"	"phosphorylation"	0.83741169451074	0.240769230769231	0.721
+"GO:0045937"	41	"GO:0016310"	1.6884580415988	728	"positive regulation of phosphate metabolic process"	"phosphorylation"	0.837390214797136	0.239923076923077	0.724
+"GO:0050790"	32	"GO:0051101"	1.68782264356022	1490	"regulation of catalytic activity"	"regulation of DNA binding"	0.937144391408115	0.300681818181818	0.628
+"GO:0006403"	35	"GO:0034502"	1.68047755093455	197	"RNA localization"	"protein localization to chromosome"	0.97354892601432	0.522285714285714	0.49
+"GO:0022406"	33	"GO:0097711"	1.67860872168831	92	"membrane docking"	"ciliary basal body-plasma membrane docking"	0.987639618138425	0.408	0.784
+"GO:0045740"	12	"GO:0006259"	1.673050005834	38	"positive regulation of DNA replication"	"DNA metabolic process"	0.840384248210024	0.379945945945946	0.634
+"GO:0055026"	56	"GO:0048634"	1.673050005834	2	"negative regulation of cardiac muscle tissue development"	"regulation of muscle organ development"	0.887640811455847	0.272333333333333	0.876
+"GO:0001510"	18	"GO:0016570"	1.67182433856168	93	"RNA methylation"	"histone modification"	0.883531026252983	0.481027027027027	0.427
+"GO:0034446"	63	"GO:0034446"	1.67080558491155	100	"substrate adhesion-dependent cell spreading"	"substrate adhesion-dependent cell spreading"	0.98967661097852	1	0
+"GO:0043487"	30	"GO:0045732"	1.67060212063896	247	"regulation of RNA stability"	"positive regulation of protein catabolic process"	0.831496420047733	0.268785714285714	0.727
+"GO:0046661"	11	"GO:0140013"	1.66174276975374	174	"male sex differentiation"	"meiotic nuclear division"	0.911394988066826	0.384538461538461	0.615
+"GO:0008589"	26	"GO:0007221"	1.65955588515988	86	"regulation of smoothened signaling pathway"	"positive regulation of transcription of Notch receptor target"	0.917374701670644	0.5692	0.351
+"GO:0032535"	43	"GO:0008361"	1.65698550284923	370	"regulation of cellular component size"	"regulation of cell size"	0.897978520286396	0.38	0.935
+"GO:1904589"	39	"GO:0006406"	1.65286521708998	2	"regulation of protein import"	"mRNA export from nucleus"	0.939427207637232	0.583375	0.386
+"GO:0090100"	62	"GO:0030513"	1.65286521708998	104	"positive regulation of transmembrane receptor protein serine/threonine kinase signaling pathway"	"positive regulation of BMP signaling pathway"	0.896656324582339	0.498	0.932
+"GO:0007259"	26	"GO:0007221"	1.65227978296596	174	"receptor signaling pathway via JAK-STAT"	"positive regulation of transcription of Notch receptor target"	0.916550119331742	0.4477	0.373
+"GO:0097696"	26	"GO:0007221"	1.65227978296596	188	"receptor signaling pathway via STAT"	"positive regulation of transcription of Notch receptor target"	0.916091885441527	0.4464	0.375
+"GO:0071479"	58	"GO:0006972"	1.64569943765464	70	"cellular response to ionizing radiation"	"hyperosmotic response"	0.965552505966587	0.451	0.55
+"GO:0010039"	52	"GO:0070301"	1.64493179365115	30	"response to iron ion"	"cellular response to hydrogen peroxide"	0.982140811455847	0.6768	0.653
+"GO:1902808"	3	"GO:0022402"	1.64244628025692	65	"positive regulation of cell cycle G1/S phase transition"	"cell cycle process"	0.835712410501193	0.283904109589041	0.667
+"GO:0002200"	37	"GO:0032502"	1.63751752524883	78	"somatic diversification of immune receptors"	"developmental process"	0.935645584725537	0.661	0.342
+"GO:1900180"	35	"GO:0034502"	1.63732907027433	143	"regulation of protein localization to nucleus"	"protein localization to chromosome"	0.919649164677804	0.384071428571429	0.666
+"GO:0061157"	30	"GO:0045732"	1.63283051146532	163	"mRNA destabilization"	"positive regulation of protein catabolic process"	0.780628878281623	0.266	0.807
+"GO:0046331"	25	"GO:0045165"	1.62764041747568	3	"lateral inhibition"	"cell fate commitment"	0.906953460620525	0.408833333333333	0.717
+"GO:0048645"	54	"GO:0001736"	1.6272720591144	67	"animal organ formation"	"establishment of planar polarity"	0.936798329355608	0.732	0.402
+"GO:0045773"	47	"GO:2000177"	1.61672334959235	37	"positive regulation of axon extension"	"regulation of neural precursor cell proliferation"	0.786965393794749	0.46445	0.468
+"GO:0061014"	6	"GO:0000377"	1.61618463401957	167	"positive regulation of mRNA catabolic process"	"RNA splicing, via transesterification reactions with bulged adenosine as nucleophile"	0.796801909307876	0.351576923076923	0.399
+"GO:0043666"	41	"GO:0016310"	1.60624935965192	47	"regulation of phosphoprotein phosphatase activity"	"phosphorylation"	0.851273269689737	0.392538461538462	0.542
+"GO:0050779"	30	"GO:0045732"	1.60589869795996	167	"RNA destabilization"	"positive regulation of protein catabolic process"	0.819745823389021	0.2655	0.808
+"GO:0021532"	21	"GO:0009790"	1.60397510339141	40	"neural tube patterning"	"embryo development"	0.916905727923628	0.418214285714286	0.68
+"GO:0016331"	24	"GO:0035987"	1.59773861754532	152	"morphogenesis of embryonic epithelium"	"endodermal cell differentiation"	0.918050119331743	0.4435	0.668
+"GO:1902532"	28	"GO:0072331"	1.58586263781552	586	"negative regulation of intracellular signal transduction"	"signal transduction by p53 class mediator"	0.874942720763723	0.339421052631579	0.556
+"GO:0045665"	40	"GO:0050793"	1.58435902010385	73	"negative regulation of neuron differentiation"	"regulation of developmental process"	0.854319809069212	0.44156	0.606
+"GO:0031581"	61	"GO:0045217"	1.58335949266172	6	"hemidesmosome assembly"	"cell-cell junction maintenance"	0.942091885441527	0.748	0.504
+"GO:0007289"	1	"GO:0051276"	1.58335949266172	27	"spermatid nucleus differentiation"	"chromosome organization"	0.849306682577566	0.62593023255814	0.415
+"GO:1901889"	20	"GO:0051129"	1.57691804170277	32	"negative regulation of cell junction assembly"	"negative regulation of cellular component organization"	0.873948687350835	0.4136	0.744
+"GO:0060425"	42	"GO:0001841"	1.57235162881307	54	"lung morphogenesis"	"neural tube formation"	0.926601431980907	0.372461538461538	0.548
+"GO:0006334"	5	"GO:0071824"	1.57235162881307	118	"nucleosome assembly"	"protein-DNA complex organization"	0.921144391408115	0.3294	0.806
+"GO:0008543"	64	"GO:0008543"	1.56928011213672	86	"fibroblast growth factor receptor signaling pathway"	"fibroblast growth factor receptor signaling pathway"	0.921184964200477	0.511	0
+"GO:0045747"	26	"GO:0007221"	1.5654310959658	48	"positive regulation of Notch signaling pathway"	"positive regulation of transcription of Notch receptor target"	0.902054892601432	0.4995	0.702
+"GO:0071398"	52	"GO:0070301"	1.56240796774604	34	"cellular response to fatty acid"	"cellular response to hydrogen peroxide"	0.967816229116945	0.6628	0.531
+"GO:0006470"	41	"GO:0016310"	1.55564287434397	203	"protein dephosphorylation"	"phosphorylation"	0.895224343675418	0.436384615384615	0.634
+"GO:0015931"	39	"GO:0006406"	1.54821356447571	225	"nucleobase-containing compound transport"	"mRNA export from nucleus"	0.974865155131265	0.309625	0.897
+"GO:0038066"	15	"GO:0006974"	1.54045674171959	57	"p38MAPK cascade"	"DNA damage response"	0.912433174224344	0.398136363636364	0.575
+"GO:0060260"	2	"GO:0090304"	1.53850147321698	72	"regulation of transcription initiation by RNA polymerase II"	"nucleic acid metabolic process"	0.86041646778043	0.468583333333333	0.422
+"GO:0033365"	35	"GO:0034502"	1.53461714855158	958	"protein localization to organelle"	"protein localization to chromosome"	0.95503937947494	0.338785714285714	0.796
+"GO:0048144"	47	"GO:2000177"	1.52753610339301	107	"fibroblast proliferation"	"regulation of neural precursor cell proliferation"	0.977015513126492	0.53265	0.417
+"GO:0048145"	47	"GO:2000177"	1.52753610339301	89	"regulation of fibroblast proliferation"	"regulation of neural precursor cell proliferation"	0.937798329355609	0.4882	0.494
+"GO:0009451"	18	"GO:0016570"	1.52578373592374	180	"RNA modification"	"histone modification"	0.881917661097852	0.554297297297297	0.452
+"GO:0010646"	28	"GO:0072331"	1.52549236088302	3518	"regulation of cell communication"	"signal transduction by p53 class mediator"	0.898156324582339	0.447421052631579	0.383
+"GO:2000677"	32	"GO:0051101"	1.52273400457515	40	"regulation of transcription regulatory region DNA binding"	"regulation of DNA binding"	0.953107398568019	0.415772727272727	0.948
+"GO:0015012"	29	"GO:0006491"	1.52273400457515	33	"heparan sulfate proteoglycan biosynthetic process"	"N-glycan processing"	0.90982338902148	0.400666666666667	0.632
+"GO:0031062"	18	"GO:0016570"	1.52273400457515	16	"positive regulation of histone methylation"	"histone modification"	0.857501193317422	0.383108108108108	0.862
+"GO:0006364"	2	"GO:0090304"	1.51956185282218	225	"rRNA processing"	"nucleic acid metabolic process"	0.834898568019093	0.557875	0.492
+"GO:0010721"	40	"GO:0050793"	1.51726929992006	287	"negative regulation of cell development"	"regulation of developmental process"	0.846737470167064	0.32604	0.696
+"GO:0045597"	40	"GO:0050793"	1.51555779235759	890	"positive regulation of cell differentiation"	"regulation of developmental process"	0.838289976133652	0.30432	0.81
+"GO:0071901"	32	"GO:0051101"	1.51328622401751	100	"negative regulation of protein serine/threonine kinase activity"	"regulation of DNA binding"	0.820601431980907	0.360863636363636	0.501
+"GO:0043966"	18	"GO:0016570"	1.51074483163074	6	"histone H3 acetylation"	"histone modification"	0.919045346062053	0.375621621621622	0.812
+"GO:0048635"	56	"GO:0048634"	1.50682087931748	9	"negative regulation of muscle organ development"	"regulation of muscle organ development"	0.888782816229117	0.245222222222222	0.947
+"GO:1905809"	20	"GO:0051129"	1.50210325708678	11	"negative regulation of synapse organization"	"negative regulation of cellular component organization"	0.885437947494033	0.4224	0.688
+"GO:0043085"	32	"GO:0051101"	1.49976352517436	937	"positive regulation of catalytic activity"	"regulation of DNA binding"	0.939440334128878	0.307590909090909	0.601
+"GO:0034248"	4	"GO:0019219"	1.49962628564663	602	"regulation of amide metabolic process"	"regulation of nucleobase-containing compound metabolic process"	0.86930906921241	0.552241379310345	0.562
+"GO:2000008"	35	"GO:0034502"	1.49852992789959	42	"regulation of protein localization to cell surface"	"protein localization to chromosome"	0.928380668257757	0.549928571428571	0.471
+"GO:0051236"	35	"GO:0034502"	1.48999148705977	161	"establishment of RNA localization"	"protein localization to chromosome"	0.973205250596659	0.528285714285714	0.483
+"GO:0008593"	26	"GO:0007221"	1.48771593671815	98	"regulation of Notch signaling pathway"	"positive regulation of transcription of Notch receptor target"	0.915412887828162	0.4748	0.738
+"GO:0010501"	65	"GO:0010501"	1.48412615628832	9	"RNA secondary structure unwinding"	"RNA secondary structure unwinding"	0.921887828162291	1	0
+"GO:0051241"	17	"GO:0048523"	1.4835968515526	1247	"negative regulation of multicellular organismal process"	"negative regulation of cellular process"	0.880615751789976	0.596	0.6
+"GO:0007030"	1	"GO:0051276"	1.48214458106997	157	"Golgi organization"	"chromosome organization"	0.918915274463007	0.599674418604651	0.483
+"GO:2000171"	47	"GO:2000177"	1.47599355444263	8	"negative regulation of dendrite development"	"regulation of neural precursor cell proliferation"	0.823025059665871	0.54225	0.423
+"GO:0045687"	46	"GO:0021872"	1.47599355444263	45	"positive regulation of glial cell differentiation"	"forebrain generation of neurons"	0.853980906921241	0.484	0.454
+"GO:2000648"	47	"GO:2000177"	1.47599355444263	55	"positive regulation of stem cell proliferation"	"regulation of neural precursor cell proliferation"	0.921468973747017	0.48255	0.478
+"GO:0060562"	42	"GO:0001841"	1.46750041390534	334	"epithelial tube morphogenesis"	"neural tube formation"	0.915997613365155	0.283615384615385	0.881
+"GO:0023051"	62	"GO:0030513"	1.46521264137051	3514	"regulation of signaling"	"positive regulation of BMP signaling pathway"	0.913841288782816	0.52875	0.513
+"GO:0010906"	53	"GO:0006111"	1.46445272082333	103	"regulation of glucose metabolic process"	"regulation of gluconeogenesis"	0.890242243436754	0.2842	0.946
+"GO:0065009"	32	"GO:0051101"	1.46218090492673	2139	"regulation of molecular function"	"regulation of DNA binding"	0.935816229116945	0.323636363636364	0.655
+"GO:0045167"	25	"GO:0045165"	1.45792185366437	1	"asymmetric protein localization involved in cell fate determination"	"cell fate commitment"	0.929871121718377	0.475833333333333	0.661
+"GO:0045168"	25	"GO:0045165"	1.45792185366437	3	"cell-cell signaling involved in cell fate commitment"	"cell fate commitment"	0.906953460620525	0.408833333333333	0.717
+"GO:0009952"	38	"GO:0007389"	1.4550642341185	219	"anterior/posterior pattern specification"	"pattern specification process"	0.933614558472554	0.31	0.896
+"GO:0060976"	57	"GO:0035051"	1.44502654166676	50	"coronary vasculature development"	"cardiocyte differentiation"	0.935317422434367	0.571	0.634
+"GO:0046777"	41	"GO:0016310"	1.44478459487393	199	"protein autophosphorylation"	"phosphorylation"	0.89645584725537	0.421538461538462	0.738
+"GO:0051094"	40	"GO:0050793"	1.44357687862871	1369	"positive regulation of developmental process"	"regulation of developmental process"	0.85595107398568	0.3314	0.867
+"GO:0061061"	56	"GO:0048634"	1.44189169836945	698	"muscle structure development"	"regulation of muscle organ development"	0.936472553699284	0.394333333333333	0.711
+"GO:0010332"	58	"GO:0006972"	1.4414114168918	51	"response to gamma radiation"	"hyperosmotic response"	0.98122553699284	0.4595	0.537
+"GO:0019319"	53	"GO:0006111"	1.4414114168918	93	"hexose biosynthetic process"	"regulation of gluconeogenesis"	0.92950954653938	0.2684	0.94
+"GO:0080134"	31	"GO:0080135"	1.44129142946683	1495	"regulation of response to stress"	"regulation of cellular response to stress"	0.911284009546539	0.454	0.874
+"GO:0031503"	66	"GO:0031503"	1.43806423668622	188	"protein-containing complex localization"	"protein-containing complex localization"	0.98127446300716	1	0
+"GO:0035065"	18	"GO:0016570"	1.4313290219901	18	"regulation of histone acetylation"	"histone modification"	0.868963007159905	0.313216216216216	0.874
+"GO:0048854"	46	"GO:0021872"	1.41510365586255	37	"brain morphogenesis"	"forebrain generation of neurons"	0.928903341288783	0.527666666666667	0.593
+"GO:0001764"	46	"GO:0021872"	1.41195250301392	177	"neuron migration"	"forebrain generation of neurons"	0.912528639618138	0.538555555555556	0.528
+"GO:0048730"	24	"GO:0035987"	1.40949253799142	37	"epidermis morphogenesis"	"endodermal cell differentiation"	0.940207637231503	0.5265	0.417
+"GO:0045638"	40	"GO:0050793"	1.40616033891873	95	"negative regulation of myeloid cell differentiation"	"regulation of developmental process"	0.849156324582339	0.34132	0.62
+"GO:0055021"	44	"GO:0040010"	1.40593909872958	65	"regulation of cardiac muscle tissue growth"	"positive regulation of growth rate"	0.877349642004773	0.361	0.566
+"GO:0043255"	53	"GO:0006111"	1.40395299245456	105	"regulation of carbohydrate biosynthetic process"	"regulation of gluconeogenesis"	0.886050119331742	0.2844	0.945
+"GO:0050658"	39	"GO:0006406"	1.39544996742874	158	"RNA transport"	"mRNA export from nucleus"	0.971303102625298	0.291125	0.941
+"GO:0050657"	39	"GO:0006406"	1.39544996742874	158	"nucleic acid transport"	"mRNA export from nucleus"	0.975394988066826	0.291125	0.941
+"GO:0016202"	56	"GO:0048634"	1.37861597151835	18	"regulation of striated muscle tissue development"	"regulation of muscle organ development"	0.898258949880668	0.220888888888889	0.984
+"GO:0040034"	40	"GO:0050793"	1.37355697466871	12	"regulation of development, heterochronic"	"regulation of developmental process"	0.919412887828162	0.58188	0.518
+"GO:0044344"	64	"GO:0008543"	1.37273658343178	115	"cellular response to fibroblast growth factor stimulus"	"fibroblast growth factor receptor signaling pathway"	0.980105011933174	0.511	0.978
+"GO:0033674"	32	"GO:0051101"	1.37038655462182	337	"positive regulation of kinase activity"	"regulation of DNA binding"	0.836711217183771	0.295181818181818	0.552
+"GO:0008355"	67	"GO:0008355"	1.36622865391744	2	"olfactory learning"	"olfactory learning"	0.962215990453461	1	0
+"GO:2000241"	11	"GO:0140013"	1.36562350591163	207	"regulation of reproductive process"	"meiotic nuclear division"	0.925704057279236	0.381076923076923	0.626
+"GO:0009411"	58	"GO:0006972"	1.36471736200179	152	"response to UV"	"hyperosmotic response"	0.97972553699284	0.4755	0.581
+"GO:0048589"	44	"GO:0040010"	1.36471736200179	660	"developmental growth"	"positive regulation of growth rate"	0.939527446300716	0.338142857142857	0.584
+"GO:0031647"	43	"GO:0008361"	1.36381310480128	325	"regulation of protein stability"	"regulation of cell size"	0.956914081145585	0.6212	0.496
+"GO:0021766"	46	"GO:0021872"	1.35713994741551	94	"hippocampus development"	"forebrain generation of neurons"	0.927973747016706	0.458055555555556	0.711
+"GO:1901532"	27	"GO:0045652"	1.35674477497523	40	"regulation of hematopoietic progenitor cell differentiation"	"regulation of megakaryocyte differentiation"	0.889473747016706	0.531	0.539
+"GO:0010648"	28	"GO:0072331"	1.35359627377693	1462	"negative regulation of cell communication"	"signal transduction by p53 class mediator"	0.88436276849642	0.433736842105263	0.344
+"GO:0009100"	29	"GO:0006491"	1.34833439607706	370	"glycoprotein metabolic process"	"N-glycan processing"	0.908565632458234	0.358833333333333	0.748
+"GO:0071577"	68	"GO:0071577"	1.34237056861105	27	"zinc ion transmembrane transport"	"zinc ion transmembrane transport"	0.972601431980907	1	0
+"GO:0060122"	57	"GO:0035051"	1.34237056861105	35	"inner ear receptor cell stereocilium organization"	"cardiocyte differentiation"	0.863026252983294	0.64625	0.365
+"GO:1903707"	40	"GO:0050793"	1.34179774661299	118	"negative regulation of hemopoiesis"	"regulation of developmental process"	0.845933174224344	0.32816	0.64
+"GO:0023057"	62	"GO:0030513"	1.34065436425382	1463	"negative regulation of signaling"	"positive regulation of BMP signaling pathway"	0.898655131264916	0.5535	0.468
+"GO:0007530"	11	"GO:0140013"	1.33903970822392	22	"sex determination"	"meiotic nuclear division"	0.933680190930788	0.483897435897436	0.525
+"GO:0048146"	47	"GO:2000177"	1.33903970822392	53	"positive regulation of fibroblast proliferation"	"regulation of neural precursor cell proliferation"	0.921527446300716	0.48135	0.478
+"GO:0006890"	69	"GO:0006890"	1.33752549624969	52	"retrograde vesicle-mediated transport, Golgi to endoplasmic reticulum"	"retrograde vesicle-mediated transport, Golgi to endoplasmic reticulum"	0.97273508353222	1	0
+"GO:0044093"	32	"GO:0051101"	1.33677036546713	1281	"positive regulation of molecular function"	"regulation of DNA binding"	0.938712410501193	0.332090909090909	0.621
+"GO:0048332"	24	"GO:0035987"	1.33413769979684	77	"mesoderm morphogenesis"	"endodermal cell differentiation"	0.936952267303103	0.468666666666667	0.438
+"GO:0055017"	44	"GO:0040010"	1.32845691473743	89	"cardiac muscle tissue growth"	"positive regulation of growth rate"	0.919515513126492	0.375142857142857	0.519
+"GO:0048880"	37	"GO:0032502"	1.32817943981675	401	"sensory system development"	"developmental process"	0.929099045346062	0.5278	0.412
+"GO:1901983"	18	"GO:0016570"	1.3269790928711	42	"regulation of protein acetylation"	"histone modification"	0.871810262529833	0.481405405405405	0.402
+"GO:0030166"	29	"GO:0006491"	1.3243132913006	65	"proteoglycan biosynthetic process"	"N-glycan processing"	0.903	0.370833333333333	0.67
+"GO:0021953"	46	"GO:0021872"	1.32312356802686	181	"central nervous system neuron differentiation"	"forebrain generation of neurons"	0.909879474940334	0.445111111111111	0.607
+"GO:0150063"	37	"GO:0032502"	1.32084475871665	395	"visual system development"	"developmental process"	0.929145584725537	0.528	0.412
+"GO:0001654"	37	"GO:0032502"	1.32084475871665	391	"eye development"	"developmental process"	0.92384844868735	0.512266666666667	0.411
+"GO:1901861"	40	"GO:0050793"	1.31668273807812	46	"regulation of muscle tissue development"	"regulation of developmental process"	0.899397374701671	0.51972	0.579
+"GO:1901863"	40	"GO:0050793"	1.30671284299434	24	"positive regulation of muscle tissue development"	"regulation of developmental process"	0.887105011933174	0.5068	0.548
+"GO:0045844"	56	"GO:0048634"	1.30671284299434	3	"positive regulation of striated muscle tissue development"	"regulation of muscle organ development"	0.89135799522673	0.261777777777778	0.894

@@ -1,0 +1,68 @@
+"go"	"cluster"	"parent"	"score"	"size"	"term"	"parentTerm"	"termUniqueness"	"termUniquenessWithinCluster"	"termDispensability"
+"GO:0006310"	1	"GO:0006310"	19.8538719643218	340	"DNA recombination"	"DNA recombination"	0.858320971867008	0.3295625	0
+"GO:0007063"	2	"GO:0007063"	17.5228787452803	17	"regulation of sister chromatid cohesion"	"regulation of sister chromatid cohesion"	0.850709718670077	0.309241379310345	0
+"GO:0010948"	3	"GO:0010948"	17.301029995664	320	"negative regulation of cell cycle process"	"negative regulation of cell cycle process"	0.837291560102302	0.247121212121212	0
+"GO:0006302"	4	"GO:0006302"	17.2518119729938	307	"double-strand break repair"	"double-strand break repair"	0.827319693094629	0.3036	0
+"GO:0090304"	5	"GO:0090304"	13.8538719643218	5652	"nucleic acid metabolic process"	"nucleic acid metabolic process"	0.839684143222507	0.347047619047619	0
+"GO:0060255"	6	"GO:0060255"	13.0969100130081	6624	"regulation of macromolecule metabolic process"	"regulation of macromolecule metabolic process"	0.813212276214834	0.358870967741935	0
+"GO:0043170"	7	"GO:0043170"	12	10222	"macromolecule metabolic process"	"macromolecule metabolic process"	0.877797953964195	0.472	0
+"GO:0006338"	8	"GO:0006338"	10.6777807052661	638	"chromatin remodeling"	"chromatin remodeling"	0.937789002557545	0.251083333333333	0
+"GO:0048523"	9	"GO:0048523"	10.5850266520292	5526	"negative regulation of cellular process"	"negative regulation of cellular process"	0.874158567774936	0.386	0
+"GO:0000280"	10	"GO:0000280"	10.568636235841	441	"nuclear division"	"nuclear division"	0.923901534526854	0.240125	0
+"GO:0016445"	11	"GO:0016445"	8.50863830616573	68	"somatic diversification of immunoglobulins"	"somatic diversification of immunoglobulins"	0.826852941176471	0.361909090909091	0
+"GO:0050794"	12	"GO:0050794"	8.44369749923271	11770	"regulation of cellular process"	"regulation of cellular process"	0.898948849104859	0.6292	0
+"GO:0007127"	13	"GO:0007127"	7.85387196432176	129	"meiosis I"	"meiosis I"	0.877782608695652	0.238090909090909	0
+"GO:0072711"	14	"GO:0072711"	7.65757731917779	11	"cellular response to hydroxyurea"	"cellular response to hydroxyurea"	0.964152173913044	0.574857142857143	0
+"GO:0010586"	15	"GO:0010586"	7.19382002601611	105	"miRNA metabolic process"	"miRNA metabolic process"	0.893019181585678	0.297230769230769	0
+"GO:0035194"	16	"GO:0035194"	7.19382002601611	635	"regulatory ncRNA-mediated post-transcriptional gene silencing"	"regulatory ncRNA-mediated post-transcriptional gene silencing"	0.80814705882353	0.276888888888889	0
+"GO:1905634"	17	"GO:1905634"	6.17392519729917	11	"regulation of protein localization to chromatin"	"regulation of protein localization to chromatin"	0.9426547314578	0.509444444444444	0
+"GO:0006996"	18	"GO:0006996"	6.01322826573375	3613	"organelle organization"	"organelle organization"	0.918572890025575	0.5825	0
+"GO:0051782"	19	"GO:0051782"	6.0087739243075	17	"negative regulation of cell division"	"negative regulation of cell division"	0.925780051150895	0.453125	0
+"GO:0018193"	20	"GO:0018193"	5.65757731917779	941	"peptidyl-amino acid modification"	"peptidyl-amino acid modification"	0.881737851662404	0.381435897435897	0
+"GO:0046640"	21	"GO:0046640"	5.45593195564972	44	"regulation of alpha-beta T cell proliferation"	"regulation of alpha-beta T cell proliferation"	0.874765984654731	0.273111111111111	0
+"GO:0042102"	22	"GO:0042102"	5.07058107428571	105	"positive regulation of T cell proliferation"	"positive regulation of T cell proliferation"	0.84342199488491	0.219666666666667	0
+"GO:0080135"	23	"GO:0080135"	5.06048074738138	655	"regulation of cellular response to stress"	"regulation of cellular response to stress"	0.887337595907928	0.4195	0
+"GO:0033043"	24	"GO:0033043"	5.05551732784983	1176	"regulation of organelle organization"	"regulation of organelle organization"	0.867572890025575	0.3545	0
+"GO:0050779"	25	"GO:0050779"	5.05551732784983	167	"RNA destabilization"	"RNA destabilization"	0.798524296675192	0.247548387096774	0
+"GO:0031954"	26	"GO:0031954"	4.85387196432176	26	"positive regulation of protein autophosphorylation"	"positive regulation of protein autophosphorylation"	0.84274168797954	0.4209375	0
+"GO:0010718"	28	"GO:0010718"	4.76955107862173	59	"positive regulation of epithelial to mesenchymal transition"	"positive regulation of epithelial to mesenchymal transition"	0.842175191815857	0.5155	0
+"GO:0010470"	27	"GO:0010470"	4.76955107862173	17	"regulation of gastrulation"	"regulation of gastrulation"	0.874726342710997	0.36095	0
+"GO:0034332"	30	"GO:0034332"	4.67778070526608	57	"adherens junction organization"	"adherens junction organization"	0.949401534526854	0.321166666666667	0
+"GO:0040018"	29	"GO:0040018"	4.67778070526608	31	"positive regulation of multicellular organism growth"	"positive regulation of multicellular organism growth"	0.870295396419437	0.269571428571429	0
+"GO:0014010"	31	"GO:0014010"	4.58502665202918	11	"Schwann cell proliferation"	"Schwann cell proliferation"	0.913731457800512	0.524166666666667	0
+"GO:0048731"	32	"GO:0048731"	4.20065945054642	4044	"system development"	"system development"	0.890228900255755	0.4399	0
+"GO:0016032"	33	"GO:0016032"	4.07572071393812	432	"viral process"	"viral process"	0.987323529411765	0.226272727272727	0
+"GO:2000027"	34	"GO:2000027"	3.88605664769316	126	"regulation of animal organ morphogenesis"	"regulation of animal organ morphogenesis"	0.876658567774936	0.402666666666667	0
+"GO:0097327"	35	"GO:0097327"	3.82390874094432	1	"response to antineoplastic agent"	"response to antineoplastic agent"	0.981437340153453	1	0
+"GO:0035556"	36	"GO:0035556"	3.79588001734407	2698	"intracellular signal transduction"	"intracellular signal transduction"	0.885333759590793	0.41275	0
+"GO:0048871"	37	"GO:0048871"	3.74472749489669	814	"multicellular organismal-level homeostasis"	"multicellular organismal-level homeostasis"	0.955453964194373	0.36475	0
+"GO:0019827"	38	"GO:0019827"	3.67778070526608	183	"stem cell population maintenance"	"stem cell population maintenance"	0.935231457800511	0.32775	0
+"GO:0045445"	39	"GO:0045445"	3.63827216398241	110	"myoblast differentiation"	"myoblast differentiation"	0.927950127877238	0.73	0
+"GO:0032924"	40	"GO:0032924"	3.56863623584101	49	"activin receptor signaling pathway"	"activin receptor signaling pathway"	0.922382352941176	0.48675	0
+"GO:0044403"	41	"GO:0044403"	3.53760200210104	322	"biological process involved in symbiotic interaction"	"biological process involved in symbiotic interaction"	0.9903452685422	0.313636363636364	0
+"GO:0007423"	43	"GO:0007423"	3.49485002168009	588	"sensory organ development"	"sensory organ development"	0.928849104859335	0.513142857142857	0
+"GO:0150063"	42	"GO:0150063"	3.49485002168009	395	"visual system development"	"visual system development"	0.916212276214834	0.2328	0
+"GO:0002761"	44	"GO:0002761"	3.3767507096021	124	"regulation of myeloid leukocyte differentiation"	"regulation of myeloid leukocyte differentiation"	0.83652557544757	0.320352941176471	0
+"GO:0070242"	45	"GO:0070242"	3.33724216831843	20	"thymocyte apoptotic process"	"thymocyte apoptotic process"	0.979713554987212	0.318076923076923	0
+"GO:0048563"	46	"GO:0048563"	3.23657200643706	11	"post-embryonic animal organ morphogenesis"	"post-embryonic animal organ morphogenesis"	0.926175191815857	0.376333333333333	0
+"GO:0032989"	47	"GO:0032989"	3.22184874961636	789	"cellular component morphogenesis"	"cellular component morphogenesis"	0.91703452685422	0.253090909090909	0
+"GO:0051338"	48	"GO:0051338"	3.18045606445813	692	"regulation of transferase activity"	"regulation of transferase activity"	0.946829923273657	0.2947	0
+"GO:2000026"	49	"GO:2000026"	3.00877392430751	1480	"regulation of multicellular organismal development"	"regulation of multicellular organismal development"	0.841754475703325	0.382111111111111	0
+"GO:0010212"	50	"GO:0010212"	2.83564714421556	138	"response to ionizing radiation"	"response to ionizing radiation"	0.973684143222506	0.3152	0
+"GO:0090305"	51	"GO:0090305"	2.81815641205523	25	"nucleic acid phosphodiester bond hydrolysis"	"nucleic acid phosphodiester bond hydrolysis"	0.912433503836317	1	0
+"GO:0046685"	52	"GO:0046685"	2.75202673363819	32	"response to arsenic-containing substance"	"response to arsenic-containing substance"	0.976351662404092	0.572	0
+"GO:0043414"	53	"GO:0043414"	2.73518217699046	210	"macromolecule methylation"	"macromolecule methylation"	0.903823529411765	0.5105	0
+"GO:0030010"	55	"GO:0030010"	2.72584215073632	156	"establishment of cell polarity"	"establishment of cell polarity"	0.987051150895141	0.521	0
+"GO:0008608"	54	"GO:0008608"	2.72584215073632	49	"attachment of spindle microtubules to kinetochore"	"attachment of spindle microtubules to kinetochore"	0.909184143222506	0.299	0
+"GO:0006517"	56	"GO:0006517"	2.65364702554936	16	"protein deglycosylation"	"protein deglycosylation"	0.913090792838875	0.424666666666667	0
+"GO:0035295"	57	"GO:0035295"	2.57348873863542	1168	"tube development"	"tube development"	0.909691815856777	0.458666666666667	0
+"GO:0022407"	58	"GO:0022407"	2.39040559077478	493	"regulation of cell-cell adhesion"	"regulation of cell-cell adhesion"	0.931585677749361	0.210666666666667	0
+"GO:0051239"	59	"GO:0051239"	2.07058107428571	3123	"regulation of multicellular organismal process"	"regulation of multicellular organismal process"	0.879828644501279	0.462833333333333	0
+"GO:0021846"	60	"GO:0021846"	2.02965312376991	27	"cell proliferation in forebrain"	"cell proliferation in forebrain"	0.913462915601023	0.721	0
+"GO:0014911"	61	"GO:0014911"	1.96577273922945	49	"positive regulation of smooth muscle cell migration"	"positive regulation of smooth muscle cell migration"	0.928445012787724	0.370333333333333	0
+"GO:0051716"	62	"GO:0051716"	1.96457026181545	7599	"cellular response to stimulus"	"cellular response to stimulus"	0.937978260869565	0.62425	0
+"GO:0071560"	63	"GO:0071560"	1.89008413697621	287	"cellular response to transforming growth factor beta stimulus"	"cellular response to transforming growth factor beta stimulus"	0.971035805626599	0.3375	0
+"GO:0009952"	64	"GO:0009952"	1.82159865846624	219	"anterior/posterior pattern specification"	"anterior/posterior pattern specification"	0.924278772378517	0.3592	0
+"GO:0006913"	65	"GO:0006913"	1.7594507517174	330	"nucleocytoplasmic transport"	"nucleocytoplasmic transport"	0.974728900255754	0.4375	0
+"GO:0032606"	66	"GO:0032606"	1.61654370347525	123	"type I interferon production"	"type I interferon production"	0.876599744245524	0.28025	0
+"GO:0032501"	67	"GO:0032501"	1.52636707312616	7882	"multicellular organismal process"	"multicellular organismal process"	0.940523017902813	1	0
