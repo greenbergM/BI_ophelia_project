@@ -1,0 +1,1 @@
+For some reason the Mac m1 had some problems with Salmon, so it is in a separate environment. 
