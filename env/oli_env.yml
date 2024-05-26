@@ -1,4 +1,4 @@
-name: busco
+name: oli_env
 channels:
   - defaults
   - conda-forge
