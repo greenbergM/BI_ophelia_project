@@ -1,7 +1,7 @@
 # Gene expression dynamics in the life cycle of the annelid *Ophelia limacina*
 
 **Author:**
-- Mikhail Greenberg, SPbU Embryology department
+- Mikhail Grinberg, SPbU Embryology department
 
 **Supervisors:**
 - Vitaly Kozin, SPbU Embryology department
